@@ -1,4 +1,4 @@
-# ADTC 2026 — Submission Template
+# ADTC 2026 Submission Template
 
 This is the official template repository for the **Africa Deep Tech Challenge 2026** Laptop LLM track.
 
