@@ -1,0 +1,12 @@
+# Ce Dockerfile ne fait AUCUN COPY du contexte de build (tout vient de git clone).
+# On exclut donc tout le lourd/inutile pour accélérer l'envoi du contexte au daemon.
+.git/
+.claude/
+model/
+*.gguf
+submission.json
+audit.json
+verdict.json
+__pycache__/
+*.py[cod]
+.venv/
