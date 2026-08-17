@@ -9,6 +9,20 @@ model/**/*.safetensors
 model/*.gguf
 model/*.bin
 model/*.safetensors
+# 🔴 TROU MESURÉ le 17/08 — les règles ci-dessus ne couvrent que les poids FINIS.
+# `git add --dry-run model/` mettait en scène deux fichiers de téléchargement
+# interrompu : `Non confirmé 870923.crdownload` (89 789 281 o, Chrome) et
+# `bge-m3-Q8_0.gguf.partial` (44 671 000 o, laissé par `download_model.sh` quand
+# curl meurt en vol — `set -euo pipefail` abrège le script avant son `rm -f`).
+# Le premier passe sous les 100 Mo de GitHub : il aurait été poussé sans erreur.
+# C'est le même mécanisme que le trou des sous-dossiers documenté plus haut, avec
+# une autre extension — donc on arrête d'énumérer des extensions et on INVERSE la
+# règle : tout est ignoré sous `model/`, sauf `model/.gitkeep`, seul fichier que git
+# y suit réellement (vérifié : `git ls-files model/` → une seule ligne).
+# Les règles spécifiques au-dessus sont gardées à dessein : si quelqu'un juge un jour
+# `model/*` trop large et le retire, les poids restent couverts.
+model/*
+!model/.gitkeep
 
 # macOS
 .DS_Store
@@ -25,6 +39,17 @@ audit.json
 # Stratégie compétitive — NE JAMAIS pousser sur le repo public
 CLAUDE.md
 old_CLAUDE.md
+# 🔴 TROU MESURÉ le 17/08 — les deux lignes ci-dessus sont des noms EXACTS, pas des
+# motifs : `old_CLAUDE.md` n'attrape **pas** `old_CLAUDE.md-20260817`, et `CLAUDE.md`
+# n'attrape pas `CLAUDE.md.bak-20260816`. Test comportemental (§10.4) : `git add
+# --dry-run old_CLAUDE.md-20260817` a répondu `add '…'` — donc une sauvegarde horodatée
+# du fichier de stratégie serait UNTRACKED-mais-non-ignorée sur ce fork PUBLIC, à un
+# `git add -A` de la fuite. Or la session de compression de CLAUDE.md commence
+# précisément par créer cette sauvegarde. Même correctif structurel que `model/*` : on
+# couvre la FAMILLE, pas un nom, sinon le trou se rouvre au prochain suffixe inventé.
+CLAUDE.md*
+old_CLAUDE.md*
+*.bak-*
 .claude/
 # ⚠️ PREUVES.md est le document COMPAGNON de CLAUDE.md, pas un livrable : recon
 # nominative des 44 forks rivaux, analyse du scoring, chemins d'échec dur du
@@ -77,6 +102,10 @@ corpus/sources.yaml.*
 corpus/txt/fetched/
 # Rapport de mesure de l'extraction : chiffres de travail, pas un livrable.
 corpus/txt/_extraction.json
+
+# Journal du serveur d'embeddings (D4) : sortie d'execution reecrite a chaque run, jamais
+# un livrable. `git add rag/` l'aurait mis en scene sans cette ligne — mesure du 17/08.
+rag/_embed_server.log
 
 # Porte anti-échec-dur du D6 (vérifie les 4 chemins vers `fail` de comparator.py).
 # ⚠️ Ignoré par DÉFAUT, pas par principe : c'est un outil de QA qui ne révèle rien

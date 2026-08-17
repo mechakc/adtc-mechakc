@@ -40,6 +40,7 @@ EMB_BYTES=634553760
 fetch() {
   local rel="$1" url="$2" want="$3" label="$4"
   local dest="$MODEL_DIR/$rel"
+  local part="$dest.partial"
   mkdir -p "$(dirname "$dest")"
 
   # Idempotence + verification d'integrite. Un fichier present MAIS tronque (coupure
@@ -51,33 +52,79 @@ fetch() {
     have=$(wc -c < "$dest" | tr -d '[:space:]')
     if [[ "$have" == "$want" ]]; then
       echo "[$label] deja present et complet ($have o) — rien a faire"
+      # Un .partial oublie par un essai precedent ne sert plus a rien et serait
+      # ramasse par un `git add` (mesure le 17/08 : 44 671 000 o mis en scene).
+      rm -f "$part"
       return 0
     fi
     echo "[$label] present mais taille INATTENDUE ($have o, attendu $want o) — retelechargement" >&2
     rm -f "$dest"
   fi
 
-  echo "[$label] telechargement -> $rel ($((want / 1024 / 1024)) Mo)…"
-  if command -v curl >/dev/null 2>&1; then
-    curl -L --fail --retry 3 --retry-delay 5 --progress-bar -o "$dest.partial" "$url"
-  elif command -v wget >/dev/null 2>&1; then
-    wget --tries=3 --show-progress -O "$dest.partial" "$url"
-  else
-    echo "erreur : ni curl ni wget disponible" >&2
-    return 1
+  # Etat d'un telechargement precedent. Trois cas, et le cas ">" n'est pas theorique :
+  # une reprise `-C -` au-dela de la fin du fichier distant produirait un GGUF
+  # corrompu qui PASSERAIT le test de taille — un faux positif silencieux.
+  if [[ -f "$part" ]]; then
+    local pre
+    pre=$(wc -c < "$part" | tr -d '[:space:]')
+    if (( pre == want )); then
+      mv "$part" "$dest"
+      echo "[$label] .partial deja complet ($pre o) — promu sans retelecharger"
+      return 0
+    elif (( pre > want )); then
+      echo "[$label] .partial de $pre o > cible $want o : irreparable, jete" >&2
+      rm -f "$part"
+    else
+      echo "[$label] reprise d'un essai precedent a $pre o / $want o"
+    fi
   fi
 
-  local got
-  got=$(wc -c < "$dest.partial" | tr -d '[:space:]')
-  if [[ "$got" != "$want" ]]; then
-    echo "erreur [$label] : $got o telecharges, $want o attendus — fichier ecarte" >&2
-    rm -f "$dest.partial"
-    return 1
-  fi
-  # `mv` en dernier : tant que le fichier s'appelle .partial, une interruption ne
-  # laisse jamais un GGUF incomplet a l'emplacement attendu.
-  mv "$dest.partial" "$dest"
-  echo "[$label] OK : $rel ($got o)"
+  # 🔴 PANNE MESUREE le 17/08 : la version precedente lancait
+  #     curl -L --fail --retry 3 --retry-delay 5 --progress-bar -o "$dest.partial"
+  # sans `-C -`. Deux defauts qui se combinent :
+  #   1. `--retry` de curl RECOMMENCE le transfert a zero ; sur une liaison lente,
+  #      634 Mo n'aboutissent jamais (constate : mort a 44 671 000 o).
+  #   2. `set -euo pipefail` (ligne 25) abrege le script des que curl sort non-nul,
+  #      donc AVANT le nettoyage plus bas — le .partial restait sur le disque, et
+  #      il n'etait couvert par aucune regle de .gitignore.
+  # D'ou : boucle de reprise explicite, `-C -`, et .partial conserve a dessein en
+  # cas d'abandon (il est desormais ignore par git, cf. .gitignore `model/*`).
+  local tentative got
+  for tentative in 1 2 3 4 5; do
+    echo "[$label] tentative $tentative/5 -> $rel ($((want / 1024 / 1024)) Mo)…"
+    if command -v curl >/dev/null 2>&1; then
+      # --speed-limit/--speed-time : une socket morte abandonne au bout de 60 s au
+      # lieu de pendre indefiniment. 1 ko/s est un plancher qu'une liaison lente
+      # mais vivante depasse largement (mesure du 17/08 : ~125 ko/s).
+      curl -L --fail --retry 3 --retry-delay 5 -C - \
+           --speed-limit 1024 --speed-time 60 \
+           --progress-bar -o "$part" "$url" || true
+    elif command -v wget >/dev/null 2>&1; then
+      # Branche de repli : la reprise de wget combinee a -O est moins fiable que
+      # celle de curl (avertissement du manuel wget), mais curl est present dans
+      # Git Bash, WSL et l'image Docker — ce chemin ne doit jamais servir.
+      wget --continue --tries=3 --show-progress --output-document "$part" "$url" || true
+    else
+      echo "erreur : ni curl ni wget disponible" >&2
+      return 1
+    fi
+
+    got=0
+    [[ -f "$part" ]] && got=$(wc -c < "$part" | tr -d '[:space:]')
+    if [[ "$got" == "$want" ]]; then
+      # `mv` en dernier : tant que le fichier s'appelle .partial, une interruption
+      # ne laisse jamais un GGUF incomplet a l'emplacement attendu.
+      mv "$part" "$dest"
+      echo "[$label] OK : $rel ($got o)"
+      return 0
+    fi
+    echo "[$label] incomplet : $got o / $want o" >&2
+  done
+
+  echo "erreur [$label] : abandon apres 5 tentatives." >&2
+  echo "  le .partial est CONSERVE — relancer ce script reprend ou il s'est arrete :" >&2
+  echo "  $part" >&2
+  return 1
 }
 
 fetch "$LLM_REL" "$LLM_URL" "$LLM_BYTES" "LLM"

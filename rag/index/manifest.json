@@ -1,0 +1,75 @@
+{
+ "bloc": "D4",
+ "bm25": {
+  "avgdl": 61.9,
+  "b": 0.75,
+  "jeton": "minuscules + repli accents ; compose a tiret emis entier ET en morceaux",
+  "k1": 1.2,
+  "liste_arret_n": 169,
+  "liste_arret_sha256": "2874d293401fff54",
+  "n_termes": 19877
+ },
+ "chunking": {
+  "chevauchement_unites": 1,
+  "cible_car": 700,
+  "marqueurs_indexes": false,
+  "maxi_car": 955,
+  "mini_car": 220,
+  "plancher_page_car": 40,
+  "texte_est_tranche_contigue_du_txt": true,
+  "traverse_les_pages": false,
+  "unite": "phrase, repli lignes puis coupe dure"
+ },
+ "chunks": {
+  "car_max": 1079,
+  "car_median": 604,
+  "car_min": 197,
+  "car_moyen": 580.1,
+  "car_pages_sous_plancher": 0,
+  "car_total": 1844682,
+  "ids_sous_mini": [
+   "icrisat_terres_degradees_2017:p21",
+   "reca_maladies_cultures_vivrieres:p7",
+   "reca_vca4d.niger_.arachide.28112023_approve:p149"
+  ],
+  "n": 3180,
+  "n_sous_mini": 3,
+  "pages_sous_plancher": 0,
+  "pages_totales": 677,
+  "structure_effet_mesure": "a cible 700 le marquage ne recupere AUCUNE marge (0,0000 sur 5 requetes) et gagne 3 rangs sur 1 requete : les distracteurs de rang 1 n'y sont pas marques. A cible 1100 il en marque 2 sur 5 et rend +0,0328 de marge. La taille de chunk fait donc le gros du travail ; le champ reste un levier residuel pour le D5, pas la correction qu'on croyait.",
+  "structure_marquee": {
+   "bibliographie": 116,
+   "mots_cles": 6,
+   "sommaire": 81
+  }
+ },
+ "embeddings": {
+  "chemin": "model/bge-m3/bge-m3-Q8_0.gguf",
+  "dim": 1024,
+  "dtype_stocke": "float16",
+  "llama_server": "version: 10175 (60bccc376)",
+  "modele": "BGE-M3 Q8_0 (GGUF)",
+  "moteur": "llama.cpp / llama-server --embedding (regle 4)",
+  "normalisation": "faite par le serveur (norme 1,0 assertee, jamais reimposee)",
+  "octets": 634553760,
+  "pooling": "cls",
+  "sha256_gguf": "950f4a8e5e19477a6d3c26d2f162233c20002c601f75e4b002e3239997821167"
+ },
+ "perimetre": {
+  "exclus_champ_exclusion": 1,
+  "exclus_utilite_methodologique": 5,
+  "ids_exclus_exclusion": [
+   "oar_57215:police_cassee"
+  ],
+  "ids_exclus_methodologique": [
+   "oar_56229",
+   "oar_56273",
+   "oar_56309",
+   "oar_56942",
+   "oar_57526"
+  ],
+  "n_documents": 33,
+  "n_sources": 39
+ },
+ "seuils_cosinus": "AUCUN. Calibres au D5 sur distribution mesuree (PREUVES.md 17.5.1)."
+}
