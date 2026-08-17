@@ -12,7 +12,7 @@
   "cross_disciplinary_pairing": {
     "discipline": "agronomie",
     "load_bearing": true,
-    "description": "Le systeme repond a partir d'un corpus agronomique sahelien de 34 documents indexes (INRAN, RECA Niger, ICRISAT, CGIAR), dont 12 sous licence CC-BY verifiee page par page a l'interieur du PDF. L'agronomie n'est pas un theme mais la source de verite : chaque conseil chiffre (date de semis, ecartement, densite, dose d'engrais, seuil d'intervention) est rendu avec sa citation verbatim, son editeur, son annee et sa page. Hors corpus, le systeme annonce explicitement que la reponse n'est pas sourcee et nomme le document qui manque ; hors du domaine agricole, il refuse."
+    "description": "Le systeme repond a partir d'un corpus agronomique sahelien de 33 documents indexes (INRAN, RECA Niger, ICRISAT, CGIAR), dont 7 sous licence CC-BY verifiee page par page a l'interieur du PDF. L'agronomie n'est pas un theme mais la source de verite : chaque conseil chiffre (date de semis, ecartement, densite, dose d'engrais, seuil d'intervention) est rendu avec sa citation verbatim, son editeur, son annee et sa page. Hors corpus, le systeme annonce explicitement que la reponse n'est pas sourcee et nomme le document qui manque ; hors du domaine agricole, il refuse."
   },
   "test_prompts": [
     {

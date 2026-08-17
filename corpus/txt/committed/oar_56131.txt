@@ -1,0 +1,1587 @@
+=== ADTC-PROVENANCE v1 ===
+id: oar_56131
+titre: Restoring degraded landscapes and sustaining livelihoods: sustainability assessment (cum-review) of integrated landscape management in sub-Saharan Africa
+editeur: Frontiers Media
+annee: 2024-03-21
+langue: en
+licence: CC-BY-4.0
+licence_confirmee_dans_le_pdf: true
+licence_citation: ta, Cofie, Tilahun and Mabhaudhi. This is an open-access article distributed under the terms of the Creative Commons Attribution License
+regime: committed
+citation_verbatim_autorisee: oui
+sujet: fertilisation
+portee: sahel_specific
+utilite_conseil: indirecte
+url_pdf: http://oar.icrisat.org/id/document/56131
+page_notice: http://oar.icrisat.org/id/eprint/12606
+doi: https://doi.org/10.3389/fclim.2024.1338259
+fichier_source: Frontiers in Climate_06_01-15_2024.pdf
+pages_pdf_total: 15
+pages_extraites: 15
+pages_source: 1-15
+moteur_extraction: pdfplumber 0.11.10 (use_text_flow=True)
+car_extraits: 75871
+car_utiles_pypdf_reference: 76616
+car_pypdf_memes_pages: 76616
+normalisations: pua=0 ligatures=0 espaces_speciaux=0 zero_largeur=0 decesures=15
+decesure_regles: atteste_soude=0 atteste_tiret=10 atteste_deux_moities=2 defaut_prefixe=0 defaut_soude=3
+qualite_texte: car_en_tokens_soudes_pct=1.9 tokens_soudes=38 tokens_total=11274 verdict=sain
+marqueur_page: [[page N]] = numero de page PDF 1-indexe, lu du PDF et non du texte
+=== TEXTE ===
+[[page 1]]
+Frontiers in Climate 01 frontiersin.org
+Restoring degraded landscapes
+and sustaining livelihoods:
+sustainability assessment
+(cum-review) of integrated
+landscape management in
+sub-Saharan Africa
+Birhanu Zemadim Birhanu 1*, Gizaw Desta 2, Olufunke Cofie 1,
+Seifu Admassu Tilahun 1 and Tafadzwanashe Mabhaudhi 3,4
+1 International Water Management Institute (IWMI), Accra, Ghana, 2 International Crops Research
+Institute for the Semi-Arid Tropics (ICRISAT), Addis Ababa, Ethiopia, 3 International Water Management
+Institute (IWMI), Pretoria, South Africa, 4 Centre for Transformative Agricultural and Food Systems
+(CTAFS), University of KwaZulu-Natal, Pietermaritzburg, South Africa
+Introduction: Land degradation is a significant environmental challenge across
+sub-Saharan Africa. In recent decades, efforts have been undertaken, with
+varying successes, to rehabilitate degraded rural landscapes. However, there
+needs to be more evidence on the outcomes regarding enhanced productivity,
+environmental management, and socio-economic benefits.
+Methods: This study uses a case study approach, using contrasting sites from
+Ethiopia and Mali to appraise restoration innovations implemented through
+various programs. Two distinct sites were chosen from each of the study
+cases, and an extensive literature search was conducted to document the
+evidence, focusing on the sustainability gains derived from integrated landscape
+management (ILM). For this, the sustainable intensification assessment
+framework (SIAF) was used, encompassing five domains, namely productivity,
+economic, environmental, social, and human condition, and featuring scales
+from plot to landscape, all facilitated by simplified yet robust indicators such as
+yield, soil loss, net income, land access, and food availability.
+Results: Results highlighted a higher productivity gain (35% to 55%) and an improved
+socio-economic benefit (>20%). The ILM in the Ethiopian highlands enabled a
+significant improvement in wheat and barley yield (p < 0.01). Introducing new crop
+varieties integrated with the in-situ and ex-situ practices enabled diversifying crops
+across the landscape and significantly reduced runoff and soil loss (p < 0.05). By
+increasing the cultivable land by 44%, household income was increased by selling
+potatoes and agroforestry products. In Mali, ILM practices reduced soil loss to 4.97t/
+ha from 12.1t/ha. In addition to the improvements in the yield of sorghum and
+maize (33% and 63%, respectively), rehabilitating the once marginal and abandoned
+landscape in Mali enabled landless and female-headed households to work together,
+improving the social cohesion among the groups. The introduction of irrigation
+facilities enabled widowed women to increase household vegetable consumption
+by 55% and increase their income by 24%.
+Discussion: The study showed positive evidence from ILM practices in the two
+contrasting landscapes. However, there is a need to address challenges related
+to the absence of timely data monitoring and documentation of successful
+practices. For this, the generation of evidence-based data and the use of
+OPEN ACCESS
+EDITED BY
+Sabine Homann-Kee Tui,
+Alliance Bioversity International and CIAT,
+Kenya
+REVIEWED BY
+Najibullah Omerkhil,
+Forest Research Institute (ICFRE), India
+Tewodros T. Assefa,
+Bahir Dar University, Ethiopia
+*CORRESPONDENCE
+Birhanu Zemadim Birhanu
+Z.Birhanu@cgiar.org
+RECEIVED 07 December 2023
+ACCEPTED 06 March 2024
+PUBLISHED 21 March 2024
+CITATION
+Birhanu BZ, Desta G, Cofie O, Tilahun SA and
+Mabhaudhi T (2024) Restoring degraded
+landscapes and sustaining livelihoods:
+sustainability assessment (cum-review) of
+integrated landscape management in
+sub-Saharan Africa.
+Front. Clim. 6:1338259.
+doi: 10.3389/fclim.2024.1338259
+COPYRIGHT
+© 2024 Birhanu, Desta, Cofie, Tilahun and
+Mabhaudhi. This is an open-access article
+distributed under the terms of the Creative
+Commons Attribution License (CC BY). The
+use, distribution or reproduction in other
+forums is permitted, provided the original
+author(s) and the copyright owner(s) are
+credited and that the original publication in
+this journal is cited, in accordance with
+accepted academic practice. No use,
+distribution or reproduction is permitted
+which does not comply with these terms.
+TYPE Original Research
+PUBLISHED 21 March 2024
+DOI 10.3389/fclim.2024.1338259
+
+[[page 2]]
+Birhanu et al. 10.3389/fclim.2024.1338259
+Frontiers in Climate 02 frontiersin.org
+advanced geo-spatial tools such as Remote Sensing and GPS-installed drones
+are recommended.
+KEYWORDS
+participatory research, degradation, sustainable intensification, sustainability
+indicators, restoration practices, landscape management, climate change,
+sub-Saharan Africa
+1 Introduction
+Land degradation is a significant threat to agriculture and food
+security in many parts of sub-Saharan Africa (SSA). Diminishing
+suitable agricultural land, soil erosion, and the continuous extraction
+of farm nutrients result in declining productivity and severe livelihood
+challenges to the agriculture-based communities of developing
+countries (Traore et al., 2017). By reducing soil fertility and
+agricultural yields, land degradation undermines livelihood security.
+As a result, communities already struggling to cope with the impacts
+of climate variability and change are trapped in a vicious cycle of
+conflicts, low farm incomes, poverty, and food insecurity (Amede
+et al., 2007; World Bank, 2019), making it difficult for SSA states to
+achieve sustainable development.
+In SSA, land degradation is a complex challenge driven by many
+dynamic factors, including population growth and urbanization (AfDB,
+2014), unsustainable agricultural practices, the conversion of pasture and
+forest lands to croplands, deforestation (Ussiri and Lal, 2019), and climate
+variability and change (IPCC, 2014, 2019). A history of food insecurity
+and poverty means that many governments have always focused on
+agriculture as a solution to both challenges. However, these wellintentioned efforts, through the expansion and intensification of
+agriculture, have inadvertently led to soil degradation and decreased
+agricultural productivity (Tully et al., 2015). Diminishing grazing and
+pasture lands restricts the traditional practice of livestock mobility and
+further drives the conversion of pastoral and livelihoods to sedentary
+farming, leading to severe land degradation and competition for scarce
+land and water resources; this has often led to conflict for pastoral
+communities and diseases moving more easily across livestock and people
+(Mackenzie and Jeggo, 2019). Deforestation for agriculture and fuelwood
+further exacerbates the problem, disrupting ecosystems and altering land
+cover (FAO, 2020). The prevailing land degradation problems are more
+complex when they happen across different land uses in fragile and
+ecologically sensitive landscapes that typify much of SSA; technological
+solutions alone do not provide lasting and sustainable solutions. This
+underscores the urgent need for sustainable and integrated land
+management practices that consider positive outcomes for people and
+the environment.
+The problems need to be tackled through an integrated landscape
+solution that considers the balance of supply and demand, integration
+of production system and natural resource conservation, and socio-technical and socio-economic, local, and national objectives. Solutions
+must be driven from the description and analysis of the current
+context at farm and landscape scales and the co-design of strategic
+pathways for resilient, adaptive, and transformative interventions and
+action areas (Sanginga and Woomer, 2009). To ensure adaptation and
+sustainability of the solutions, planning and implementation of
+interventions have to be derived by community-led processes and
+partnerships with all interest groups (Bekunda et al., 2010). Despite
+being fragmented, sustainable landscape management practices are
+available in a few SSA landscapes with varying complexity,
+implementation status, and commitments by different actors at
+different levels. With support from the government and NGOs,
+smallholder farmers have improved traditional natural resources
+management practices (Dregne, 2002).
+Landscape management and soil health recovery could
+successfully be achieved using existing, often traditional techniques
+and through affordable strategic management innovations at scale
+from individual fields to a more integrated system that combines
+technologies of soil, water, crops, livestock, and tree systems (German
+et al., 2007; Bado et al., 2022). For example, to restore degraded
+landscapes, implementing various soil and water conservation options
+in northern Ethiopia resulted in a significant decline in runoff and soil
+loss with a significant sediment yield reduction of 77% at the
+watershed level (Yaekob et al., 2020). Intending to manage torrential
+rains and flood water management, the once degraded landscape in
+the Afar region of Ethiopia (Amede et al., 2020) turned out to be a
+productive land for growing dryland crops (Getnet et al., 2020) and
+forages for livestock feed (Erkossa et al., 2020). The Ethiopian
+government restored several degraded areas through its watershed
+management program since the 1980s. Kibret et al. (2020) reported
+that restoration practices such as exclosure-based management are
+effective interventions to restore degraded lands and the associated
+ecosystem services. In Mali, landscape restoration practices focused
+on improvements in plant-available soil water, bridging dry spells, and
+shallow aquifer recharge by implementing soil and water conservation
+works (Traore and Birhanu, 2019). In other parts of West Africa, for
+example, Burkina Faso, the government planned to set up 120,000 ha
+of degraded lands treated using earthen benches (Hien, 2015). In
+Niger, landscape restoration techniques combine one or more
+agricultural technologies with land and water management practices.
+Half-moons, stone bunds, and benches were standard techniques at
+the farm level, while Farmer Managed Natural Regeneration (FMNR)
+has been widely considered a successful landscape restoration
+technique. Since the 1980s, 500,000 ha of degraded land has been
+covered by the FMNR technique in the Maradi region of Niger
+(Haglund et al., 2011; Sendzimir et al., 2011).
+Other restoration techniques that are common in West Africa
+include the Zaï technology (Liniger et al., 2011), contour bunding
+combined with fast-growing tree species (Birhanu et al., 2022), and
+semi-circular bunds (Ray and Simpson, 2014). Zaï became popular in
+the early 1980s in the West African Sahel (Roose et al., 1999). Contour
+bunding technology was introduced in southern Mali in 1980 as a Soil
+and Water Conservation (SWC) practice to control erosion and
+improve soil fertility in many farm fields (Gigou et al., 2006). It
+provided multiple benefits of increasing crop yield (Traore and
+
+[[page 3]]
+Birhanu et al. 10.3389/fclim.2024.1338259
+Frontiers in Climate 03 frontiersin.org
+Birhanu, 2019) and reducing soil water erosion by over 40% (Birhanu
+et al., 2022). Semi-circular bunds (SCB) are earthen embankments
+practiced in semi-arid areas for rangeland improvement (Ray and
+Simpson, 2014). They can increase crop yields by 112% (Hien, 2015).
+The bio-reclamation of degraded land (BDL) system is an integrated
+system aimed at increasing the food production and income of poor
+farmers (mainly women) by utilizing degraded lands to produce
+rainfed fruit trees and vegetables. The BDL is very popular in Niger
+(Bado et al., 2016).
+Against this background, managing degraded landscapes in many
+SSA countries faces several barriers. Often, there are limited efforts to
+integrate natural resource management practices with agricultural
+intensification and livelihood options, and only some of the proven
+technologies and practices at the farm level can be implemented at scale
+successfully. In Ethiopia, for example, despite significant progress by the
+government to restore degraded landscapes, rural growth and poverty
+reduction have been critically hampered by land degradation in the past
+decade. A report by the World Bank (2019) highlighted that approximately
+27 million hectares (ha) of highland areas are significantly eroded, and
+approximately 80% of Ethiopia’s land surface is prone to moderate or
+severe soil degradation. In Mali, the aggravated land degradation is
+exacerbated by climatic changes and inaction due to several factors that
+complicate efforts to increase food production and security. The absence
+of timely data monitoring, documentation of successful practices, and
+identification of appropriate scaling options still needs to be addressed.
+Decision-makers require tangible evidence to believe in the success of
+technologies and practices for broader scaling. For this, it is imperative to
+record successful stories where integrated solutions have been co-validated
+with relevant stakeholders. The limited available documentation
+highlighted the challenges related to degraded landscapes in SSA and the
+efforts made by government and development programs. The major
+weakness is the lack of analytical study and associated documentation to
+scale proven practices. Therefore, this paper aims to present practical cases
+of landscape management practices from restoration innovations
+established under different research for development (R4D) programs
+and investigate the gains using the sustainable intensification assessment
+framework (SIAF) sustainability indicators. Case studies from Ethiopia
+and Mali were considered to provide valuable insights into the lessons
+learned, data management system, and potential challenges under
+contrasting scenarios and direct future landscape management approaches.
+2 Materials and methods
+The methodology employed for this study uses a mixed approach.
+It begins with a purposeful and selective decision to identify and
+investigate landscape management practices from restoration
+innovation sites established under different programs over the past
+decades across SSA. An extensive literature search based on the
+sustainability gains was conducted for the identified innovation sites
+to document the evidence, focusing on the sustainability gains derived
+from landscape management practices. Using data obtained on
+sustainability domains, namely, productivity, economic,
+environmental, social, and human condition, the sustainable
+intensification assessment framework was utilized to assess the
+effectiveness and multifaceted impacts of integrated landscape
+management practices across diverse contexts. Additionally, the
+experimental data collected at the watershed level enabled
+comparisons of the benefits of ILM practices over non-interventions.
+The details of the mixed approach are described below.
+2.1 Study area identification and
+description
+This study uses a case study approach, using contrasting sites from
+Ethiopia and Mali to appraise restoration innovations implemented
+through various programs. Two distinct sites were chosen from each
+study case based on available datasets and documentation. In Ethiopia,
+the Yewol watershed in the South Wollo Zone and the Chifra and Yallo
+sites in the Afar regional state were considered. In Mali, the study
+encompassed the Bougouni and Koutiala districts in southern Sikasso
+(Figure 1). Though each case study is quite distinct, for example, in
+terms of average household farm sizes (Table 1), persistent problems
+of land degradation, soil erosion, limited smallholders’ access to
+sufficient resources to invest in agricultural intensification solutions,
+and lack of farm to landscape scale natural resource management are
+common in both cases. In Ethiopia, the study areas are in the highland
+sloppy catchment (>30%) with an elevation that ranges from 1,090 m
+to 3,170 m. Mali’s relatively flatland characterizes the study site (with
+slopes less than 5%) and elevation ranging from 350 m to 400 m.
+Agriculture dominates the land use system in both countries, with
+mixed-crop livestock as the primary farming system (Table 1). Before
+the intervention practices, the study areas represented degraded,
+drought-prone, and poor soil fertility conditions.
+2.2 Literature search
+Major scientific websites such as ResearchGate, Google Scholar,
+and ScienceDirect were used to search literature on the sustainability
+gains of landscape management practices. The literature search did not
+impose a time limit but considered two case studies from Ethiopia and
+Mali, representing East Africa and West Africa, respectively, under
+contrasting conditions. Literature outside the two countries was
+considered on a limited case to show comparable advantages of
+implemented practices. Keywords used were ‘degraded landscape,’
+‘agricultural productivity,’ ‘sustainable development,’ ‘integrated
+practices,’ ‘sustainable landscape management,’ ‘farmers perception,’
+‘Ethiopia,’ and ‘Mali.’ Criteria for further screening of the search results
+were done based on criteria such as (i) the presence of innovation sites
+for validating and co-learning landscape management practices, (ii)
+community or end users’ participation in the landscape management
+process, (iii) the existence of practices at different scale (field/plot,
+farm, and landscape), (iv) land use and land cover changes, and finally
+(iv) outputs that signify agricultural water and land sustainability
+options. Most of the articles (over 96%) used in the literature were
+published in the last 10 years, a period that signifies the establishment
+of the selected innovation sites in both countries.
+2.3 Restoration innovation sites in northern
+Ethiopia and Mali
+In the rainfed highland of northern Ethiopia, a good example of
+an innovation site is the Yewol mountain landscape’s rehabilitation
+
+[[page 4]]
+Birhanu et al. 10.3389/fclim.2024.1338259
+Frontiers in Climate 04 frontiersin.org
+initiated in 2013. Landscape intervention practices were implemented
+jointly through public works of the Productive Safety Net Program
+(PSNP), where rural communities played an active role in the
+implementation process (Child et al., 2021). Activities were
+co-designed and driven by the needs of communities and local
+partners, and through local government support, approximately 7,500
+hectares of degraded landscape were restored. In the co-designing
+process, integrated solutions of locally adaptive practices such as soil
+and water conservation, fertility management, improved crop and
+fodder varieties, contour ditches, and agroforestry practices were
+implemented through investing in public works. Another example of
+an innovation site is in the dry lowlands of Afar Regional State, where
+two learning sites were established in 2015 to benefit more than 200
+agro-pastoral households. The region is a drought-prone area with low
+rainfall and high temperatures. The lowlands suffer from recurrent
+droughts and flash floods emerging from adjacent highlands. Flood-
+spreading weirs, an engineering structure aimed to divert and spread
+flash floods and create recession farming, were identified as innovative
+solutions to promote agro-pastoral intensification through food and
+fodder varieties in a purely pastoral farming system.
+In Mali, under the Africa Research In Sustainable Intensification
+for the Next Generation (Africa RISING), innovation sites were
+FIGURE 1 (Continued)
+
+[[page 5]]
+Birhanu et al. 10.3389/fclim.2024.1338259
+Frontiers in Climate 05 frontiersin.org
+established in the districts of Bougouni and Koutiala of the Sikasso
+region. The Africa RISING program commenced in early 2011 to
+showcase different technologies and practices through the inclusive
+engagement of government extension agents, NGOs, and R4D
+partners (Africa RISING, 2018). Reducing soil loss, enhancing water
+utilization, and integrating soil fertility management were a few of the
+expected outputs from the innovation sites (ICRISAT, 2022).
+2.4 Assessment of landscape management
+practices using sustainability indicators
+Evidence-based data monitoring and landscape management
+assessment help to demonstrate how socio-economic and
+environmental benefits are improving beyond productivity gains.
+We selected the Sustainable Intensification Assessment Framework
+(SIAF) with its comprehensive approach encompassing five
+domains, namely productivity, economic, environmental, social,
+and human condition, and featuring scales ranging from plot-level
+to landscape-level, all facilitated by simplified yet robust indicators
+(Musumba et al., 2017). This framework was chosen for its ability
+to provide a holistic and nuanced understanding of sustainable
+intensification, allowing us to assess the effective and multifaceted
+impacts of integrated landscape management practices across
+diverse contexts. Selected indicators and metrics for each domain
+were considered essential and present assessment methods to show
+broader implications and interactions of sustainability at multiple
+scales. Sustainability indicator outputs were adopted from previous
+works (Snapp et al., 2010; Zurek et al., 2015; Frelat et al., 2016).
+Table 2 presents the adopted approach for this study. Results were
+compared against the outputs obtained for each indicator in the
+traditional or non-intervention practice.
+3 Results
+Table 3 presents the multiple benefits of landscape management
+practices based on sustainability indicators for case studies. In
+Ethiopia, annual crop cover and application of green manure were
+integrated into in-situ and ex-situ management practices such as
+contour ridge tillage, hillside terraces, agroforestry, improved crop and
+fodder varieties, and water-spreading weirs. In Mali, implementing
+contour bunding and contour ridge tillage resulted in significant
+benefits over non-treated farms. For each case study, details of the
+analytical result based on the sustainability assessment and
+comparisons against non-intervention practices are presented below.
+FIGURE 1
+(A) Location map of Ethiopia and Mali, (B) Study sites in Mali (Bougouni and Koutiala districts of Sikasso region), (C) Study sites in Ethiopia (highlands of
+Wollo and lowlands of Afar region). Source: Birhanu et al. (2023).
+
+[[page 6]]
+B
+irh
+a n
+u
+e t
+a
+l.
+1
+0
+.3
+3
+8 9
+/fc
+lim
+.2
+0
+2 4
+.1
+3
+3 8
+2
+5 9
+F
+ro
+n tie
+rs
+in
+C
+lim
+a
+te
+0
+6
+fro
+n tie
+rs
+in
+.o
+rg
+TABLE 1 Major biophysical and physiographic characteristics of the study sites in Ethiopia and Mali.
+Country Innovation site/
+major challenge
+Geographic coordinate MAR*
+(mm)
+Avg.
+Temp
+(°C)
+Slope (%) Major
+LULC
+Major
+soil
+Average
+household
+farm size
+(ha)
+Average
+household
+number
+Farming
+system
+Reference
+Lon Lat AvEL** (m)
+Ethiopia Yewol
+• Unreliable rainfall and
+intensive drainage system
+• Erosion and over-grazed
+land
+• Dissected and steep
+topography
+• Subsistence farming
+• Food scarcity
+39.4 10.8 3,170 773 16.46 70% of the land
+mass is greater
+than 30%
+Agriculture/
+Crop cultivation
+Cambisols/
+Regosols/
+Lithosols
+0.45 5 Mixed crop-livestock
+Amede et al.
+(2023)
+Alem et al.
+(2022)
+Afar
+• Recurrent drought
+• Torrential floods
+• Low rainfall and high
+temperature
+• Seasonal migration to search
+for water and pasture
+• Severe competition for
+biomass (livestock, soil
+fertility, and cooking)
+40 11.61 1,090 300 27.8 Steep slope
+(>30%) in the
+upstream and
+medium to low
+slopes (<10%) in
+downstream
+areas
+Degraded dry
+rangeland
+Deep alluvial
+soils and
+graveldominated
+soils in
+degraded
+rangelands
+2 ND Pastoral and
+agro-pastoral
+Getnet et al.
+(2020)
+Gumma et al.
+(2021)
+Mali Bougouni
+• Extended dry spell
+• Loss of ecosystem
+• Degraded arable land
+• Soils with heavy erosion risk,
+low water storage capacity,
+and poor drainage
+11.42 −7.64 350 1,060 27.5 1.5–2% Natural
+vegetation
+(59%),
+Agriculture
+(20%)
+Regosols
+(62%), and
+Lixisols
+(37%)
+8 14 Mixed crop-livestock
+Sanogo et al.
+(2023); Birhanu
+et al. (2022);
+Birhanu et al.
+(2023); Dembele
+et al. (2021)
+Koutiala
+• Water scarcity
+• Unpredictable and
+unreliable rainfall
+• Degraded catchment and
+stream channels
+• Highly eroded topsoil
+• Arid and hot
+12.67 −5.71 365 862 28.5 1.5–2% Savanna
+rangeland (48%),
+Agriculture
+(35%)
+Entisols
+(35%) and
+Lixisols
+(37%)
+5 16 Mixed crop-livestock
+*Mean Annual Rainfall, **Average Elevation.
+
+[[page 7]]
+Birhanu et al. 10.3389/fclim.2024.1338259
+Frontiers in Climate 07 frontiersin.org
+TABLE 2 Description of sustainable intensification assessment framework, indicators, and data collection methods.
+Sustainability
+domain
+Analyzed
+system
+Indicator Metrics and
+scale
+Data
+collection
+method
+Critical
+input
+Essential
+characteristics
+Productivity Major cropping
+system
+Crop yield Yield in Kg/ha/
+season (plot/farm
+level)
+Crop diversity
+(farm level)
+Yield measurement Land/Crop type Increasing output per unit
+of input in a given period
+Crop biomass Biomass
+production in Kg/
+ha/season (plot/
+farm level)
+Biomass
+measurement
+Environment Farm/Landscape • Soil loss
+• Erosion
+• Groundwater recharge
+• Vegetation cover
+• Water productivity
+• Soil moisture
+• Soil loss in tons/
+ha/year
+(field/plot)
+• Erosion in tons/
+ha/yr.
+(landscape)
+• Sediment load in
+% (landscape)
+• Improvement in
+groundwater
+level, water
+productivity,
+moisture,
+vegetation cover
+(farm and
+landscape)
+Direct measurement/
+survey/model output
+Soil/water • Improved natural
+resource base
+supporting agriculture
+• Improved
+environmental services
+• Reduced pollution
+coming from agriculture
+Economic Household Profitability • Net income:
+total net income
+for all farm
+activities
+(household)
+• Marginal rate
+of return
+• Increments in
+irrigable and
+cultivable land
+Survey Land/Labor/
+Capital
+• Profitability of practices
+• Returns to factors of
+production
+Social Household/
+Community
+Gender Equity Land access by
+gender, access to
+information,
+income by gender
+(household)
+Survey/Focus group
+discussion (FGD)
+Land/Livestock Equitable relationships
+across gender and social
+groups
+Collective action Participation in a
+collective action
+group (Landscape)
+Survey FGD Social groups • Level of collective action
+• Ability to resolve
+conflicts related to
+agriculture and natural
+resource management
+Human well-being Household Food Security • Food availability
+in a year
+(household)
+• Access to
+nutritious food
+(household)
+Survey • Food type
+• Household size
+• Meeting dietary needs for
+a productive and
+healthy life
+• Improved nutritional
+status through
+consumption or
+sale value
+
+[[page 8]]
+B
+irh
+a n
+u
+e t
+a
+l.
+1
+0
+.3
+3
+8 9
+/fc
+lim
+.2
+0
+2 4
+.1
+3 3 8
+2 5 9
+F
+ro
+n tie
+rs
+in
+C
+lim
+a
+te
+0
+8
+fro
+n tie
+rs in
+.o rg
+TABLE 3 Results of sustainable intensification assessment framework in the degraded landscapes of Ethiopia and Mali under different cropping systems and management conditions.
+Study site/
+primary
+cropping
+system/
+intervention
+practice
+Productivity Environment Economy Social Human
+well-being
+Reference
+Yewol (Ethiopia)
+Wheat
+• Hillside terracing
+• Implementation of
+contour farming
+• Annual crop cover
+and green manuring
+• Yield improvement: Wheat
+by 142% (p < 0.01) (from
+0.7 t/ha), barley by 100%
+(p < 0.01) (from 0.8 t/ha), and
+Faba bean by 66% (p < 0.05)
+(from 0.9 t/ha)
+• Crops diversity increased
+from 3 to 8 at the
+landscape level
+• Runoff and soil loss were reduced on an
+average by 27 and 37% (p < 0.05),
+respectively (at plot level)
+• Sediment yield reduced by 75% (p < 0.01
+at watershed level)
+• Increased recharge of groundwater
+• Vegetation cover increased from 13 to
+29% (p < 0.1), and degraded rangelands
+reduced from 87% to just 28% (p < 0.05)
+• An income of $140 per season
+from the sale of potatoes,
+$115 from
+agroforestry products
+• A five-fold increase in
+irrigable land (200 ha
+to 970 ha)
+• Increased cultivated land by
+44% (p < 0.05)
+• Improved land quality (soil moisture and nutrients)
+enabled a gradual change of degraded hillslopes to
+restored and productive mountain slopes. Hence,
+land allocation from communal use covered by
+grasses and shrubs to individual occupation.
+• A producers’ cooperative was formed to support 69
+unemployed youth in producing potatoes using
+emerging mountain springs.
+• Nearly 56% of women and 30% of men farmers send
+their children to school.
+• Additional livelihood assets acquired by women
+(11%) and men (9%)
+• Lessons learned are being applied to degraded land
+in at least 20 additional watersheds
+Food security
+status improved
+by 31%, and
+reliance on food
+aid reduced by
+39% compared to
+non-targeted
+communities in
+adjacent
+watersheds.
+Yaekob et al.
+(2020); Alem
+et al. (2022);
+Gumma et al.
+(2021); Kane-
+Potaka (2015);
+ICRISAT (2018)
+Afar (Ethiopia)
+Maize
+Participatory flood-based farming using
+water-spreading weirs
+• Grain Yield increased by
+3.5–5.8 tons/ha (p < 0.05)
+(from 1 ton/ha)
+• Biomass increased from
+13.4–20.0 tons/ ha (p < 0.05)
+(from 7.0 tons/ha)
+• Fodder biomass stored for the
+dry months increased by
+more than 80% (p < 0.01).
+• Coverage of cultivated and vegetation
+land increased from nil to 44 and 13 to
+29%, respectively (p < 0.05).
+• Bare lands decreased from 87 to 28% of
+the area (p < 0.05).
+• The gradual shift from predominantly communal
+pastoral land covered by grasses and shrubs to a
+fenced agro-pastoral farming system.
+• Community leaders negotiated with neighboring
+communities to protect crops from livestock.
+• Better skills were developed in new farming systems
+and agronomic practices.
+• Community groups produced sufficient grass
+biomass harvest and shared with neighboring
+communities
+Amede et al.
+(2023); Gumma
+et al. (2021)
+Koutiala (Mali)
+Sorghum
+Contour bunding
+Ridge tillage
+Solar-based irrigation
+system
+• Grain Yield increased by 33%
+from 1,371 Kg/ha (p < 0.05)
+• Biomass increased by 42%
+from 3,402 Kg/ha (p < 0.05)
+• Increase in Water Productivity (WP)
+from 2.4 to 3.2 Kg/mm (p < 0.1)
+• Increase in soil moisture at different soil
+horizon depths: 21% at 10 cm and 20 cm,
+19% at 30 cm, 15% at 40 cm, and 13% at
+60 cm and 100 cm (p < 0.1)
+• Average Runoff Coefficient reduced to
+19.25% from 35.62% (p < 0.05)
+• Mean soil loss (farm level) reduced to
+4.97 t/ha from 12.1 h/ha (p < 0.01)
+• Increment in the net benefit
+by 24% (from $US201 to
+$US249) per year
+• The average marginal rate of
+return of improved practices
+was 5.13
+• SBISs enabled household
+incomes to increase by over
+40% (p < 0.05).
+• After rehabilitating the once marginal and
+abandoned farmlands, landless female-headed
+households and widowed women came together to
+grow sorghum.
+• The introduction of SBISs enabled an increase in
+household vegetable consumption by 55%.
+Birhanu et al.
+(2022); Traore
+and Birhanu
+(2019)
+(Continued)
+
+[[page 9]]
+Birhanu et al. 10.3389/fclim.2024.1338259
+Frontiers in Climate 09 frontiersin.org
+3.1 Sustainability assessment for Yewol and
+Afar innovation sites in Ethiopia
+Before intervention practices, yields of major staple crops such as wheat and barley in the Yewol watershed were stagnant at 0.7 tons/ha
+and 0.8 tons/ha, respectively. Crop yields increased significantly after
+introducing in-situ and ex-situ management practices such as hillside
+terraces, Fanya juu, and contour ridge tillage. Farmers could diversify
+cropping systems by adding other crops such as faba bean and potato
+into their farming practices. Compared with untreated plots,
+implementing management practices reduced soil loss in treatment
+plots (Table 3). In places where crop covers and green manuring were integrated, plot-level soil loss was reduced below 10 tons/ha (Desta et al., 2021). At the farm level, the introduction of new crop varieties (such as faba beans and potato) integrated with the in-situ and ex-situ
+management practices enabled a reduction of runoff and soil loss by 27 and 37%, respectively. Faba beans are nitrogen fixing and enhance soil fertility and if incorporated regularly into diets, enhance household nutrition. They are also relatively resilient to varied rainfall. By increasing the cultivable land by 44%, household income was raised by selling potatoes and agroforestry products (Yaekob et al., 2020). As shown in Table 3, farmers were able to obtain an income of $140 per season from the sale of potatoes and $115 from agroforestry
+products. This is an opportunity for Yewol watershed communities to
+benefit from the implementation of ILM practices. At the watershed
+level, significant improvements in sediment load reduction (by 75%)
+and groundwater recharge were observed (Gumma et al., 2021). The vegetation covering the entire landscape increased from 13 to 29%. A five-fold increase in irrigable land from 200 ha to 970 ha (Kane-Potaka, 2015) enabled improvements in the food security status of the Yewol community (additional benefits are presented in Table 3 and in
+ICRISAT, 2018).
+In the dry lowlands of the Afar regional state, participatory flood-based farming using water spreading weirs (WSW) helped convert degraded dry rangelands to be productive and support diversified crop and fodder production. As highlighted in Table 3, the major staple crop (maize) grain yield increased by 3.5 to 5.8 tons/ha. Before the intervention, farmers were getting biomass yields of less than 7 tons/ha, with the use of WSW biomass of maize increased by over twofold (13.4 to 20 tons/ha). Additionally, the 80% increase in fodder biomass provided feed for calves and milking cows, reducing calf mortality from 35–40% to 5–8% in the dry season (Getnet et al.,
+2020). This is an important livelihood benefit to the livestock
+community of Chifra and Yallo communities in the Afar regional
+state. At the landscape level, increments in cultivable land (from nil to 44%), vegetation cover (from 13 to 29%), and reductions of degraded rangelands from 87% to just 28% were the environmental benefits gained by introducing flood recession farming (Gumma et al., 2021). Improved land quality (soil moisture and nutrients) benefitted the community by enabling the introduction of new dryland crops and fodder varieties into the flood-based farming system (Amede et al.,
+2023). The primary forage types utilized by farmers include desho
+grass (Pennisetum glaucifolium), vetch (Vicia sativa), and Napier
+(Pennisetum purpureum; Adie and Blummel, 2019). Additionally, pigeon pea and sesbania species were introduced to increase the amount and quality of available forage. Apart from utilizing them for feed, farmers utilized improved forage species for soil and water conservation (desho grass), fencing, and as a windbreak (sesbania and T A B L E 3 ( C o nti n u
+e
+d)
+S t u d y si t e / p ri m a r y c r o p pi n g s y s t e m / i n t e r v e n ti o n p r a c ti c e
+P
+r o d u c ti vi t y
+E
+n vi r o n m e n t
+E
+c
+o n o m y
+S
+o ci al
+H
+u
+m
+a
+n
+w
+ell
+-
+b
+ei
+n
+g
+R e f e r e n
+c e
+B o u g o u n u ( Mali) Maize C o nt o ur b u n di n g Ri d ge till a ge S ol ar- b as e d irri g ati
+o
+n
+s yste m
+•
+G Y i ncre ase d fr o m 6 3 t o 8 7 % fr o m 1 3 3 0 K g/ h a i n n o n-tre ate d f ar ms ( p < 0. 0 5)
+•
+O n a ver a ge, bi o m ass i ncre ase d b et wee n 6 4 t o 7 1 % i n di ffere nt test sites ( p < 0. 0 5).
+•
+W P i ncre ase d fr o m 2. 3 1 t o 3. 7 6
+•
+I n tre ate d fiel ds, 1 6 2 m m of r ai nf all p er ye ar w as s a ve d as s oil m oist ure
+•
+I ncre ase s oil w ater i n filtr ati o n i n t he s u b-s urf ace b y 1 0 %
+•
+Re d ucti o n of er osi o n l oss b y 7 3 %
+•
+O n a ver a ge, 1 3 t o ns/ h a of s oil w as l ost i
+n
+n o n-tre ate d fiel ds, a n d s oil l oss w as re d uce d b y 6 3 % i n f ar ms tre ate d wit h l a n dsc a p e m a n a ge me nt pr actices s uc h
+as
+C B T ( p < 0. 0 5).
+•
+Val ue C ost R ati o ( V
+C
+R) d
+ue
+t
+o C B T w as 2. 2
+•
+M ost f ar mers ( 7 8 %)
+p
+ercei
+ve d
+hi g her i nc o me fr o m
+selli n g
+cr o ps gr o w n o n tre
+ate
+d fiel
+ds.
+•
+Maize f ar mi n g yiel de d t he hi g
+hest i nc o me at t he
+h o use h ol d le vel a fter t he i ntr o d
+ucti o n of c o nt o ur
+b u n ds i n f ar m fiel ds.
+•
+Me n h a ve a hi g h le vel of l a n d o
+w ners hi p a n d he
+nce
+c o ntr ol i nc o me o n pr o d ucti o ns
+fr o m f ar ms wit h
+m a n a ge me nt pr actices. H o we
+ver, w o me n i n fe m
+alehe a de d h o use h ol ds i n dic ate d a
+hi g h le vel of
+decisi o n- m a ki n g p o wer c o ncer
+ni n g i nc o me.
+D e m b ele et
+al.
+( 2 0 2 1); Bir h
+a n u
+et al. ( 2 0 2 2)
+
+[[page 10]]
+Birhanu et al. 10.3389/fclim.2024.1338259
+Frontiers in Climate 10 frontiersin.org
+FIGURE 2
+Variation in groundwater level at farm and watershed for agriculture fields treated with and without contour bunding technology. Source: Authors’
+data.
+leucaena; Mijena, 2022). With fodder trees and shrubs, soil fertility
+was improved, and landscape level erosion was controlled. Additional
+benefits include the provision of firewood and timber. Challenges are
+related to the shortage of land, lack of capital to purchase improved
+forage seed, and poor extension services, among others (Zereu and
+Lijalem, 2016; Melese et al., 2019). A gradual change in land allocation
+from communal use covered by grasses and shrubs to a fenced agro-pastoral farming system enabled community leaders to negotiate with
+communities to protect crops from livestock (ICRISAT, 2021).
+Further, with water-spreading weirs, crop and fodder production
+could be scaled to over 1.27 million hectares in different seasons
+(Gumma et al., 2021). Such innovations co-validated at the learning
+sites are one entry option to support the government policy to expand
+dryland irrigated agriculture, for example, to the dry lowlands of the
+Somali and Oromia states (OICR, 2018).
+3.2 Sustainability assessment for Bougouni
+and Koutiala innovation sites in southern
+Mali
+In southern Mali, contour bunding technology (CBT) is the most
+widely adopted management practice from farm to landscape.
+Improvements in crop productivity, erosion control, and increased
+household incomes are a few of the reported benefits (Table 3).
+Regarding crop productivity, the introduction of contour ridge tillage
+in farmers’ fields increased yield of sorghum and maize by 33, and 63%,
+respectively. Compared to non-treated fields, the biomass of sorghum
+and maize increased by 42 and 64% in the Koutiala and Bougouni
+innovation sites, respectively. The overall advantage of CBT technology
+was reflected at the household level by providing improved incomes.
+For example, the net benefit generated by sorghum production with
+contour bunding was about 24% higher than that generated without
+contour bunds (Birhanu et al., 2019). Improvements in water
+productivity and soil moisture at different soil layers, reductions in
+landscape runoff coefficients, and soil loss rates are some of the benefits
+of ILM practices (detailed data is presented in Table 3). The majority
+of communities living in the watershed (>78%) witnessed higher
+income by selling sorghum and maize crops planted on farms treated
+with contour ridges. Integrated landscape management practices
+combining trees and crops have helped manage agricultural resources
+and benefit from ecosystem services (Dembele et al., 2021). The most
+common tree species used for erosion control and dry-season livestock
+feed include Leucaena leucocephala and Gliricidia Sepium. Additionally,
+several tree species, such as Vitellaria paradoxa, Parkia biglobosa,
+Adansonia digitata, and Tamarindus indica, are left in farmers’ fields to
+grow with crops to serve as a shed and improve soil fertility. In addition
+to the farm level and household benefits, CBT was evaluated at the
+watershed scale, with measurements performed on water table levels
+in 2017 and 2018. As shown in Figure 2, toward the end of the rainy
+season in October 2017, recorded water levels below the ground
+surface at the watershed outlet, CBT plots, and non-CBT plots were
+1.52 m, 3.11 m, and 5.08 m, respectively. Improvements were observed
+after a year in 2018, where the respective recordings were 0.86 m,
+2.44 m, and 4.33 m. CBT implementation and recharging of the
+subsurface soil moisture have implications for facilitating better water
+uptake for crops grown near CBT ridges, especially during the growing
+season in Mali, where dry spells are common. A recent study from the
+innovation sites by Sanogo et al. (2023) highlighted that the highest
+rates of erosion (7.8 to 17.53 t/ha/year) were recorded from landscapes
+without CBT and hence resulted in significant deficiency (p < 0.05) of
+soil nutrients in most untreated agricultural fields.
+The analytical study using sustainability indicators enabled us
+to understand gender roles and decision-making power at the
+household level. In male-headed households, men have a high level
+of land ownership and hence control income on productions made
+from farms with ILM practices. However, women in female-headed
+households indicated high decision-making power concerning
+income. In most households (60%), household heads and adult
+males are primarily responsible for implementing ILM practices.
+Communities living in the innovation areas were beneficial in
+providing feedback regarding other management practices
+
+[[page 11]]
+Birhanu et al. 10.3389/fclim.2024.1338259
+Frontiers in Climate 11 frontiersin.org
+implemented at the landscape level. Socio-economic data from 112
+farm households in the nine innovation sites in Bougouni and
+Koutiala enabled us to understand that water productivity was
+consistently higher in farms treated with ILM practices (Table 3).
+For example, solar based irrigation systems enabled local
+communities to increase household vegetable consumption by 55%
+and household incomes by 40% (Birhanu et al., 2023). Other studies
+conducted in the innovation sites at the plot level further enabled
+the understanding and usefulness of farm-based intervention
+practices, such as vegetable sack gardens to increase household
+income and nutrition (Badolo et al., 2022; Govoeyi et al., 2022;
+Tignegre et al., 2022).
+4 Discussion
+Land degradation has seriously threatened food security in
+most SSA landscapes. Successful remediation through improved
+natural resource management enables improvements in livelihood
+diversification in targeted, degraded watersheds. When proper
+interventions are implemented at different scales, the landscape can
+support enough crops and livestock to feed the local population
+(Musumba et al., 2017). Effective stakeholder collaboration,
+experimentation, and social learning combining scientific and local
+knowledge enabled communities in the innovation sites of Ethiopia
+and Mali to benefit from improved management practices and
+restore once degraded and unproductive landscapes. Improvements
+were obtained in crop productivity, food security status, erosion
+control, management of grazing lands, and improvements in surface
+and groundwater status (Birhanu and Tabo, 2016; Gumma et al.,
+2016; Umutoni et al., 2016). The success of specific ILM
+implementation lies in the proper identification and definition of
+the roles of stakeholders, their level of collaboration, and the
+required facilitations at different levels. Other possible factors are
+understanding the benefits of co-learning and identifying possible
+challenges to scale appropriate and proven ILM practices. Details
+are presented below.
+4.1 The role of stakeholder collaboration
+and facilitation
+Though the idea of having a standard operation unit, such as
+innovation sites, was common in the studied cases, the collective effort
+in rehabilitating degraded landscapes and co-validation of management
+at different scales were guided by specific contexts in the study cases.
+In Ethiopia, for example, integrated watershed management was
+considered a key area of intervention by the government to address
+developmental challenges related to land degradation. According to the
+World Bank report, four strategic operations were necessary to achieve
+these: (i) soil restoration, (ii) management of rainwater, (iii) land use
+and vegetation management, and (iv) diversifying livelihood options
+(World Bank, 2019). Thus, these different operations are implemented
+in a watershed approach through the community’s multi-stakeholder
+collaboration and collective actions. The government’s ambition was to
+deliver intervention practices in 5,000 community watersheds that
+cover 2.5 million hectares of land (9.3% of 27 million ha degraded area)
+until 2023.
+In terms of collaboration the Yewol watershed community
+contributed 60 labor days per year at a household level, and, through
+the lead of the PSNP public work and technical support provided by
+different local organizations, the entire watershed (7,500 hectares) was
+terraced, and 2000 households have been benefitting with more food,
+higher incomes, and a revitalized environment.
+In Mali, the implementation of landscape management
+practices was promoted by the Institut d’Economie Rurale (IER)
+and Centre de Coopération Internationale en Recherche
+Agronomique pour le Développement (CIRAD; Birhanu et al.,
+2019). CBT was a landscape management practice introduced to
+improve agricultural productivity and erosion control. The CBT
+technology gained quick acceptance and was adopted by the
+Malian cotton company Compagnie Malienne de Development
+des Textiles (CMDT) to increase cotton productivity in southern
+Mali (Birhanu et al., 2022). The rollout of ILM practices
+considered watersheds a landscape comprising several micro-watersheds (Gumma et al., 2021; Amede et al., 2023; Sanogo
+et al., 2023). Practices such as terracing and earthen bunds are
+usually constructed in the upstream areas. The middle and lower
+parts of the landscape are for crops (e.g., sorghum and faba
+beans) and several soil fertility measures (intercropping and
+cereal legume rotations). Training activities are facilitated
+through extension agents and lead farmers at the watershed level
+(Birhanu et al., 2022; Amede et al., 2023). In most cases, married
+women are essential contributors to the agricultural labor force
+(Grosz-Ngaté, 2000; Doka et al., 2014). In contrast, for Malian
+households, decision-making on ILM practices (such as contour
+bunds) and economic benefits are controlled by the head of the
+household, who is usually an adult man (Birhanu et al., 2022).
+Documentation on gender dynamics is limited. The ILM practices
+were mainly conducted in several cases to capture excessive
+rainfall and maximize infiltration into the soil. A recent study by
+Abera et al. (2023) indicated that gender and social inclusion are
+rarely considered in landscape restoration studies in Ethiopia.
+Most studies and interventions are heavily focused on the
+biophysical and environmental aspects of restoration. Despite the
+importance of gender and social inclusion in supporting positive
+decision-making and outcomes (Leisher et al., 2016), scientific
+evidence on gender power dynamics and the role of social capital
+is lacking (Wossen et al., 2015; Abera et al., 2023). In some
+instances, the ILM approach is embedded in existing local
+coordination mechanisms, but the participation of women groups
+is limited. The study by Umutoni et al. (2016) in southern Mali
+highlighted that decentralized management of natural resources
+is dominated by a small group of individuals, often community
+leaders and elites. Women are marginalized and are not
+encouraged to participate in decision-making actively.
+4.2 The advantage of co-learning
+The co-learning from innovation sites enabled an understanding
+of the stability of crops under climate change conditions. In Mali, for
+example, by establishing innovation sites for technology co-validation
+and showcasing, it was possible to generate high-quality data for
+decision-making. Akinseye et al. (2023) utilized data collected from
+innovation sites in Mali from 2014 to 2021 to predict sorghum yield
+
+[[page 12]]
+Birhanu et al. 10.3389/fclim.2024.1338259
+Frontiers in Climate 12 frontiersin.org
+under changing climate scenarios. Accordingly, they reported that the
+yield of early maturing sorghum varieties will decline by 2.5 to 4%
+during 2010–2039, and a further decline by up to 5.7% would
+be expected in the mid-century scenario (2040–2069). In this case,
+helpful policy guidance was provided to adopt medium-maturing
+varieties that exhibit a high-yielding potential with a mean simulated
+yield of up to 12.2% in the near future. Other studies conducted at
+different scales highlighted how co-validation of technologies and
+participatory research at the innovation sites brought significant
+improvements in the management of soil, water, and integrated crop-livestock systems (Birhanu et al., 2019; Traore and Birhanu, 2019;
+Birhanu et al., 2022; Guindo et al., 2022). In Ethiopia, the experience
+obtained in the Yewol watershed paved the way to scale out integrated
+landscape management practices and community-led experiences to
+over 20 other adjacent watersheds.
+4.3 Key highlights of sustainability
+assessment of landscape management
+practices
+Evidence-based data monitoring and sustainability assessment
+helped demonstrate how landscape management practices
+improved the socio-economic and environmental benefits beyond
+productivity gains. Different sets of data collected in the domains
+of productivity, environment, social, economic, and human well-being enable the quantification of the gains in sustainability
+indicators to promote restoration practices and to comply with
+international climate change treaties such as the Paris Agreement
+in reducing GHG emissions. From 2020 to 2030, for example, the
+government of Mali has determined a mitigation scenario of
+reducing GHG emissions to mitigate national carbon emissions and
+build community resilience. By diversifying livelihood options,
+increasing soil fertility, reducing soil loss, and addressing rural
+energy security needs using renewable energy sources, the
+ambitious plan of reducing GHG emissions by 29% from
+agriculture, 31% from energy, and 21% from forest and land use
+change could be achieved.
+4.4 Challenges to scaling landscape
+management practices
+Several technical options exist to improve the sustainability of
+landscape management and reverse degradation. In most cases
+however, institutional, socio-cultural, economic, and policy barriers
+hinder adoption at a scale (Thomas et al., 2018). In the case study sites
+of Ethiopia and Mali, for example, the absence of quicker gains from
+restoration efforts discourages local communities from being fully
+committed. Additionally, NGOs and the private sector are less engaged
+because of initial investment risks. Other challenges are related to
+uncoordinated and sector-oriented development actions such as land
+tenure insecurity, inadequate data availability, limited technical
+support, and weak research-extension linkage (Haregeweyn et al.,
+2015; Fleskens, 2019).
+In most African countries, policies promoting ILM exist; the
+challenge lies in pilot project-based projects with inadequate
+strategies for upscaling by the respective governments (Chirwa et al.,
+2015). Sometimes, the situation is global as well. In Sweden, for
+example, ILM practices are hindered by institutional and regulatory
+barriers and the timely availability of sufficient funds (Dawson et al.,
+2017). In Ecuador, the barriers to large-scale adoption of ILM (for
+example, Agroforestry) are rooted in the misalignment between
+small-scale farmers and beneficiaries at large (Buck et al., 2020).
+Mismatch of political cycles and the absence of proper restoration
+objectives were identified as scaling challenges in the ILM practices
+in Ecuador (Wiegant et al., 2020). In Ethiopia and Mali, successful
+restoration practices are documented from specific localities by
+specific studies with little luck in collecting long-term research data
+that supports designing and targeting sustainable action plans in the
+face of current and future climate challenges (Abera et al., 2023;
+Birhanu et al., 2023).
+Competing interest in natural resource use and the absence of
+guiding bylaws in natural resource use management is another
+challenge worth mentioning (for example, Umutoni and Ayantunde,
+2018). Promoting and broader scaling of ILM requires collective
+effort and commitment that includes government extension systems,
+NGOs, communities, and others interested in investing in
+management practices and combating long-term impacts (Dawson
+et al., 2017; Plieninger et al., 2020). For a successful scaling strategy,
+efforts are required to protect existing ecosystems and rehabilitate
+degraded areas. Additionally, investments in soil health, good
+agronomic practices, timely funding requirements, and monitoring
+practices are crucial (Mansuy et al., 2020; Peng et al., 2022; Abera
+et al., 2023). Often, there needs to be more balanced investments in
+the different sustainability options.
+In most cases, extension service agents need upskilling and capacity
+strengthening for example through the farmer field schools (Fleskens,
+2019), to enable them to utilize digital technologies to facilitate data
+monitoring and guidance of implementation practices. The study has
+been limited to two restoration innovation sites in Ethiopia and Mali.
+We recommend the inclusion of sustainability and livelihood gains from
+other SSA regions for more inclusive decision guidance in integrated
+landscape management practices.
+5 Conclusion and recommendation
+The study showed positive evidence from implementing
+integrated landscape management practices in the two contrasting
+landscapes of Ethiopia and Mali. Rural communities in the two areas
+have experienced tangible benefits from sustained productivity and
+household income increases. Regarding the environment, ILM
+practices in both study cases enabled better vegetation cover and
+reduced degraded rangelands. The success of restoration efforts
+hinges on the collective actions of diverse stakeholders. This is
+exemplified in the cases of Ethiopia and Mali, where government
+institutions, community mobilization and contribution, and research
+and development institutes have played a pivotal role in validating
+and demonstrating effective practices, albeit within a limited scope.
+To achieve lasting impacts at a regional or national level, efforts to
+scale up these practices must align with long-term government
+strategies and goals. The enhancement of rural livelihoods can
+be further achieved by integrating good agronomic practices (GAP)
+
+[[page 13]]
+Birhanu et al. 10.3389/fclim.2024.1338259
+Frontiers in Climate 13 frontiersin.org
+and leveraging a combination of technologies and landscape options
+at farm and landscape levels. The importance of generating evidence-based data and conducting regular visits to innovation sites cannot
+be overstated, as it enables decision-makers to appreciate the
+significant advantages of communities residing within restored
+ecosystems compared to control sites. Beyond traditional field-based
+monitoring, adopting advanced tools such as Remote Sensing and
+GPS-installed drones for recording and monitoring landscape-based
+implementation practices is increasingly crucial. These efforts are
+compelling incentives for attracting government and donor agencies
+to commit to longer-term funding and support at a scale. It is
+alarming that soil erosion, a leading cause of land degradation in
+many sub-Saharan African landscapes, is projected to increase by 40
+to 70% annually. This underscores the critical priority of integrated
+landscape management as an adaptation strategy to the impacts of
+climate change. Practices that mitigate runoff and enhance
+groundwater recharge will become increasingly essential to enhance
+livelihoods and meet the rising demands for food and energy driven
+by a growing population, particularly under changing
+climatic conditions.
+Data availability statement
+The original contributions presented in the study are included in
+the article/supplementary material, further inquiries can be directed
+to the corresponding author.
+Author contributions
+BB: Conceptualization, Data curation, Formal analysis,
+Investigation, Methodology, Writing – original draft, Writing – review
+& editing. GD: Formal analysis, Investigation, Methodology, Writing
+– review & editing. OC: Conceptualization, Funding acquisition,
+Investigation, Project administration, Resources, Writing – review &
+editing. ST: Conceptualization, Methodology, Writing – review &
+editing. TM: Conceptualization, Funding acquisition, Methodology,
+Project administration, Writing – review & editing.
+Funding
+The author(s) declare that financial support was received for the
+research, authorship, and/or publication of this article. Funding
+sources are the One CGIAR Transforming African Food System
+(TAFS-WCA), Sustainable Intensification for Mixed Farming System
+(SI-MFS), and Nature-Positive Solutions (NATURE+) Initiatives,
+which are grateful for the support of CGIAR Trust Fund contributors:
+www.cgiar.org/funders.
+Acknowledgments
+The authors would like to acknowledge contributions from the
+reviewers of this review and funding.
+Conflict of interest
+The authors declare that the research was conducted in the
+absence of any commercial or financial relationships that could
+be construed as a potential conflict of interest.
+The handling editor SH declared a shared research partnership
+group [CGIAR] with the authors.
+Publisher’s note
+All claims expressed in this article are solely those of the authors
+and do not necessarily represent those of their affiliated organizations,
+or those of the publisher, the editors and the reviewers. Any product
+that may be evaluated in this article, or claim that may be made by its
+manufacturer, is not guaranteed or endorsed by the publisher.
+References
+Abera, W., Tamene, L., Mekonnen, D., Carmona, N.E., Elias, M., and Joshi, D.,
+Aynekulu,E. (2023). Assessing the application of gender perspectives in land restoration
+studies in Ethiopia using text mining, Environ. Develop., Vol 46, 100854–104645, doi:
+10.1016/j.envdev.2023.100854
+Adie, A., and Blummel, M. (2019). Irrigated forages improve livestock productivity and
+livelihoods in Ethiopia. Blog post. Nairobi, Kenya: ILRI.
+AfDB (2014). African Development Bank Group. Tracking Africa’s progress in figures.
+Available at: AfDB (2014). Tracking Africa’s Progress in Figures (afdb.org) (accessed on
+October 09, 2023).
+Africa RISING. (2018). Footprints of Africa RISING. Phase I: 2011–2016.
+International Institute of Tropical Agriculture, Ibadan and International Livestock
+Research Institute, Addis Ababa. Available at: https://hdl.handle.net/10568/92816
+(accessed on September 01, 2023).
+Akinseye, F. M., Birhanu, Z. B., Ajeigbe, H. A., Diancoumba, M., Sanogo, K., and
+Tabo, R. (2023). Impacts of fertilization management strategies on improved sorghums
+varieties in smallholder farming systems in Mali: productivity and profitability
+differences. Heliyon 9:e14497. doi: 10.1016/j.heliyon.2023.e14497
+Alem, B. B., Wosenie, M. D., and Tilahun, S. A. (2022). Runoff and suspended
+sediment yield and implications for watershed management. J. Sediment. Environ 7,
+199–210. doi: 10.1007/s43217-022-00091-w
+Amede, T., Kassa, H., Zeleke, G., Shiferaw, A., Kismu, S., and Teshome, M. (2007).
+Working with communities and building local institutions for sustainable land
+management in the Ethiopian highlands. Mt. Res. Dev. 27, 15–19. doi:
+10.1659/0276-4741(2007)27[15:WWCABL]2.0.CO;2
+Amede, T., Konde, A. A., Muhinda, J. J., and Bigirwa, G. (2023). Sustainable farming
+in practice: building resilient and profitable smallholder agricultural Systems in sub-
+Saharan Africa. Sustain. For. 15:5731. doi: 10.3390/su15075731
+Amede, T., Van den Akker, E., Berdel, W., Keller, C., Tilahun, G., Dejen, A., et al.
+(2020). Facilitating livelihoods diversification through flood-based land restoration in
+pastoral systems of Afar, Ethiopia. Renewable Agricul. Food Syst. 37, S43–S54. doi:
+10.1017/S1742170520000058
+Bado, B. V., Bationo, A., Whitbread, A., Tabo, R., and Manzo, M. L. S. (2022).
+Improving the productivity of millet based cropping systems in the west African Sahel:
+experiences from a long-term experiment in Niger. Agric. Ecosyst. Environ. 335:107992.
+doi: 10.1016/j.agee.2022.107992
+Bado, B V, Savadogo, P, and Manzo, M L S (2016) Restoration of Degraded Lands in
+West Africa Sahel: Review of experiences in Burkina Faso and Niger. Technical Report.
+ICRISAT. Available at: Restoration of Degraded Lands in West Africa Sahel: Review of
+experiences in Burkina Faso and Niger - OAR@ICRISAT (accessed on August 01, 2023).
+Badolo, F., Kotu, B., Oyinbo, O., Sanogo, K., and Birhanu, B. (2022). Farmers’ preferences
+for sustainable intensification attributes in sorghum-based cropping systems: evidence from
+Mali. Renewable Agricul. Food Syst. 37, 695–706. doi: 10.1017/S1742170522000345
+Bekunda, M., Sanginga, N., and Woomer, P. L. (2010). Restoring soil fertility in sub-
+Sahara Africa. Adv. Agron. 108, 183–236. doi: 10.1016/S0065-2113(10)08004-1
+
+[[page 14]]
+Birhanu et al. 10.3389/fclim.2024.1338259
+Frontiers in Climate 14 frontiersin.org
+Birhanu, B. Z., Sanogo, K., Traore, S. S., Thai, M., and Kizito, F. (2023). Solar-based
+irrigation systems as a game changer to improve agricultural practices in sub-Sahara Africa:
+a case study from Mali. Front. Sustain. Food Syst. 7:1085335. doi: 10.3389/fsufs.2023.1085335
+Birhanu, B. Z., and Tabo, R. (2016). Shallow wells, the untapped resource with a
+potential to improve agriculture and food security in southern Mali. Agric. Food Secur.
+5:5. doi: 10.1186/s40066-016-0054-8
+Birhanu, B. Z., Traoré, K., Gumma, M. K., Badolo, F., Tabo, R., and Whitbread, A. M.
+(2019). A watershed approach to managing rainfed agriculture in the semi-arid region
+of southern Mali: integrated research on water and land use. Environ. Dev. Sustain. 21,
+2459–2485. doi: 10.1007/s10668-018-0144-9
+Birhanu, B. Z., Traoré, K., Sanogo, K., Tabo, R., Fischer, G., and Whitbread, A. M.
+(2022). Contour bunding technology-evidence and experience in the semi-arid region
+of southern Mali. Renewable Agricul. Food Syst. 37, S55–S63. doi: 10.1017/
+S1742170519000450
+Buck, L., Scherr, S., and Trujillo, L. (2020). Using integrated landscape management
+to scale agroforestry: examples from Ecuador. Sustain. Sci. 15, 1401–1415. doi: 10.1007/
+s11625-020-00839-1
+Child, K., Desta, G., Douthwaite, B., Haileslassie, A., van Rooyen, A., Tamene, L., et al.
+(2021). Impact tracking: A practitioner-developed approach to scaling agricultural
+innovation in Ethiopia. Colombo, Sri Lanka: International water management institute
+(IWMI). CGIAR research program on water, land and ecosystems (WLE). 28. (WLE
+Legacy Series 1).
+Chirwa, P. W., Larwanou, M., Syampungani, S., and Folaranmi, B. D. (2015).
+Management and restoration practices in degraded landscapes of eastern
+Africa and requirements for up-scaling. Int. For. Rev. 17, 20–30. doi:
+10.1505/146554815816006965
+Dawson, L., Elbakidze, M., Angelstam, P., and Gordon, J. (2017). Governance and
+management dynamics of landscape restoration at multiple scales: learning from
+successful environmental managers in Sweden. J. Environ. Manag. 197, 24–40. doi:
+10.1016/j.jenvman.2017.03.019
+Dembele, C. O., Traore, K., Karembe, M., Zemadim, B., Cisse, F., and Samake, O.
+(2021). Contour ridge tillage for improved crops and fodder trees production in the
+villages of Kani and Noumpinesso, southern- Mali. J. Agricul. Stud. 9, 550–572. doi:
+10.5296/jas.v9i2.18513
+Desta, G., Tamene, L., Abera, W., Amede, T., and Whitbread, A. M. (2021). Effects of
+land management practices and land cover types on soil loss and crop productivity in
+Ethiopia: A review. Int. Soil and Water Conservation Res. 9, 544–554. doi: 10.1016/j.
+iswcr.2021.04.008
+Doka, M.D., Madougou, D., and Diouf, A. (2014). Food Crisis, Gender and Resilience
+in the Sahel. Oxfam Research Reports [Internet]. Available at https://www.oxfam.org/
+en/research/food-crisis-gender-and-resilience-sahel (Accessed 13 October 2019).
+Dregne, H. E. (2002). Land degradation in the drylands. Arid Land Res. Manag. 16,
+99–132. doi: 10.1080/153249802317304422
+Erkossa, T., Geleti, D., Williams, T. O., Laekemariam, F., and Haileslassie, A. (2020).
+Restoration of grazing land to increase biomass production and improve soil properties
+in the Blue Nile basin: effects of infiltration trenches and Chloris Gayana reseeding.
+Renewable Agricul. Food Syst. 37, S64–S72. doi: 10.1017/S1742170519000425
+FAO. (2020). Global Forest Resources Assessment 2020 – Key findings. Rome: Food
+and Agriculture Organization of the United Nations (FAO). (Accessed October 09,
+2023).
+Fleskens, L. (2019). Sustainable land management (SLM) in practice in the Kagera
+Basin: lessons learned for scaling up at landscape level. By FAO. Mt. Res. Dev. 39, M5–
+M6. doi: 10.1659/mrd.mm246.1
+Frelat, R., Lopez-Ridaura, S., Giller, K. E., Herrero, M., Douxchamps, S.,
+Djurfeldt, A. A., et al. (2016). Drivers of household food availability in sub-Saharan
+Africa based on big data from small farms. Proc. Natl. Acad. Sci. 113, 458–463. doi:
+10.1073/pnas.1518384112
+German, L., Mansoor, H., Alemu, G., Mazengia, W., Amede, T., and Stroud, A. (2007).
+Participatory integrated watershed management: evolution of concepts and methods in
+an ecoregional program of the eastern African high-lands. Agric. Syst. 94, 189–204. doi:
+10.1016/j.agsy.2006.08.008
+Getnet, M., Amede, T., Tilahun, G., Legesse, G., Gumma, M. K., Abebe, H., et al.
+(2020). Water spreading weirs altering flood, nutrient distribution, and crop productivity
+in upstream–downstream settings in dry lowlands of Afar, Ethiopia. Renewable Agricul.
+Food Syst. 37, S17–S27. doi: 10.1017/S1742170519000474
+Gigou, J., Traoré, K., Giraudy, F., Coulibaly, H., Sogoba, B., and Doumbia, M. (2006).
+Aménagement paysan des terres et réduction du ruissellement dans les savanes
+africaines. Cahiers Agricultures 15, 116–122.
+Govoeyi, B., Tignégré, J. B. D. L. S., Badolo, F., Zaato, P. A., Sanogo, K., and
+Birhanu, B. Z. (2022). Perceptions on sack gardening in rural areas: the case of vegetable
+stakeholders in Koutiala and Bougouni, Mali. Sustain. For. 14:14896. doi: 10.3390/
+su142214896
+Grosz-Ngaté, M. (2000). “Labor migration, gender, and social transformation in
+rural Mali” in Originally published in democracy and development in Mali. eds. R. J.
+Bingen, D. Robinson and J. M. Staatz (East Lansing: Michigan State University Press),
+84–104.
+Guindo, M., Traoré, B., Birhanu, B. Z., Coulibaly, A., and Tabo, R. (2022). Microdosing
+of compost for sustainable production of improved Sorghum in southern Mali.
+Agronomy 12:1480. doi: 10.3390/agronomy12061480
+Gumma, M. K., Birhanu, B. Z., Mohammed, I. A., Tabo, R., and Whitbread, A. M. (2016).
+Prioritization of watersheds across Mali using remote sensing data and GIS techniques for
+agricultural development planning. WaterSA 8:260. doi: 10.3390/w8060260
+Gumma, M. K., Desta, G., Amede, T., Panjala, P., Smith, A. P., Kassawmar, T., et al.
+(2021). Assessing the impacts of watershed interventions using ground data and remote
+sensing: a case study in Ethiopia. Int. J. Environ. Sci. Technol. 19, 1653–1670. doi:
+10.1007/s13762-021-03192-7
+Haglund, E., Ndjeunga, J., Snook, L., and Pasternak, D. (2011). Dry land tree
+management for improved household livelihoods: farmer managed natural regeneration
+in Niger. J. Environ. Manag. 92, 1696–1705. doi: 10.1016/j.jenvman.2011.01.027
+Haregeweyn, N., Tsunekawa, A., Nyssen, J., Poesen, J., Tsubo, M., Tsegaye
+Meshesha, D., et al. (2015). Soil erosion and conservation in Ethiopia: a review. Progress
+in Physical Geography: Earth Environ. 39, 750–774. doi: 10.1177/0309133315598725
+Hien, F. CILSS. (2015). Etude bilan des acquis du CILSS en matière de Lutte Contre
+la Désertification. Rapport de expert consultant. (unpublished) 169p.
+ICRISAT (2018). Impact assessment report on Yewol integrated watershed development
+program: Based on household, community and institutional level evidence, 57.
+ICRISAT. (2021). Building resilient agri-food systems in East and Southern Africa.
+Research Impact Highlights 2020. Available at: https://drive.google.com/
+file/d/1epn2qEav-iWsFRCczMeYhWbW3ZdcBzbe/view?usp=sharing (Accessed on
+August 10, 2023).
+ICRISAT. (2022). Africa RISING: Technology parks herald a new beginning in Mali’s
+farms. ICRISAT Happenings Newsletter. Available at: https://africa-rising.net/africa-rising-program-technology-parks-in-mali-end-of-an-era-start-of-a-new-one/ (accessed
+on August 25, 2023)
+IPCC (2014). Climate change 2014: Impacts, adaptation, and vulnerability. Contribution
+of working group II to the fifth assessment report of the intergovernmental panel on climate
+change Cambridge University Press.
+IPCC (2019) in Climate change and land: An IPCC special report on climate change,
+desertification, land degradation, sustainable land management, food security, and
+greenhouse gas fluxes in terrestrial ecosystems. eds. P. R. Shukla, J. Skea, E. C. Buendia, V.
+Masson-Delmotte, H.-O. Pörtner and D. C. Robertset al
+Kane-Potaka, J. (2015). For all of us – the Yewol mountains. WLE. Available at: https://
+wle.cgiar.org/news/all-us-yewol-mountains (accessed on September 15, 2023)
+Kibret, K. S., Haileslassie, A., and Mekurhigh Landsand Schmitter, P. (2020). Multicriteria
+decision-support system to assess the potential of exclosure-based conservation in Ethiopia.
+Renewable Agricul. Food Syst. 37, S88–S102. doi: 10.1017/S1742170520000034
+Leisher, C., Temsah, G., Booker, F., Day, M., Samberg, L., Prosnitz, D., et al. (2016). Does the
+gender composition of forest and fishery management groups affect resource governance and
+conservation outcomes? A systematic map. Environ Evid 5:6. doi: 10.1186/s13750-016-0057-8
+Liniger, H. P., Mekdaschi, S. R., Hauert, C., and Gurtner, M. (2011). “Sustainable land
+Management in Practice Guidelines and Best Practices for sub-Saharan Africa” in
+TerrAfrica, world overview of conservation approaches and technologies (WOCAT) and
+food and agriculture Organization of the United Nations (Rome: FAO).
+Mackenzie, J. S., and Jeggo, M. (2019). The one health approach-why is it so important?
+Trop Med Infect Dis 4:88. doi: 10.3390/tropicalmed4020088
+Mansuy, N., Burton, P. J., Stanturf, J., Beatty, C., Mooney, C., Besseau, P., et al. (2020).
+Scaling up forest landscape restoration in Canada in an era of cumulative effects and
+climate change. Forest Policy Econ. 116:102177. doi: 10.1016/j.forpol.2020.102177
+Melese, W., Assefa, A., and Dehninet, K. (2019). Improved forage production practice
+and challenges in Libokemkem District, Ethiopia. Agricul. Sci. Digest - Research J. 38,
+280–284. doi: 10.18805/ag.D-133
+Mijena, D. (2022). Improved forage production in Ethiopia: efforts done, success
+achieved, challenges, and future opportunities: review. Int. J. Food Sci. Agricul. 6,
+260–266. doi: 10.26855/ijfsa.2022.09.004
+Musumba, M., Grabowski, P., Palm, C., and Snapp, S. (2017). Guide for the sustainable
+intensification assessment framework. Kansas State University, Kansas, United States.
+OICR. (2018). Harnessing Ethiopian floodwaters helps dryland pastoralists – and the
+approach is being scaled up (WLE-ICRISAT). Study #2791. Available at: https://marlo.
+cgiar.org/projects/WLE/studySummary.do?studyID=2791&cycle=Reporting&ye
+ar=2018 (accessed on August 08, 2023)
+Peng, Y., Liu, X., and Wang, Y. (2022). Incorporating landscape scaling relations into
+catchment classification for optimizing ecological management. Sustain. For. 14:5408.
+doi: 10.3390/su14095408
+Plieninger, T., Muñoz-Rojas, J., Buck, L. E., and Scherr, S. J. (2020). Agroforestry for
+sustainable landscape management. Sustain. Sci. 15, 1255–1266. doi: 10.1007/
+s11625-020-00836-4
+Ray, M., and Simpson, B.M. (2014). Agricultural adaptation to climate change in the
+Sahel: Profiles of agricultural management practices. Tetra Tech ARD Report, USAID,
+Washington DC. 60p.
+
+[[page 15]]
+Birhanu et al. 10.3389/fclim.2024.1338259
+Frontiers in Climate 15 frontiersin.org
+Roose, E., Kabore, V., and Guenat, C. (1999). Zai practice: a west African traditional
+rehabilitation system for semi-arid degraded lands, a case study in Burkina Faso. Arid
+Soil Res. Rehabil. 13, 343–355. doi: 10.1080/089030699263230
+Sanginga, N. S., and Woomer, P. L. (2009). Integrated soil fertility management in
+Africa: Principles, practices, and developmental process. Tropical soil biology and
+fertility Institute of the International Centre for tropical agriculture. Nairobi 263.
+Available online at: Integrated Soil Fertility Management in Africa: Principles, Practices
+and Developmental Process (agrilinks.org) (accessed September 27, 2023).
+Sanogo, K., Birhanu, B. Z., Sanogo, S., and Ba, A. (2023). Landscape pattern analysis
+using GIS and remote sensing to diagnose soil erosion and nutrient availability in two
+agroecological zones of southern Mali. Agric & Food Secur 12:4. doi: 10.1186/
+s40066-023-00408-6
+Sendzimir, J., Reij, C. P., and Magnuszewski, P. (2011). Rebuilding resilience in the
+Sahel: regreening in the Maradi and Zinder regions of Niger. Ecol. Soc. 16:1. doi:
+10.5751/ES-04198-160301
+Snapp, S. S., Blackie, M. J., Gilbert, R. A., Bezner-Kerr, R., and Kanyama-Phiri, G. Y.
+(2010). Biodiversity can support a greener revolution in Africa. Proc. Natl. Acad. Sci.
+107, 20840–20845. doi: 10.1073/pnas.1007199107
+Thomas, R., Reed, M., Clifton, K., Appadurai, N., Mills, A., Zucca, C., et al. (2018). A
+framework for scaling sustainable land management options. Land Degrad. Dev. 29,
+3272–3284. doi: 10.1002/ldr.3080
+Tignegre, J. B. D. L. S., Traore, A. S., Konate, M., Zaato, P. A., Diarra, B. G., Hanson, P.,
+et al. (2022). Bulb yield stability study of onion lines over locations and seasons in Ghana
+and Mali. Agronomy 12:3037. doi: 10.3390/agronomy12123037
+Traore, K., and Birhanu, B. Z. (2019). Soil erosion control and moisture conservation
+using contour ridge tillage in Bougouni and Koutiala, southern Mali. J. Environ. Prot.
+10, 1333–1360. doi: 10.4236/jep.2019.1010079
+Traore, K., Sidibe, D. K., Coulibaly, H., and Bayala, J. (2017). Optimizing yield of
+improved varieties of millet and sorghum under highly variable rainfall conditions using
+contour ridges in Cinzana, Mali. Agriculture and Food Security 6:11. doi: 10.1186/
+s40066-016-0086-0
+Tully, K., Sullivan, C., Weil, R., and Sanchez, P. (2015). The state of soil degradation in
+sub-Saharan Africa: baselines, trajectories, and solutions. Sustain. For. 7, 6523–6552. doi:
+10.3390/su7066523
+Umutoni, C., and Ayantunde, A. A. (2018). Perceived effects of transhumant practices
+on natural resource management in southern Mali. Pastoralism 8:8. doi: 10.1186/
+s13570-018-0115-7
+Umutoni, C., Ayantunde, A., Turner, M., and Sawadogo, G. J. (2016). Community
+participation in decentralized Management of Natural Resources in the southern region
+of Mali. Environ. Natural Resources Res. J. 6, 1–15. doi: 10.5539/enrr.v6n2p1
+Ussiri, D. A., and Lal, R. (2019). Soil degradation in sub-Saharan Africa: challenges
+and opportunities for restoration. Soil degradation and restoration in Africa, 1–24. doi:
+10.1201/b22321-1
+Wiegant, D., Peralvo, M., Van Oel, P., and Dewulf, A. (2020). Five scale challenges in
+Ecuadorian forest and landscape restoration governance. Land Use Policy 96:104686.
+doi: 10.1016/j.landusepol.2020.104686
+World Bank. (2019). Ethiopia - climate action through landscape management program for
+results. Available at: World Bank Document (accessed on September 27 2023)
+Wossen, T., Berger, T., and Di Falco, S. (2015). Social capital, risk preference and
+adoption of improved farmland management practices in Ethiopia. Agric. Econ. 46,
+81–97. doi: 10.1111/agec.12142
+Yaekob, T., Tamene, L., Gebrehiwot, S., Syoum, S., Adimassu, Z., Woldearegay, K.,
+et al. (2020). Assessing the impacts of different land uses and soil and water
+conservation interventions on runoff and sediment yield at different scales in the
+central highlands of Ethiopia. Renewable Agricul. Food Syst. 37, S73–S87. doi:
+10.1017/S1742170520000010
+Zereu, G., and Lijalem, T. (2016). Status of improved forage production, utilization, and
+constraints for adoption in Wolaita zone, southern Ethiopia. Livest. Res. Rural. Dev. 28:78
+Zurek, M., Keenlyside, P., and Brandt, K. (2015). Intensifying agricultural production
+sustainably: a framework for analysis and decision support. Amsterdam, the Netherlands:
+International food policy research institute (IFPRI); Climate Focus. Available at: http://ebrary.
+ifpri.org/cdm/ref/collection/p15738coll2/id/130125 (accessed on August 10, 2023)

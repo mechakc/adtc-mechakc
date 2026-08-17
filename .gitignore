@@ -24,12 +24,19 @@ audit.json
 
 # Stratégie compétitive — NE JAMAIS pousser sur le repo public
 CLAUDE.md
+old_CLAUDE.md
 .claude/
 # ⚠️ PREUVES.md est le document COMPAGNON de CLAUDE.md, pas un livrable : recon
 # nominative des 44 forks rivaux, analyse du scoring, chemins d'échec dur du
 # comparateur. Le committer ajouterait à la dette d'historique qu'on doit déjà
 # purger pour CLAUDE.md (commit cac2b8d) avant de rendre le repo public.
 PREUVES.md
+# ⚠️ RECON-D3.md — troisième compagnon de CLAUDE.md/PREUVES.md, et le PLUS sensible
+# des trois : recon NOMINATIVE des 12 forks agricoles rivaux avec liens, tailles de
+# leurs jeux de test, failles mesurées dans leurs propres fichiers, et notre plan de
+# positionnement D3-D5. Le committer sur ce fork PUBLIC donnerait à chaque rival
+# nommé la carte de nos avantages ET la liste de ses propres faiblesses.
+RECON-D3.md
 # Bake-off : révèle les candidats testés et les mesures comparatives
 bakeoff_*
 .bakeoff_*
@@ -53,6 +60,23 @@ corpus/pdf/
 corpus/pdf_ecartes/
 # Fichiers de travail de l'audit du corpus (états intermédiaires, sauvegardes).
 corpus/sources.yaml.*
+# 🔴 Texte extrait au D3, séparé par RÉGIME — et la séparation est justement là
+# pour que cette ligne existe. `corpus/txt/fetched/` = 26 documents dont AUCUNE
+# licence n'est établie (RECA/INRAN/ICRISAT ne portent aucune mention juridique
+# dans le PDF ⇒ `licence: null`). Les committer sur un fork PUBLIC serait une
+# reproduction intégrale sans titre — exactement le reproche qu'on adresse à
+# ChukwumaUk, qui redistribue 376 ko de texte FAO/IITA sans citer une source.
+# Le régime `fetched` ne redistribue rien : `corpus/fetch_corpus.sh` retélécharge
+# chez l'éditeur, comme `download_model.sh` pour les poids (CLAUDE.md §7.5).
+# ⚠️ Committables au contraire : `corpus/txt/committed/` = 7 documents dont la
+# licence CC-BY est confirmée DANS le PDF, page lue une par une. 7 et non 8 :
+# `oar_57215` a été écarté au D3 (police cassée, mesurée), son entrée restant dans
+# `sources.yaml` avec son motif. Ce nombre est recalculé par `verify_txt.py` §0
+# depuis les CHAMPS de `sources.yaml` — s'il diverge ici, c'est ce commentaire qui
+# a tort, pas le corpus.
+corpus/txt/fetched/
+# Rapport de mesure de l'extraction : chiffres de travail, pas un livrable.
+corpus/txt/_extraction.json
 
 # Porte anti-échec-dur du D6 (vérifie les 4 chemins vers `fail` de comparator.py).
 # ⚠️ Ignoré par DÉFAUT, pas par principe : c'est un outil de QA qui ne révèle rien

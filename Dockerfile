@@ -61,12 +61,25 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 # par l'accuracy en mode audit, in-process) doit tourner sur n'importe quelle VM.
 ENV CMAKE_ARGS="-DGGML_NATIVE=OFF"
 
-# Épingler PROFILER_REF à un SHA/tag au J5 pour une repro exacte.
+# Profileur épinglé au SHA COMPLET (40 caractères). Vérifié par exécution le 17/08,
+# pas par lecture de doc — les trois faits qui imposent cette forme exacte :
+#  1. `git clone --depth 1 --branch <SHA>` ÉCHOUE : « fatal: Remote branch ac2e137
+#     not found in upstream origin », alors même que ce SHA EST le HEAD de main.
+#     `--branch` n'accepte que des branches et des tags, jamais un SHA nu.
+#  2. `git ls-remote --tags` sur ce dépôt renvoie VIDE ⇒ aucun tag à viser en amont.
+#     Donc init + fetch par objet est la SEULE façon d'épingler ici. Testé : OK,
+#     38 objets, superficialité préservée.
+#  3. La forme courte `ac2e137` ne suffit pas : le fetch par objet exige les 40 car.
+# Build sûr en superficiel : le pyproject amont est hatchling + `version = "0.1.0"`
+# statique (aucun setuptools_scm) ⇒ ni historique ni tag requis pour construire.
 ARG PROFILER_REPO=https://github.com/Africa-Deep-Tech-Foundation/adtc-profiler.git
-ARG PROFILER_REF=main
-WORKDIR /opt
-RUN git clone --depth 1 --branch "${PROFILER_REF}" "${PROFILER_REPO}" adtc-profiler
+ARG PROFILER_REF=ac2e137dca65ea3b09d997774f17dd8907b489fb
 WORKDIR /opt/adtc-profiler
+RUN git init -q . \
+    && git remote add origin "${PROFILER_REPO}" \
+    && git fetch -q --depth 1 origin "${PROFILER_REF}" \
+    && git checkout -q FETCH_HEAD \
+    && echo "PROFILER pinned at: $(git rev-parse HEAD)"
 RUN pip wheel --no-cache-dir --wheel-dir /wheels .
 
 # -----------------------------------------------------------------------------

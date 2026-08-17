@@ -24,6 +24,14 @@ Dockerfile      text eol=lf
 *.py            text eol=lf
 *.md            text eol=lf
 
+# Corpus extrait au D3 : substrat des citations verbatim du D5. Un CR reintroduit
+# par un checkout entrerait dans le chunk indexe, donc dans la citation rendue au
+# juge. Le catch-all ci-dessus suffit deja (verifie par `git checkout-index` reel le
+# 17/08, sur l'index qui part dans ce commit : 7 fichiers restitues, 552 125 o,
+# 0 octet 0x0D malgre core.autocrlf=true) ; la ligne explicite est la
+# pour que l'invariant soit ECRIT, pas seulement constate une fois.
+*.txt           text eol=lf
+
 # Binaires : jamais de conversion (un seul octet modifie invalide un GGUF).
 *.gguf          binary
 *.bin           binary

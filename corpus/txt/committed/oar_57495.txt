@@ -1,0 +1,714 @@
+=== ADTC-PROVENANCE v1 ===
+id: oar_57495
+titre: Evaluating the impact of cattle corralling duration on soil nutrient dynamics and sorghum yield in dryland Systems
+editeur: Research Square (PRÉPRINT, non relu par les pairs) — Institut d'Économie Rurale (IER), CRRA Sikasso, Mali
+annee: 2025-06-06
+langue: en
+licence: CC-BY-4.0
+licence_confirmee_dans_le_pdf: true
+licence_citation: rs.3.rs-6786015/v1 License: This work is licensed under a Creative Commons Attribution 4.0 International License. Read Full L
+regime: committed
+citation_verbatim_autorisee: oui
+sujet: sorgho
+portee: sahel_specific
+utilite_conseil: directe
+url_pdf: http://oar.icrisat.org/id/document/57495
+page_notice: http://oar.icrisat.org/id/eprint/13296
+doi: https://doi.org/10.21203/rs.3.rs-6786015/v1
+fichier_source: 1f010dfe-0ae0-4a04-8fee-6b21066a7ae5.pdf
+pages_pdf_total: 19
+pages_extraites: 16
+pages_source: 1-15,19
+moteur_extraction: pdfplumber 0.11.10 (use_text_flow=True)
+car_extraits: 54778
+car_utiles_pypdf_reference: 54855
+car_pypdf_memes_pages: 54855
+normalisations: pua=0 ligatures=0 espaces_speciaux=0 zero_largeur=0 decesures=3
+decesure_regles: atteste_soude=0 atteste_tiret=3 atteste_deux_moities=0 defaut_prefixe=0 defaut_soude=0
+qualite_texte: car_en_tokens_soudes_pct=1.3 tokens_soudes=14 tokens_total=8339 verdict=sain
+caveat: PRÉPRINT Research Square v1 (DOI 10.21203/rs.3.rs-6786015/v1) : non relu par les pairs. Citer en nommant ce statut, jamais comme un résultat établi
+caveat: seul document du corpus dont le terrain est le Mali (Sikasso)
+caveat: durée de parcage du bétail -> nutriments du sol -> rendement sorgho : effet mesuré sur un site, ne pas généraliser au Sahel entier
+marqueur_page: [[page N]] = numero de page PDF 1-indexe, lu du PDF et non du texte
+=== TEXTE ===
+[[page 1]]
+Page 1/19
+Evaluating the impact of cattle corralling duration on soil nutrient
+dynamics and sorghum yield in dryland Systems
+Bouba Traoré
+Institut d’Economie Rurale (IER), Centre Régional de la Recherche Agronomique de Sikasso
+Moumini Guindo
+Institut d’Economie Rurale (IER), Centre Régional de la Recherche Agronomique de Sikasso
+Hama Kassé
+Birhanu Zemadim Birhanu
+Gizaw Desta
+Matin Moyo
+Rebbie Harawa
+Research Article
+Keywords: Soil fertility, Cattle penning, Nitrogen, Organic matter, fertilization
+Posted Date: June 6th, 2025
+DOI: https://doi.org/10.21203/rs.3.rs-6786015/v1
+License: - - This work is licensed under a Creative Commons Attribution 4.0 International License. Read Full License
+Additional Declarations: No competing interests reported.
+
+[[page 2]]
+Page 2/19
+Abstract
+Livestock corralling is a traditional practice in Sahelian farming systems, yet its contribution to soil fertility and crop productivity
+remains underutilized. This study assesses the effects of varying corralling durations on manure accumulation, soil nutrient
+dynamics, and sorghum yield in dryland smallholder systems. A two years eld experiments were conducted using 10 Tropical
+Livestock Units (TLUs) on 150 m² plots across six farms over 3, 7, 10, and 15-night corralling durations. Soil samples and crop
+performance were evaluated under each treatment and compared to unpenned control plots. Farmer surveys were also conducted
+to assess perceptions and management constraints.
+The amount of dry manure deposited per hectare increased proportionally with penning duration, from 2.82 t ha⁻¹ after 3 nights to
+14.12 t ha⁻¹ after 15 nights using 10 Tropical Livestock Units (TLUs). These organic inputs contributed to marked improvements in
+soil organic matterup to 34% after 10–15 nights—and a 26% increase in total nitrogen compared to unpenned plots. Longer
+durations also led to greater accumulation of phosphorus (P) and potassium (K), while soil pH improved from very strongly acidic
+(pH 4.5–5.5) to weakly acidic levels, especially after 7 nights or more. These fertility gains translated into signicantly higher
+sorghum grain yields, reaching up to 2,651 kg ha⁻¹ under 7-, 10-, and 15-night treatments more than 50% higher than the control and
+24% higher than 3-night penning. In addition, farmers reported a reduction in mineral fertilizer use by approximately 50% on penned
+plots, demonstrating the cost-effectiveness and input substitution potential of the practice.
+A 7-night corralling strategy offers an ecient balance between labor input and agronomic benet. Cattle corralling presents a
+practical, low-cost approach to enhance nutrient cycling, reduce input dependency, and support agroecological intensication in
+dryland farming systems. Scaling adoption will require context-specic support to address labor, infrastructure, and land access
+constraints.
+I. Introduction
+Agricultural systems in sub-Saharan Africa (SSA) are predominantly mixed crop–livestock systems, where crops and animals are
+closely integrated to support household livelihoods and ecosystem services (Herrero et al., 2010). However, the long-term
+sustainability of these systems is threatened by severe soil fertility decline, particularly due to the depletion of soil organic matter
+(SOM), which is a key determinant of nutrient availability, water retention, and overall soil productivity (Lal, 2006).
+In many parts of SSA, including Southern Mali, the degradation of cropland is driven by continuous cultivation, minimal fallow
+periods, and insucient replenishment of nutrients (Blanchard et al., 2014; Gigou et al., 2004). In the Koutiala region, over 80% of
+the land is under permanent cultivation and the natural reserves of SOM have steadily declined due to poor organic matter
+management. These challenges are compounded by widespread poverty and limited access to mineral fertilizers, which together
+constrain farmers’ ability to invest in soil fertility restoration (Kouyate et al., 2021; Ten Berge et al., 2019). As a result, low-input
+farming systems suffer from declining crop productivity and reduced resilience (Rufyikiri, 2017).
+To address these limitations, farmers in the region employ various organic amendments including compost, household waste, and
+livestock manure to restore soil fertility. Yet, the availability of farmyard manure remains insucient, covering only 32–60% of crop
+nutrient needs depending on farm type (Guindo et al., 2024) Given these constraints, practices that integrate livestock more directly
+into nutrient cycling such as night-time cattle corralling have received renewed interest. Corralling involves conning livestock
+overnight on cropland, where manure and urine are deposited directly onto the soil, enriching it with organic and mineral nutrients
+(Ayantunde et al., 2018).
+Previous studies have shown that this practice can signicantly improve SOM content and increase crop yields. For example,
+(Bénagabou et al., 2017) reported that organic manure from mixed farming systems in Burkina Faso contributed between 9% and
+56% of farmers’ manure requirements. Similarly, (Traoré et al., 2014) demonstrated that corralling 20 cattle overnight improved
+millet yields by 45–106%, depending on the duration of penning. Guerin and Roose (2017) estimate that a single Tropical Livestock
+Unit (TLU) excretes approximately 25–30 kg of nitrogen per year, with roughly 50% returned to the soil through dung and urine.
+However, most existing research have fairly quantied corralling manure contributions and soil impacts in relation to TLU—a
+standardized metric that facilitates cross-system comparisons. Furthermore, few studies have systematically evaluated how the
+
+[[page 3]]
+Page 3/19
+duration and corralling affect the accumulation of N, P, K, and SOM, and how these changes translate into crop productivity,
+particularly in cereal-based systems such as sorghum cultivation.
+Given these gaps, this study aims to evaluate the impact of cattle corralling (measured by the number of TLUs and duration of
+overnight penning) on soil fertility and sorghum productivity in the Sahelian zone of Mali. Specically, the objectives are to: (i)
+quantify the amount of dry matter and nutrients (N, P, K, organic matter) excreted per TLU during overnight penning; (ii) assess how
+corralling affects the evolution of soil N, P, K, and SOM content; (iii) evaluate the effect of varying corralling durations on sorghum
+yield; and (iv) examine the implications of these ndings for system-level sustainability in smallholder crop–livestock systems.
+II. Methods
+2.1. Study site
+The study was conducted in Koutiala – in the South-Sahelian zone of Mali, at the villages of N'golonianasso (12°25'37''north,
+5°40'59''west), Sirakele (12°31'05''north, 5°28'49''west) and Zansoni (12°35'05''north, 5°36''40'west) from 2019 to 2021. Koutiala
+zone is characterized by ferralitic, and sometimes ferruginous, deeper, loamy to loamy-clay soils(FAO, 2005) Farming systems are
+dominated by agro-pastoral production systems based on cotton and cereals (maize, millet, sorghum). In this area, livestock
+farming is as transhumant as it is sedentary. Manure management practices focus primarily on mineral fertilizer use and organic
+fertilizer. Manure production is gaining attention as a preferred nutrient-source alternative, although it is hampered by insucient
+stocks of crop residues as well as the lack appropriate transport given it is bulky, and time competition for other activities.
+Composting, animal penning, and household waste generation are the main strategies used to obtain organic manure. Cotton and
+maize are generally preferred for organic inputs, given the lack of manure and the economic stakes of these crops.
+The 2019 and 2020 average annual rainfall in Koutiala uctuated between 750 and 1000 mm between June and October (Fig. 1).
+Rainfall amount was 763 mm in 2019 and 936.33 mm in 2020 .
+2.2. Quantication and analysis of cattle dung and urine
+Quantication of cattle droppings was determined by weighing cattle using a zebu abacus. The TLU conversion table fromMeyer et
+al. (2022) was used as a reference to convert cattle numbers into Tropical Livestock Units (TLUs). Livestock Standard Unit is a
+reference weight unit corresponding to a standard 250 kg live-weight cow (Djibo et al., 2018; Vall et al., 2017)The evaluation of the
+quantities of animal waste excreted per head/night was performed at the agricultural research station in N'Tarla using a head of 17
+cattles that included 4 bulls, 3 cows, 3 calves, 2 young bulls and 5 heifers. The collection of cattle dung and urine was done using an
+isolated box device to conne the animal. The cattle dung excreted overnight was collected in a double-walled bag attached to the
+animal (Fig. 2). The wet cattle dung was then weighed and then dried in the shade for 7 days then weighed using a precision (0.1g)
+electronic scale to obtain dry weight.
+Urine was collected by isolating the animals in a room with a well cemented oor. The oor was covered with a plastic mat and was
+laid at a slope and had a gully (small hole) to allow easy ow of urine as soon as excreted. The urine was collected in a container
+that was hermetically sealed and placed at the back of the room (Fig. 2). The collected urine was quantied for each isolated
+animal and computed per TLU, per night.
+Night corralling and rotation of animals was performed by weighing cattle using the zebu abacus to obtain their weights, and the
+number of heads corresponding to 10 TLU was determined and the animals were penned. Cattle droppings obtained in each farmer
+was quantied on the basis of a linear regression equation between chest belt and cattle weight (Dodo et al., 2001; Traore, 2009)as
+follows:
+Where Y is the amount of cattle droppings, a and b are regression coecients between the weight of cattle and quantities of cattle
+droppings, and x represents the weight of cattle.
+The amount of cattle droppings excreted by TLU/night was calculated according to the duration of overnight penning i.e 3N, 7N,
+10N, and 15N.
+Y = ax+bY
+
+[[page 4]]
+Page 4/19
+Cattle dung samples were analyzed for nitrogen (%N), phosphorus (%P), potassium (%K), and organic matter (%OM) using duplicate
+dried sub-samples (500 g each) obtained from homogenized composite mixtures. Urine samples were collected in the morning via
+bladder catheterization from cattle designated for penning. Duplicate urine samples (250 mL each) were packaged and analyzed for
+nutrient content at the International Crops Research Institute for the Semi-Arid Tropics (ICRISAT) laboratory in Sadoré, Niger.
+Soil samples were collected along the diagonal transect of the plots before corralling, and in the various treatments after corralling.
+Composite samples were pooled based on the treatments and analyzed for N, P, K and soil organic carbon.
+2.3. Cattle night corralling and establishment of experimental plots
+Experiments on cattle rotation and corralling were conducted with six farmers, with two experimental plots per village. The
+treatments consisted of varying corralling durations: 3, 7, 10, and 15 consecutive nights, along with two controls (one with Di-
+Ammonium Phosphate (DAP) application and one untreated control). Each night of corralling corresponded to a 12-hour period
+(6:00 p.m. to 6:00 a.m.). Each treatment block on a farmer’s eld was considered a replicate. The selected livestock groups
+comprised 10 Tropical Livestock Units (TLUs), corresponding to 11–14 head of cattle per farmer. Corralling was carried out during
+the 2019 and 2020 cropping seasons on fenced plots of 150 m² (15 m × 10 m). Each plot served as an elementary unit for a specic
+penning duration. Upon completion of each treatment, the wire mesh fence was relocated to the next designated plot (Fig. 3).
+As soon as the corralling cycle was completed, soil was ploughting and sorghum (Sorghum bicolor L Monch) var."Soubatimi" was
+sown in the different treatments. The experimental design was a split-plot arranged in a completely randomized block design. The
+main plot treatments were 4 levels of penning times (3N, 7N, 10N, 15N), while the sub-plot treatments were 3 levels of sowing
+density (D1 = 0.75 m x 0.20 m; D2 = 0.75 m x 0.30 m; D3 = 0.75 m x 0.40 m) and corresponded respectively to 66,666; 44 444 and 33
+333 plants/ha. The DAP treatment received 100 kg ha− 1 Di-Ammonique Phosphate and no fertilizer application for the control.
+2.4. Statistical analyses
+Collected data was subjected to analyses of variance (ANOVA) using Genstat 20th edition software, with the application of the
+Student-Newman and Keuls test at the 5% signicance level (P < 0.05). Where signicant (Prob < 0.05), means separation was
+performed using SED.
+2.5. Sustainability of corralling system according to the length of overnight stays
+The sustainability of cattle corralling within a sorghum production system was evaluated using four dimensions: productivity,
+economic viability, environmental impact, and human well-being, following the framework of Guindo et al. (2022).The contribution
+of each treatment to these sustainability dimensions was expressed as a percentage. Productivity was assessed based on grain
+yield, which was further converted into food energy intake. Economic protability was determined by calculating the gross margin,
+dened as total income minus total production costs. Environmental impact was assessed through the level of chemical soil
+pollution, estimated using a partial soil nitrogen balance ((∑Input – ∑Output).
+2.5. Farmers' perception on cattle corralling system.
+Individual survey was conducted among 45 farmers in the villages of N'Golonianasso, Sirakélé and Zansoni to collect the farmers’
+perception of coralling and rotating cattle during the night. Respondents were selected on a voluntary basis and according to their
+prole as farmers or agro-breeders. The interviews were conducted in the "Bambanankan" language using a translator and focused
+on the current way cattle pen nights in the elds, the period, the number of penned cattle, the penned area and the duration of
+rotation. The survey also focused on the target crops of the plots that were penned for the cattles, the manure brought and the
+constraints related to this practice of rotating cattle.
+III. Results
+3.2. Quantities of manure and levels of N P, K and OM in cattle dung and urine
+Results indicate that cattle age and chest girth are both signicantly correlated with live weight (p < 0.05). Specically, each
+additional year of age was associated with an average increase of 9.343 kg in body weight, while each one-centimeter increase in
+
+[[page 5]]
+Page 5/19
+chest girth corresponded to an average weight gain of 1.398 kg (Table 1). These ndings suggest that age and chest girth are
+reliable predictors of cattle body weight, and the relationship can be described by the following predictive equation:
+Cattle weight (kg) = − 66.6 + 9.343 * age (year) + 1.398 * chest girth (cm).
+Table 1
+Multiple linear regression of the effect of age and chest
+girth on cattle weights
+Variables Coef SE T-Value P-Value
+Constant − 66.6 40.2 -1.66 0.120
+Ages (year) 9.343 0.892 10.48 0.000
+Chest girth (cm) 1.398 0.336 4.16 0.001
+The nightly collection of cattle dung yielded an average of 1.48 kg of dry matter (dung) and 3.40 liters of urine per Tropical Livestock
+Unit (TLU). Analysis of the relationship between live weight and manure (dung and urine) indicated a positive correlation, with
+manure quantities increasing proportionally with cattle weight (Fig. 4). Additionally, a strong linear relationship was observed
+between the quantities of dung and urine produced (Fig. 5). The prediction of the regression equation is as follows:
+Feces (kg/night/cattle ) = 0.4,829 + 0.2,184 * urine (litre/night/cattle )
+The average dry matter (DM) production by 10 TLUs was 14.8 kg of dung and 34 liters of urine per night. Depending on the length of
+the nights, the quantities of droppings deposited on the penned plots varied signicantly (Prob < 0.001). At the scale of the hectare,
+cattle deposited 2.82 tons and 6.59 tons of cattle dung respectively for the durations of 3N and 7N, while for the 10N and 15N, the
+deposited corresponds to 9.42 tons and 14.12 tons respectively. Urine excreted also evolved according to the length of overnight
+stays. For the durations of 3N and 7N, a volume of 6.64 m3 and 15.48 m3 of urine was deposited per hectare, against 22.12 m3 and
+33.18 m3 respectively for the durations of 10N and 15N (Fig. 6).
+The amounts of nutrients (N, P, K) and organic matter (OM) deposited through the droppings differed signicantly depending on the
+duration of the penning nights. Organic matter from cattle dung increased from 2.15 t ha− 1 with the penning of 3N, to 5.02 t ha− 1,
+7.17 t ha− 1 and 10.76 t ha− 1 respectively for the durations of 7N, 10N, and 15N and these quantities were proportional to the
+duration of penning. Thus, the more the number of penning nights, the higher the amount of organic matter deposited on the
+penning space. This increasing trend was also valid for NPK analysed from cattle dung and nitrogen from urine (Table 2).
+Table 2
+Amounts of nutrient elements analysed from cattle dung and urine (kg ha− 1)
+Number of
+nights
+N dung P dung K dung N urine OM dung
+3N 38.17 ± 1.90 15.56 ± 0.78 112.19 ± 5.60 922.89 ± 40.92 2,151.72 ± 107.38
+7N 89.07 ± 4.44 36.31 ± 1.81 261.79 ± 13.06 2,153.42 ± 95.48 5,020.67 ± 250.56
+10N 127.24 ± 6.35 51.87 ± 2.59 373.98 ± 18.66 3,076.31 ± 136.39 7,172.39 ±,357.95
+15N 190.86 ± 9.52 77.81 ± 3.88 560.97 ± 28.00 4,614.47 ± 204.59 10,758.59 ±,536.92
+3.3. Quantities of N, P, K and OM from the soil before and after corralling
+The ANOVA showed high signicant differences (Prob < .001) between the amounts of nutrients (N, P, K, OM) contained in soils
+before and after cattle corralling. The low stock of soil organic matter (1.03%) before penning (0N) increased by 1.13%, 1.46% and
+2.69% with the durations of 7N, 10N and 15N respectively. This increase depicted an average quantity of 45.65 t ha− 1 for the
+durations of 10N and 15N, but much higher by 19% when compared to treatments of 3N, 7N, and more than 34% than before
+penning (0N) (Table 3). The average amount of total soil nitrogen (0.31%N), i.e. 20.83 t ha− 1 was the same in all corralled plots (3N,
+7N, 10N, 15N), but was statistically higher by 23% when compared to those of uncorralled plots, i.e. 0.24% N for control. For
+
+[[page 6]]
+Page 6/19
+phosphorus (P) and potassium (K), except for plots of 10N and 15N having accumulated a similar average quantity of 1.5 t ha− 1,
+the other plots (3N, 7N) have very low levels of these elements, much lower by 67% and 54% compared to 10N and 15N (Table 3).
+The soil is a sandy-silty texture, with 62% sand, 25% silt and 13% clay respectively. With cattle corralling soil pH changed from very
+strongly acidic to weakly acidic soil (Table 4).
+Table 3
+Quantity (t ha− 1) of soil N, P, K and OM before and after cattle
+penning and soil texture
+Average effect of treatments N P K OM
+0N 14.95 0.58 0.49 30.3
+DAP 15.72 0.6 0.511 31.8
+3N 20.16 0.37 0.76 40.1
+7N 19.21 0.49 0.75 39
+10N 21.89 1.58 1.18 43.2
+15N 22.06 1.48 1.55 48.1
+Average 19 0.68 1.04 38.8
+F.Prob < .001 < .001 <.001 < .001
+S.E.D 1.41 0.17 0.26 3.65
+% CV 20.3 68.2 68.5 25.8
+Table 4
+Soil texture and pH
+Soil texture pH before corralling (0N) pH after corralling (7N, 10N and 15N)
+Clay % < 0.002 mm 12.83 4.5–5.5 5.6–6.5
+Silt % 0.002–0.05 mm 25
+Sand % > 0.05 to 2 mm 62.17
+3.4. Effect of corralling and seedling densities, stem diameter, plant height, and yield of sorghum
+The results indicate that the tallest sorghum plants, both in the year of corralling and in the carryover experiment, were observed
+under the 7N, 10N, and 15N treatments (Tables 5 and 6). These treatments resulted in plant heights approximately 8% greater than
+the 3N treatment across both years. The control (0N) consistently recorded the shortest plants, with heights at least 17% lower
+compared to those under 7N, 10N, and 15N. No signicant interaction was observed between corralling duration and seedling
+density (D1, D2, D3) on plant height during either the initial or the carryover year (p = 0.875), suggesting that these factors acted
+independently. Although a signicant main effect of seedling density was detected, it did not interact signicantly with corralling
+duration.
+Stem diameter varied signicantly with seedling density in both the year of corralling (Table 5) and in the carryover experiment
+(Table 6). Across all corralling treatments (3N, 7N, 10N, and 15N), the largest stem diameters were consistently observed under the
+lower seedling densities (D2 and D3), while the smallest diameters were recorded at the highest density (D1). This result conrms a
+negative relationship between seedling density and stem diameter: as plant density increased, stem diameter decreased (Table 5).
+The highest grain yields were recorded under the 7N, 10N, and 15N treatments, which were statistically similar and signicantly
+greater than the yield obtained with the 3N treatment (Table 5). On average, yields under 7N–15N were 24% higher than 3N, while
+3N itself produced yields 34% greater than the control (0N).
+The interaction between corralling duration and seedling density was not signicant (p = 0.89), indicating independent effects of the
+two factors on grain yield. Additionally, there was no signicant difference in average grain yield between the corralling year and the
+
+[[page 7]]
+Page 7/19
+carryover year (p = 0.744), suggesting that the benecial effects of corralling persisted into the subsequent season.
+Biomass yield followed a trend similar to grain yield, with the highest values observed under the 7N, 10N, and 15N treatments,
+which were statistically similar (Table 5). These treatments produced biomass yields that were on average 19% higher than the 3N
+treatment, which itself was 16% higher than the control (0N).
+In the carryover effect experiment, the highest biomass yield (13,044 kg ha⁻¹) was achieved under the 15N treatment (Table 6),
+representing a signicant increase of 10% (p < 0.001) compared to the 7N and 10N treatments, and more than 29% higher than the
+3N treatment. The control recorded the lowest biomass production, yielding 47% less than 15N and over 41% less than 7N and 10N.
+Table 5
+Effect of bedding on plant height, head diameter, stocking density, grain yield and sorghum biomass
+Average effect of treatments in 2019
+and 2020
+Height
+(cm)
+Seedling
+density
+Stem diameter
+(mm)
+Grain yield kg
+ha− 1
+Biomass
+yield
+kg ha− 1
+0N 205.9 85 808 18.29 1 329 8 253
+DAP 220.1 82 807 17.81 1 611 9 886
+3N 228.2 85 821 18.61 2 003 9 783
+7N 243.7 91 642 18.88 2 565 12 044
+10N 245.7 93 530 18.8 2 661 11 601
+15N 256.3 89 037 19.44 2 728 12 703
+Average 233.3 88 108 18.64 2 149 10 712
+F.Prob < .001 0.492 0.685 < .001 < .001
+SED 5.95 6 062.50 0.996 134.3 745.4
+D1 235.6 119 758 17.16 2 146 10 888
+D2 233.5 82 450 18.29 2 126 10 795
+D3 230.9 62 114 20.46 2 176 10 452
+Average 233.3 88 108 18.64 2 149 10 712
+F.Prob 0.54 < .001 < .001 0.872 0.685
+SED 4.21 4286.8 0.705 95 527.1
+Penning year 2019 240.2 94 614 15.73 2 226 9 644
+Penning year 2020 225.1 80 300 22.12 2 058 11 993
+Average 233.3 88 108 18,64 2 149 10 712
+F.Prob < .001 0,003 < .001 0.123 < .001
+SED 4.06 4 789 0.399 108.4 449.5
+F. Prob corralling duration * densities 0.875 0.793 0.742 0.895 0.995
+F. Prob corralling duration * years 0.131 0.477 0.518 0.004 0.012
+F. Prob densities * years 0.398 < .001 < .001 0.689 0.011
+F. Prob corralling duration * densities x
+years
+0.961 0.995 0.837 0.956 0.764
+
+[[page 8]]
+Page 8/19
+Table 6
+Carryover effect of treatments on plant height, stem diameter, stocking density, grain and biomass yield of sorghum
+Average effect of treatments in 2020 and
+2021
+Height
+(cm)
+Stocking
+density
+Stem diameter
+(mm)
+Grain
+yield
+kg ha− 1
+Biomass
+yield
+kg ha− 1
+0N 208.2 94 200 20.143 1 237 6 926
+DAP 210 97 467 20.623 2 016 9 119
+3N 209.8 96 244 21.511 2 042 9 341
+7N 222.7 93 689 22.928 2 501 11 652
+10N 225.6 99 956 23.094 2 280 11 811
+15N 227 98 689 23.2 2 626 13 044
+Average 217.2 96 707 21.917 2 117 10 315
+F.Prob 0.002 0.944 < .001 < .001 < .001
+SED 6.27 7 132.2 0.3444 227.4 550.7
+D1 221.4 133 811 21.241 2 143 10 204
+D2 216.9 86 344 21.979 2 118 10 320
+D3 213.4 69 967 22.53 2 090 10 422
+Average 217.2 96 707 21.917 2 117 10 315
+F.Prob 0.2 < .001 < .001 0.948 0.854
+SED 4.44 5 043.3 0.2435 160.8 389.4
+Rear effect 2020 236.5 86 680 22.74 2 465 11 052
+Rear effect 2021 193.12 109 242 20.88 1 682 9 394
+Average 217,22 96707 21.92 2 117 10 315
+F.Prob < .001 < .001 < .001 < .001 < .001
+SED 1.708 5 659.3 0.249 134.7 434.1
+Penning years (2019, 2020) 233.3 88 108 18.64 2 149 10 712
+Rear effect (2020, 2021) 217.2 96 707 21.92 2 117 10 315
+Average 226.1 91 977 20.11 2 135 10 533
+F.Prob < .001 0.024 < .001 0.717 0.234
+SED 2,87 3 781.2 0.357 89.4 332.7
+F. Prob corralling duration * densities 0.957 0.996 0.997 0.888 0.984
+F. Prob corralling duration * years < .001 0.877 < .001 0.004 0.535
+F. Prob corralling duration * years < .001 < .001 0.104 0.311 0.8
+F. Prob corralling duration densities *
+years
+0.965 1.000 1.000 0.920 0.878
+3.6. System-level sustainability of cattle corralling
+The results show that the control treatment had the lowest contributions across all indicators, with particularly poor performance
+for the environmental domain, where values were negative (Fig. 7). The application of 100 kg/ha DAP moderately improved
+
+[[page 9]]
+Page 9/19
+productivity and protability (contributions around 50–60%) but had negligible effects on environmental sustainability which
+reects the limited systemic impact of chemical fertilizers when used in isolation.
+In contrast, cattle corralling treatments demonstrated signicant advantages. The 3-night corralling yielded moderate
+improvements, especially in productivity and protability, food security, while contributions for environmental sustainability
+remained low. More importantly, 7-night corralling showed a clear threshold, with high contributions (~ 90–100%) across
+productivity, protability, and food security, and slight improvements in environmental performance. This positive trend continued
+with 10 and 15 night treatments, though the gains in comparison to 7 nights were marginal, suggesting diminishing returns beyond
+the 7 night threshold. Across all corralling treatments, improvements in food security closely followed the patterns observed in
+productivity and income-related indicators, highlighting the interconnectedness of agricultural productivity and household food
+access. Across, all the treatments, environmental sustainability, while initially low under control and DAP treatments, showed a clear
+and progressive improvement with increasing corralling duration.
+3.7. Farmer’s practice of cattle corralling
+The results of the survey show variation in cattle penning practices. On average, 30.57 ± 6.87 cattle were penned over an area of
+1.18 ± 0.61 ha for approximately 10 ± 2 nights, reecting the common practice of short-duration rotational penning (Table 6).
+Penning rates were highest in N’golonianasso and Sirakele (66.67%), while Zansoni had a lower rate (40%), despite a higher number
+of penned cattle. This suggests that penning intensity is inuenced not only by livestock availability but also by land size and farmer
+management strategies. The observed average penning duration of 10 nights aligns with optimal thresholds identied for improving
+soil fertility and crop yield, reinforcing its agronomic relevance.
+Overall, maize and cotton are the dominant crops grown (Table 6) on the penned plots, with maize occupying 40% of the area and
+cotton 31% indicating a strategic use of penned plots. Sorghum and millet were not reported as major crops on penned plots, likely
+due to their lower nutrient demands and common placement later in the cropping cycle, where residual fertility can be exploited.
+Regarding fertilization practices, the results show widespread use of mineral fertilizers on penned plots that even on organically
+enriched plots, farmers often complement manure inputs with mineral fertilizers, suggesting a strong reliance on mineral inputs to
+optimize yield potential following penning.
+With regards to farmers perception of constraints related to cattle corralling, results showed that, approximately 29% of
+respondents found night rotation very restrictive, 22% moderately restrictive, and 30% did not perceive it as a constraint (Table 7),
+while 61.11% of farmers did not consider watering to be a constraint, compared to only 3.33% and 10% who classied it as very or
+moderately restrictive, respectively.
+Table 6
+Farmers practice of cattle corralling
+Corralling statement Crops (%) Fertilization (%)
+Village Number
+of
+penned
+cattle
+Corralling
+area (ha)
+Penning
+time
+(overnight)
+Penning
+rate (%)
+Cotton Maize Sorghum Millet NPK
+cotton
+NPK
+cereal
+Urea
+N'golonia 26.60 1.88 12 66.67 26 33 - - 73 73 100
+Sirakele 26.60 0.74 9 66.67 40 60 - - 93 80 100
+Zansoni 38.50 0.92 10 40.00 26 26 - - 80 73 77
+Average 30.57 1.18 10 57.78 31 40 - - 82 75 92
+
+[[page 10]]
+Page 10/19
+Table 7
+Farmer perceptions of constraints related to cattle corralling.
+Villages Night rotation and penning Watering of animals
+Very
+restrictive
+Moderately
+restrictive
+Low
+Binding
+No
+Constraint
+Very
+restrictive
+Moderately
+restrictive
+Low
+Binding
+No
+Constraint
+N'golonianasso 30 30 10 30 0 10 30 60
+Sirakélé 40 20 30 10 10 20 30 40
+Zansoni 16.67 16.67 16.67 50 0 0 16.67 83.33
+Average 28.89 22.22 18.89 30 3.33 10 25.56 61.11
+IV. Discussions
+4.1. Dynamics of manure accumulation and nutrient input in corralling systems
+We found that the quantities of dry cattle dung deposited per hectare increased proportionally with the duration of corralling. Using
+10 Tropical Livestock Units (TLUs), the quantity of dung recorded was 2.82 t ha⁻¹ after 3 nights (3N) and 6.59 t ha⁻¹ after 7 nights
+(7N). This amount further increased to 9.42 t ha⁻¹ and 14.12 t ha⁻¹ for 10-night (10N) and 15-night (15N) treatments, respectively.
+These results conrm a strong positive relationship between corralling duration and manure accumulation, consistent with previous
+studies in the Sahel (Landais et al., 1990; Schlecht and Buerkert, 2004). The progressive buildup of organic material suggests that
+longer corralling durations enhance the input of nutrients and organic matter into the soil, thereby improving its fertility potential.
+However, the quantity of manure produced by cattle may vary signicantly according to the seasons and the type and quality of feed
+provided. Seasonal uctuations in forage availability and feed composition inuence both the volume and nutrient content of dung
+and urine. During the dry season, reduced feed intake and lower-quality forage often result in smaller quantities of manure with
+lower nutrient concentrations (Runo et al., 2006; Schlecht and Buerkert, 2004). affecting the ecacy of corralling practices (Rahimi
+et al., 2020).
+Research indicates that livestock corralling can result in uneven manure deposition, creating nutrient-rich hotspots rather than
+uniformly enhancing soil fertility and may lead to inecient nutrient utilization and potential environmental concerns (De Deyn et al.,
+2009). Despite the operational challenges such as labor-intensive nature and logistical demands, cattle corralling presents
+substantial opportunities for both pastoralists and crop farmers in the Sahelian context. The practice facilitates a mutually
+benecial exchange between livestock and cropping systems (Turner and Hiernaux, 2008). Furthermore, corralling also serves as a
+cost-effective alternative to traditional manure management practices. In many smallholder systems, the collection, transport,
+storage, and manual application of manure represent signicant labor and nancial burdens. By concentrating on animals directly
+on agricultural land, corralling eliminates the need for these steps, thereby increasing the eciency of nutrient recycling and
+minimizing nutrient losses associated with storage and handling(Runo et al., 2006). This implies that longer corralling durations
+can signicantly enhance soil fertility, potentially improving nutrient availability for crops and contribute to long-term carbon
+sequestration (Giller et al., 2009). Therefore, this practice can offer a practical and sustainable solution to soil nutrient depletion,
+especially in regions with limited access to chemical fertilizers.
+4.2. Soil fertility improvements and sorghum yield response to corralling duration
+Our results demonstrate that cattle corralling signicantly enhances soil organic matter (SOM), with improvements of
+approximately 34% observed following 10 to 15 nights of penning, compared to a 19% increase with shorter durations of 3 to 7
+nights. This trend strongly suggests that the cumulative quantity of dry matter from dung deposition plays a central role in driving
+SOM accumulation. The nutrients from the droppings can percolate into the soil due to trampling by animals. The greater deposition
+of organic inputs over longer penning periods enhances microbial activity and improves soil structure and fertility (Machmuller et
+al., 2015; Rahman et al., 2019; Rayne and Aula, 2020) particularly in systems where synthetic inputs are limited. Beyond nutrient
+recycling, the repeated deposition of organic matter enhances soil structure and promotes the formation of stable aggregates,
+which increase porosity and water-holding capacity which is particularly benecial in dryland conditions where rainfall is erratic and
+inltration is low (Mando et al., 1996).
+
+[[page 11]]
+Page 11/19
+We found that soil nitrogen (N) content was comparable across all penned plots but was 26% higher than in the unpenned control
+plots. In contrast, phosphorus (P) and potassium (K) levels in the 3N and 7N treatments were signicantly lower by 67% and 54%,
+respectively compared to those in the 10N and 15N plots. These ndings suggest that even short durations of corralling (3 to 7
+nights) are sucient to increase total nitrogen in the soil. This is likely due to rapid deposition of urine, which is rich in readily
+available nitrogen, and the microbial transformation of organic nitrogen from dung. However, the marginal gains level off with
+longer durations, possibly due to nitrogen saturation or losses (e.g., through volatilization or leaching) (Sutton et al., 2011).
+Unlike nitrogen both P and K are less mobile in the soil and tend to accumulate near the point of deposition (Bationo et al., 2007;
+Schlecht and Hiernaux, 2004). As a result, longer corralling durations lead to greater accumulation of these nutrients suggesting
+that to effectively enrich soils with phosphorus and potassium particularly in Sahelian regions where phosphorus deciency is
+common, corralling periods of 7 nights or more are more effective, as the gradual buildup of manure enhances nutrient availability
+over time.
+The initial soil pH values across the study area indicated very strongly acidic conditions, ranging from 4.5 to 5.5. Following livestock
+penning, a progressive increase in soil pH was observed, particularly after 7, 10, and 15 nights of corralling. In these treatments, the
+soils transitioned from very strongly acidic to weakly acidic, indicating a signicant amelioration of acidity due to penning duration.
+This improvement in soil pH can be attributed to the cumulative effect of organic inputs principally livestock manure and urine
+deposited during penning. These organic residues serve as sources of base-forming cations such as calcium (Ca²⁺), magnesium
+(Mg²⁺), potassium (K⁺), and sodium (Na⁺), which are known to neutralize exchangeable acidity by replacing hydrogen (H⁺) and
+aluminum (Al³⁺) ions on soil exchange sites (Agegnehu et al., 2016; Haynes and Mokolobate, 2001). In addition, enhanced microbial
+activity stimulated by the inux of organic matter may further support pH buffering through decomposition processes and the
+release of humic substances, which improve the soil’s capacity to resist drastic pH uctuations. This nding aligns reports
+highlighting the importance of consistent organic matter application in modifying soil acidity, particularly in tropical soils where low
+pH is often a limiting factor for crop productivity due to nutrient unavailability and aluminum toxicity(Vanlauwe et al., 2015). In this
+context, strategic corralling emerges as an effective, low-cost soil management practice for smallholder systems in acid-prone
+environments. By improving soil chemical conditions, it can contribute to better nutrient availability.
+The benets of these soil nutrient change (OM, pH, etc) were reected in sorghum grain and biomass yield, which were signicantly
+higher under longer corralling durations. Grain yields reached up to 2,651 kg ha⁻¹ in the 7-, 10-, and 15-night treatments, representing
+a signicant increase compared to the 3-night corralling (yield was less than 24% lower) and the control (more than 50% lower).
+These results demonstrate a strong correlation between improved soil fertility, especially pH adjustment and organic nutrient inputs
+and crop productivity (Haynes and Mokolobate, 2001; Vanlauwe et al., 2010). The relatively lower yield under the 3-night corralling
+treatment suggests that shorter durations do not provide sucient nutrient accumulation or time for nutrient mineralization to
+benet crop growth. Conversely, longer corralling periods likely ensured more uniform and sustained nutrient availability, especially
+for nitrogen, which increased by approximately 26% in corralling eld relative to the unpenned control. The role of improved pH is
+particularly critical, as low pH can inhibit root growth, reduce microbial activity, and limit the availability of essential nutrients,
+especially phosphorus and molybdenum (Vanlauwe et al., 2015).
+In line with previous research (Powell et al., 2004) the integration of livestock through strategic penning emerges as a viable, low-cost agroecological approach to enhance soil fertility and crop yields. In dryland farming systems, where access to mineral
+fertilizers is often limited, optimizing the timing and duration of livestock corralling can signicantly contribute to soil restoration
+and improved agricultural productivity.
+4.4. Opportunities and constraints of dry season cattle corralling
+Findings indicate that farmers increasingly recognize the agronomic benets of dry season cattle corralling. In the Koutiala region,
+the widespread presence of livestock, especially with medium and large-scale farms, present a valuable opportunity to integrate
+corralling as a sustainable soil fertility management practice (Guindo et al., 2024). We found that farmers' corralling strategies also
+inuence subsequent cropping choices. In corralled elds, 40% of farmers planted maize and 31% cotton crops commonly
+positioned at the beginning of crop rotations due to their economic value and capacity to capitalize on the nutrient-rich conditions
+created by penning. In these plots, no additional organic inputs were applied, and farmers reported reducing mineral fertilizer
+
+[[page 12]]
+Page 12/19
+application by approximately 50% compared to non-penned plots—a nding consistent with earlier research showing that cattle
+corralling substantially reduces reliance on external inputs (Sangaré et al., 2002; Schlecht and Buerkert, 2004).
+Spatial decisions regarding corralling are often inuenced by security and labor considerations. Farmers preferentially corral
+livestock near homesteads to reduce the risk of theft and avoid conict with transhumant herds. As a result, more distant elds are
+less likely to benet from this fertility-enhancing practice. Despite its benets, these ndings emphasize the need for context-specic support measures, including improved penning infrastructure, collective organization for labor-sharing, and better access to
+water sources, to alleviate the burden on farmers and enhance the adoption of penning practices.
+4.5. Systemic benets of cattle corralling for sustainable intensication
+The ndings of this study clearly illustrate the systemic benets of integrating cattle corralling into smallholder production systems.
+The control treatment, which received no external nutrient inputs, consistently recorded the lowest performance across all
+indicators, with especially negative values in the environmental domain. This result underscores the well-documented challenges
+associated with continuous cultivation without nutrient replenishment in the Sahel, where soil fertility depletion remains a major
+constraint to sustainable production (Tittonell and Giller, 2013; Vanlauwe et al., 2006).
+Application of 100 kg/ha of diammonium phosphate (DAP) moderately improved productivity and protability, with contribution
+scores around 50–60%. However, it had negligible impact on environmental sustainability, reecting the limited capacity of
+inorganic fertilizers, when used in isolation, to improve soil health or ecological resilience (Vanlauwe et al., 2014).
+In contrast, cattle corralling treatments demonstrated notable system-wide advantages. The 3-night corralling resulted in modest
+improvements in productivity, protability, and food security, though the effect on environmental sustainability remained minimal
+likely due to limited manure accumulation and uneven nutrient distribution. However, a marked threshold was observed at 7 nights,
+where contributions across all dimensions particularly productivity, protability, and food security reached 90–100%, with visible
+improvements in environmental performance. This suggests a critical duration beyond which nutrient deposition and soil biological
+processes are suciently activated to support systemic gains. These results are consistent with ndings by (Schlecht and
+Hiernaux, 2004), who showed that livestock corralling can signicantly improve topsoil quality, nutrient cycling, and organic carbon
+content when applied consistently and at sucient intensity.
+While 10- and 15-night treatments sustained high levels of performance, the marginal gains beyond 7 nights were limited, indicating
+diminishing returns. This trend suggests that a 7-night corralling strategy may offer the optimal balance between labor input,
+nutrient loading, and area coverage. It also opens the possibility of rotating livestock across multiple plots within the dry season to
+extend benets more equitably across the farm landscape.
+Food security improvements closely mirrored the trends in productivity and income-related indicators, further conrming the strong
+linkage between agricultural output and household food access (FAO, 2017). Corralling not only enhanced yields but also reduced
+the need for costly external inputs, thereby improving household-level protability and resilience (Atakoun et al., 2025).
+V. Conclusion
+This study provides strong evidence that dry-season cattle corralling can signicantly improve soil fertility and crop productivity in
+smallholder systems of the Sahel. The quantity and duration of manure deposition were directly linked to improvements in soil
+organic matter, nitrogen content, and pH, with 7-night corralling emerging as an effective threshold for optimizing nutrient inputs
+and crop response. Sorghum yields increased substantially under longer corralling durations, and farmers reported a reduced
+reliance on mineral fertilizers.
+While 10- and 15-night treatments sustained positive outcomes, marginal gains beyond 7 nights suggest diminishing returns,
+reinforcing the eciency of a 7-night rotational strategy. Despite logistical challenges, cattle corralling offers a scalable and cost-effective pathway to agroecological intensication by integrating livestock and cropping systems. These ndings underscore its
+potential for sustainable land management and call for supportive measures to enhance adoption among smallholder farmers in
+dryland regions.
+
+[[page 13]]
+Page 13/19
+Declarations
+Author Contribution
+BT led conceptualization, funding acquisition, validation, and drafting, with all authors contributing to data analysis, writing, and
+review. MG and HK supported data curation and analysis; BZB, GD, and MM contributed to supervision and editing; and RH
+managed project administration and resources.
+Acknowledgement
+We thank farmers from the villages of Zansoni, Sirakele, and N'golonianasso and several trainees who helped during data collection.
+We would like to acknowledge the anonymous reviewers for their valuable comments and suggestions. We thank the CGIAR
+program on Sustainable Farming Program for Additional funding support
+References
+1. Agegnehu, G., Nelson, P.N., Bird, M.I., 2016. Crop yield, plant nutrient uptake and soil physicochemical properties under organic
+soil amendments and nitrogen fertilization on Nitisols. Soil Tillage Res 160, 1–13.
+2. Atakoun, A.M., Tovihoudji, P.G., Diogo, R.V.C., Amponsah, W., dos Santos Vianna, M., Gaiser, T., Kyei-Baffour, N., Kyereh, B., 2025.
+Characterizing Cattle Corralling Practices for Sustainable Soil Fertility Management in Northern Benin, in: Climate Change, Food
+Security, and Land Management: Strategies for a Sustainable Future. Springer, pp. 1–20.
+3. Ayantunde, A., Hiernaux, P., Fernandez-Rivera, S., Sangare, M., 2018. Nutrient Management in Livestock Systems in West Africa
+Sahel with Emphasis on Feed and Grazing Management, in: Bationo, A., Ngaradoum, D., Youl, S., Lompo, F., Fening, J.O. (Eds.),
+Improving the Protability, Sustainability and Eciency of Nutrients Through Site Specic Fertilizer Recommendations in West
+Africa Agro-Ecosystems: Volume 1. Springer International Publishing, Cham, pp. 11–23. https://doi.org/10.1007/978-3-319-
+58789-9_2
+4. Bationo, A., Kihara, J., Vanlauwe, B., Waswa, B., Kimetu, J., 2007. Soil organic carbon dynamics, functions and management in
+West African agro-ecosystems. Agric Syst 94, 13–25.
+5. Bénagabou, O.I., Blanchard, M., Bougouma Yaméogo, V.M.C., Vayssières, J., Vigne, M., Vall, E., Lecomte, P., Nacro, H.B., 2017.
+L’intégration agriculture-élevage améliore-t-elle l’ecience, le recyclage et l’autonomie énergétique brute des exploitations
+familiales mixtes au Burkina Faso ? Rev Elev Med Vet Pays Trop 70, 31. https://doi.org/10.19182/remvt.31479
+. Blanchard, M., Coulibaly, K., Bognini, S., Dugué, P., Vall, É., 2014. Diversité de la qualité des engrais organiques produits par les
+paysans d’afrique de l’ouest: Quelles conséquences sur les recommandations de fumure? Biotechnology, Agronomy and
+Society and Environment 18, 512–523.
+7. De Deyn, G.B., Quirk, H., Yi, Z., Oakley, S., Ostle, N.J., Bardgett, R.D., 2009. Vegetation composition promotes carbon and nitrogen
+storage in model grassland communities of contrasting soil fertility. Journal of Ecology 97, 864–875.
+https://doi.org/https://doi.org/10.1111/j.1365-2745.2009.01536.x
+. Djibo, I., Mamman, M., Issa, C., Sarr, O., Bakhoum, A., Marichatou, H., Akpo, E.L., Assane, M., 2018. Caractéristiques de la
+végétation du parcours Gadoudhé, dans la commune rurale de Fabidji (Niger). Int J Biol Chem Sci 12, 1151–1163.
+9. Dodo, K., Pandey, V.S., Illiassou, M.S., 2001. Utilisation de la barymétrie pour l’estimation du poids chez le zébu Azawak au
+Niger. Rev Elev Med Vet Pays Trop 54, 63–68.
+10. FAO, 2017. Mali country fact sheet on food and agriculture policy trends. Fao 717, 6. https://doi.org/I5890E/1/07.16
+11. FAO, 2005. Appui à la mise en oeuvre du NEPAD-PDAA, TCP/MLI/2909 (I), (NEPAD Ref. 05/22 F), Volume VII de VII, Projet de
+gestion intégrée de la fertilité des sols. 37p.
+12. Gigou, J., Giraudy, F., Cheick Oumar Tidiane Doucoure, S.H., Traoré, K., Guindo, O., 2004. de la culture itinérante à la culture
+permanente dans le bassin cotonnier du Mali. Cahiers Agricultures 13, 467–472.
+13. Giller, K.E., Witter, E., Corbeels, M., Tittonell, P., 2009. Conservation agriculture and smallholder farming in Africa: the heretics’
+view. Field Crops Res 114, 23–34.
+
+[[page 14]]
+Page 14/19
+14. Guerin, H., Roose, É., 2017. Ingestion, restitution et transfert d’éléments fertilisants aux agrosystèmes par les ruminants
+domestiques en régions semi-arides d’Afrique occidentale : points de vue d’un zootechnicien et d’un agro-pédologue. In : Eric
+Roose (ed), Éditions, 161-178. ISBN, in : Restauration de La Productivité Des Sols Tropicaux et Méditerranéens,. Contribution à
+l’agroécologie 161–177.
+15. Guindo, M., Traore, B., Birhanu, B.Z., 2024. Biomass and nutrient ow dynamics and sustainability practices to de-risk
+environmental challenges in the sub-saharan Africa farming system. Farming System 2, 100109.
+https://doi.org/https://doi.org/10.1016/j.farsys.2024.100109
+1. Guindo, M., Traoré, B., Birhanu, B.Z., Coulibaly, A., Tabo, R., 2022. Microdosing of Compost for Sustainable Production of
+Improved Sorghum in Southern Mali. Agronomy. https://doi.org/10.3390/agronomy12061480
+17. Haynes, R.J., Mokolobate, M.S., 2001. Amelioration of Al toxicity and P deciency in acid soils by additions of organic residues:
+a critical review of the phenomenon and the mechanisms involved. Nutr Cycl Agroecosyst 59, 47–63.
+https://doi.org/10.1023/A:1009823600950
+1. Herrero, M., Thornton, P.K., Notenbaert, A.M., Wood, S., Msangi, S., Freeman, H.A., Bossio, D., Dixon, J., Peters, M., van de Steeg,
+J., 2010. Smart investments in sustainable food production: revisiting mixed crop-livestock systems. Science (1979) 327, 822–
+825.
+19. Kouyate, A.B., Ibrahim, A., Serme, I., Dembele, S.G., 2021. Sorghum responses to different forms of Tilemsi rock phosphate
+combined with soluble fertilizers in a low-input production system in Mali. Int J Biol Chem Sci 14, 3285–3296.
+https://doi.org/10.4314/ijbcs.v14i9.25
+20. Lal, R., 2006. Enhancing crop yields in the developing countries through restoration of the soil organic carbon pool in
+agricultural lands. Land Degrad Dev 17, 197–209.
+21. Landais, E., Hubert, G., Philippe, L., 1990. Systèmes d’élevage et transferts de fertilité. Savanes d’Afrique, terres fertiles 219–
+270.
+22. Machmuller, M.B., Kramer, M.G., Cyle, T.K., Hill, N., Hancock, D., Thompson, A., 2015. Emerging land use practices rapidly
+increase soil organic matter. Nat Commun 6, 6995.
+23. Mando, A., Stroosnijder, L., Brussaar, L., 1996. Effects of termites on inltration into crusted soil. Geoderma 74, 107–113.
+24. Meyer, C., Arbonnier, M., Lhoste, P., Huguenin, J., Letenneur, L., Roberge Guy, Tacher, G., Vall, E., 2022. Dictionnaire des sciences
+animales. Montpellier : CIRAD http://dico-sciences-animales.cirad.fr/.
+25. Powell, J.M., Pearson, R.A., Hiernaux, P.H., 2004. Crop–livestock interactions in the West African drylands. Agron J 96, 469–
+483.
+2. Rahimi, J., Mutua, J.Y., Notenbaert, A.M.O., Dieng, D., Butterbach-Bahl, K., 2020. Will dairy cattle production in West Africa be
+challenged by heat stress in the future? Clim Change 161, 665–685.
+27. Rahman, N.A., Larbi, A., Opoku, A., Tetteh, F.M., Hoeschle‐Zeledon, I., 2019. Crop–livestock interaction effect on soil quality and
+maize yield in Northern Ghana. Agron J 111, 907–916.
+2. Rayne, N., Aula, L., 2020. Livestock manure and the impacts on soil health: A review. Soil Syst 4, 64.
+29. Runo, M.C., Rowe, E.C., Delve, R.J., Giller, K.E., 2006. Nitrogen cycling eciencies through resource-poor African crop–
+livestock systems. Agric Ecosyst Environ 112, 261–282. https://doi.org/10.1016/j.agee.2005.08.028
+30. Rufyikiri, G., 2017. De l’agriculture de subsistance à une agriculture de marché en Afrique: une mutation impérative pour le
+développement du Continent. Afrique Durable 2030 2, 50–68.
+31. Sangaré, M., Fernández-Rivera, S., Hiernaux, P., Bationo, A., Pandey, V., 2002. Inuence of dry season supplementation for cattle
+on soil fertility and millet (Pennisetum glaucum L.) yield in a mixed crop/livestock production system of the Sahel. Nutr Cycl
+Agroecosyst 62, 209–217.
+32. Schlecht, E., Buerkert, A., 2004. Organic inputs and farmers’ management strategies in millet elds of western Niger. Geoderma
+121, 271–289. https://doi.org/10.1016/j.geoderma.2003.11.015
+33. Schlecht, E., Hiernaux, P., 2004. Beyond adding up inputs and outputs: process assessment and upscaling in modelling nutrient
+ows. Nutr Cycl Agroecosyst 70, 303–319.
+34. Sutton, M.A., Oenema, O., Erisman, J.W., Leip, A., Van Grinsven, H., Winiwarter, W., 2011. Too much of a good thing. Nature 472,
+159–161.
+
+[[page 15]]
+Page 15/19
+35. Ten Berge, H.F.M., Hijbeek, R., Van Loon, M.P., Rurinda, J., Tesfaye, K., Zingore, S., Craufurd, P., van Heerwaarden, J., Brentrup, F.,
+Schröder, J.J., 2019. Maize crop nutrient input requirements for food security in sub-Saharan Africa. Glob Food Sec 23, 9–21.
+3. Tittonell, P., Giller, K.E., 2013. When yield gaps are poverty traps: The paradigm of ecological intensication in African
+smallholder agriculture. Field Crops Res 143, 76–90.
+37. Traore, B., 2009. Effets des techniques de gestion de la fertilité sur le sol et sur les systèmes de culture à base de mil dans la
+région de Mopti au Mali. Thèse Doctorat: l’université de Bamako, 196 p.
+3. Traoré, B., Samaké, O., Maiga, M., Keita, M., 2014. Evaluation de la durée de parcage des bovins sur la productivité des sols et
+des cultures dans le Sahel : Cas de la région de Mopti. . Les Cahiers de l’Economie Rurale 14, 20–33.
+39. Turner, M.D., Hiernaux, P., 2008. Changing access to labor, pastures, and knowledge: The extensication of grazing
+management in Sudano-Sahelian West Africa. Hum Ecol 36, 59–80.
+40. Vall, E., Marre-Cast, L., Kamgang, H.J., 2017. Chemins d’intensication et durabilité des exploitations de polyculture-élevage en
+Afrique subsaharienne: contribution de l’association agriculture-élevage. Cah. Agri. 2017, 26,25006. Cahiers Agricultures 26.
+https://doi.org/10.1051/cagri/2017011
+41. Vanlauwe, B., Bationo, A., Chianu, J., Giller, K.E., Merckx, R., Mokwunye, U., Ohiokpehai, O., Pypers, P., Tabo, R., Shepherd, K.D.,
+2010. Integrated soil fertility management: operational denition and consequences for implementation and dissemination.
+Outlook Agric 39, 17–24.
+42. Vanlauwe, B., Descheemaeker, K., Giller, K.E., Huising, J., Merckx, R., 2014. Integrated soil fertility management in sub-Saharan
+Africa : unravelling local adaptation 1239–1286. https://doi.org/10.5194/soild-1-1239-2014
+43. Vanlauwe, B., Descheemaeker, K., Giller, K.E., Huising, J., Merckx, R., Nziguheba, G., Wendt, J., Zingore, S., 2015. Integrated soil
+fertility management in sub-Saharan Africa: unravelling local adaptation. Soil 1, 491–508.
+44. Vanlauwe, B., Tittonell, P., Mukalama, J., 2006. Within-farm soil fertility gradients affect response of maize to fertiliser
+application in western Kenya. Nutr Cycl Agroecosyst 76, 171–182.
+Figures
+Figure 1
+Seasonal rainfall and temperature for 2019 and 2020 in the Koutiala region of southern Mali
+
+[[page 19]]
+Page 19/19
+Figure 7
+Contribution (%) of different soil fertility management strategies—Control, 100 kg/ha DAP, and 3-, 7-, 10-, and 15-night cattle
+corralling durations to four key performance indicators: Productivity, Protability, Environmental Sustainability, and Food Security

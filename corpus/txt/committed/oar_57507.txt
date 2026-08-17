@@ -1,0 +1,1085 @@
+=== ADTC-PROVENANCE v1 ===
+id: oar_57507
+titre: A cost–benefit analysis of the production system with improved and climate-resilient sorghum varieties in southern Mali
+editeur: Frontiers Media
+annee: 2025-01-06
+langue: en
+licence: CC-BY-4.0
+licence_confirmee_dans_le_pdf: true
+licence_citation: Nebié, Worou, Jumbo and Savadogo. This is an open-access article distributed under the terms of the Creative Commons Attribution License
+regime: committed
+citation_verbatim_autorisee: oui
+sujet: arachide
+portee: sahel_specific
+utilite_conseil: indirecte
+url_pdf: http://oar.icrisat.org/id/document/57507
+page_notice: http://oar.icrisat.org/id/eprint/13315
+doi: https://doi.org/10.3389/fclim.2024.1477039
+fichier_source: Frontiers in Climate_6_01-12_2025.pdf
+pages_pdf_total: 12
+pages_extraites: 12
+pages_source: 1-12
+moteur_extraction: pdfplumber 0.11.10 (use_text_flow=True)
+car_extraits: 61488
+car_utiles_pypdf_reference: 62331
+car_pypdf_memes_pages: 62331
+normalisations: pua=0 ligatures=0 espaces_speciaux=0 zero_largeur=0 decesures=6
+decesure_regles: atteste_soude=0 atteste_tiret=2 atteste_deux_moities=4 defaut_prefixe=0 defaut_soude=0
+qualite_texte: car_en_tokens_soudes_pct=1.3 tokens_soudes=23 tokens_total=9160 verdict=sain
+marqueur_page: [[page N]] = numero de page PDF 1-indexe, lu du PDF et non du texte
+=== TEXTE ===
+[[page 1]]
+Frontiers in Climate 01 frontiersin.org
+A cost–benefit analysis of the
+production system with improved
+and climate-resilient sorghum
+varieties in southern Mali
+Adama B. Coulibaly 1*, Félix Badolo 1,2, Jummai O. Yila 1,3,
+Bourema Koné 4, Baloua Nebié 1,5, Nadine Worou 1,6,
+Macdonald Bright Jumbo 1 and Kimseyinga Savadogo 7
+1 International Crops Research Institute for the Semi-Arid Tropics (ICRISAT), Bamako, Mali, 2 African
+Development Bank (AfDB), Abidjan, Côte d'Ivoire, 3 International Rice Research Institute (IRRI),
+Kampala, Uganda, 4 Institute of Rural Economy (IER), Bamako, Mali, 5 International Maize and Wheat
+Improvement Center (CIMMYT), Dakar, Senegal, 6 International Livestock Research Institute (ILRI),
+Dakar, Senegal, 7 Department of Economics and Management, Thomas SANKARA University,
+Ouagadougou, Burkina Faso
+Given the persistently low adoption rate of improved sorghum varieties over
+decades, it is relevant to assess whether it is profitable or not to grow these varieties
+in Mali. Over the past years, little evidence has demonstrated the profitability
+analysis as decision-support information regarding the adoption of improved
+sorghum varieties. This study used cost-benefit analysis to assess the profitability
+of two Improved and Climate-Resilient Sorghum Varieties (ICRSVs), “Soubatimi and
+Tiandougou-coura” compared to the “Local” ones, using three years of average
+yield data (2017, 2018, and 2020) in Sikasso region, Mali. The objective was to
+perform a consistent cost-benefit analysis through net income, cost-benefit ratio,
+and gross profit margin. The study used a farm partial budget framework, sensitivity
+analysis, and stochastic dominance analysis methods. A final sample of 31 farmers’
+on-farm trials under the fertiliser package of “100 kg complex cereal and 50 kg
+urea” per hectare was held as the agronomic package. The key findings showed
+that both varieties were profitable, with 79,661 CFA (123.56 USD) and 45,073 CFA
+(69.91 USD) average net incomes corresponding to 1.54 and 1.32 CBR, and 34 and
+24 percents average gross profit margins, respectively, while growing the “local”
+varieties was not profitable, with an average loss of 12,113 CFA (18.79 USD) with
+0.91 CBR and 10 percent average gross profit margin. In light of these results,
+the study suggests a large dissemination of the ICRSVs in Mali. Policy-makers
+should facilitate the implementation of outreach programs to inform smallholder
+sorghum farmers on the ICRSVs’ traits and profitability information as decision
+support tool for a larger adoption.
+KEYWORDS
+CBA, profitability, stochastic dominance, improved and climate-resilient sorghum,
+Mali
+1 Introduction
+Raising productivity on existing farmlands is a key driver for sustainable agricultural
+transformation in sub-Saharan Africa (Akpo et al., 2021). To achieve this, the adoption of
+improved and climate-resilient cereal and legume varieties plays an important role. This idea
+is also supported by Akpo et al. (2021) stating that agricultural productivity is highly
+dependent on quality inputs most importantly, quality seeds of modern high-yielding crop
+OPEN ACCESS
+EDITED BY
+Cosmas Parwada,
+Midlands State University, Zimbabwe
+REVIEWED BY
+Magda Aparecida De Lima,
+Brazilian Agricultural Research Corporation
+(EMBRAPA), Brazil
+Joseph Persevearance Musara,
+University of the Free State, South Africa
+*CORRESPONDENCE
+Adama B. Coulibaly
+adamany90@gmail.com
+RECEIVED 13 September 2024
+ACCEPTED 27 November 2024
+PUBLISHED 06 January 2025
+CITATION
+Coulibaly AB, Badolo F, Yila JO,
+Koné B, Nebié B, Worou N, Jumbo MB and
+Savadogo K (2025) A cost–benefit analysis of
+the production system with improved and
+climate-resilient sorghum varieties in
+southern Mali.
+Front. Clim. 6:1477039.
+doi: 10.3389/fclim.2024.1477039
+COPYRIGHT
+© 2025 Coulibaly, Badolo, Yila, Koné, Nebié,
+Worou, Jumbo and Savadogo. This is an
+open-access article distributed under the
+terms of the Creative Commons Attribution
+License (CC BY). The use, distribution or
+reproduction in other forums is permitted,
+provided the original author(s) and the
+copyright owner(s) are credited and that the
+original publication in this journal is cited, in
+accordance with accepted academic
+practice. No use, distribution or reproduction
+is permitted which does not comply with
+these terms.
+TYPE Original Research
+PUBLISHED 06 January 2025
+DOI 10.3389/fclim.2024.1477039
+
+[[page 2]]
+Coulibaly et al. 10.3389/fclim.2024.1477039
+Frontiers in Climate 02 frontiersin.org
+varieties. On the other hand, smallholder farmers in sub-Saharan
+Africa (SSA) particularly in Mali faced many challenges in adopting
+promising improved crop varieties and farming systems. Amongst
+several constraints hindering the adoption of improved crop varieties,
+we mention the high risk and uncertainty in the face of a changing
+climate and its variabilities, decreasing soil fertility, lack of appropriate
+improved seed delivery system, and limited information on their traits
+and profitability. Another key constraint is the unaffordable price of
+certified seeds and other basic inputs such as chemical fertilisers
+remained crucial (Akpo et al., 2021; Smale et al., 2016).
+In Mali, 80 percent of the active population depends on agriculture
+basically family farming and the allied sector (INSTAT, 2022)1.
+Therefore, information regarding the performance and profitability at
+the early stage of the dissemination process of new agricultural
+technologies such as Improved and Climate-Resilient Sorghum
+Varieties (ICRSVs) could provide more incentives to rural farmers
+(Alvarado, 2013; Gittinger, 1982; Miklyaev et al., 2017a,b). So,
+engaging in the adoption of improved crop seeds is a double risk for
+smallholder farmers. First, the new testing variety is sometimes
+associated with the risk of new agronomic practises (application
+knowledge and its effectiveness). Second, the uncontrolled rainfall
+pattern throughout the growing season is also challenging
+continuously. Thus, when a smallholder farmer decides to engage in
+growing the ICRSVs, this will undoubtedly incur additional costs to
+his/her farm budget. This derives from the fact that most of the
+recently released ICRSVs impose the use of a particular input package.
+For instance, in Mali, the production of a released sorghum variety
+“Seguifa” in 2008 required a package of “6 kg of Seeds, 100 kg of NPK,
+and 50 kg of Urea” for 1 ha with an average cost of 52,600 CFA2/ha
+(USAID, 2010)3. This average cost presents more than half of the
+annual average income per capita 85,322 CFA in rural areas of Mali
+(INSTAT, 2020).
+Gittinger (1982) reported that cost–benefit analysis (CBA) will
+allow the farmers to allocate efficiently scarce resources in the
+production area once they are well informed on the costs and benefits.
+In addition, ranking different agricultural technologies (particularly,
+the ICRSVs) based on their profitability information is vital for
+farmers’ decision-making. Moreover, the efficient use of improved
+seeds, and organic and inorganic fertilisers are recognised
+preconditions for achieving productivity growth in SSA including
+Mali (Jayne et al., 2021; Sanchez, 2019). More recently, the cultivation
+of local and improved sorghum varieties induced an incremental total
+cost of 19,531 CFA/hectare4 in Mali (Miklyaev et al., 2017a,b). Such
+an additional cost can be an impediment for farmers to adopt
+improved sorghum varieties. Given that concern, the present study
+performs a cost–benefit analysis of the ICRSVs which benefit farmers
+more with the dual-purpose (food and feeds) trait.
+Beyond their dual-purpose nature, the ICRSVs incorporate
+important climate resilience features, such as drought tolerance and
+early maturity. They were disseminated in 2017 and 2018 under the
+1 Institut National de la Statistique/the National Institute of Statistics.
+2 “Franc de la Communauté Financière d’Afrique,” currency in used in the
+West African Economics and Monetary Union (WAEMU) area.
+3 United States Agency for International Development.
+4 32.5 USD exchanged to CFA on Internet at today exchange rate of 600.94
+for 1 USD.
+Africa Research in Sustainable Intensification for Next Generation
+project and again in 2020 under the Enhancing Crop Productivity and
+Climate Resilience for Food and Nutrition Security project in Mali.
+The gap in 2019 was due to the conclusion of the Africa RISING
+project. Activities resumed in 2020 under the APSAN-Mali project,
+guided by the principle of building on existing efforts for continued
+sustainability. This study supports the findings of Kouyate (2020)
+highlighting the need for consistent profitability of improved varieties
+over time, given Malian sorghum farmers’ increasing vulnerability to
+climate change and variabilities in recent decades. The analysis also
+tracks the consistency of benefits within a stochastic farming
+environment to provide evidence of sustainable sorghum farm
+profitability independent of seasonal variation. This cost-benefit
+analysis can, therefore, guide farmers, sorghum breeding programs,
+and policymakers.
+Several authors (Afreen and Haque, 2014; Arayaphong, 2012;
+Beshir and Nishikawa, 2012; Katungi et al., 2011; Kuwornu et al., 2018;
+Miklyaev et al., 2021; Al Rawahy and Mbaga, 2019; Sgroi et al., 2015;
+Vidogbéna et al., 2015) performed the CBA. However, these studies
+mainly focussed on plants and vegetables rather than cereal crops
+known as the major staple food in sub-Saharan Africa (SSA) including
+Mali. On the other hand, other authors have conducted the CBA with
+agricultural improved technologies (improved rice, maize, millet, and
+sorghum), policies, and crop value chains. For example, most recently,
+authors (Jenkins and Miklyaev, 2018; Miklyaev et al., 2017a,b, 2021)
+performed CBA for decision-making for both governments and
+individual farmers. However, those analyses focussed on the value
+chain approach and research investment with the net present value
+(NPV) appraisal and provided less detail on individual farmers’
+profitability concerns. Nonetheless, individual farmers’ profitability
+appraisal analysis can be a pattern for the widespread adoption of
+ICRSV technologies.
+The findings of the CBA of Mali sorghum and millet value chains
+were also reported under the Africa RISING project (Miklyaev et al.,
+2017a,b). The authors used the Economic Net Present Value (ENPV)
+as the evaluation criterion and mainly focused on the project’s initial
+investment. They did not closely consider the farm’s profitability with
+free seasonality. It is worthwhile noting that the promotion of
+improved sorghum varieties namely “Grinkan” and “Seguifa” by the
+USAID research project in the 2008–2009 agricultural season required
+the conduct of CBA. Then, the analysis revealed that both varieties
+had cost–benefit ratio (CBR) of less than one (USAID, 2010). Gierend
+et al. (2014) recommended using panel data to assess consistent
+sorghum farm profitability. This gives consistent CBR which is less
+sensitive to seasonal variation. However, we are not aware of any study
+that used panel yield data in that sense. So, given that concern the
+present study used 3-year yield data to perform the profitability
+analysis of on-farm trial plots. This provides reliable information to
+farmers, sorghum breeding programme, and policymakers
+contributing to reversing the lagging adoption rate of ICRSVs in Mali.
+In the same vein, authors (Gierend et al., 2014; Kraybill and
+Kidoido, 2009) also studied in detail the profitability of improved
+sorghum varieties in Uganda. Admittedly, Gierend et al. (2014),
+considering the low and high input regimes with improved and local
+sorghum varieties, reported that the sorghum production system
+might be profitable mostly under high input use and not necessarily
+with improved varieties standalone without using any fertiliser
+package. On the other hand, Kraybill and Kidoido (2009) also pointed
+
+[[page 3]]
+Coulibaly et al. 10.3389/fclim.2024.1477039
+Frontiers in Climate 03 frontiersin.org
+out the low profitability (and highly inconsistent with one-season
+data) of improved sorghum amongst its competing cereal crops such
+as maize and millet. This implies that considering only 1-year yield
+effect, growing these improved sorghums was not profitable for
+farmers. Consequently, that could impede a wider acceptance of
+promoted improved sorghum varieties by smallholder farmers. In
+contrast, the ICRSVs have a competitive advantage with higher fodder
+yield which can also be commercialised. The present study was built
+upon that literature issues to know how much the ICRSVs are
+profitable under a fair agronomic fertiliser package of “100 kg complex
+cereal and 50 kg Urea” per hectare? The objective of the study is to
+assess the profitability through net income, cost–benefit ratio, and
+gross profit margin. We hypothesise that ICRSVs are higher yielding
+and generate greater benefit than local varieties to farmers. The
+analysis is performed with 3-year adjusted yield data to investigate the
+consistency of the profitability of improved sorghum production
+system in Mali.
+2 Conceptual framework and
+methodology
+2.1 Conceptual framework
+This sub-section presents the conceptual framework of the study
+in Figure 1 as follows.
+The study’s conceptual framework is based on the theory of change
+that farmers are more likely to adopt a particular improved sorghum
+variety when it is higher yielding. This means the variety generates a
+marketable surplus with greater net benefit than the local varieties. This
+is also supported by Amponsah et al. (2013) with the assertion that a
+positive gross margin increases the chance for farmers to adopt
+improved agricultural technologies. Most of the ICRSV cultivation
+requires a certain agronomic or fertiliser package (e.g., this analysis used
+“100 kg complex cereal and 50 kg urea”) to achieve the expected yield.
+Farmers are most often confident when they are informed of the
+profitability of such a required package. So, the present study
+conceptualises that CBA results provide information to farmers through
+net income, cost–benefit ratio, and gross profit margin on the ICRSV
+production system under the abovementioned fertiliser package. These
+profitability indicators help farmers as supporting tools to engage in the
+adoption decision process. Such profitability information can also serve
+public policymakers to set relevant outreach programmes for the large
+dissemination of ICRSV technologies in Mali.
+2.2 Methodology
+2.2.1 Cost–benefit analysis model
+Generally, two basic approaches are used in the literature
+concerning profitability analysis. On the one hand, the CBA is suitable
+where all cost and benefit items can be monetised. On the other hand,
+cost-effectiveness may be better when there are difficulties in
+transforming some of the cost and benefit items in monetary values
+(Gittinger, 1982). For instance, the cost-effectiveness approach is
+mostly applied in the environmental and health sectors where there are
+quite difficulties to assign monetary value to all the cost and benefit
+items. In this analysis, the CBA approach is used as all costs in the
+sorghum production system can be measured in monetary value and
+at the market and/or farm gate prices. This analysis used the average
+farm gate price as sorghum grains are mostly sold by farmers at gate
+price during harvest period in Mali. Most recently, a generalized Risk
+Opportunity Analysis (ROA) approach emerged, but it is applicable
+only when the economy exhibits dynamic and strong path dependence,
+fundamental uncertainty, and stakeholder heterogeneity (Mercure et
+al., 2021). This focuses on the agricultural sector, where stakeholders
+are relatively homogeneous, unlike the heterogeneity stipulated by the
+authors, and does address the entire complex economy. ROA might be
+more suitable for climate change policy analysis within a broader
+multilateral dimension.
+Subsequently, the primary analysis methods applied were mostly
+financial and economic analyses. The financial analysis utilized a farm
+partial budget framework with net income and CBR evaluation criteria,
+while the economic analysis employed discounting techniques with Net
+Present Value (NPV) and internal rate of return (IRR) evaluation
+criteria. The study applies the farm partial budget analysis technique
+within the Malian sorghum production system, using net income, CBR,
+and gross profit margin as profitability measures for the ICRSVs.
+Recognizing some limitations of CBR, such as the potential for
+overlooking side effects of technologies (Akinseye et al., 2023;
+Boardman and Weimer, 2014), this study combines CBR with net
+income and gross profit margin to provide more comprehensive insights
+into profitability. Accordingly, the following empirical model used by
+Katungi et al. (2011) is applied in this analysis. The following equation
+1 is applied:
+AGM ATR ATC = − (1)
+Where AGM stands for average gross margin, ATR is the average
+total revenue, and ATC is the average total cost. In our analysis, the
+AGM represents the farm average net income which is equal to the
+average total revenue derived from grain sold at farm gate price minus
+the average total variable cost for 1 hectare level valued at their
+respective market prices.
+FIGURE 1
+CBA conceptual framework for the ICRSV adoption decision in
+southern Mali. Source: authors’ conception.
+
+[[page 4]]
+Coulibaly et al. 10.3389/fclim.2024.1477039
+Frontiers in Climate 04 frontiersin.org
+2.2.2 Sensitivity analysis
+The consistency of the net income (profitability) is checked
+through sensitivity analysis using the best and worst-case analysis
+following the study of Beshir and Nishikawa (2012) with five cases
+scenarios. For each ICRSVs (“Soubatimi and Tiandougou-coura”)
+and Local variety, we applied the scenarios to three key variables
+(i.e., the average farm total variable costs, average farm yield, and
+the farm gate price) selected based on their higher sensitivity to the
+revenue stream. This is the best-fitting sensitivity method because
+improved sorghum varieties are subject to seasonal variations of
+inputs and farm gate prices and yields which may randomly affect
+the net income over the years. However, other methods such as
+Monte Carlo are more suitable for cost-effectiveness analysis
+(Boardman and Weimer, 2014) but it is not used in this study
+framework. In addition, in partial sensitivity analysis, one particular
+variable is selected to vary whilst the others remain constant. A
+potential limitation of this method is that in a complex farming
+environment such as improved sorghum production system,
+sensitivity based on a particular single assumption is not as strong
+as a sound sensitivity test.
+2.2.3 Risk analysis
+Risk analysis is carried out through stochastic dominance
+analysis and is used for ranking the ICRSVs (“Soubatimi and
+Tiandougou-coura”) in comparison with farmers’ best “Local”
+varieties in terms of average yields and average net incomes. As
+suggested by Lowenberg-DeBoer et al. (1992), Steele and Torrie
+(2002), the present analysis performed the Kolmogorov–Smirnov
+(K-S) non-parametric test to determine the statistical difference of
+the probability distributions based on a pairwise comparison
+between “Soubatimi,” Tiandougou-coura, and the “Local” varieties
+using their respective average yields and average net incomes per
+hectare. As a non-parametric test, the K-S test is performed using
+a null hypothesis (H0) that there is no statistical difference between
+the probability distribution curves of the ICRSVs and the “Local”
+varieties. This is against the alternative that there is statistical
+difference between the probability distribution curves. Then, the
+test result is considered as only indicative when the K-S test is not
+significant at a 5 percent level rejecting the null hypothesis of no
+statistical differences between the graphs (Hien et al., 1997). In this
+study, we reject the H0 indicating that there is a statistical difference
+between the probability distribution curves, hence validating our
+empirical cumulative distribution function curves (see the K-S test
+result in Supplementary materials).
+2.2.4 Study area
+The study covered the Sikasso region, one of the most
+important agroecological zones (based on the quantity of rainfall
+received per annum) in the southern Sudan Savanna of Mali. On
+the one hand, Sikasso was chosen for the study based on the fact
+that the Africa RISING’s large-scale Diffusion of Technologies for
+Sorghum and Millet Systems (ARDT-SMS, 2015–2019) project
+was implemented in the region. In this project framework, the
+on-farm trials of dual-purpose, ICRSVs (“Soubatimi” and
+“Tiandougou-coura”) compared to the “Local” varieties were
+grown under the fertiliser package of “100 kg complex cereal and
+50 kg urea” per hectare in 2017 and 2018. On the other hand, the
+same trials were conducted in the region under the Enhancing
+Crops Productivity and Climate Resilience for Food and Nutrition
+Security (“APSAN Mali”) project in 2020. Moreover, the
+population is estimated at 3,736,267 inhabitants representing 18.6
+percent of the country’s total population (INSTAT, 2020) with an
+average annual temperature of 27.0°C. The rainy season lasts
+approximately 3–6 months from May to October. The rainfall is
+abundant compared to the other agroecological zones with an
+annual average of 1,121 mm and between 600 and 1,400 mm
+(Falconnier et al., 2015). This offers the region an excellent
+opportunity to practise cereal cultivation with a large diversity of
+crops. The local economy is predominated by farm and farming
+activities. Most importantly, smallholder farmers depend on
+livestock raising, cotton and maize cultivation for income-generation. Then, they cultivate sorghum and millet as staple
+foods. The map of the study area is presented in Figure 2.
+2.2.5 Data collection
+Data were collected from the Sikasso region, southern Mali,
+particularly in the districts of Bougouni, Koutiala, and Yorosso.
+These districts have been the testing nest of on-farm trials of
+“Soubatimi and Tiandougou-coura” over 3 years (2017, 2018, and
+2020). A total of 50 sorghum farmers were targeted in 14 villages
+over the three districts for collecting complementary information
+regarding cost items (inputs, farm equipment rental, labour, storage,
+and transportation costs) at 1 ha level. A multi-stage sampling
+technique was applied to collect appropriate data with 3 years of
+recall back information on sorghum production cost items in
+August 2021. First, at stage 1, a purposive selection was made at the
+village and farmer levels based on the use of the recommended
+fertiliser package, i.e., 100 kg of complex cereal and 50 kg of urea
+per hectare during the on-farm trials. Second, at stage 2, we retained
+the villages where the two ICRSVs (“Soubatimi” and “Tiandougou-
+coura”) were grown under the above fertiliser package. Finally, at
+stage 3, the plots were randomly selected from farmers who
+participated in the on-farm trials within the 3-year applying the
+recommended fertiliser package.
+• First, 9 on-farm trial plots (including one female plot) were
+randomly selected from 4 villages (Dieba, Sibirila, Flola, and
+Madina) in Bougouni district in 2017.
+• Second, 10 plots (including two female plots) were maintained in
+7 villages from 2 districts: Bougouni (Dieba, Sibirila, Flola, and
+Madina) and Koutiala (M’Pessoba, Zansoni, and Namposela)
+in 2018.
+• Third, 12 plots (including one female plot) were considered in 8
+villages from 3 districts: Bougouni (Bassa, Zambougou, and
+N’kemene), Koutiala (M’Pessoba and Nianabougou), and
+Yorosso (Kiffosso, Makoungo, and Karangana) in 2020.
+So, in each village, the ICRSVs were cultivated in comparison
+with farmers’ best “Local” sorghum varieties, i.e., “Sokorka,”
+“Kalosabani,” “Niodionani,” “Lata,” “Gugneblé,” “Seguetana,” and
+“Sogrekun” on 400 m2 area. Then, the plot yields were extrapolated
+to 1 ha level and adjusted at 10 percent given that farmers may
+receive technical assistance from research technicians in the farming
+processes. So, a final sample of 31 on-farm trial plots was retained
+from farmers who provided complete information during the 3-year
+survey period. A structured and pre-tested focus group discussions
+
+[[page 5]]
+Coulibaly et al. 10.3389/fclim.2024.1477039
+Frontiers in Climate 05 frontiersin.org
+(FGDs) guide and individual questionnaires were used in interacting
+with farmers. Then, during the interaction, written consent was
+obtained from the farmers’ leader, and a verbal agreement was
+obtained from each farmer before both FGDs and individuals field
+surveys. We used data triangulation to compare the values of our key
+sensitive variables, i.e., average sorghum yield and gate price with
+their values in the existing available breeding data base and the
+literature, respectively. Table 1 presents the cost items and their
+respective unit of measures.
+Table 1 shows that the farm partial budget components unit of
+measure are likely the same for all three years except for 2020, when
+farmers tend to move to contract arrangements for renting farm
+equipment. Farmers explain this shift by saying that the contract
+arrangement is cheaper than the daily fee, and they have experienced
+an increase in moral hazard with daily fee rental arrangements
+over years.
+3 Results and discussion
+In this section, the summary statistics of the variables of interest
+from the farm partial budgets are presented and discussed. Then,
+sensitivity analysis and stochastic dominance analysis are used to
+assess the consistency of the results.
+3.1 Summary statistics farm partial budgets
+Table 2 shows the descriptive statistics of ICRSVs and “Local”
+varieties with respect to farm gate price, adjusted yield, farm net
+income, cost–benefit ratio, and input cost share in the farm total cost
+over the 3 years average data. The selection of these variables is based
+on the study’s interests highlighting the profitability information.
+Then, we provide discussion on the average figures related to the farm
+gate price, adjusted yield, farm net income, and cost–benefit ratio as
+mentioned in Table 2.
+Table 2 shows that the average farm gate price is 123 CFA which
+is consistent with both ICRSVs and the “Local” varieties over the
+3-year period. This price consistency might be explained by the fact
+that gate prices for sorghum grains does not vary regardless of whether
+it is improved or “Local” varieties. Most recently, the same average gate
+price (123 CFA) was recorded by Miklyaev et al. (2017a,b) studying
+the cost–benefit analysis of sorghum and millet value chains in Mali.
+The average adjusted (at 10 percent) yields were 1,820 Kg/ha,
+1,517 Kg/ha, and 980 Kg/ha for “Soubatimi,” “Tiandougou-coura,” and
+“Local” varieties presented in Table 2, respectively. An important
+remark is that these averages are free from high seasonal inconsistency.
+The figures show a much higher average adjusted yield of “Soubatimi”
+in 2020 over “Tiandougou-coura” and the “Local.” This might
+be explained by high drought tolerant trait of “Soubatimi” at maturity
+FIGURE 2
+Map of the study area, Sikasso region, southern Mali. Source: authors’ conception.
+
+[[page 6]]
+Coulibaly et al. 10.3389/fclim.2024.1477039
+Frontiers in Climate 06 frontiersin.org
+stage compared to the other varieties used in this study. In comparison
+with other studies in sorghum literature, “Soubatimi” outperformed
+the average potential sorghum yield (1.500 kg/ha) reported by Traore
+et al. (2017) and the average sorghum yield reported (1,600 Kg/ha) by
+Miklyaev et al. (2017a,b) which are all one-season data and might
+suffer from seasonal inconsistency (Akinseye et al., 2023; Gierend
+et al., 2014). The higher yield performance of “Soubatimi” over its
+competitor varieties in this analysis might be partially explained by
+the higher drought tolerance trait of the variety at maturity stage. On
+the other hand, “Tiandougou-coura” also performs better than the
+“Local” varieties. This result was expected as the ICRSVs yield higher
+and more climate-resilient than farmers’ best “Local” varieties. In
+comparison with existing literature, the variety yield is quite lower
+than the average 1,600 Kg/ha (Miklyaev et al., 2017a,b). This shows
+the relevance of the data type used in our study leading to more
+consistent results than 1-year data. These findings indicate that given
+the current fertiliser package used in our analysis, both ICRSVs
+performed better than the farmers’ best “Local” varieties.
+Regarding the average net incomes, the amounts of 79,661 CFA/
+ha, 45,073 CFA/ha, and (-12,113) CFA/ha were recorded for both
+ICRSVs and the “Local” varieties, respectively. These gross margins
+represent 93 percent and 53 percent of the annual average income per
+capita for the ICRSVs in rural Mali, respectively. Given these figures,
+adopting the ICRSVs might be better way to alleviate rural poverty.
+An important notice is that our margins from both ICRSVs are higher
+than that of Basavaraja et al. (2005) with an average of 13,672.65 CFA5
+in India, analysing kharif sorghum profitability and Kraybill and
+Kidoido (2009) with the average of 2,337.10 CFA6 analysing sorghum
+profitability under relative low input use in Uganda. However, the
+margins obtained from both ICRSV cultivation are lower than that
+(average of 102,070 CFA/ha) of Amponsah et al. (2013) analysing
+improved sorghum profitability in Mali. Concerning the “Local”
+varieties, our result which led to a loss of an average of 12,113 CFA/ha
+indicates the low yield potential of “Local” sorghum variety cultivation
+in Mali. This finding corroborated that of Kraybill and Kidoido (2009)
+analysing the profitability of local sorghum with an average loss of
+4116.34 CFA/ha under low input use in Uganda and obtaining an
+average gross margin of 25,193 CFA/ha under high input use.
+The average CBR of 1.54, 1.32, and 0.91 were recorded,
+respectively, for both ICRSVs and the “Local” varieties. This indicates
+that each cost unit invested will bring a 0.54 and 0.32 unit of benefit
+to farmers, for both ICRSVs presented in Table 2, respectively. Similar
+findings are obtained by Akinseye et al. (2023). On the contrary,
+USAID (2010) reported CBR less than 1 in Mali. Finally, Table 2 shows
+that the average basic input costs of the ICRSVs and the “Local”
+varieties have the highest share of 39.99 percent, 40.87 percent, and
+41.11 percent in the farms’ total cost, respectively. This implies that
+sorghum farmers should manage with care the costs of basic inputs
+such as improved seeds, fertilisers, herbicides, and fungicides to
+improve their profit margins. This finding is consistent with Gierend
+et al. (2014) stating the difficulties in CBA where some cost structures
+might be overestimated if the investigator did not use rigorous
+methods and data triangulation.
+In addition, we performed a paired t-test of mean difference (see
+Supplementary materials for the test results) using the adjusted
+average yields and net incomes which are highly dependent and
+critical variables in profitability analysis. The result indicates no
+statistically significant mean difference between the two ICRSVs
+(“Soubatimi” and “Tiandougou-coura”). In contrast, the t-test
+indicates the significant statistical mean difference between
+“Tiandougou-coura” and the “Local” varieties (1 percent significant).
+Based on this, the study suggests that the ICRSVs cultivation is highly
+recommendable to smallholder farmers in Mali.
+3.2 Analysis of variance and linear model
+This sub-section first present the analysis of variance (ANOVA)
+for checking the presence of any year effect and variety effect in the
+data with our selected key variables. Second, the linear model is
+presented to test the consistency of the ANOVA results in Tables 3, 4,
+respectively. In the linear model, the data are shaped into years and
+variety sequences to estimate two effects. So, the first estimation was
+intended to capture the presence of any significant year effect and the
+second estimation was to capture any variety effect for the selected
+variables of interest in the model. For the year effect estimation, 2017
+5 1792.22 Indian Rupee exchanged in West African CFA at today exchange
+rate of 574.64 CFA for 1 USD on Internet.
+6 13,892 Ugandan shilling exchanged in West African CFA at today exchange
+rate of 5.94 shilling for 1 CFA on Internet.
+TABLE 1 Cost item variable descriptions over the 3 years (2017, 2018, and
+2020).
+Year 2017 2018 2020
+Variables Unit of measure
+Yields
+Sorghum yields kg/ha kg/ha kg/ha
+Adjusted yields kg/ha kg/ha kg/ha
+Basic inputs
+Seeds (improved sorghum) kg/ha kg/ha kg/ha
+Fertilisers (cereal complex) kg/ha kg/ha kg/ha
+Fertilisers (urea) kg/ha kg/ha kg/ha
+Herbicides (“Béret Rouge”) litre litre litre
+Fungicides (“Clathio C”) sachet sachet sachet
+Farm equipment rental
+Draught power (ploughing) daily fee daily fee contract
+Draught power (hoeing) daily fee daily fee contract
+Draught power (mounding) daily fee daily fee contract
+Labour
+Weeding man/day man/day man/day
+Harvesting man/day man/day man/day
+Threshing and winnowing contract man/day man/day
+Storage
+Sacks Number Number Number
+Transportation
+Transports Number Number Number
+Source: authors from field survey data 2021.
+
+[[page 7]]
+Coulibaly et al. 10.3389/fclim.2024.1477039
+Frontiers in Climate 07 frontiersin.org
+is the reference year compared to 2018 and 2020. Then, for variety
+effect estimation, “Soubatimi” is the reference variety compared to
+“Tiandougou-coura” and the “Local” varieties.
+Table 3 shows the ANOVA under the null hypothesis that there is
+no year and variety mean effect estimate variances over years against
+the alternative hypothesis of year and variety mean effect estimate
+variances given the confidence interval level α = 5 percent. The results
+indicate the presence of mean year effect estimate variance for the
+average gate price (statistically significant). On the other hand, there
+is also the presence of variety mean effect estimate variances for the
+adjusted sorghum yield, sorghum farm net income, and CBR
+(statistically significant).
+Table 4 shows first, a significant positive mean price effect
+estimates in 2018 and 2020 in reference to 2017. The estimates
+confirmed the results of the previous ANOVA which indicated a
+significant farm gate price effect over years. This finding might
+indicate that sorghum production system in Mali is highly sensitive
+to any farm gate price variation from 1 year to another relative to the
+other variables used in this analysis. Given that situation, sorghum
+gate price monitoring and the gate price stabilisation mechanism can
+be a better adaptive public policy in Malian’s sorghum production
+system. On the other hand, regarding the variety effect, the results
+indicate a significant negative mean variety effect estimates for
+“Tiandougou-coura” and the “Local” varieties in reference to
+“Soubatimi” the dominant variety in term of average adjusted yields.
+This finding also confirmed the results of the ANOVA which
+showed the presence of significant variety effect for the adjusted yield.
+The negative variety effect estimates also explain the dominance of
+“Soubatimi” in terms of higher yield performance over its competitor
+varieties. In addition, a negative mean variety effect estimates were
+found for only the “Local” varieties in reference to “Soubatimi” in
+term of net income and CBR with 1 percent significance. So, this also
+explains the dominance of “Soubatimi” over farmers’ best “Local”
+varieties in terms of profitability. In brief, the results from the linear
+models confirmed that of the ANOVA model indicating a consistent
+mean year and mean variety effects estimate variances in the sorghum
+production system in Mali. These findings corroborated that of
+Akinseye et al. (2023) who reported significant seasonal and variety
+effects in the improved sorghums production system in Mali.
+3.3 Graphical evidence of sorghum average
+adjusted yields and average net incomes
+This sub-section presents two graphs for testing the adjusted
+yield and net income differences of the ICRSVs and “Local” varieties
+TABLE 2 Summary statistics of the variables of interests from farm partial budgets.
+Varieties/Years 2017 2018 2020 Mean Min Max SD
+“Soubatimi”
+Farm gate price (CFA) 120 125 125 123 120 125 2.89
+Adjusted yield (kg/ha) 1,665 1,614 2,181 1,820 1,614 2,181 313.50
+Net income (CFA/ha) 54,375 62,310 122,299 79,661 54,375 122,299 37,137.55
+CBR 1.37 1.45 1.81 1.54 1.37 1.81 0.24
+Input cost share (%) 41.29 40.83 37.84 39.99 37.84 41.29 1.87
+“Tiandougou-coura”
+Farm gate price (CFA) 120 125 125 123 120 125 2.89
+Adjusted yield (kg/ha) 1,635 1,440 1,475 1,517 1,440 1,635 104.11
+Net income (CFA/ha) 50,811 41,060 43,349 45,073 41,060 50,811 5,099.15
+CBR 1.35 1.30 1.31 1.32 1.30 1.35 0.03
+Input cost share (percent) 41.29 40.98 40.33 40.87 40.33 41.29 0.49
+“Local”
+Farm gate price (CFA) 120 125 125 123 120 125 2.89
+Adjusted yield (kg/ha) 1,080 945 916 980 916 1,080 87.45
+Net income (CFA/ha) −7,700 −14,475 −14,164 −12,113 −14,475 −7,700 3,824.93
+CBR 0.94 0.89 0.89 0.91 0.89 0.94 0.03
+Input cost share (percent) 41.01 40.05 42.29 41.11 40.05 42.29 1.13
+Source: authors from field survey data 2021, CBR: cost–benefit ratio, and SD: standard deviation.
+TABLE 3 Analysis of variance.
+ANOVA
+Mean
+Variables
+Year effect
+p-value
+Variety effect
+p-value
+Gate price 2.2e-16*** 1.000
+Adjusted yield 0.8764 0.0056***
+Net income 0.8606 0.0059***
+CBR 0.8873 0.0036***
+Input cost share 0.6472 0.5633
+Source: authors from farm partial budget tables, ***p < 0.01, CBR stands for cost–benefit
+ratio.
+
+[[page 8]]
+Coulibaly et al. 10.3389/fclim.2024.1477039
+Frontiers in Climate 08 frontiersin.org
+over the 3 years (2017, 2018, and 2020). The adjusted average yield
+differences are presented in Figure 3.
+Figure 3 shows a slight fall in the average yields from 2017 to
+2018 for the ICRSVs. However, both ICRSVs indicate a pick in
+average yield in 2020. This pick from “Soubatimi” is higher than
+that of “Tiandougou-coura” within the same year (2020). These
+differences might be explained by the seasonal effect between zones
+and farmers’ practises over the years. Nonetheless, yields from
+“Local” varieties have decreased over the three-year study period.
+Overall, in terms of adjusted yield, the improved varieties
+performed better over time while the “Local” varieties’ performance
+decreased over the years. This result could be explained by farmers
+getting more experience and understanding of the ICRSVs
+production system and the use of technology packages in southern
+Mali. Then, the annual net income differences is presented in
+Figure 4.
+Figure 4, on the one hand, highlights positive earnings from both
+ICRSVs with little difference in average net incomes. On the other
+hand, a negative cash return is recorded for the “Local” varieties
+throughout the 3-year study period.
+3.4 Sensitivity analysis
+In this sub-section, the sensitivity analysis results and discussion
+of the ICRSVs and “Local” varieties are presented, respectively, in
+Tables 5–7. For each variety, five scenarios are compared to the baseline
+situation. Using three years of data, the percentage value changes were
+chosen for each scenario based on its key variable fluctuation range
+over the 3-year study period. So, based on our calculations (see
+Supplementary materials), the percentage changes are specific for each
+variety. The scenario was increased and decreased by this percentage
+value for checking the consistency except for the first scenario (farm
+total costs) where the increase case is only considered due to the fact
+that input costs got higher over time and the decrease case was seldom
+recorded in Mali considering the literature.
+The baseline scenario in Table 5 indicates an average 34 percent
+gross profit margin with 79,661 CFA/ha average net income over the
+3-year time span. Moreover, under five (5) sensitivity scenarios,
+“Soubatimi” is still profitable under scenarios 1, 2, 4, and 5 with gross
+profit margins of 30, 48, 38, and 32 percents, respectively. The highest
+gross profit margin (48 percent which is greater than 34 percent in the
+FIGURE 3
+Annual average yields (kg/ha) of ICRSVs and “Local” sorghum varieties. Source: authors from field survey data 2021.
+TABLE 4 Linear model estimates for testing the consistency of the ANOVA.
+Linear models
+Mean
+Variables
+Years Coef. (p-value) Varieties Coef. (p-value)
+Gate price 2018 5.000 (2e-16***) Tiandougou-coura −2.890e-14 (1)
+2020 5.000 (2e-16***) Local −2.828e-14 (1)
+Adjusted yield 2018 −127.0 (0.7460) Tiandougou-coura −303.3 (0.1088*)
+2020 64.0 (0.8699) Local −839.7 (0.0019***)
+Net income 2018 −2864 (0.946) Tiandougou-coura −34588 (0.0994)
+2020 17999 (0.674) Local −91774 (0.0021***)
+CBR 2018 −0.0067 (0.9818) Tiandougou-coura −0.2233 (0.0932)
+2020 0.1167 (0.6923) Local −0.6367 (0.0012***)
+Input cost share 2018 −0.5767 (0.613) Tiandougou-coura 0.8800 (0.436)
+2020 −1.0433 (0.371) Local 1.1300 (0.325)
+Source: authors from farm partial budget tables, ***p < 0.01, *p < 0.1.
+
+[[page 9]]
+Coulibaly et al. 10.3389/fclim.2024.1477039
+Frontiers in Climate 09 frontiersin.org
+baseline) is recorded in scenario 2 (average farm adjusted yield
+increased by 35 percent, and total variable costs increased by 8 percent)
+with an average net income of 146,358 CFA/ha. On the contrary, a
+negative gross profit margin is recorded under scenario 3 with (−7
+percent) largely explained by the high variation of the variety yield over
+the years (35 percent). In short, this sensitivity analysis should be a
+profitability guidance under the used fertiliser package, i.e., “100 kg
+complex cereal and 50 kg urea” in sorghum production system in Mali.
+The baseline scenario in Table 6 indicated an average 24 percent
+gross profit margin with 45,073 CFA/ha average net income over the
+3-year period. Moreover, under five sensitivity scenarios,
+“Tiandougou-coura” is still profitable under all the applied scenarios
+gross profit margins of 20 (for scenarios 1 and 5), 30, 7, and 28
+percents for scenarios 2, 3, and 4, respectively. In addition, the highest
+gross profit margin of 30 percent is recorded in scenario 2 (average
+farm adjusted yield increased by 14 percent, and total variable costs
+increased by 5 percent). Hence, it can be concluded that the gross
+profit margin of “Tiandougou-coura” is smother than that of
+“Soubatimi” although the dominant ICRSVs. This might be explained
+by its low yield variation over years (14 percent). Shortly saying, this
+sensitivity analysis should be a profitability guidance under the above-used fertiliser package in sorghum production system in Mali.
+The baseline scenario in Table 7 indicates the average net income
+loss of 10 percent with 12,113 CFA/ha over the 3-year study period.
+Moreover, under all the applied five sensitivity scenarios, the “Local”
+varieties led to a loss with negative gross profit margins of (−18, −12,
+−24, −5, and − 16 percents). In addition, the highest loss is recorded
+in scenario 3 (average farm adjusted yield decreased by 18 percent, and
+FIGURE 4
+Annual average net incomes (CFA/ha) of ICRSVs and “Local” sorghum varieties. Source: authors from field survey data 2021.
+TABLE 5 Sensitivity analysis “Soubatimi” (2017, 2018, and 2020).
+Scenarios Total
+revenue
+(CFA)
+Total
+variable
+cost (CFA)
+Net
+income
+(CFA)
+Gross
+profit margin
+(percent)
+0. Baseline (average values over 3 years) 224,713 145,051 79,661 34
+1. Average farm total variable costs increased by 8 percent no change in yield 224,713 156,655 68,057 30
+2. Average farm yield increased by 35 percent and total variable costs increased by 8 percent 303,013 156,655 146,358 48
+3. Average farm yield decreased by 35 percent and total variable costs increased by 8 percent 145,895 156,655 −10,760 −7
+4. Gate price increased by 5 percent keeping others constant 235,677 145,051 90,626 38
+5. Gate price decreased by 5 percent keeping others constant 213,232 145,051 68,180 32
+Source: authors’ calculation based on field survey data 2021.
+TABLE 6 Sensitivity analysis “Tiandougou-coura” (2017, 2018, and 2020).
+Scenarios Total
+revenue
+(CFA)
+Total
+variable
+cost (CFA)
+Net
+income
+(CFA)
+Gross
+profit margin
+(percent)
+0. Baseline (average values over 3 years) 186,875 141,801 45,073 24
+1. Average farm total variable costs increased by 5 percent no change in yield 186,875 148,891 37,983 20
+2. Average farm yield increased by 14 percent and total variable costs increased by 5 percent 213,262 148,891 64,371 30
+3. Average farm yield decreased by 14 percent and total variable costs increased by 5 percent 160,882 148,891 11,991 7
+4. Gate price increased by 5 percent keeping others constant 196,426 141,801 54,624 28
+5. Gate price decreased by 5 percent keeping others constant 177,718 141,801 35,917 20
+Source: authors’ calculation based on field survey data 2021.
+
+[[page 10]]
+Coulibaly et al. 10.3389/fclim.2024.1477039
+Frontiers in Climate 10 frontiersin.org
+TABLE 7 Sensitivity analysis “Local” (2017, 2018, and 2020).
+Scenarios Total
+revenue
+(CFA)
+Total
+variable
+cost (CFA)
+Net
+income
+(CFA)
+Gross
+profit margin
+(percent)
+0. Baseline (average values over 3 years) 120,750 132,863 −12,113 −10
+1. Average farm total variable costs increased by 7 percent no change in yield 120,750 142,163 −21,413 −18
+2. Average farm yield increased by 18 percent and total variable costs increased by 7 percent 126,619 142,163 −15,545 −12
+3. Average farm yield decreased by 18 percent and total variable costs increased by 7 percent 114,560 142,163 −27,604 −24
+4. Gate price increased by 5 percent keeping others constant 126,962 132,863 −5,901 −5
+5. Gate price decreased by 5 percent keeping others constant 11,4870 132,863 −17,993 −16
+Source: authors’ calculation based on field survey data 2021.
+total variable costs increased by 7 percent). This sensitivity analysis
+should be a guide in the sorghum production system given the above-used fertiliser package as well.
+3.5 Stochastic dominance analysis
+In this sub-section, the concept of Empirical Cumulative
+Distribution Function (ECDF) is used to assess the stochastic
+dominance between the ICRSVs and “Local” varieties. For the ECDF
+interpretation, the dominant variety is the one located on the right
+side of the others. The variety located on the left side is dominated by
+the right side ones (Hien et al., 1997). We present below the ECDF
+graphs of sorghum average adjusted yields and average net incomes,
+respectively, as key profitability indicators for variety ranking and risk
+analysis in Figures 5A,B respectively.
+Figures 5A,B show the ECDF of the average adjusted grain yields
+and net incomes from ICRSVs compared to the “Local” varieties,
+respectively. The first-degree stochastic dominance was used for
+ranking the varieties. It implies that there is no cross-cutting point in
+the probability distribution. Otherwise, in the presence of cross-cutting point, the second-degree stochastic dominance is used for
+ranking the technologies (Hien et al., 1997). The present ECDF graphs
+indicate that “Soubatimi” is dominant over “Tiandougou-coura” and
+the “Local” varieties given the current probability distributions of the
+average adjusted grain yields and net incomes levels of “Soubatimi”
+lying on the right side of the others.
+Admittedly, between the two ICRSVs, “Tiandougou-coura” is
+also dominated by “Soubatimi” given the current probability
+distributions of the average adjusted grain yields and net incomes of
+“Soubatimi” lying on the right side. Overall, “Soubatimi” is the
+dominant variety over “Tiandougou-coura” and the “Local” varieties.
+As a result, both ICRSVs are dominant over the “Local” varieties
+given the probability distributions considered in this analysis. In
+other words, this implies that the ICRSVs would be acceptable by
+risk-neutral and risk-averse individual sorghum farmers. This result
+is similar to that obtained by Hien et al. (1997) comparing the yield
+of four fertiliser treatments in Burkina Faso. To conclude, the first
+concern of sorghum farmers might be the higher yields to secure
+home consumption and generate marketable surplus for sale. The
+finding gives more insight in terms of grain yields and cash earnings
+when farmers are invited to choose amongst a set of proposed ICRSVs.
+4 Conclusion and policy implications
+In SSA, including Mali, research outcomes demonstrated the low
+adoption rate of improved agricultural technologies due to farmers’
+reluctance towards the released technologies. Financial profitability
+information can be useful to farmers at the early stage of
+FIGURE 5
+ECDF of sorghum average adjusted yields and average net incomes. (A) ECDF of average adjusted yields. (B) ECDF of average net incomes Source:
+authors from field survey data 2021.
+
+[[page 11]]
+Coulibaly et al. 10.3389/fclim.2024.1477039
+Frontiers in Climate 11 frontiersin.org
+dissemination process of the ICRSVs. This study performed a CBA
+using 3-year average yield data. Farm partial budget, sensitivity
+analysis, and stochastic dominance analysis methods were used to
+assess the financial profitability of two ICRSVs (“Soubatimi” and
+“Tiandougou-coura”) compared to the “Local” varieties. The study
+unit was farmers’ on-farm trial plots. A final sample of 31 plots
+cultivated under the fertiliser package of “100 kg complex cereal and
+50 kg Urea” per hectare was held.
+The farm partial budget analysis revealed that growing the
+ICRSVs was profitable with 34 percent and 24 percent gross profit
+margins, respectively. On the contrary, farmers’ best “Local” varieties
+were not profitable with a 10 percent loss. The sensitivity analysis for
+testing the consistency showed that “Soubatimi” was still profitable
+(4/5) under a total of five applied scenarios. On the other hand,
+“Tiandougou-coura” was also profitable (5/5) under all applied
+scenarios. The stochastic dominance analysis for ranking the
+varieties and risk analysis revealed that “Soubatimi” is dominant
+over “Tiandougou-coura” and the “Local” varieties in terms of
+average adjusted yields and net incomes. This suggests that both
+ICRSVs would be accepted by risk-neutral farmers with relative
+preference for “Soubatimi” for those who prefer more to less, but a
+risk-averse farmer would probably choose “Tiandougou-coura” in
+which yield is relatively consistent, hence more robust in the
+sensitivity analysis results shown above.
+First, the study suggests the scale up of the ICRSVs given their
+gross profit margins which might imply that farmers would be better
+off with their adoption in Mali. Second, the study suggests facilitating
+the implementation outreach programmes to inform smallholder
+sorghum farmers on the ICRSVs’ traits and profitability information
+as decision support tool for a larger adoption. Finally, policymakers
+should reinforce the budding fodder market opportunity with value
+chain approach which in turn can undoubtedly improve the ICRSVs
+profitability for farmers. Beyond the country frontiers, these
+recommendations can be relevant policy to the widened SSA countries
+where sorghum represents the major staple cereal for food, nutrition,
+and income security for rural smallholder farmers.
+As a limit, the study did not consider the fodder yields in the
+profitability due to the lack of appropriate fodder market, although the
+ICRSVs have high potential fodder yield for livestock feeding which
+has a high economic importance. Undoubtedly, accounting for this
+fodder monetisation would further increase the gross profit margins.
+So, any future research integrating the value of fodder in ICRSVs
+profitability would be more insightful.
+Data availability statement
+The raw data supporting the conclusions of this article will
+be made available by the authors, without undue reservation.
+Ethics statement
+Ethical review and approval was not required for the study on
+human participants in accordance with the local legislation and
+institutional requirements. Written consent was obtained from the
+farmers leader and a verbal agreement was obtained from each
+farmer before the survey (FGDs and individuals) was taken up on
+the field.
+Author contributions
+AC: Conceptualization, Data curation, Formal analysis,
+Investigation, Methodology, Software, Validation, Visualization,
+Writing – original draft, Writing – review & editing. FB:
+Conceptualization, Funding acquisition, Project administration,
+Resources, Supervision, Validation, Writing – original draft, Writing –
+review & editing. JY: Funding acquisition, Project administration,
+Resources, Supervision, Validation, Writing – review & editing. BK:
+Funding acquisition, Project administration, Resources, Supervision,
+Writing – review & editing. BN: Funding acquisition, Project
+administration, Resources, Validation, Writing – review & editing.
+NW: Funding acquisition, Project administration, Resources,
+Writing – review & editing. MJ: Funding acquisition, Project
+administration, Resources, Writing – review & editing. KS:
+Supervision, Validation, Writing – review & editing.
+Funding
+The author(s) declare that financial support was received for the
+research, authorship, and/or publication of this article. This study was
+funded by the European Union under the Development Smart
+Innovation through Research in Agriculture (DeSIRA) programme
+[Contract CRIS N° FOOD 2019/407715] through the project
+Enhancing Crops Productivity and Climate Resilience for Food and
+Nutrition Security in Mali (French Acronym “UE-APSAN Mali”).
+Acknowledgments
+The authors are grateful to Vincent Garin for his useful suggestions
+for the statistical analysis. We also thank Mamourou Sidibe for his support
+in the data collection process, Hadidjatou Nana Sogodogo for generating
+the map of the study area, and all participant sorghum farmers and farmer
+leaders for their endeavours during the field survey data collection.
+Conflict of interest
+The authors declare that the research was conducted in the
+absence of any commercial or financial relationships that could
+be construed as a potential conflict of interest.
+Publisher’s note
+All claims expressed in this article are solely those of the authors
+and do not necessarily represent those of their affiliated organizations,
+or those of the publisher, the editors and the reviewers. Any product
+that may be evaluated in this article, or claim that may be made by its
+manufacturer, is not guaranteed or endorsed by the publisher.
+Supplementary material
+The Supplementary material for this article can be found online
+at: https://www.frontiersin.org/articles/10.3389/fclim.2024.1477039/
+full#supplementary-material
+
+[[page 12]]
+Coulibaly et al. 10.3389/fclim.2024.1477039
+Frontiers in Climate 12 frontiersin.org
+References
+Afreen, N., and Haque, M. (2014). Cost benefit analysis of cassava production in
+Sherpur district of Bangladesh. J. Bangladesh Agric. Univ. 12, 119–126. doi: 10.3329/jbau.
+v12i1.21401
+Akinseye, F. M., Zemadim, B., Ajeigbe, H. A., Diancoumba, M., Sanogo, K., and
+Tabo, R. (2023). Heliyon impacts of fertilization management strategies on improved
+sorghums varieties in smallholder farming systems in Mali: productivity and profitability
+differences. Heliyon 9:e14497. doi: 10.1016/j.heliyon.2023.e14497
+Akpo, E., Ojiewo, C. O., Kapran, I., Omoigui, L. O., Diama, A., and Varshney, R. K. (2021).
+Enhancing smallholder farmers’ access to seed of improved legume varieties through multi-stakeholder platforms. Springer: Springer Nature Singapore Pte Ltd., Singapore.
+Alvarado, E. (2013). Cost-benefit analysis of an agricultural project involving a
+smallholder production system. Montreal: McGill University.
+Amponsah, E. K., Aboagye, E., and Agyemang, O. S. (2013). Crop technology
+adoption among rural farmers in some selected regions of Mali. J. Sustain. Dev. 6, 25–35.
+doi: 10.5539/jsd.v6n10p25
+Arayaphong, S. (2012). Cost–benefit analysis of different rice cropping systems in
+Thailand. Dep. Earth Sci. 79, 1–67.
+Basavaraja, H., Hugar, A. Y., Mahajanshetti, S. B., Angadi, V. V., and Rao, B. D. (2005).
+Kharif Sorghum in Karnataka: an economic analysis. Agric. Econ. Res. Rev. 18, 223–240.
+Beshir, B., and Nishikawa, Y. N. (2012). Cost-benefit analysis of small-scale onion and
+tomato farming in Melkassa area: central Rift Valley of Ethiopia. Trop. Agric. Dev. 56,
+143–150. doi: 10.11248/jsta.56.143
+Boardman, G., and Weimer, V. (2014). Cost-benefit analysis concepts and practice.
+London: Pearson education limited. 1–505.
+Falconnier, G. N., Descheemaeker, K., Van Mourik, T. A., Sanogo, O. M., and Giller, K. E.
+(2015). Understanding farm trajectories and development pathways: two decades of
+change in southern Mali. Agric. Syst. 139, 210–222. doi: 10.1016/j.agsy.2015.07.005
+Gierend, A., Ojulong, H., and Wanyera, N. (2014). A combined ex-post/ex-ante
+impact analysis for improved sorghum and finger millet varieties in Uganda, vol. 19.
+Nairobi: The International Crops Research Institute for the Semi-Arid Tropics, 19.
+Gittinger, J. P. (1982). Economic analysis of agricultural projects. Baltimore and
+London: The economics development institute of the world bank.
+Hien, V., Kaboré, D., Youl, S., and Lowenberg-DeBoer, J. (1997). Stochastic dominance
+analysis of on-farm-trial data: the riskiness of alternative phosphate sources in
+Burkina Faso. Agric. Econ. 15, 213–221. doi: 10.1111/j.1574-0862.1997.tb00433.x
+INSTAT, (2020). INSTAT - MALI [WWW Document]. Available at:http://www.instat-mali.org/. Accessed on April 12, 2020.
+INSTAT (2022). Enquête modulaire et permanente auprès des ménages juillet 2020
+(EMOP). Bamako: Institut National de la Statistique.
+Jayne, T.S., Fox, L., Fuglie, K., and Adelaja, A., (2021). Agricultural productivity
+growth, resilience, and economic transformation in sub-Saharan Africa IMPLICATIONS
+FOR USAID. Association of Public and Land-grant Universities (APLU).
+Jenkins, G.P., and Miklyaev, M., P. V Basikiti, Preotle, E., (2018). Cost benefit analysis
+of agricultural interventions to enhance the production of cowpea, groundnuts, maize
+and soybeans value chains in Nigeria (no. 03). Kingston: Queen’s University. 1–22.
+Katungi, E., Wozemba, D., Mutuoki, T., and Rubyogo, J. C. (2011). A cost benefit
+analysis of farmer based seed production for common bean in Kenya. African Crop Sci.
+J. 19, 409–415.
+Kouyate, D. (2020). Effects of climate variability and climate change on Sorghum
+productivity in the Cercle of Koutiala in Mali. Asian J. Agric. Extension, Econ. Sociol. 38,
+68–79. doi: 10.9734/ajaees/2020/v38i1230490
+Kraybill, D., and Kidoido, M. (2009). Analysis of relative profitability of key
+Ugandan agricultural\nenterprises by agricultural production zone\nDavid
+Kraybill (no. 4), Uganda strategy support program (USSP) background papers.
+Washington: International Food Policy Research Institute.
+Kuwornu, J. K. M., Oduro, E., Amegashie, D. P. K., Fening, K. O., Yangyouru, M.,
+MacCarthy, D. S., et al. (2018). Cost-benefit analysis of conventional and integrated crop
+Management for Vegetable Production. Int. J. Veg. Sci. 24, 597–611. doi:
+10.1080/19315260.2018.1457585
+Lowenberg-DeBoer, J., Reddy, K. C., and M, Z. A. (1992). Rapport sur les
+caractéristiques de risque des tcchnologles mil-niébé testées en milieu réel à Malguéro
+ct Rigial Oban- dawaki. Niamey: Institut national de recherche agronomique du Niger.
+Mercure, J. F., Sharpe, S., Vinuales, J. E., Ives, M., Grubb, M., Lam, A., et al. (2021).
+Risk-opportunity analysis for transformative policy design and appraisal. Glob. Environ.
+Chang. 70:102359. doi: 10.1016/j.gloenvcha.2021.102359
+Miklyaev, M., Hashemi, M., and Schultz, M. (2017b). Cost benefit analysis of Senegal’s
+Rice value chains, vol. 4. Ontario: Queen’s University Kingston.
+Miklyaev, M., Jenkins, G., and Shobowale, D. (2021). Sustainability of agricultural crop
+policies in Rwanda: an integrated cost–benefit analysis. Sustain. For. 13, 1–22. doi:
+10.3390/su13010048
+Miklyaev, M., Melani, S., Adeline, A., Afra, S., and Laval, M. (2017a). Cost benefit
+analysis of Mali’ S Sorghum and millet value chains, vol. 3. Ontario.
+Rawahy, M.S.S.Al, and Mbaga, M.D., (2019). Cost benefit analysis of growing
+cucumbers in greenhouse at different cooling of nutrient solution temperatures in closed
+hydroponic system in Oman. Sustain. Agric. Res. 8:74. doi: 10.5539/sar.v8n1p74
+Sanchez, P. A. (2019). Properties and Management of Soils in the tropics. 2nd Edn.
+New York: Cambridge University Press.
+Sgroi, F., Foderà, M., Di Trapani, A. M., Tudisca, S., and Testa, R. (2015). Cost-benefit
+analysis: a comparison between conventional and organic olive growing in the
+Mediterranean area. Ecol. Eng. 82, 542–546. doi: 10.1016/j.ecoleng.2015.05.043
+Smale, M., Kergna, A., and Diakite, L. (2016). An economic assessment of sorghum
+improvement in Mali. Telagana, India: International Crops Research Institute for the
+Semi-Arid Tropics.
+Steele, R. G. D., and Torrie, J. H. (2002). Principles and procedures of Statisitics: A
+biometrical approach. New York: McGraw-Hill Kogakusha, Ltd.
+Traore, K., Sidibe, D. K., Coulibaly, H., and Bayala, J. (2017). Optimizing yield of
+improved varieties of millet and sorghum under highly variable rainfall conditions using
+contour ridges in Cinzana, Mali. Agric. Food Secur. 6, 1–13. doi: 10.1186/
+s40066-016-0086-0
+USAID (2010). Transfer of Sorghum, millet production, processing and Marketing
+Technologies in Mali Final Report Transfer of Sorghum, millet production, Processing
+and Marketing Technologies in Mali. Lincoln: DigitalCommons@University
+of Nebraska - Lincoln.
+Vidogbéna, F., Adégbidi, A., Assogba-Komlan, F., Martin, T., Ngouajio, M., Simon, S.,
+et al. (2015). Cost: benefit analysis of insect net use in cabbage in real farming conditions
+among smallholder farmers in Benin. Crop Prot. 78, 164–171. doi: 10.1016/j.
+cropro.2015.09.003

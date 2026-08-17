@@ -1,0 +1,3123 @@
+=== ADTC-PROVENANCE v1 ===
+id: oar_57100
+titre: Integrated Pest Management in Pigeonpea: Progress and Prospects
+editeur: Wiley-VCH GmbH
+annee: 2025-02-24
+langue: en
+licence: CC-BY-4.0
+licence_confirmee_dans_le_pdf: true
+licence_citation: n open access article under the terms of the Creative Commons Attribution License, which permits use, distribution and
+regime: committed
+citation_verbatim_autorisee: oui
+sujet: chenille_legionnaire
+portee: general_tropical
+utilite_conseil: directe
+url_pdf: http://oar.icrisat.org/id/document/57100
+page_notice: http://oar.icrisat.org/id/eprint/13000
+doi: https://doi.org/10.1111/jen.13414
+fichier_source: Journal of Applied Entomology_1-21_2025.pdf
+pages_pdf_total: 21
+pages_extraites: 21
+pages_source: 1-21
+moteur_extraction: pdfplumber 0.11.10 (use_text_flow=True)
+car_extraits: 133377
+car_utiles_pypdf_reference: 135890
+car_pypdf_memes_pages: 135890
+normalisations: pua=0 ligatures=0 espaces_speciaux=0 zero_largeur=0 decesures=226
+decesure_regles: atteste_soude=206 atteste_tiret=0 atteste_deux_moities=8 defaut_prefixe=0 defaut_soude=12
+qualite_texte: car_en_tokens_soudes_pct=0.1 tokens_soudes=3 tokens_total=19975 verdict=sain
+marqueur_page: [[page N]] = numero de page PDF 1-indexe, lu du PDF et non du texte
+=== TEXTE ===
+[[page 1]]
+Journal of Applied Entomology, 2025; 0:1–21
+https://doi.org/10.1111/jen.13414
+1 of 21
+Journal of Applied Entomology
+REVIEW ARTICLE OPEN ACCESS
+Integrated Pest Management in Pigeonpea: Progress
+and Prospects
+Trevor M. Volp1,2 | Babu L. Jat3 | Jagdish Jaba4 | Myron P. Zalucki2 | Michael J. Furlong2
+1Queensland Department of Primary Industries, Toowoomba, Queensland, Australia | 2School of the Environment, The University of Queensland, St Lucia,
+Queensland, Australia | 3Krishi Vigyan Kendra, Barmer- II, Agriculture University, Jodhpur, India | 4International Crops Research Institute for the
+Semi- Arid Tropics, Patancheru, India
+Correspondence: Trevor M. Volp (trevor.volp@daf.qld.gov.au)
+Received: 22 May 2024 | Revised: 10 December 2024 | Accepted: 8 January 2025
+Funding: This work was funded by the Queensland Government's ‘Pigeonpea Initiative’ project and a Crawford Fund Student Award to T.M.V.
+Keywords: host- plant resistance | integrated pest management | IPM | pulse crop | sustainable agriculture | sustainable intensification
+ABSTRACT
+Pigeonpea is one of the world's most important grain legume crops. Mostly grown and consumed in India, where it is a staple food,
+pigeonpea production also occurs elsewhere in Asia, Africa, Latin America and Australia. Despite widespread cultivation and staple food status, pigeonpea yields have barely increased over the last half century. The prevalence and severity of insect pests present
+major constraints to increasing pigeonpea yields. Two of the most significant pests of pigeonpea are the lepidopteran ‘pod- borers’–
+Helicoverpa armigera and Maruca vitrata. The pod fly (Melanagromyza obtusa) and several species of pod- feeding Hemiptera are
+also regular pests, and numerous other minor or sporadic pests have been recorded throughout the cultivated distribution of the
+crop. Current pigeonpea pest management practices rely heavily on the application of synthetic insecticides. Most research has focused on the management of H. armigera, M. vitrata and M. obtusa due to their damaging feeding behaviour, and the propensity of
+H. armigera to evolve resistance to synthetic insecticides. Not surprisingly, pest management in pigeonpea is largely based around
+these three major pests, particularly the lepidopteran pod- borers which appear to be more damaging to modern short- duration cultivars than to older cultivars. A large amount of research has attempted to develop pigeonpea cultivars with conventional host- plant
+resistance to pod- borers and pod fly, but with limited success. Future pigeonpea pest management research should take a more
+integrated approach, exploring underexamined areas such as: understanding how modern pigeonpea varieties and traditional landraces respond to pest herbivory, identifying what cultural control methods are available to smallholder farmers, and investigating
+how biological control can be incorporated into management practices. Future research has the potential to develop IPM strategies
+in pigeonpea and provide farmers with an alternative to an unsustainable dependence on synthetic insecticides.
+1 | Introduction
+1.1 | Background and the Importance
+of Pigeonpea
+Pigeonpea (Cajanus cajan (L.) Millspaugh) is a multipurpose
+legume crop cultivated globally throughout the semi- arid tropics and sub- tropics. Mostly grown by smallholder farmers, it is
+a low- input crop that is relatively tolerant to both drought and
+heat (Mula and Saxena 2010). Domesticated in the Indian sub-continent, pigeonpea spread through Asia, into Africa and then
+to the Americas alongside the slave trade (Fuller et al. 2019;
+Kassa et al. 2012). The crop is now cultivated in more than 50
+countries throughout Asia, Africa, the Americas and Australia
+(FAO 2024). In the semi- arid tropics, pigeonpea is one of the
+most important pulse crops and many people depend on it for
+This is an open access article under the terms of the Creative Commons Attribution License, which permits use, distribution and reproduction in any medium, provided the original work is
+properly cited.
+© 2025 The Author(s). Journal of Applied Entomology published by Wiley-VCH GmbH.
+
+[[page 2]]
+2 of 21 Journal of Applied Entomology, 2025
+their livelihood and nutrition. As an important source of protein
+(~20% grain protein), pigeonpea is used to feed both humans and
+livestock as either split seeds (dal), whole seeds, a green vegetable or as a forage (Mula and Saxena 2010; Saxena, Kumar, and
+Sultana 2010).
+Over the last decade approximately 4.9 million tonnes of pigeonpea grain were harvested from approximately 5.7 million hectares of production annually (Figure 1) (FAO 2024). India is the
+largest producer of the crop, contributing approximately 77% of
+the area and 73% of the tonnage of global production over the
+last decade (FAO 2024). In India, pigeonpea is a staple crop and
+the mostly vegetarian population depend on it as a major source
+of dietary protein (Mula and Saxena 2010). Other significant
+pigeonpea producing countries include Myanmar (9% of global
+production) in Asia; and Malawi (8%), Tanzania (4%) and Kenya
+(3%) in Africa (FAO 2024).
+Over the last half century, pigeonpea yields have stagnated
+and an increased supply has been generated by increasing the
+area of cultivation (Figure 1a) (FAO 2024; Saxena et al. 2021).
+Pigeonpea is regarded as an ‘orphan crop’, as it has experienced
+substantially less research interest/investment and consequent
+yield gains compared to major cereal crops that have benefited
+from the green revolution (Figure 1b) (Borlaug 1975; Cullis and
+Kunert 2017). Due to limited research investment, there are
+several major unresolved challenges for global pigeonpea production. Notably, the limited availability of high yielding cultivars and the limited management strategies to manage pests,
+diseases and weeds that affect pigeonpea production (Mula and
+Saxena 2010; Odeny 2007).
+Arguably the largest biotic constraint to pigeonpea production
+is the crop's suite of insect pests (Saxena, Chauhan, et al. 2018;
+Shanower, Romeis, and Minja 1999) that limits yields in Asia
+(Mohapatra and Chattopadhyay 2012; Wankhade, Malthane, and
+Nemade 2009), Africa (Hillocks et al. 2000; Mergeai et al. 2001;
+Yohane et al. 2021), Latin America (Viteri et al. 2019), and which
+contributed to the collapse of pigeonpea production in Australia
+(Ryan 1998). Yield losses due to pests are likely exacerbated as
+most pigeonpea is produced by smallholder farmers, for whom
+appropriate education and pest management guidelines may not
+be available.
+The goal of this review is not to extensively document every species of phytophagous insect that has been recorded in pigeonpea
+crops. Rather, we outline the key pests of pigeonpea, review the
+pest management strategies available for these pests and then
+identify the future research that is required to improve their
+management in the crop.
+FIGURE 1 | Global pigeonpea production statistics (FAO 2024). (a) Pigeonpea area of production and total grain production have approximately
+doubled over the last half century. (b) Pigeonpea yield has remained stagnant, while yields of the major cereal crops (maize and wheat) have increased
+approximately 3- fold.
+14390418,
+0,
+D
+ow
+nloaded
+from
+https://onlinelibrary.w
+iley.com
+/doi/10.1111/jen.13414
+by
+R esearch
+Inform
+ation
+Service,
+W
+iley
+O
+nline
+L
+ibrary
+on
+[06/03/2025].
+See
+the
+T
+erm
+s
+and
+C
+onditions
+(https://onlinelibrary.w
+iley.com
+/term
+s-and-conditions)
+on
+W
+iley
+O
+nline
+L
+ibrary
+for
+rules
+of
+use;
+O
+A
+articles
+are
+governed
+by
+the
+applicable
+C
+reative
+C
+om
+m
+ons
+L
+icense
+
+[[page 3]]
+3 of 21
+1.2 | Pigeonpea Agronomy and Physiology
+To understand the context of pigeonpea pests and their management, we briefly outline the crop's agronomy and physiology. Renowned for its drought and heat tolerance (Subbarao,
+Chauhan et al. 2000 and Subbarao, Nam et al. 2000), pigeonpea
+can be grown in challenging conditions and respond to climate
+variability, making the crop productive in marginal areas that
+are not suitable to other legumes (Odeny 2007). Depending on
+the variety, pigeonpea may be cultivated either as an annual or
+as a perennial using ratoon management, whereby plant stems
+are cut near the base post- harvest and allowed to re- grow (Rogé
+et al. 2016; Snapp et al. 2019). In India, pigeonpea is grown as
+both a kharif (sown during monsoon, harvested in autumn)
+and rabi (sown in winter, harvested in spring) crop. The crop
+may be grown year- round in the tropics but it is restricted to the
+warmer seasons in the sub- tropics, limited by its lower temperature thresholds for germination and emergence (Mahendraraj
+et al. 2021).
+Pigeonpea may be grown as a monocrop in rotation with cereals (e.g., wheat, barley, maize, sorghum, millet and rice) or other
+pulses (e.g., mungbeans, blackgram and chickpeas) (Mula and
+Saxena 2010), but it is mainly grown as an intercrop with cereals (especially maize, sorghum and millet) (Egbe and Kalu 2009;
+Saxena, Choudhary, et al. 2018; Yohane et al. 2021). Pigeonpea
+has a slow early vegetative phase compared to the rapid development of cereals, which are harvested before the pigeonpea intercrop flowers and sets pods (Saxena, Choudhary, et al. 2018).
+The pigeonpea intercrop crop fixes atmospheric nitrogen which
+benefits the cereal (Snapp et al. 2003), along with providing
+other agronomic and yield benefits (Daryanto et al. 2020; Myaka
+et al. 2006; Renwick et al. 2020).
+Pigeonpea has other applications and uses in farming systems.
+Many smallholders use harvested pigeonpea stems as thatching
+or for fuel (Mula and Saxena 2010) and it can be used as a forage for grazing livestock due to its ratooning ability (Norman
+et al. 1980; Wallis, Whiteman, and Byth 1979). In Australian
+farming systems the current major use for pigeonpea is as a ‘refuge crop’ as a part of the Australian cotton industry's strategy
+to manage resistance to transgenic crops expressing Bt- toxins
+(Grundy, Chauhan, and Knight 2016; Whitehouse et al. 2017;
+Wilson, Whitehouse, and Herron 2018). Pigeonpea refuges are
+planted close to Bt- cotton crops and intended to act as ‘genetic
+diluters’ by allowing Bt- susceptible Helicoverpa spp. moths to
+develop and then randomly mate with conspecifics that have
+developed in the proximate Bt- cotton, thereby retarding the
+evolution of Bt resistance (Whitehouse et al. 2017; Wilson,
+Whitehouse, and Herron 2018).
+Pigeonpea cultivars from different genetic backgrounds can
+have very different phenologies (i.e., time to flowering and
+subsequent maturity). Broadly, genotypes are separated into
+groups based on their time to harvest maturity, these include:
+super early (< 90 d), extra early (91–120 d), early (121–150 d), medium (151–180 d) and late (> 250 d) maturing varieties (Saxena,
+Chauhan, et al. 2018). Traditionally long- duration (i.e., late maturity) landraces have been cultivated as they are suitable as
+inter- crops and may be ratooned and re- harvested for several
+seasons. Modern pigeonpea breeding has shifted towards developing faster maturing (i.e., short- duration) genotypes, and
+breeders now focus on super- , extra- and early cultivars (Saxena,
+Chauhan, et al. 2018; Saxena et al. 2019).
+Pigeonpea genotypes can also be separated into two major plant
+types or ‘habits’: determinate and indeterminate (Reddy 1990).
+Although there is some dispute among definitions (Van der
+Maesen 1985; Vanambathina et al. 2019), upon reaching flowering determinate genotypes largely cease vegetative growth
+and the apical meristems of the mainstem and branches form
+terminal racemes whereas, indeterminate cultivars continue
+vegetative growth from apical meristems. Determinate cultivars
+typically flower basipetally along branches, whereas indeterminate cultivars tend to flower acropetally. For both plant types
+however, flowering within racemes is acropetalous.
+2 | Arthropod Pests of Pigeonpea
+2.1 | Pests as a Function of Crop Phenology
+Several hundred phytophagous arthropod species have been recorded feeding on pigeonpea (Lateef and Reed 1990; Shanower,
+Romeis, and Minja 1999). Plants may be attacked by pests
+throughout their development, but the suite of pests typically
+infesting crops changes drastically as a function of crop phenology. Pest infestations which occur during the flowering through
+to podding stages are most likely to result in yield loss. In this
+section we document the major pests of pigeonpea, along with
+several of the minor pests of significance. We selected species
+based on damage severity, frequency, research focus in the literature and our professional experience.
+Although there are several insect species recorded feeding on
+germinating and emerging pigeonpea (i.e., emergence pests),
+few are of serious economic concern (Reed and Lateef 1990).
+During vegetative growth, pigeonpea may be attacked by a range
+of insects—mainly phloem- feeding hemipterans such as jassids,
+in the Empoascini. Jassids are regularly recorded from crops
+but typically don't require control (Sharma et al. 2010). Cowpea
+aphid Aphis craccivora Koch (Hemiptera: Aphididae) feeds on
+phloem and may cause yield reduction at high densities by decreasing plant vigour (Sharma et al. 2010). A potentially damaging vegetative stage pest is the stem fly Ophiomyia centrosematis
+De Meijere (Diptera: Agromyzidae), and heavy larval infestations can kill small plants (Reed and Lateef 1990). Spider mites
+Tetranychus urticae Koch (Trombidiformes: Tetranychidae),
+thrips Megalurothrips usitatus Bagnall (Thysanoptera:
+Thripidae) and whitefly Bemisia tabaci Gennadius (Hemiptera:
+Aleyrodidae) can all also feed on pigeonpea during its vegetative
+stage. However, these pests are all attacked by a suite of natural
+enemies and rarely reach levels that justify intervention (Reed
+and Lateef 1990).
+There are several leaf- feeding lepidopterans that attack pigeonpea during vegetative growth. Including the leaf- webbers
+(Lepidoptera: Tortricidae) Grapholita critica Meyrick and
+Leguminivora ptychora Meyrick, and a suite of defoliating lepidopterans Spilarctia obliqua Walker (Lepidoptera: Arctiidae),
+14390418,
+0,
+D
+ow
+nloaded
+from
+https://onlinelibrary.w
+iley.com
+/doi/10.1111/jen.13414
+by
+R esearch
+Inform
+ation
+Service,
+W
+iley
+O nline
+L
+ibrary
+on
+[06/03/2025].
+See
+the
+T
+erm
+s
+and
+C
+onditions
+(https://onlinelibrary.w
+iley.com
+/term
+s-and-conditions)
+on
+W iley
+O
+nline
+L
+ibrary
+for
+rules
+of
+use;
+O A
+articles
+are
+governed
+by
+the
+applicable
+C
+reative
+C
+om
+m
+ons
+L
+icense
+
+[[page 4]]
+4 of 21 Journal of Applied Entomology, 2025
+Chrysodeixis chalcites Esper (Lepidoptera: Noctuidae) and
+Thysanoplusia orichalcea Fabricius (Lepidoptera: Noctuidae).
+Pigeonpea has also been listed as a host plant of fall armyworm
+(Spodoptera frugiperda) (Montezano et al. 2018), but the pest
+does not prefer to oviposit nor feed on pigeonpea plants and
+there are limited reports of field infestations (Volp, Zalucki, and
+Furlong 2022).
+Upon reaching reproductive stages, pigeonpea becomes most attractive and susceptible to its major pests (Figure 2). As pigeonpea plants are flowering and podding they are at greatest risk
+of yield loss because pests can damage the plants yield- forming
+reproductive organs. Arguably the major pest of global pigeonpea production is Helicoverpa armigera Hübner (Lepidoptera:
+Noctuidae), known by several common names including
+pod- borer, gram pod- borer, cotton bollworm, Heliothis, etc.
+(Jaba, Bhandi, et al. 2021; Shanower, Romeis, and Minja 1999;
+Zalucki et al. 1986). However, other pests such as the spotted
+pod- borer Maruca vitrata Fabricius (Lepidoptera: Crambidae),
+the pod flies (Diptera: Agromyzidae) Melanagromyza obtusa
+Malloch and Melanagromyza chalcosoma Spencer, and the
+pod wasp Tanaostigmodes cajaninae La Salle (Hymenoptera:
+Tanaostigmatidae) are important during this period (Jaba, Jatin,
+et al. 2021). A complex of pod- sucking bug species belonging to
+the Hemipteran families Alydidae, Coreidae, and Pentatomidae
+also feed on pigeonpea crops during these reproductive stages.
+Blister beetles Mylabris spp. (Coleoptera: Meloinae) will also
+attack pigeonpea flowers during this period (Durairaj and
+Ganapathy 2000; Ghoneim 2013).
+In addition to the pod- borers, there are several other species of
+lepidopterans that attack the reproductive structures of pigeonpea. The composition of lepidopteran pest species in pigeonpea
+varies geographically and seasonally but common pests include
+other species of Heliothines (Lepidoptera: Noctuidae) such
+as Helicoverpa zea Boddie and Chloridea virescens Fabricius
+in Latin America, and Helicoverpa punctigera Wallengren in
+Australia. Plume moths (Lepidoptera: Pterophoridae) including Exelastis atomosa Walsingham, Exelastis pumilio Zeller and
+Sphenarches anisodactylus Walker feed on pigeonpea reproductive structures along with the blue butterly Lampides boeticus
+L. (Lepidoptera: Lycaenidae), the lobster moth Neostauropus
+alternus Walker (Lepidoptera: Notodontidae) and the spiny pod-borer Etiella zinckenella Treitschke (Lepidoptera: Pyralidae).
+Several arthropods vector pigeonpea diseases. The species of
+major significance is the pigeonpea mite, Aceria cajani Chan.
+(Acari: Eriophydae), which vectors sterility mosaic virus, perhaps the major disease of pigeonpea (Kulkarni et al. 2002).
+Pigeonpea grain is also attacked by a complex of bruchids
+(Callosobruchus spp.). Bruchids appear to infest grain in storage,
+rather than in the field (Dasbak, Echezona, and Asiegbu 2009;
+Nahdy et al. 1998), therefore we do not address bruchid management in this review.
+The major pests of pigeonpea are largely consistent across the
+global growing regions (Hillocks et al. 2000; Minja, Shanower,
+Songa, et al. 1999; Rao et al. 2002) (Table 1). Due to its widespread
+distribution, the severity of damage that it inflicts, and insecticide
+FIGURE 2 | Major insect pests of pigeonpea: (A) H. armigera larva, (B) H. armigera moth, (C) M. vitrata moth, (D) M. vitrata larvae, (E) M. obtusa
+larva and feeding damage and (F) M. obtusa pupae and seed damage. Photo credit: A and B—T.M.V; C, E, and F—B.L.J; D—J.J.
+14390418,
+0,
+D
+ow
+nloaded
+from
+https://onlinelibrary.w
+iley.com
+/doi/10.1111/jen.13414
+by
+R esearch
+Inform
+ation
+Service,
+W
+iley
+O
+nline
+L
+ibrary
+on
+[06/03/2025].
+See
+the
+T
+erm
+s
+and
+C
+onditions
+(https://onlinelibrary.w
+iley.com
+/term
+s-and-conditions)
+on
+W
+iley
+O
+nline
+L
+ibrary
+for
+rules
+of
+use;
+O
+A
+articles
+are
+governed
+by
+the
+applicable
+C
+reative
+C
+om
+m
+ons
+L
+icense
+
+[[page 5]]
+5 of 21
+resistance, H. armigera has been the focus of substantially more
+research than the other insect pests (Figure 3). As often is the case
+with serious pests that attack major crops, authors search for a
+cost estimate to attach to pests to indicate their economic implications. The estimated the annual loss from pigeonpea production
+due to H. armigera alone sits at US $300M (ICRISAT 1992). How
+such an estimate was derived is difficult to ascertain. Typically,
+such estimated costs are highly variable depending on the process used to calculate them and input or yield loss costs may vary
+considerably based on the geographic location of the crop, and
+pest management strategies used by farmers (Zalucki et al. 2012).
+Therefore, given the age of the estimate and the various factors
+that contribute to the calculation, we suspect there is a need to
+provide updated cost estimates for the major pests of pigeonpea.
+2.2 | Helicoverpa armigera
+Helicoverpa armigera is arguably the major pest of global pigeonpea production. Considered a ‘key pest’ of global agriculture,
+H. armigera attacks many agricultural crops (Cunningham
+and Zalucki 2014; Fitt 1989; Jaba, Bhandi, et al. 2021; Zalucki
+et al. 1986) and has evolved resistance to numerous insecticides (Ahmad 2007; Downes et al. 2017; Walsh et al. 2022).
+Pigeonpea is a highly preferred host of H. armigera (Rajapakse
+and Walter 2007). Moths typically infest pigeonpea crops at
+flowering (Volp, Zalucki, and Furlong 2024b), attracted to floral
+volatiles (Hartlieb and Rembold 1996; Rajapakse et al. 2006),
+and lay most of their eggs on floral structures (Volp, Zalucki,
+and Furlong 2023; Volp, Zalucki, and Furlong 2024b). Neonate
+larvae preferentially establish inside pigeonpea flowers, and
+as the larvae develop contemporaneously with the plant, they
+switch to feeding on pods, where they may cause substantial
+yield loss (Volp, Zalucki, and Furlong 2024a).
+2.3 | Maruca vitrata
+Maruca vitrata is also a major pest of pigeonpea and in conjunction with H. armigera, is often referred to as part of the ‘pod- borer
+complex’. A serious pest of other key legume crops throughout its
+near global distribution, M. vitrata attacks mungbean and yard
+long bean in Asia, cowpea in Africa, lima bean in the Americas,
+and mungbean in Australia (Ba et al. 2019; Brier et al. 2008;
+Srinivasan, Tamò, and Malini 2021). Like H. armigera, M. vitrata populations preferentially infest pigeonpea and crops during
+flowering (Jackai and Singh 1983; Nebapure 2020; Sharma 1998).
+Moths mostly oviposit on leaves, buds, and flowers, and early instars typically establish feeding sites inside flowers. As larvae
+develop, they form a silk web around flowers, pods, and leaves,
+in which they shelter and eventually feed on pods (Srinivasan,
+Tamò, and Malini 2021). Due to their cryptic feeding behaviour,
+infestations of M. vitrata can be difficult to detect and subsequently control with insecticides.
+TABLE 1 | Major arthropod pests of pigeonpea and their distributions.
+Pest complex Species name(s) Family Order
+Distribution
+Asia Africa Latin America Australia
+Pod- borers Helicoverpa armigera Noctuidae Lepidoptera * * * *
+Maruca vitrata Crambidae Lepidoptera * * * *
+Pod flies Melanagromyza obtusa Agromyzidae Diptera * * *
+Melanagromyza
+chalcosoma
+Agromyzidae Diptera *
+Blister beetles Mylabris pustulata Meloinae Coleoptera *
+Pod- sucking bugs Clavigralla gibbosa Coreidae Hemiptera *
+Clavigralla
+tomentosicollis
+Coreidae Hemiptera *
+Clavigralla scutellaris Coreidae Hemiptera * *
+Clavigralla elongata Coreidae Hemiptera *
+Clavigralla shadabi Coreidae Hemiptera *
+Anoplocnemis curvipes Coreidae Hemiptera *
+Nezara viridula Pentatomidae Hemiptera * * * *
+Riptortus dentipes Alydidae Hemiptera *
+Riportus serripes Alydidae Hemiptera *
+Melanacanthus
+scutellaris
+Alydidae Hemiptera *
+Pigeonpea mite Aceria cajani Eriophyidae Acarina *
+*Confirmed presence.
+14390418,
+0,
+D
+ow
+nloaded
+from
+https://onlinelibrary.w
+iley.com
+/doi/10.1111/jen.13414
+by
+R
+esearch
+Inform
+ation
+Service,
+W
+iley
+O
+nline
+L
+ibrary
+on
+[06/03/2025].
+See
+the
+T
+erm
+s
+and
+C
+onditions
+(https://onlinelibrary.w
+iley.com
+/term
+s-and-conditions)
+on
+W
+iley
+O
+nline
+L ibrary
+for
+rules
+of
+use;
+O
+A
+articles
+are
+governed
+by
+the
+applicable
+C
+reative
+C
+om
+m
+ons
+L
+icense
+
+[[page 6]]
+6 of 21 Journal of Applied Entomology, 2025
+2.4 | Pod Flies
+The Asian pod fly (Melanagromyza obtusa) is an Agromyzid
+distributed through Asia, Australia, and Latin America that
+infests pigeonpea crops during podding (Makinson et al. 2005).
+Adult females lay their eggs through pod walls and larvae feed
+on and tunnel through developing seeds (Shanower, Lal, and
+Bhagwat 1998). Larvae chew a small exit hole through the
+pod wall as they approach pupation. Due to their small size,
+and cryptic feeding habit M. obtusa larvae are also difficult to
+detect and control. In Africa Melanagromyza chalcosoma inhabits a similar niche to the Asian pod fly, but less is known
+about its ecology (Hillocks et al. 2000; Shanower, Romeis, and
+Minja 1999).
+2.5 | Blister Beetles
+Blister beetles (Mylabris pustulata Thunberg) are regularly reported as pests of flowering pigeonpea (Ghoneim 2013; Yohane
+et al. 2021). The larval stage of these beetles are bee parasites,
+however the winged adults infest pigeonpea crops at flowering
+where they feed on flowers. At high densities, these beetles are
+capable of causing substantial yield loss in pigeonpea (Durairaj
+and Ganapathy 2000; Singh, Singh, and Singla 2022). However
+to what extent such high populations actually occur in farmers'
+fields is uncertain and this pest may present more of a problem
+in small- plot experiments (Reed and Lateef 1990).
+2.6 | Pod- Sucking Bugs
+During podding pigeonpea crops are attacked by a suite of
+pod- feeding Hemipteran pests, commonly referred to as pod-sucking bugs, which can cause substantial pod damage (Dialoke
+et al. 2010). The pest complex varies geographically and seasonally (Hillocks et al. 2000; Seni 2021; Shanower, Romeis, and
+Minja 1999), but mainly consists of species in the Alydidae,
+Corediae and Pentatomidae. The most frequently reported species are Clavigralla gibbosa Spinola (Hemiptera: Coreidae), C. tomentosicollis Stål (Hemiptera: Coreidae), C. scutellaris Westwood
+(Hemiptera: Coreidae), C. elongata Signoret (Hemiptera:
+Coreidae), Anoplocnemis curvipes Fabricius (Hemiptera:
+Coreidae), Riptortus dentipes Fabricius (Hemiptera: Alydidae),
+R. serripes Fabricius (Hemiptera: Alydidae), Melanacanthus
+scutellaris Dallas (Hemiptera: Alydidae), and Nezara viridula
+L. (Hemiptera: Pentatomidae) (Dolling, 1978, Dolling, 1979,
+Materu, 1970). These bugs insert their stylets into developing
+seeds to feed which results in either shrivelled or stained seeds,
+defects which may render the grain unmarketable.
+2.7 | Pigeonpea Mite
+The pigeonpea mite (Aceria cajani) is a minute (~200 μm), host-specific eriyophid mite that feeds only on species of Cajanus.
+Aceria cajani significantly affects yield by vectoring pigeonpea
+sterility mosaic virus, a species of virus in the genus Emaravirus
+which is one of the major pigeonpea diseases (Kulkarni
+et al. 2002; Patil and Kumar 2015). Currently, the distribution
+of A cajani is limited to south Asia, however it poses an invasion risk to other pigeonpea growing regions. The mite is unable to survive long without access to its host plant (Kulkarni
+et al. 2002), so the invasion risk may be small.
+3 | Pest Management Strategies
+For the suite of pests that attack pigeonpea, a variety of pest
+management strategies have been researched and developed.
+Based upon the typical conceptual IPM ‘framework’ (for example see (Naranjo et al. 2008)) realised and potential strategies include monitoring and sampling, economic thresholds, cultural
+control, host plant resistance and tolerance, biological control
+FIGURE 3 | Trends in pigeonpea pest research efforts—cumulative publication counts since 2000. Cumulative publication counts were obtained from Scopus by searching ‘Cajanus+cajan’ then the pest species Latin binomial names. For pod- sucking bugs we searched for ‘Clavigralla’,
+‘Riptortus’, ‘Piezodorus’, ‘Anoplocnemis’ and ‘Nezara’ and pooled results, removing any duplicates.
+14390418,
+0,
+D
+ow
+nloaded
+from
+https://onlinelibrary.w
+iley.com
+/doi/10.1111/jen.13414
+by
+R
+esearch
+Inform
+ation
+Service,
+W
+iley
+O
+nline
+L
+ibrary
+on
+[06/03/2025].
+See
+the
+T
+erm
+s
+and
+C
+onditions
+(https://onlinelibrary.w
+iley.com
+/term
+s-and-conditions)
+on
+W
+iley
+O
+nline
+L ibrary
+for
+rules
+of
+use;
+O
+A
+articles
+are
+governed
+by
+the
+applicable
+C
+reative
+C
+om
+m
+ons
+L
+icense
+
+[[page 7]]
+7 of 21
+and the use of conventional insecticides. Here we outline key
+research findings, strategies employed by pigeonpea farmers
+and gaps that require further research.
+3.1 | Monitoring and Sampling
+Although many species of pests infest pigeonpea, species
+composition and population levels within pigeonpea crops
+may vary substantially across crop phenology, seasons, growing regions and among fields. The starting point for in- field
+pest management is to detect and monitor pest populations.
+Although many species can be detected by light trapping,
+limited trapping techniques are available for key pigeonpea
+pests. Reliable pheromone traps are only available for H. armigera (Dent and Pawar 1988; Yadav, Keval, and Yadav 2021).
+A pheromone lure has been developed for M. vitrata, however,
+and it is efficacious in Africa (Downham et al. 2004) but not
+in Asia (Schläger et al. 2012). Even though both African and
+Asian male moths are attracted to female gland extracts from
+either region (Schläger et al. 2015). Therefore, the development
+of a pheromone lure for Asian M. vitrata requires further research (Srinivasan, Tamò, and Malini 2021). No pheromone
+lures are available for M. obtusa, although sticky traps may
+provide an appropriate sampling method (Mohan, Subba Rao,
+and Sundarababu 1994).
+Limited work has been conducted on pheromone trapping for
+pod- sucking bugs in pigeonpea, although aggregation pheromone traps have been developed for species infesting other
+legume and horticultural crops. There are several cases of interspecific cross- attraction among pod- sucking Hemipterans,
+indicating the potential for multi- species traps (Adachi, Uchino,
+and Mochizuki 2007; Endo, Sasaki, and Muto 2010; Tillman
+et al. 2010). The usefulness of such traps in predicting in- field
+populations is questionable as studies must first demonstrate a
+correlation between trap catches and actual pest abundance in
+the crops. Traps even have the potential to increase in- field damage levels because of ‘trap spillover’ following the attraction of
+pests into crops (Rahman et al. 2018).
+Although the inability to readily monitor several key pests
+through species- specific trapping methods may limit pigeonpea
+pest management, ultimately measuring in- crop pest populations
+is dependent on sampling methods that are more intensive than
+passive trapping. In- field sampling techniques are fundamental to
+obtain estimates of pest and natural enemy abundance to guide
+management decisions, along with ensuring farmers are educated
+about pest and natural enemy identification. Pigeonpea growers
+typically rely on visual assessments to measure pest populations;
+however these assessments are likely unreliable, particularly
+given the cryptic feeding habits of the key pigeonpea pests. The
+beatcloth (also referred to as ‘beatsheet’) sampling method is perhaps the most reliable technique for farmers and pest managers to
+measure the abundance of insect species in field crops (Duffield,
+Winder, and Chapple 2005; Wade et al. 2006). This method involves shaking plants onto a cloth or sheet of plastic spread on the
+ground to obtain an estimate of the of abundance pest and natural
+enemy species. This technique is used by some pigeonpea farmers,
+but the extent of adoption is uncertain (Sharma et al. 2010) and
+even researchers still rely on visual counts to sample pigeonpea
+pests (Seethalam et al. 2021). We suggest that developing the beatcloth as a standard sampling method for research in pigeonpea,
+and extending the technique to farmers, would be a major step
+forward in pigeonpea pest management.
+3.2 | Economic Thresholds
+Economic injury levels (EILs) and their consequent economic
+thresholds are fundamental components of integrated pest
+management (Pedigo, Hutchins, and Higley 1986). Yet, in modern farming systems the state of thresholds is regrettably poor
+(Leather and Atanasova 2017; Ramsden et al. 2017). For field
+crops in general, few empirical thresholds (i.e., those which
+are calculated from experimental data) are available, and most
+thresholds are nominal (i.e., threshold values are notional and
+not based on EIL calculations) (Ramsden et al. 2017). This is
+certainly true for pigeonpea, where the available thresholds
+are often nominal, variable, and often not supported by available data (Table 2). Although some studies have provided experimental evaluations and calculated thresholds based on
+input costs (e.g., Chiranjeevi and Patange 2017; Mahalle and
+Taggar 2017).
+There are several reasons for the lack of proper threshold development in pigeonpea. These include poor sampling protocols
+(as previously discussed), the ‘black box’ approach often taken
+by entomologists when examining plant responses to damage
+(Peterson and Higley 2000), and a lack of research interest/
+investment in threshold development. Thresholds are complicated—they are influenced by the cost of control measures, the
+contribution of natural enemies to pest mortality, grain prices,
+crop variety, crop stage and environmental factors (Pedigo,
+Hutchins, and Higley 1986). Nominal thresholds do not incorporate these variable factors, and we suggest threshold development should be regarded as a high priority research area for
+pigeonpea pest management.
+Shanower, Romeis, and Minja (1999) questioned whether the
+development of useful or practical thresholds could ever be
+achieved for pigeonpea pests given the crop's long reproductive
+period, compensatory ability, the large number of pests, and
+the socioeconomic constraints upon most pigeonpea farmers.
+We suggest that threshold development for pigeonpea pests is
+useful and practical. Without thresholds, pigeonpea farmers are
+forced to make uninformed decisions about their management
+tactics (Leather and Atanasova 2017), which renders judicious
+pesticide use and IPM in pigeonpea impossible. Additionally,
+threshold development is not a binary process, but rather management guidelines are developed incrementally. For instance,
+some basic information that contributes to threshold development has already been obtained and may be used to inform
+farmers' decision making. Pigeonpea plants can compensate for
+substantial floral damage but not later damage to filling pods
+(Sheldrake, Narayanan, and Venkataratnam 1979; Tayo 1980;
+Togun and Tayo 1990). Therefore, floral damage, caused by podborers and blister beetles may be tolerated, yet direct pod damage caused by pod- borers, pod fly and pod- sucking bugs is at
+greater risk of causing yield loss. Given this knowledge, farmers
+14390418,
+0,
+D
+ow
+nloaded
+from
+https://onlinelibrary.w
+iley.com
+/doi/10.1111/jen.13414
+by
+R esearch
+Inform
+ation
+Service,
+W
+iley
+O
+nline
+L
+ibrary
+on
+[06/03/2025].
+See
+the
+T
+erm
+s
+and
+C
+onditions
+(https://onlinelibrary.w
+iley.com
+/term
+s-and-conditions)
+on
+W iley
+O
+nline
+L
+ibrary
+for
+rules
+of
+use;
+O A
+articles
+are
+governed
+by
+the
+applicable
+C
+reative
+C
+om
+m
+ons
+L
+icense
+
+[[page 8]]
+8 of 21 Journal of Applied Entomology, 2025
+may differentially prioritise the investment of their management
+tactics across different crop stages.
+To improve the state of thresholds in pigeonpea, a proper understanding of how pigeonpea plants respond to damage must first
+be developed. Since the studies conducted in the 1970s and 1980s
+(Sheldrake, Narayanan, and Venkataratnam 1979; Tayo 1980;
+Togun and Tayo 1990), few studies on pigeonpea have taken a
+phytocentric approach to understand how plants respond to pest
+damage. As several key pests have similar modes of feeding,
+there may be potential to manage pest complexes using multi-species thresholds—a process that has been successful for other
+legume crop pests, such as defoliating lepidopterans in soybeans
+(de Freitas Bueno et al. 2011) and pod- sucking bugs in soybeans
+and mungbeans (Brier et al. 2008).
+3.3 | Cultural Control
+Modern pigeonpea research has experienced a strong shift towards developing short duration cultivars with higher harvest
+indices in attempt to increase yield. The modern focus for pigeonpea breeding is on short duration, determinate varieties to
+be cultivated as sole crops (Saxena, Chauhan, et al. 2018). Yet,
+traditionally pigeonpea has been either grown as an intercrop
+or a perennial, and most smallholder farmers still cultivate pigeonpea as an intercrop (Saxena, Choudhary, et al. 2018; Yohane
+et al. 2021). Although there is limited empirical evidence, many
+authors state that short- duration, determinate modern varieties
+are more susceptible to certain pests than traditional landraces
+(Reed and Lateef 1990; Saxena et al. 2002). Due to the substantial differences in phenology of the ‘new’ genotypes versus traditional landraces, it is understandably a difficult question to
+test experimentally. However, given the environmental sustainability of perennial production (Grabowski et al. 2019; Pimentel
+et al. 2012; Snapp et al. 2019), and if most farmers still rely on
+landraces grown as intercrops, it seems that modern pigeonpea
+research may be somewhat disconnected from actual production
+systems used by farmers!
+3.3.1 | Intercropping
+The pest management benefits of intercropping pigeonpea have
+been examined in several studies, with varied results. As pigeonpea typically reaches its most susceptible period after the
+cereal (or other legume) intercrops have been harvested, the
+purported benefit of intercropping is that natural enemy populations will establish on the faster intercrop and then move
+across to the pigeonpea as it begins flowering. There are two
+major limitations to overcome for this approach to be successful.
+First, if medium or long- duration pigeonpea cultivars are used,
+there may be a substantial gap between cereal and pigeonpea
+flowering (Shanower, Romeis, and Minja 1999) and second, natural enemies might not be effective unless the pests targeted in
+pigeonpea are common to both crops (e.g., H. armigera).
+Short- duration pigeonpea cultivars present the opportunity
+to synchronise pigeonpea and cereal intercrop flowering. In
+a single season trial, intercropping short- duration pigeonpea
+with sorghum increased Trichogramma spp. parasitism of H.
+armigera eggs in pigeonpea (Duffield 1994). This result was
+purportedly due to parasitoids moving from sorghum to the
+pigeonpea intercrop, although parasitism levels peaked early
+and decreased as flowering/podding continued. These results
+were mostly not reproduced under similar conditions over 5
+seasons when H. armigera eggs were predominately laid on
+reproductive structures (Romeis, Shanower, and Zebitz 1999).
+The location of H. armigera eggs on pigeonpea plants strongly
+affects Trichogramma spp. (mainly Trichogramma chilonis
+Ishii [Hymenoptera: Trichogrammatidae]) parasitism levels,
+and high parasitism levels were recorded from H. armigera eggs
+TABLE 2 | Purported economic thresholds for pest management decision making in pigeonpea.
+Pest Economic threshold level Reference
+H. armigera 2 eggs or 1 larva/plant at flowering, or 1 larva/plant at
+podding, or 4–5 moths/trap/day, or > 5% pod damage
+(Sharma et al. 2010)
+5 eggs or 3 small larvae/plant (Jaba, Jatin, et al. 2021)
+0.6 larvae/plant (Reddy, Singh, and Singh 2001)
+M. vitrata 1 web/plant (Sharma et al. 2010)
+5 webs/plant (Jaba, Jatin, et al. 2021)
+3 larvae per m2 (Mohapatra and Chattopadhyay 2015)
+4.2 webs/plant (Mahalle and Taggar 2017)
+0.54 larvae/plant (Vinayaka 2012)
+M. obtusa 2.5% pod damage (Sharma et al. 2010)
+7.7 larvae/plant or 4.6% pod damage (Chiranjeevi and Patange 2017)
+Pod- sucking bugs 2 bugs/plant (Sharma et al. 2010)
+1 egg mass/plant (Jaba, Jatin, et al. 2021)
+14390418,
+0,
+D
+ow
+nloaded
+from
+https://onlinelibrary.w
+iley.com
+/doi/10.1111/jen.13414
+by
+R
+esearch
+Inform
+ation
+Service,
+W
+iley
+O
+nline
+L
+ibrary
+on
+[06/03/2025].
+See
+the
+T
+erm
+s
+and
+C
+onditions
+(https://onlinelibrary.w
+iley.com
+/term
+s-and-conditions)
+on
+W
+iley
+O
+nline
+L
+ibrary
+for
+rules
+of
+use;
+O
+A
+articles
+are
+governed
+by
+the
+applicable
+C reative
+C
+om
+m
+ons
+L
+icense
+
+[[page 9]]
+9 of 21
+laid on leaves (41%) but not on to calyxes (4%) or pods (0.3%).
+The lower parasitism on reproductive structures occurs because
+Trichogramma spp. searching behaviour is negatively impacted
+by the trichomes and their glandular exudates on these plant
+parts (Romeis, Shanower, and Zebitz 1998). Parasitoids are
+also repelled by volatiles produced by reproductive pigeonpea
+(Romeis, Shanower, and Zebitz 1997).
+Sowing a cowpea intercrop to act as a ‘bridge’ for natural enemies after a sorghum intercrop was harvested failed to benefit
+to predator populations in pigeonpea or H. armigera biocontrol
+(Sigsgaard and Ersboll 1999). Rather, there was little overlap in
+the predator species composition between reproductive sorghum
+and the reproductive pigeonpea. The cowpea intercrop instead
+increased H. armigera oviposition on pigeonpea (Sigsgaard and
+Ersboll 1999). Other experiments have documented a pest suppressive effect from sorghum intercropped with pigeonpea (Rao
+et al. 2007). Some early experimental work documented that a
+range of legume and cereal intercrops can delay and decrease
+pest infestations in pigeonpea (Singh and Singh 1978). For instance, intercropping with pearl millet decreased H. armigera
+eggs, larvae and resulting damage in pigeonpea; however there
+was a substantial yield loss from the intercropping compared
+with the sole crop (Hegde and Lingappa 1996).
+Intercropping with cereals (maize, sorghum and pearl millet)
+may decrease M. vitrata infestation and damage in pigeonpea
+compared to sole crops (Kavitha and Vijayaraghavan 2023).
+Based on surveys of villages in Northern India, pigeonpea crops
+intercropped with mungbeans and turmeric experienced lower
+H. armigera populations compared with cereal intercrops and
+sole pigeonpea (Yogesh et al. 2015). However, the ‘successful’
+intercrops still experienced substantial pod damage, averaging
+between 18% and 22% for pigeonpea intercropped with turmeric
+and mungbeans, respectively (Yogesh et al. 2015).
+The push- pull approach, a form of well- researched intercropping, has now experienced substantial success for African
+smallholders growing maize (Midega et al. 2018). Although
+there are anecdotal records of pigeonpea being incorporated
+into push- pull systems, we were unable to find any published
+studies evaluating pigeonpea as push- pull intercrop, despite pigeonpea reducing Striga (i.e., the target weed of the push- pull
+technology) populations when used as a rotation crop (Oswald
+and Ransom 2001). Therefore, we suspect it would be worth investigating if pigeonpea also has the ‘push’ effect of Desmodium
+to repel stemborers. Intercropping may decrease pigeonpea
+yield compared to sole pigeonpea crop (Dasbak, Echezona,
+and Asiegbu 2012), but there are other documented agronomic
+benefits of the cereal- pigeonpea intercrop system (Renwick
+et al. 2020) along with the potential pest management benefits if
+the system is understood and implemented appropriately.
+When conducting intercropping experiments, researchers
+should record pigeonpea (and intercrop) yields and economic
+returns, rather than simply natural enemy presence and pest
+mortality. Ultimately pest management is only one factor in the
+agricultural system. Most published research on intercropping
+on pigeonpea, has not sought to develop a mechanistic understanding of how intercropping may cause pest suppression.
+Future research should focus on determining how a given intercrop contributes to pest suppression in pigeonpea rather than
+simply documenting its effects.
+3.3.2 | Other Cultural Control Methods
+There is a suite of other cultural control tactics available to pigeonpea farmers, that have been less extensively researched than
+intercropping. One such tactic is manipulating sowing dates so
+that the pigeonpea crop flowers and sets pods either before or
+after the maximum insect threat period (Yadava et al. 1983).
+Early and late flowering pigeonpea varieties may escape insect
+damage, as they can complete the podding stage during periods
+of low pest pressure, while mid- season flowering crops may be
+conducive to heavier insect pressure (Jat et al. 2017). However,
+changing sowing date does not always influence in- crop pest
+pressure (Kabaria et al. 1990). Substantial data is available for
+the phenology of major pigeonpea pests, and this might be useful to design strategic planting times for pigeonpea, if analysed
+appropriately.
+Several other agronomic factors may either exacerbate or decrease pest problems. There is some data to suggest increasing
+plant density within a crop may increase pest incidence (Dialoke
+et al. 2014). While surveys in Kenya have correlated fertiliser application with increased incidence of chewing and sucking pests
+in pigeonpea crops (Otieno et al. 2011).
+Erecting bird perches is regularly mentioned as an IPM tactic
+to help manage insect pests of pigeonpea (Maurya et al. 2017;
+Rao et al. 2011; Sharma et al. 2010; Srivastava and Joshi 2011).
+Perches may be either inanimate (e.g., dead tree branches or
+bamboo sticks) or animate (e.g., planted tall sorghum or Kenaf
+plants (Hibiscus cannabinus)) and are supposed to attract birds
+which feed on insect pests in the pigeonpea field. Perhaps unsurprisingly, there is little published data on the effectiveness
+of bird perches to promote avian biocontrol in pigeonpea crops.
+Some non- replicated observations have been published, which
+document bird predation of H. armigera larvae and report yield
+benefits (Lingappa and Hegde 2001). We suggest that the ability
+of perches to provide biocontrol benefits to smallholder farmers
+should be properly investigated with replicated experiments at
+the field scale. There is evidence of the benefits of birds and bats
+for biocontrol in other crops (Garcia et al. 2020), along with relatively simple approaches to measure contributions to pest mortality (Maas et al. 2019).
+Another cultural control tactic that may be useful for pest
+management is control of alternative host- plants or weeds that
+may harbour pest populations. Although we could not find
+any studies examining the effect of weed control on pigeonpea
+pest populations, several of the key pests are known to maintain their populations on weeds including H. armigera (Zalucki
+et al. 1986), M. vitrata (Srinivasan, Tamò, and Malini 2021),
+and M. obtusa (Khokhar et al. 1987). However, the suggestion
+of weed management tactics raises the important question—
+are the pest populations infesting crops generated locally or
+distantly? If populations are mostly generated within a local
+farming area, deep soil ploughing post- crop is another tactic to
+14390418,
+0,
+D
+ow
+nloaded
+from
+https://onlinelibrary.w
+iley.com
+/doi/10.1111/jen.13414
+by
+R esearch
+Inform
+ation
+Service,
+W
+iley
+O
+nline
+L
+ibrary
+on
+[06/03/2025].
+See
+the
+T
+erm
+s
+and
+C
+onditions
+(https://onlinelibrary.w
+iley.com
+/term
+s-and-conditions)
+on
+W iley
+O
+nline
+L
+ibrary
+for
+rules
+of
+use;
+O A
+articles
+are
+governed
+by
+the
+applicable
+C
+reative
+C
+om
+m
+ons
+L
+icense
+
+[[page 10]]
+10 of 21 Journal of Applied Entomology, 2025
+destroy overwintering lepidopteran pupae (e.g., H. armigera) in
+the soil (Fitt and Cotter 2005).
+3.4 | Host- Plant Resistance and Tolerance
+There has been an enormous research investment in developing
+pest- resistant cultivars of pigeonpea, most of which has focused
+on the three major pests: H. armigera, M. vitrata, and M. obtusa
+(Sharma 2016). The majority of the resistance research has been
+conducted by the International Crops Research Institute for the
+Semi- Arid Tropics (ICRISAT), where by 1990 over 11,000 pigeonpea accessions had been screened for their susceptibility
+to pod- borers (Lateef and Pimbert 1990). Only low to moderate
+resistance/tolerance has been found in cultivated genotypes
+(Jaba, Bhandi, et al. 2021; Reed and Lateef 1990; Sharma 2016;
+Sharma, Ahmad, et al. 2005). Despite the considerable time and
+money invested in this area, there has been limited progress.
+Several resistant accessions have been identified, but so far no
+resistant, agronomically suitable genotype has been released
+(Sharma 2016).
+3.4.1 | Plant Types and Susceptibility
+As mentioned previously, the trend of plant breeding efforts to
+develop short duration cultivars (Saxena, Chauhan, et al. 2018;
+Saxena et al. 2019) appears to have increased pigeonpea susceptibility to pod- borers (H. armigera and M. vitrata) but decreased the incidence of M. obtusa as a major pest (Srivastava
+and Joshi 2011). Supposedly long- duration pigeonpea genotypes (traditionally grown by smallholder farmers) are better
+able to either avoid or compensate for pod- borer damage (Reed
+and Lateef 1990). Long- duration genotypes may flower and set
+pods during cooler periods with lower pest pressure, or alternatively they may be better able to compensate for pest damage.
+Despite many comments within the pigeonpea literature suggesting short- duration, determinate types are more susceptible
+to pod- borer damage, few researchers have published empirical
+data testing this claim. This is an obvious area for future investigation with substantial practical outcomes. For instance, the
+variety ‘Pusa Ageti’ was not widely adopted by farmers due to
+its high susceptibility to pod- borers (Saxena et al. 2019). Some
+data have been published documenting that M. vitrata causes
+greater damage of short- duration determinate cultivars (Saxena
+et al. 2002; Sharma, Saxena, and Bhagwat 1999). However, these
+studies have relied on open- field screening, which does not enable controlled infestations, nor can this method disentangle
+resistance and tolerance. Research should focus on determining the mechanisms that increase plant susceptibility to the
+pests—i.e., does an earlier flowering time overlap with pest populations? Do pests oviposit more on these types? Do immatures
+establish better? Is larval mortality decreased on compact and
+determinate plant types? Or are short- duration cultivars simply
+less tolerant of pest damage?
+On the other hand, M. obtusa, appears to be more of a problem in
+long duration pigeonpea varieties and early maturing genotypes
+have been reported to suffer less damage than mid and late maturing entries (Reed and Lateef 1990; Srivastava and Joshi 2011).
+3.4.2 | Conventional Resistance
+Host- plant resistance, in the form of antibiosis and antixenosis, has been putatively identified in a suite of pigeonpea accessions (Kumari, Reddy, and Sharma 2006; Kumari, Sharma,
+and Reddy 2010; Sharma 2016; Sharma, Ahmad, et al. 2005;
+Sison, Shanower, and Bhagwat 1993; Sison and Shanower 1994;
+Sunitha, Ranga Rao, et al. 2008). However, within cultivated
+genotypes typically only low to moderate levels of resistance has
+been documented. Within wild relatives of pigeonpea (particularly Cajanus scarabaeoides, Cajanus acutifolius and Cajanus
+platycarpus), high levels of resistance have been identified
+against H. armigera (Green et al. 2006; Green et al. 2002; Green
+et al. 2003; Sharma, Sujana, and Manohar Rao 2009; Stevenson
+et al. 2005), M. vitrata (Gangwar and Bajpai 2007) and M. obtusa (Sharma, Pampapathy, and Reddy 2003). The putative
+mechanisms for resistance in wild relatives against H. armigera
+are morphological (non- glandular trichomes) and biochemical
+(high levels of polyphenols and tannins) (Sharma, Sujana, and
+Manohar Rao 2009). Resistance has also been investigated for
+the pigeonpea mite A. cajani (Reddy and Nene 1980).
+Conventional breeding techniques have thus far been unable to
+incorporate resistance traits from wild relatives into agronomically suitable pigeonpea cultivars. One moderately H. armigera-resistant/tolerant genotype ‘ICPL332’ was bred and released as
+‘Abhaya’ to Indian farmers, however the variety was not successfully adopted because of its susceptibility to fusarium wilt
+(Saxena et al. 2016). An improved version of this cultivar was
+developed with potential fusarium wilt resistance (ICPL 332WR)
+was released as ‘TDRG 4’ in Telangana, India (ICRISAT 1992).
+3.4.3 | Genetically Modified Plants
+Over the last few decades, there has been a surge in the area of
+genetically modified crops grown globally (Xiao and Wu 2019).
+Predominately crops have been engineered to express a suite of
+insecticidal crystalline proteins from the soil bacterium Bacillus
+thuringeinsis (Bt) (ISAAA 2018; Sanahuja et al. 2011; Tabashnik,
+Fabrick, and Carrière 2023). Bt crops appear harmless to human
+consumers (Koch et al. 2015), enable IPM by supporting biological control (Romeis et al. 2019), and have revolutionised
+some modern farming systems (Qaim and Zilberman 2003;
+Wilson, Whitehouse, and Herron 2018). However, in response
+to the widespread adoption of Bt crops, there has been a surge
+in the level of Bt- resistant pests (Tabashnik and Carrière 2017;
+Tabashnik, Fabrick, and Carrière 2023).
+Transgenic Bt pigeonpea expressing crystalline insecticidal
+proteins (Cry1Ac, Cry1AcF and Cry2Aa) to target H. armigera
+and M. vitrata have been developed (Ghosh et al. 2017; Kaur
+et al. 2016; Ramu et al. 2012; Sarkar, Roy, and Ghosh 2021; Singh
+et al. 2018). But evaluations of efficacy have focused on leaf
+(Ramkumar et al. 2020; Ramu et al. 2012) or pod tissue (Ramu
+et al. 2012) in bioassays, and flowers have been ignored. Bt-
+cowpea has recently been approved for M. vitrata management
+in some West African countries (Addae et al. 2020) but there
+should be caution if Bt- pigeonpea is similarly granted approval,
+as H. armigera has the capacity to evolve resistance to Bt toxins
+and currently non- Bt pigeonpea crops likely function as refuges
+14390418,
+0,
+D
+ow
+nloaded
+from
+https://onlinelibrary.w
+iley.com
+/doi/10.1111/jen.13414
+by
+R esearch
+Inform
+ation
+Service,
+W
+iley
+O
+nline
+L
+ibrary
+on
+[06/03/2025].
+See
+the
+T
+erm
+s
+and
+C
+onditions
+(https://onlinelibrary.w
+iley.com
+/term
+s-and-conditions)
+on
+W iley
+O
+nline
+L
+ibrary
+for
+rules
+of
+use;
+O A
+articles
+are
+governed
+by
+the
+applicable
+C
+reative
+C
+om
+m
+ons
+L
+icense
+
+[[page 11]]
+11 of 21
+delaying the evolution of Bt resistance when challenged by the selection pressures exerted by Bt- cotton in agricultural landscapes
+(Singh, Kukanur, and Supriya 2021). Therefore, if Bt- pigeonpea is
+released to growers, an appropriate resistance management strategy must be developed in conjunction with a resistance monitoring program (Dandan et al. 2019; Downes et al. 2017).
+Recent progress has been made in the technologies of RNA interference (RNAi) and clustered regularly interspaced short
+palindromic repeats (CRISPR) that both present novel opportunities to develop insect resistant crop plants (Talakayala, Katta,
+and Garladinne 2020). One study has demonstrated that host-delivered dsRNA through RNAi can decrease M. vitrata larval
+feeding on pigeonpea leaves (Chatterjee et al. 2022). The potential
+of these new technologies is exciting, but substantial research is
+required in this area before commercial application in pigeonpea.
+3.4.4 | Tolerance
+Plant tolerance is an often- overlooked plant defence tactic in
+pigeonpea pest management research. Tolerance represents a
+plant's ability to compensate for pest injury, and has been relatively under- explored compared to traditional host- plant resistance (Peterson, Varella, and Higley 2017). Some research has
+examined pest tolerance in pigeonpea, with results indicating
+potential genetic differences in response to pod- borer complex
+herbivory (Durairaj et al. 2003). However, since the pioneering
+pigeonpea response to injury research (Sheldrake, Narayanan,
+and Venkataratnam 1979), little has been done in this area—despite the immense importance of the topic (e.g., threshold development). Tolerance may present a superior tactic compared with
+resistance, because insects cannot evolve to overcome tolerance
+mechanisms as they can for host- plant resistance traits (Stowe
+et al. 2000). However, given most of the major pigeonpea pests
+attack pigeonpea during its reproductive stages (i.e., stages critical to yield formation) the utilisation of pigeonpea tolerance may
+be limited—particularly in short- duration, determinate varieties.
+3.4.5 | Plant Susceptibility Summary
+There are several issues with resistance and tolerance research
+in pigeonpea. First, the term ‘resistance’ is often used to include
+both resistance and tolerance, with pigeonpea researchers rarely
+attempting to disentangle the effects of resistance and tolerance.
+Resistance refers to traits which decrease pest preference and
+performance, whereas tolerance refers to traits that increase a
+plant's ability to yield in response to injury (Stout 2013). Second,
+the methodology used to screen pigeonpea genotypes tend not to
+examine the pest- crop interactions at appropriate scales. There
+are two main methodologies that have been employed for screening pigeonpea for pest susceptibility: (i) laboratory assays (e.g.,
+Sharma, Pampathy, et al. 2005), restricting insects to excised
+plant parts, and (ii) open field screening (e.g., Jat et al. 2018; Jat
+et al. 2021), where plots of different cultivars are planted in a
+field trial, natural infestations occur, and then pest abundance
+and damage levels are typically recorded.
+Laboratory assays can fail to adequately consider pest behaviour
+and insect response to induced defences (Johnson et al. 2011; Volp,
+Zalucki, and Furlong 2023). In most of the assay- dependent studies (mostly conducted on H. armigera) larvae are restricted to feed
+on leaves, whereas early instar H. armigera larvae have a strong
+preference to feed on flowers (Rajapakse and Walter 2007; Volp,
+Zalucki, and Furlong 2023; Volp, Zalucki, and Furlong 2024a;
+Volp, Zalucki, and Furlong 2024b). Incorporating the feeding
+behaviour of lepidopteran larvae would present a major step forward in host- plant resistance screening in pigeonpea.
+Open field screening, on the other hand, fails to separate resistance and tolerance. As pigeonpea varieties have different flowering times, earlier flowering varieties may experience more pest
+pressure in unsprayed field plots. Another issue with field screening is how results are usually presented—often the percent of pod
+damage will be recorded, which is not the most important metric.
+Percent pod damage is a result of several other variables—pest
+abundance in a plot, level of injury inflicted by the pest, and the
+amount of undamaged pods available for the pests to damage.
+Variables that are more relevant and should be reported from
+these studies include: pest abundance in undamaged plots (i.e.,
+insecticide treated controls), pest abundance in damage plots
+(i.e., untreated plots), and the corresponding plot yields (including yield components: pod counts, seed counts and seed weight).
+Percent pod damage may be useful, but presentation of yield and
+pest population data are fundamental to understanding the relationship between pest populations and yield loss.
+Future research on pigeonpea needs to disentangle the effects
+of resistance and tolerance to obtain a mechanistic understanding of pigeonpea plant defence traits. Conducting well- designed
+experiments using insects on either glasshouse or field- grown
+whole plants would present a step in the right direction (Jat,
+Dahiya, and Sharma 2024; Volp, Zalucki, and Furlong 2023).
+Examining the role of plant architecture as well as phenology
+on plant susceptibility to pests is an area that has been unexplored in pigeonpea. One hypothesis is that clustered racemes
+of determinate cultivars enable better early instar pest establishment (Volp, Zalucki, and Furlong 2023). Within pigeonpea
+germplasm a large variation exists in terms of architecture,
+even among short- duration determinate types. Therefore, could
+spreading determinate short- duration types be bred that are less
+susceptible to pests? Would such types also enable greater efficacy of insecticides and/or biological control?
+Developing less susceptible pigeonpea varieties is not a panacea
+for pest management. Partial resistance may be a useful tactic—
+as resistance does not need to be ‘complete’ to provide benefits to
+farmers. Research in pigeonpea should shift from trying to identify an entirely resistant variety for the key pests without a clear
+understanding of the insect- plant interactions. Instead, an integrated approach using resistant/tolerant varieties, incorporating
+cultural and biological control may prove more appropriate.
+3.5 | Biological Control
+3.5.1 | Natural Enemies
+Biological control presents a major tactic for managing insect pests of crops. For the suite of pigeonpea pests, a plethora of associated natural enemies (parasitoids, predators and
+14390418,
+0,
+D
+ow
+nloaded
+from
+https://onlinelibrary.w
+iley.com
+/doi/10.1111/jen.13414
+by
+R esearch
+Inform
+ation
+Service,
+W
+iley
+O
+nline
+L
+ibrary
+on
+[06/03/2025].
+See
+the
+T
+erm
+s
+and
+C
+onditions
+(https://onlinelibrary.w
+iley.com
+/term
+s-and-conditions)
+on
+W iley
+O
+nline
+L
+ibrary
+for
+rules
+of
+use;
+O A
+articles
+are
+governed
+by
+the
+applicable
+C
+reative
+C
+om
+m
+ons
+L
+icense
+
+[[page 12]]
+12 of 21 Journal of Applied Entomology, 2025
+pathogens) have been recorded. Lists have been published for
+natural enemies in pigeonpea crops in India (Romeis, Lawo, and
+Raybould 2009; Sharma et al. 2010), Africa (Minja, Shanower,
+Ong'aro, et al. 1999), and Australia (Lawrence, Tann, and
+Baker 2007). Similarly, lists of natural enemies have been published for key pigeonpea pests: including H. armigera (Riaz
+et al. 2021; Romeis and Shanower 1996; Berg, Waage, and
+Cock 1988; Zalucki et al. 1986), M. vitrata (Srinivasan, Tamò, and
+Malini 2021), M. obtusa (Shanower, Lal, and Bhagwat 1998), and
+pod- sucking bugs (Shanower, Romeis, and Minja 1999). Many of
+these natural enemies are parasitoids and pathogens, but a suite
+of generalist predators has also been recorded from pigeonpea
+crops (Romeis, Lawo, and Raybould 2009).
+So far, there has been limited application of natural enemies
+in pigeonpea, due to a lack of understanding of tritrophic interactions. The most thorough understanding of tritrophic interactions in pigeonpea is the investigation of Trichogramma
+spp. parasitism of H. armigera eggs in Indian pigeonpea (Ballal
+and Singh 2003; Romeis, Shanower, and Zebitz 1998; Romeis,
+Shanower, and Zebitz 1999; Romeis, Shanower, and Zebitz 1997).
+Although species of Trichogramma have experienced significant success elsewhere (Romeis et al. 2005; Scholz 2000), their
+application in pigeonpea is limited. Trichogramma chilonis females are repelled by volatiles produced by reproductive pigeonpea (Romeis, Shanower, and Zebitz 1997) and their movement
+on plant surfaces is impacted by long trichomes and exudates,
+resulting in the low parasitism on reproductive structures compared to leaves (Ballal and Singh 2003; Romeis, Shanower, and
+Zebitz 1998; Romeis, Shanower, and Zebitz 1999).
+Other parasitoid species may play an important role in biocontrol of key pigeonpea pests. High levels of H. armigera pupal
+parasitism, mostly by Tachinid flies and Heteropelma scaposum
+Morley (Hymenoptera: Ichneumonidae), has been recorded from
+Australian unsprayed pigeonpea refuges (Baker and Tann 2014;
+Baker, Tann, and Fitt 2008; Grundy and Spargo 2023) and
+other crops (Lloyd, Murray, and Hopkinson 2008). The ability
+of parasitoids to regulate M. vitrata populations appears limited
+(Shanower, Romeis, and Minja 1999; Srinivasan, Tamò, and
+Malini 2021) but other parasitoids that may to contribute substantially to pest population suppression in pigeonpea include
+larval and pupal parasitoids of M. obtusa (Patange, Sharma, and
+Chiranjeevi 2017; Shanower, Lal, and Bhagwat 1998) and egg
+parasitoids of pod- sucking bugs (Asante, Jackai, and Tamò 2000;
+Shanower, Romeis, and Minja 1999). The population suppression ability of these parasitoid species all warrant proper experimental studies.
+Although generalist predators are frequently recorded in pigeonpea crops, their utility is not understood. For example, the
+generalist predator Orius tantillus Motschulsky (Hemiptera:
+Anthocoridae) is a not particularly effective predator of H. armigera eggs or larvae in pigeonpea crops in comparison with
+sorghum (Sigsgaard and Esbjerg 1997). The authors suggested
+larger O. tantillus populations in sorghum may be due to more
+alternative food resources available in sorghum crops (e.g.,
+pre- anthesis aphid infestations and sorghum pollen) in addition to the negative effects of trichomes on pigeonpea plant
+structures.
+Most natural enemy research in pigeonpea has focused on
+documenting predator/parasitoid species rather than actually
+investigating the efficacy of these natural enemies on pest population suppression. Future research should experimentally determine the impact of natural enemies on key pests in pigeonpea
+crops, and variety of approaches exist to do this (Furlong 2015;
+Macfadyen, Davies, and Zalucki 2015). Upon reaching such an
+understanding, the next step is to identify techniques to increase
+and conserve natural enemy populations, as without this understanding expecting farmers to adopt biocontrol practices is futile
+(Zalucki et al. 2015).
+3.5.2 | Biopesticides
+In modern agriculture, biopesticides have experienced substantial
+research interest and some successful application, but they are yet
+to take a large share of the pesticide market compared to synthetic
+chemical products (Glare et al. 2012; Lacey et al. 2015). There is a
+suite of biopesticide pathogens (viruses, bacteria and fungi) available that may be useful for controlling pests of pigeonpea.
+Controlling H. armigera with baculoviruses (HearNPV) has experienced substantial commercial success (Lacey et al. 2015).
+HearNPV is highly effective in certain crops when used appropriately, even removing the need to use synthetic insecticides (Franzmann et al. 2008). We were only able to find two
+studies that have properly demonstrated HearNPV efficacy on
+H. armigera feeding on pigeonpea, both using laboratory bioassays (Aminu, Stevenson, and Grzywacz 2023; Rabindra,
+Muthuswami, and Jayaraj 1994). HearNPV was also evaluated
+as a control method for H. virescens in pigeonpea in Puerto Rico
+but it failed to show control in the field (Viteri et al. 2019).
+For M. vitrata management, a virulent NPV strain (MaviMNPV)
+was discovered in Taiwan (Lee et al. 2007). MaviMNPV was then
+imported into Africa and field efficacy has now been demonstrated in several legume crops (Srinivasan et al. 2009; Tamò
+et al. 2012), but there are no published evaluations in pigeonpea.
+Bacterial and fungal biopesticides have also been evaluated for pigeonpea pests. Bt formulations have demonstrated field- scale efficacy against both H. armigera (Vinayaka and Murali 2014) and M.
+vitrata (Sreekanth and Seshamahalakshmi 2018; Sreekanth and
+Seshamahalakshmi 2012). There is some evidence that pigeonpea
+pod surface chemistry may even improve the efficacy of Bt in controlling H. armigera (Paramasiva et al. 2016). Metarhizium anisopliae sprays have also demonstrated efficacy in the lab against M.
+vitrata on pigeonpea (Sunitha, Lakshmi, and Ranga Rao 2008)
+and Beauvaria bassiana may supress M. vitrata under field conditions (Sreekanth and Seshamahalakshmi 2012).
+As is typically the case with biopesticides, experimental trials
+in pigeonpea have shown variable results. Future work should
+investigate efficacy and persistence of products more rigorously.
+A major complication for biopesticide use in the field is the tendency of the major pigeonpea pests to be cryptic feeders as larvae.
+Many biopesticide products have limited persistence and require
+ingestion, or in the case of fungal entomopathogens contact with
+the insect cuticle. Therefore, insects must feed on the external
+14390418,
+0,
+D
+ow
+nloaded
+from
+https://onlinelibrary.w
+iley.com
+/doi/10.1111/jen.13414
+by
+R esearch
+Inform
+ation
+Service,
+W
+iley
+O
+nline
+L
+ibrary
+on
+[06/03/2025].
+See
+the
+T
+erm
+s
+and
+C
+onditions
+(https://onlinelibrary.w
+iley.com
+/term
+s-and-conditions)
+on
+W iley
+O
+nline
+L
+ibrary
+for
+rules
+of
+use;
+O A
+articles
+are
+governed
+by
+the
+applicable
+C
+reative
+C
+om
+m
+ons
+L
+icense
+
+[[page 13]]
+13 of 21
+surfaces of plant organs to ingest or encounter the agent. When
+evaluating the efficacy and persistence of the pathogens, it is important to record the timing of applications (i.e., crop stage), the
+age structure of the larval populations (because as larvae grow
+they typically become more tolerant of biopesticides), and any
+potential microclimate effects (which strongly influence pathogen efficacy (Lacey et al. 2015)). Given most pigeonpea farmers
+are smallholders, the mass production, formulation, and application of biopesticides may present large limitations. Projects at
+ICRISAT have trained farmers in the production and application
+of HearNPV (Ranga Rao and Gopalakrishnan 2009) and future
+work should continue to develop viable biopesticide production
+and distribution systems.
+3.6 | Chemical Control
+3.6.1 | Botanical Insecticides
+Largely ignored by the West, botanical insecticides have been
+embraced by Indian agriculture (Isman 2006). The major use
+of botanicals in pigeonpea is the two derivations from the neem
+tree (Azadirachta indica)–neem oil and neem seed kernel extract.
+Although numerous plant extracts from different plant species
+have been examined (Ranga Rao and Gopalakrishnan 2009), neem
+products are the main botanical insecticides recommended to pigeonpea farmers (Bhede et al. 2015; Sharma et al. 2015; Sharma
+et al. 2010). Neem products have documented efficacy against several pigeonpea pests, including H. armigera (Dialoke, Emosairue,
+and Akparobi 2017; Sambathkumar et al. 2015; Sreekanth
+and Seshamahalakshmi 2018), M. vitrata (Sambathkumar
+et al. 2015; Sreekanth and Seshamahalakshmi 2018), M. obtusa
+(Sambathkumar et al. 2015; Sharma et al. 2011), and pod- sucking
+bugs (Mitchell et al. 2004).
+3.6.2 | Synthetic Insecticides
+Synthetic chemical insecticides currently represent a mainstay
+in modern pest management programs for pigeonpea and several compounds provide adequate control of the major pigeonpea
+pests in the field. However, in terms of the amount of insecticides
+used by farmers, very little data is available. Large surveys of more
+than 1000 farmers from across major pigeonpea production areas
+in India during the late 1970s showed that most (79%) pigeonpea
+crops were intercrops and that < 5% of fields were sprayed with
+insecticides (Reed, Lateef, and Sithanantham 1980). Typically,
+substantial damage from pod- borers was recorded (Reed, Lateef,
+and Sithanantham 1980) resulting in yield losses of over 50%
+(Lateef and Reed 1983).
+Shanower, Romeis, and Minja (1999) indicated an increase in
+insecticide use by Indian farmers, and suggested a similar trend
+was beginning with African pigeonpea farmers who were mostly
+not using insecticides at the time (Minja et al. 1996). Survey data
+from 2010 to 2011 from the Gulbarga district in India indicated
+‘non- IPM’ farmers used approximately 6 sprays per pigeonpea
+crop, including organophosphates, carbamates, and organochlorines (Sharma et al. 2012). It is worth pointing out, that despite
+this widespread adoption of insecticides since the 1970s, pigeonpea yields have not increased (Figure 1)!
+Given the toxicity and broad- spectrum nature of insecticides
+used by pigeonpea farmers, it is an imperative to obtain data
+on insecticide use patterns in pigeonpea from its global production areas. Clearly the easiest way to obtain such data is farmer
+surveys. Once current insecticide use patterns are determined,
+researchers may examine what broad- spectrum products (e.g.,
+organophosphates, carbamates and synthetic pyrethroids) may
+be replaced with more modern, selective insecticides.
+A plethora of recent studies has evaluated numerous insecticides and demonstrated field efficacy against the key pests of
+pigeonpea. A range of newer insecticides, including indoxacarb,
+spinosad, spinetoram, emamectin, chlorfenapyr, chlorantraniliprole, flubendiamide, and novaluron are effective against H.
+armigera (Dadas, Gosalwad, and Patil 2019; Karabhantanal and
+Dharavath 2022; Khinchi and Kumawat 2021; Mandal, Prasad,
+and Kumar 2023; Pal et al. 2022; Taggar et al. 2021), but some
+older products like synthetic pyrethroids, organophosphates
+and carbamates still demonstrate some field efficacy against
+H. armigera (Dadas, Gosalwad, and Patil 2019; Karabhantanal
+and Dharavath 2022; Khinchi and Kumawat 2021; Mandal,
+Prasad, and Kumar 2023; Pal et al. 2022). As for other key pests,
+M. vitrata (Nebapure and Sagar 2019; Nithish and Rana 2019b;
+Pal et al. 2022; Randhawa and Saini 2015; Taggar et al. 2021),
+M. obtusa (Dadas, Gosalwad, and Patil 2019; Khinchi and
+Kumawat 2021; Nithish and Rana 2019a; Pal et al. 2022; Wayal,
+Gaikwad, and Warad 2021), and pod- sucking bugs (Chethan
+et al. 2018; Lal and Jat 2015; Taggar et al. 2022; Thilagam,
+Gopikrishnan, and Dinakaran 2020) are all controlled by a suite
+of insecticides.
+The challenge for entomologists lies not in demonstrating field-level efficacy of insecticides, but rather in identifying how to
+incorporate insecticides into sustainable pest management strategies. That is, practices that limit the evolution of insecticide
+resistance and enable conservation biological control by being
+‘soft’ on natural enemies. Insecticide efficacy studies in pigeonpea rarely evaluate the toxicity of tested insecticides on natural
+enemy populations. Perhaps researchers could simultaneously
+evaluate the impact of key insecticides on natural enemies while
+examining the contribution of those natural enemies to pest
+suppression, as has cleverly been done in other crops (Knight
+et al. 2007; Vandervoet et al. 2018).
+Undoubtedly, responsible use of ‘newer’ insecticides would make
+substantial progress in temporarily increasing pigeonpea yields.
+For instance, two sprays of indoxacarb or chlorantraniliprole increases pigeonpea yields by 79% and 67%, respectively, compared
+to unsprayed controls (Sambathkumar et al. 2015). However, if
+key chemical groups are overused, as is often the case, major pests
+will evolve resistance to insecticides in response to the unsustainable use patterns and such yield benefits will disappear.
+Insecticide resistance is a key issue in pigeonpea pest management. The main pest H. armigera, has evolved resistance to
+numerous insecticide groups, but particularly the older products—synthetic pyrethroids, carbamates and organophosphates
+(Ahmad 2007; Riaz et al. 2021). Despite this, there appears to
+be no resistance management strategies or official guidelines for
+insecticide use in major pigeonpea production areas. Although
+M. vitrata has reported resistance to synthetic pyrethroids and
+14390418,
+0,
+D
+ow
+nloaded
+from
+https://onlinelibrary.w
+iley.com
+/doi/10.1111/jen.13414
+by
+R esearch
+Inform
+ation
+Service,
+W
+iley
+O nline
+L
+ibrary
+on
+[06/03/2025].
+See
+the
+T
+erm
+s
+and
+C
+onditions
+(https://onlinelibrary.w
+iley.com
+/term
+s-and-conditions)
+on
+W iley
+O
+nline
+L
+ibrary
+for
+rules
+of
+use;
+O A
+articles
+are
+governed
+by
+the
+applicable
+C
+reative
+C
+om
+m
+ons
+L
+icense
+
+[[page 14]]
+14 of 21 Journal of Applied Entomology, 2025
+organophosphates in the laboratory, there have been no field reports of control failures (Sreelakshmi et al. 2015). We were unable to find records of resistance for other key pigeonpea pests.
+We suggest that future pest management research and guidelines in pigeonpea should include the associated risk of these key
+pests evolving resistance to insecticides.
+4 | Conclusion
+Over the last several decades, slow progress has been made in
+managing the major pests of pigeonpea. Several studies report
+that IPM practices, referred to as ‘IPM module’, decrease pest
+populations and increases crop yields (Bhede et al. 2015; Maurya
+et al. 2017; Sharma et al. 2015). However, in these studies only
+the ‘IPM’ farmers are provided access to modern insecticides
+(e.g., indoxacarb, emamectin, and chlorantraniliprole) and we
+suspect IPM treatment effects are largely a reflection of the efficacy of newer insecticides.
+Although IPM strategies available to pigeonpea farmers are still
+rudimentary, adoption of these tactics (including ‘new’ insecticides) has been shown to decrease pest pressure, reduce insecticide sprays, and increase yields (Sharma et al. 2015). Adopting
+such tactics in pigeonpea increases net returns, results in lower
+insecticide use, and has health benefits for farmers (by fewer
+pesticide poisoning events) (Rao et al. 2011).
+Given the substantial yield cost insect pests impose on pigeonpea production, future research must catch up to developing pest
+management strategies that are farmer friendly. Modern pigeonpea research has shifted to short- duration varieties, which may
+be more susceptible to H. armigera and M. vitrata, potentially
+exacerbating pest problems. The traditional farming practices of
+pigeonpea should be properly investigated as they may provide
+ample opportunities to decrease crop susceptibility, meanwhile
+incorporating cultural and biological control methods. The key
+pests of pigeonpea are nearly identical across the global production areas, therefore an opportunity exists for a collaborative
+global research approach.
+For the future of pest management in pigeonpea, some basic
+research is required to develop an understanding of how pigeonpea plants respond to pest damage (underlying economic
+threshold development), investigate which natural enemies are
+most important to provide biological control of key pests, examine the opportunities for cultural control, develop resistant and/
+or tolerant cultivars by conventional or gene- editing approaches,
+properly evaluate biopesticides, obtain data on insecticide use
+patterns and develop insecticide resistance management strategies. Outreach, education and collaboration with farmers will
+be integral to the adoption of these pest management strategies
+(Orr 2003). The current reality is that IPM has underdelivered
+over the last 50 years and pesticide usage has increased (Bakker
+et al. 2020; Deguine et al. 2021; Hokkanen 2015; Zalucki,
+Adamson, and Furlong 2009). For pigeonpea, there is the potential to enable farmers to step off the pesticide treadmill, if researchers can develop sustainable pest management approaches.
+But it is only through clearly defined research that such strategies can be developed.
+Author Contributions
+Trevor M. Volp: conceptualization, funding acquisition, writing –
+original draft, writing – review and editing, visualization. Babu L. Jat:
+conceptualization, writing – original draft, writing – review and editing. Jagdish Jaba: writing – review and editing. Myron P. Zalucki:
+writing – review and editing. Michael J. Furlong: writing – review
+and editing.
+Acknowledgements
+This work was funded by the Queensland Government’s ‘Pigeonpea
+Initiative’ project, Crawford Fund Student Award to T.M.V, One-CGIAR-
+Plant Health Initiative and CGIAR- USAID -VAC, s-Pigeonpea project to
+JJ. We are grateful to the QDPI library team, particularly Pat Abbot and
+Zalee Bates, who excelled in finding many elusive references. Open access
+publishing facilitated by the Queensland Department of Agriculture and
+Fisheries, as part of the Wiley - Queensland Department of Agriculture and
+Fisheries agreement via the Council of Australian University Librarians.
+Conflicts of Interest
+The authors declare no conflicts of interest.
+Data Availability Statement
+The authors have nothing to report.
+References
+Adachi, I., K. Uchino, and F. Mochizuki. 2007. “Development of a
+Pyramidal Trap for Monitoring Fruit- Piercing Stink Bugs Baited
+With Plautia crossota Stali (Hemiptera: Pentatomidae) Aggregation
+Pheromone.” Applied Entomology and Zoology 42: 425–431.
+Addae, P. C., M. F. Ishiyaku, J. B. Tignegre, et al. 2020. “Efficacy of a
+cry1Ab Gene for Control of Maruca vitrata (Lepidoptera: Crambidae)
+in Cowpea (Fabales: Fabaceae).” Journal of Economic Entomology 113:
+974–979.
+Ahmad, M. 2007. “Insecticide Resistance Mechanisms and Their
+Management in Helicoverpa armigera (Hübner): A Review.” Journal of
+Agricultural Research 45: 319–335.
+Aminu, A., P. C. Stevenson, and D. Grzywacz. 2023. “Reduced Efficacy
+of Helicoverpa armigera Nucleopolyhedrovirus (HearNPV) on Chickpea
+(Cicer arietinum) and Other Legume Crops, and the Role of Organic
+Acid Exudates on Occlusion Body Inactivation.” Biological Control 180:
+105–171.
+Asante, S. K., L. E. Jackai, and M. Tamò. 2000. “Efficiency of Gryon
+fulviventris (Hymenoptera: Scelionidae) as an Egg Parasitoid of
+Clavigralla tomentosicollis (Hemiptera: Coreidae) in Northern Nigeria.”
+Environmental Entomology 29: 815–821.
+Ba, N. M., J. E. Huesing, C. L. Dabiré- Binso, M. Tamò, B. R. Pittendrigh,
+and L. L. Murdock. 2019. “The Legume Pod Borer, Maruca vitrata
+Fabricius (Lepidoptera: Crambidae), an Important Insect Pest of
+Cowpea: A Review Emphasizing West Africa.” International Journal of
+Tropical Insect Science 39: 93–106.
+Baker, G. H., and C. R. Tann. 2014. “Refuge Crop Performance as
+Part of the Bt Resistance Management Strategy for Helicoverpa spp.
+(Lepidoptera: Noctuidae) in Australian Cotton Production Systems.”
+Austral Entomology 53: 240–247.
+Baker, G. H., C. R. Tann, and G. P. Fitt. 2008. “Production of
+Helicoverpa spp. (Lepidoptera, Noctuidae) From Different Refuge Crops
+to Accompany Transgenic Cotton Plantings in Eastern Australia.”
+Australian Journal of Agricultural Research 59: 723–732.
+14390418,
+0,
+D
+ow
+nloaded
+from
+https://onlinelibrary.w
+iley.com
+/doi/10.1111/jen.13414
+by
+R esearch
+Inform
+ation
+Service,
+W
+iley
+O
+nline
+L ibrary
+on
+[06/03/2025].
+See
+the
+T erm
+s
+and
+C
+onditions
+(https://onlinelibrary.w
+iley.com
+/term
+s-and-conditions)
+on
+W iley
+O
+nline
+L ibrary
+for
+rules
+of
+use;
+O
+A articles
+are
+governed
+by
+the
+applicable
+C
+reative
+C
+om
+m
+ons
+L
+icense
+
+[[page 15]]
+15 of 21
+Bakker, L., W. van der Werf, P. Tittonell, K. A. G. Wyckhuys, and F. J.
+Bianchi. 2020. “Neonicotinoids in Global Agriculture: Evidence for a
+New Pesticide Treadmill?” Ecology and Society 25, no. 3.
+Ballal, C. R., and S. Singh. 2003. “The Effectiveness of Trichogramma
+chilonis, Trichogramma pretiosum and Trichogramma brasiliense
+(Hymenoptera: Trichogrammatidae) as Parasitoids of Helicoverpa
+Armigera (Lepidoptera: Noctuidae) on Sunflower (Helianthus annuus)
+and Redgram (Cajanus cajan).” Biocontrol Science and Technology 13:
+231–240.
+Van den Berg, H., J. K. Waage, and M. J. W. Cock. 1988. “Natural Enemies
+of Helicoverpa armigera in Africa—A Review.” C. A. B International
+Institute of Biological Control.
+Bhede, B. V., O. P. Sharma, A. G. Badgujar, S. Bhagat, B. B. Bhosle, and
+M. Khullar. 2015. “Impact of Areawide Integrated Pest Management
+Strategies on Pests of Pigeonpea and Yield in Marathwada Region of
+Maharashtra, India.” Legume Research: An International Journal 38:
+101–108.
+Borlaug, N. E. 1975. “Building a Protein Revolution on Grain Legumes.”
+In Nutritional Improvement of Food Legumes by Breeding, edited by M.
+Milner, 7–11. John Wiley & Sons.
+Brier, H. B., D. A. H. Murray, L. J. Wilson, et al. 2008. “An Overview of
+Integrated Pest Management (IPM) in North- Eastern Australian Grain
+Farming Systems: Past, Present and Future Prospects.” Australian
+Journal of Experimental Agriculture 48: 1574–1593.
+Chatterjee, M., J. Yadav, M. Rathinam, et al. 2022. “Amenability of
+Maruca vitrata (Lepidoptera: Crambidae) to Gene Silencing Through
+Exogenous Administration and Host- Delivered dsRNA in Pigeonpea
+(Cajanus cajan L.).” Physiology and Molecular Biology of Plants 28:
+189–202.
+Chethan, B. R., V. Rachappa, S. G. Hanchinal, N. R. Harischandra, and
+S. R. Doddagoudar. 2018. “Management of Pod Bug, Clavigralla gibbosa
+Spinola (Heteroptera: Coreidae) on Pigeonpea.” International Journal of
+Current Microbiology and Applied Sciences 7: 1615–1622.
+Chiranjeevi, B., and N. Patange. 2017. “Appraisal of Economic Threshold
+Level for the Management of Pigeonpea Pod Fly, Melanagromyza obtusa
+(Malloch).” Journal of Entomology and Zoology Studies 5: 438–441.
+Cullis, C., and K. J. Kunert. 2017. “Unlocking the Potential of Orphan
+Legumes.” Journal of Experimental Botany 68: 1895–1903.
+Cunningham, J. P., and M. P. Zalucki. 2014. “Understanding Heliothine
+(Lepidoptera: Heliothinae) Pests: What Is a Host Plant?” Journal of
+Economic Entomology 107: 881–896.
+Dadas, S. M., S. S. Gosalwad, and S. K. Patil. 2019. “Efficacy of Different
+Newer Insecticides Against Pigeon Pea Pod Borers.” Journal of
+Entomology and Zoology Studies 7: 784–791.
+Dandan, Z., X. Yutao, C. Wenbo, L. Yanhui, and W. Kongming. 2019.
+“Field Monitoring of Helicoverpa armigera (Lepidoptera: Noctuidae)
+Cry1Ac Insecticidal Protein Resistance in China (2005–2017).” Pest
+Management Science 75: 753–759.
+Daryanto, S., B. Fu, W. Zhao, S. Wang, P. A. Jacinthe, and L. Wang.
+2020. “Ecosystem Service Provision of Grain Legume and Cereal
+Intercropping in Africa.” Agricultural Systems 178, no. 102: 761.
+Dasbak, M. A., B. C. Echezona, and J. E. Asiegbu. 2009. “Post- Harvest
+Bruchid Richness and Residual Activity of Pirimiphos- Methyl on
+Callosobruchus maculatus F. Infested Pigeon Pea (Cajanus cajan L.
+Millsp.) in Storage.” African Journal of Biotechnology 8: 311–315.
+Dasbak, M. A., B. C. Echezona, and J. E. Asiegbu. 2012. “Field Insect
+Pests and Crop Damage Assessment of Pigeon Pea (Cajanus cajan [L.]
+Huth) Grown Under Ratoon and in Mixture With Maize.” Chilean
+Journal of Agricultural Research 72: 45–52.
+de Freitas Bueno, R. C. O., A. de Freitas Bueno, F. Moscardi, J. R.
+Postali Parra, and C. B. Hoffmann- Campo. 2011. “Lepidopteran Larva
+Consumption of Soybean Foliage: Basis for Developing Multiple- Species
+Economic Thresholds for Pest Management Decisions.” Pest
+Management Science 67: 170–174.
+Deguine, J. P., J. N. Aubertot, R. J. Flor, F. Lescourret, K. A. G.
+Wyckhuys, and A. Ratnadass. 2021. “Integrated Pest Management:
+Good Intentions, Hard Realities. A Review.” Agronomy for Sustainable
+Development 41: 1–35.
+Dent, D. R., and C. S. Pawar. 1988. “The Influence of Moonlight and
+Weather on Catches of Helicoverpa armigera (Hübner) (Lepidoptera:
+Noctuidae) in Light and Pheromone Traps.” Bulletin of Entomological
+Research 78: 365–377.
+Dialoke, S. A., C. M. Agu, F. O. Ojiako, et al. 2010. “Survey of Insect Pests
+on Pigeonpea in Nigeria.” Journal of SAT Agricultural Research 8: 1–8.
+Dialoke, S. A., S. O. Emosairue, and S. Akparobi. 2017. “Effect of Neem
+Seed Oil on Helicoverpa armigera on Pigeonpea in Nigeria.” Indian
+Journal of Entomology 79: 125–129.
+Dialoke, S. A., F. O. Ojiako, B. O. Bosah, and C. A. Peter- Onoh. 2014.
+“Influence of Plant Densities and Planting Dates on the Population
+of Pigeonpea Flower Blister Beetles in Owerri, Imo State, Nigeria.”
+Bioscan 9: 41–44.
+Downes, S., D. Kriticos, H. Parry, C. Paull, N. Schellhorn, and M. P.
+Zalucki. 2017. “A Perspective on Management of Helicoverpa armigera:
+Transgenic Bt Cotton, IPM, and Landscapes.” Pest Management Science
+73: 485–492.
+Downham, M. C. A., M. Tamò, D. R. Hall, B. Datinon, S. Adetonah,
+and D. I. Farman. 2004. “Developing Pheromone Traps and Lures for
+Maruca vitrata in Benin, West Africa.” Entomologia Experimentalis et
+Applicata 110: 151–158.
+Duffield, S. 1994. “Trichogramma Egg Parasitism of Helicoverpa armigera on Short- Duration Pigeonpea Intercultured With Sorghum.”
+Entomologia Experimentalis et Applicata 72: 289–296.
+Duffield, S. J., L. Winder, and D. G. Chapple. 2005. “Calibration
+of Sampling Techniques and Determination of Sample Size for
+the Estimation of Egg and Larval Populations of Helicoverpa spp.
+(Lepidoptera: Noctuidae) on Irrigated Soybean.” Australian Journal of
+Entomology 44: 293–298.
+Durairaj, C., and N. Ganapathy. 2000. “Yield Losses Caused by Blister
+Beetle, Mylabris sp. (Coleoptera: Meloidae) in Pigeon Pea and Its
+Economic Injury Level in Cowpea.” Tropical Agriculture 77: 133–136.
+Durairaj, C., T. G. Shanower, V. R. Bhagwat, M. I. Khan, and D. A.
+Dodia. 2003. “Relationship Between Helicoverpa armigera Hubner and
+Maruca vitrata (Geyer) Abundance, Damage and Yield Loss in Short-
+Duration Pigeonpeas.” International Journal of Tropical Insect Science
+23: 251–258.
+Egbe, O., and B. Kalu. 2009. “Evaluation of Pigeonpea (Cajanus cajan
+(L.) Millsp.) Genotypes for Intercropping With Tall Sorghum (Sorghum
+bicolor (L.) Moench) in Southern Guinea Savanna of Nigeria.” ARPN
+Journal of Agricultural and Biological Science 4: 54–65.
+Endo, N., R. Sasaki, and S. Muto. 2010. “Pheromonal Cross- Attraction
+in True Bugs (Heteroptera): Attraction of Piezodorus hybneri
+(Pentatomidae) to Its Pheromone Versus the Pheromone of Riptortus pedestris (Alydidae).” Environmental Entomology 39: 1973–1979.
+FAO. 2024. “FAO Statistic Division.” www. fao. org.
+Fitt, G. P. 1989. “The Ecology of Heliothis Species in Relation to
+Agroecosystems.” Annual Review of Entomology 34: 17–52.
+Fitt, G. P., and S. C. Cotter. 2005. “Heliothis/Helicoverpa Management:
+Emerging Trends and Strategies for Future Research.” In The
+Helicoverpa Problem in Australia: Biology and Management, 45–62.
+Oxford and IBH Publishers.
+Franzmann, B. A., A. T. Hardy, D. A. H. Murray, and R. G. Henzell.
+2008. “Host- Plant Resistance and Biopesticides: Ingredients for
+Successful Integrated Pest Management (IPM) in Australian Sorghum
+14390418,
+0,
+D
+ow
+nloaded
+from
+https://onlinelibrary.w
+iley.com
+/doi/10.1111/jen.13414
+by
+R
+esearch
+Inform
+ation
+Service,
+W
+iley
+O nline
+L ibrary
+on
+[06/03/2025].
+See
+the
+T erm
+s and
+C
+onditions
+(https://onlinelibrary.w
+iley.com
+/term
+s-and-conditions)
+on
+W
+iley
+O
+nline
+L
+ibrary
+for
+rules
+of
+use;
+O
+A
+articles
+are
+governed
+by
+the
+applicable
+C
+reative
+C
+om
+m
+ons
+L
+icense
+
+[[page 16]]
+16 of 21 Journal of Applied Entomology, 2025
+Production.” Australian Journal of Experimental Agriculture 48:
+1594–1600.
+Fuller, D. Q., C. Murphy, E. Kingwell- Banham, C. C. Castillo, and S.
+Naik. 2019. “Cajanus cajan (L.) Millsp. Origins and Domestication:
+The South and Southeast Asian Archaeobotanical Evidence.” Genetic
+Resources and Crop Evolution 66: 1175–1188.
+Furlong, M. J. 2015. “Knowing Your Enemies: Integrating Molecular
+and Ecological Methods to Assess the Impact of Arthropod Predators
+on Crop Pests.” Insect Science 22: 6–19.
+Gangwar, L. K., and G. C. Bajpai. 2007. “Screening of Interspecific
+Hybrids Progenies for Spotted Pod- Borer (Maruca testulalis) Resistance
+in Pigeonpea.” Indian Journal of Crop Science 2: 221–222.
+Garcia, K., E. M. Olimpi, D. S. Karp, and D. J. Gonthier. 2020. “The
+Good, the Bad, and the Risky: Can Birds be Incorporated as Biological
+Control Agents Into Integrated Pest Management Programs?” Journal
+of Integrated Pest Management 11: 1–11.
+Ghoneim, K. 2013. “Agronomic and Biodiversity Impacts of the Blister
+Beetles (Coleoptera: Meloidae) in the World: A Review.” International
+Journal of Agricultural Science Research 2: 21–36.
+Ghosh, G., S. Ganguly, A. Purohit, R. K. Chaudhuri, S. Das, and D.
+Chakraborti. 2017. “Transgenic Pigeonpea Events Expressing Cry1Ac
+and Cry2Aa Exhibit Resistance to Helicoverpa armigera.” Plant Cell
+Reports 36: 1037–1051.
+Glare, T., J. Caradus, W. Gelernter, et al. 2012. “Have Biopesticides
+Come of Age?” Trends in Biotechnology 30: 250–258.
+Grabowski, P., L. S. Olabisi, J. Adebiyi, et al. 2019. “Assessing Adoption
+Potential in a Risky Environment: The Case of Perennial Pigeonpea.”
+Agricultural Systems 171: 89–99.
+Green, P. W. C., H. C. Sharma, P. C. Stevenson, and M. S. J. Simmonds.
+2006. “Susceptibility of Pigeonpea and Some of Its Wild Relatives to
+Predation by Helicoverpa Armigera: Implications for Breeding Resistant
+Cultivars.” Australian Journal of Agricultural Research 57: 831–836.
+Green, P. W. C., P. C. Stevenson, M. S. J. Simmonds, and H. C. Sharma.
+2002. “Can Larvae of the Pod- Borer, Helicoverpa Armigera (Lepidoptera:
+Noctuidae), Select Between Wild and Cultivated Pigeonpea Cajanus
+sp.(Fabaceae)?” Bulletin of Entomological Research 92: 45–51.
+Green, P. W. C., P. C. Stevenson, M. S. J. Simmonds, and H. C. Sharma.
+2003. “Phenolic Compounds on the Pod- Surface of Pigeonpea, Cajanus
+Cajan, Mediate Feeding Behavior of Helicoverpa armigera Larvae.”
+Journal of Chemical Ecology 29: 811–821.
+Grundy, P. R., Y. S. Chauhan, and K. Knight. 2016. “A New Era Dawns
+for Bollgard 3 Refuges.” Australian Cottongrower 37: 22–24.
+Grundy, P. R., and G. Spargo. 2023. “Bt Cotton and Modern Insecticide
+Adoption Decreases Helicoverpa spp. Population Recruitment in a
+Subtropical Cropping System.” Journal of Applied Entomology 147:
+371–378.
+Hartlieb, E., and H. Rembold. 1996. “Behavioral Response of Female
+Helicoverpa (Heliothis) Armigera HB.(Lepidoptera: Noctuidae) Moths
+to Synthetic Pigeonpea (Cajanus cajan L.) Kairomone.” Journal of
+Chemical Ecology 22: 821–837.
+Hegde, R., and S. Lingappa. 1996. “Effect of Intercropping on Incidence
+and Damage by Helicoverpa armigera in Pigeonpea.” Karnataka Journal
+of Agricultural Science 9: 616–621.
+Hillocks, R. J., E. Minja, A. Mwaga, M. S. Nahdy, and P. Subrahmanyam.
+2000. “Diseases and Pests of Pigeonpea in Eastern Africa: A Review.”
+International Journal of Pest Management 46: 7–18.
+Hokkanen, H. M. 2015. “Integrated Pest Management at the Crossroads:
+Science, Politics, or Business (As Usual)?” Arthropod- Plant Interactions
+9: 543–545.
+ICRISAT. 1992. “The Medium- Term Plan. International Crops Research
+Institute for the Semi- Arid Tropics.” Patancheru, India.
+ISAAA. 2018. “Global Status of Commercialized Biotech/GM Crops in
+2018: Biotech Crops Continue to Help Meet the Challenges of Increased
+Population and Climate Change.” ISAAA Brief No. 54. ISAAA. Ithaca,
+N.Y.
+Isman, M. B. 2006. “Botanical Insecticides, Deterrents, and Repellents
+in Modern Agriculture and an Increasingly Regulated World.” Annual
+Review of Entomology 51: 45–66.
+Jaba, J., S. Bhandi, S. Deshmukh, G. R. Pallipparambil, S. P. Mishra, and
+N. Arora. 2021. “Identification, Evaluation and Utilization of Resistance
+to Insect Pests in Grain Legumes: Advancement and Restrictions.” In
+Genetic Enhancement in Major Food Legumes, edited by K. B. Saxena, R.
+K. Saxena, and R. K. Varshney, 197–230. Springer Nature.
+Jaba, J., K. Jatin, R. R. Sree, S. Kota, and S. P. Mishra. 2021. “Integrated
+Pest Management in Major Legume Crops.” In Biopesticides in Organic
+Farming, edited by L. P. Awashti, 287–294. CRC Press.
+Jackai, L. E. N., and S. R. Singh. 1983. “Suitability of Selected
+Leguminous Plants for Development of Maruca testulalis Larvae.”
+Entomologia Experimentalis et Applicata 34: 174–178.
+Jat, B. L., K. K. Dahiya, H. Kumar, and S. Mandhania. 2018.
+“Morphological and Chemical Traits Associated With Resistance
+Against Spotted Pod Borer, Maruca vitrata in Pigeonpea.” Indian
+Journal of Plant Protection 46: 39–50.
+Jat, B. L., K. K. Dahiya, H. Kumar, and S. Mandhania. 2021. “Morpho
+Physico- Chemical Components of Resistance to Pod Borer, Helicoverpa
+armigera (Hübner) in Pigeonpea [Cajanus cajan [L.] Millspaugh].”
+Legume Research 44: 967–976.
+Jat, B. L., K. K. Dahiya, R. Lal, and R. Niwas. 2017. “Effect of Weather
+Parameters on Seasonal Incidence of Pod Borer Complex in Pigeonpea.”
+Journal of Agrometeorology 19: 255–258.
+Jat, B. L., K. K. Dahiya, and H. C. Sharma. 2024. “Screening of Pigeonpea
+Varieties Through Nylon Bag No- Choice Bioassay for Host Plant
+Resistance to Helicoverpa armigera.” Legume Research 47: 256–267.
+Johnson, M. L., P. M. Schenk, B. W. Cribb, C. Moore, L. Perkins, and M.
+P. Zalucki. 2011. “Is the Effect of Priming Plants, and a Functional JAR1,
+Negligible on the Foraging Behaviour and Development of a Generalist
+Lepidopteran, Helicoverpa armigera?” Entomologia Experimentalis et
+Applicata 141: 78–87.
+Kabaria, B. B., S. N. Goyal, V. T. Jose, and A. H. Shah. 1990. “Effect
+of Sowing Time and Varieties on Major Pests and Grain Yield of
+Pigeonpea in Gujarat, India.” International Pigeonpea Newsletter 11:
+18–21.
+Karabhantanal, S. S., and S. Dharavath. 2022. “Efficacy of Chlorfenapyr
+24% SC Against the Pigeon Pea Pod Borer Helicoverpa armigera
+(Hübner).” Indian Journal of Entomology 84: e21064.
+Kassa, M. T., R. V. Penmetsa, N. Carrasquilla- Garcia, et al. 2012.
+“Genetic Patterns of Domestication in Pigeonpea (Cajanus cajan (L.)
+Millsp.) and Wild Cajanus Relatives.” PLoS One 7: e39563.
+Kaur, A., M. Sharma, C. Sharma, et al. 2016. “Pod Borer Resistant
+Transgenic Pigeon Pea (Cajanus cajan L.) Expressing cry1Ac Transgene
+Generated Through Simplified Agrobacterium Transformation of
+Pricked Embryo Axes.” Plant Cell, Tissue and Organ Culture (PCTOC)
+127: 717–727.
+Kavitha, Z., and C. Vijayaraghavan. 2023. “Habitat Manipulation:
+An Important Component of IPM in the Management of Webbing
+Caterpillar, Maruca vitrata (Geyer) in Pigeonpea.” Legume Research 46:
+762–769.
+Khinchi, S. K., and K. C. Kumawat. 2021. “Bioefficacy of
+Chlorantraniliprole 18.5 SC Against Pod Borer, Helicoverpa armigera
+14390418,
+0,
+D
+ow
+nloaded
+from
+https://onlinelibrary.w
+iley.com
+/doi/10.1111/jen.13414
+by
+R
+esearch
+Inform
+ation
+Service,
+W
+iley
+O nline
+L ibrary
+on
+[06/03/2025].
+See
+the
+T
+erm
+s and
+C
+onditions
+(https://onlinelibrary.w
+iley.com
+/term
+s-and-conditions)
+on W
+iley
+O nline
+L ibrary
+for
+rules
+of
+use;
+O
+A articles
+are
+governed
+by
+the
+applicable
+C
+reative
+C
+om
+m
+ons
+L
+icense
+
+[[page 17]]
+17 of 21
+(Hübner) and Pod Fly, Melanagromyza obtusa (Malloch) in Pigeonpea,
+Cajanus cajan (Linn.) Millsp.” Legume Research 44: 1475–1481.
+Khokhar, K., Z. Singh, and S. Sucheta. 1987. “Carry- Over of
+Melanagromyza obtusa (Malloch) (Diptera: Agromyzidae) During Off-
+Season on a Legume Weed and Its Seasonal Activity.” Indian Journal of
+Agricultural Sciences 57: 214–215.
+Knight, K. M., H. B. Brier, M. J. Lucy, and R. A. Kopittke. 2007. “Impact
+of Mirid (Creontiades Spp.)(Hemiptera: Miridae) Pest Management
+on Helicoverpa spp.(Lepidoptera: Noctuidae) Outbreaks: The Case
+for Conserving Natural Enemies.” Pest Management Science 63:
+447–452.
+Koch, M. S., J. M. Ward, S. L. Levine, J. A. Baum, J. L. Vicini, and B. G.
+Hammond. 2015. “The Food and Environmental Safety of Bt Crops.”
+Frontiers in Plant Science 6: 283.
+Kulkarni, N. K., P. L. Kumar, V. Muniyappa, A. T. Jones, and D. V. R.
+Reddy. 2002. “Transmission of Pigeon Pea Sterility Mosaic Virus by the
+Eriophyid Mite, Aceria cajani (Acari: Arthropoda).” Plant Disease 86:
+1297–1302.
+Kumari, D. A., D. J. Reddy, and H. C. Sharma. 2006. “Antixenosis
+Mechanism of Resistance in Pigeonpea to the Pod Borer, Helicoverpa
+Armigera.” Journal of Applied Entomology 130: 10–14.
+Kumari, D. A., H. C. Sharma, and D. J. Reddy. 2010. “Incorporation of
+Lyophilized Leaves and Pods Into Artificial Diet to Assess Antibiosis
+Component of Resistance to Pod Borer in Pigeonpea.” Journal of Food
+Legumes 23: 57–65.
+Lacey, L. A., D. Grzywacz, D. I. Shapiro- Ilan, R. Frutos, M. Brownbridge,
+and M. S. Goettel. 2015. “Insect Pathogens as Biological Control Agents:
+Back to the Future.” Journal of Invertebrate Pathology 132: 1–41.
+Lal, R., and B. L. Jat. 2015. “Bioefficacy of Insecticides Against Tur Pod
+Bug, Clavigralla gibbosa (Spinola) on Pigeonpea [Cajanus cajan (L.)
+Millsp.].” Pesticide Research Journal 27: 104–110.
+Lateef, S. S., and M. P. Pimbert. 1990. “The Search for Host- Plant Resistance
+to Helicoverpa Armigera in Chickpea and Pigeonpea at ICRISAT.” Paper
+Presented at: The First Consultative Group Meeting on the Host Selection
+Behavior of Helicoverpa Armigera. Patancheru, India: ICRISAT.
+Lateef, S. S., and W. Reed. 1983. “Review of Crop Losses Caused by
+Insect Pests in Pigeonpea Internationally and in India.” Indian Journal
+Of Entomology 2: 284–293.
+Lateef, S. S., and W. Reed. 1990. “Insect Pests of Pigeonpea.” In Insect
+Pests of Tropical Food Legumes, edited by S. R. Singh, 193–242. John
+Wiley & Sons.
+Lawrence, L., C. Tann, and G. Baker. 2007. “Refuge Crops Provide Refuge
+for More Than Helicoverpa.” Outlooks on Pest Management 18: 19.
+Leather, S. R., and D. Atanasova. 2017. “Without Up- to- Date Pest
+Thresholds Sustainable Agriculture Is Nothing but a Pipe- Dream.”
+Agricultural and Forest Entomology 19: 341–343.
+Lee, S. T., R. Srinivasan, Y. J. Wu, and N. Talekar. 2007. “Occurrence
+and Characterization of a Nucleopolyhedrovirus From Maruca vitrata
+(Lepidoptera, Pyralidae) Isolated in Taiwan.” BioControl 52: 801–819.
+Lingappa, S., and R. Hegde. 2001. “Biocontrol Potential and Its
+Exploitation in Sustainable Agriculture.” In Exploitation of Biocontrol
+Potential in the Management of Insect Pests of Pulse Crops, edited by
+R. K. Upadhyay, K. G. Mukerji, and B. P. Chamola, vol. 2, 321–344.
+Springer.
+Lloyd, R. J., D. A. H. Murray, and J. E. Hopkinson. 2008. “Abundance
+and Mortality of Overwintering Pupae of Helicoverpa armigera
+(Hübner)(lepidoptera: Noctuidae) on the Darling Downs, Queensland,
+Australia.” Australian Journal of Entomology 47: 297–306.
+Maas, B., S. Heath, I. Grass, et al. 2019. “Experimental Field Exclosure
+of Birds and Bats in Agricultural Systems—Methodological Insights,
+Potential Improvements, and Cost–Benefit Trade- Offs.” Basic and
+Applied Ecology 35: 1–12.
+Macfadyen, S., A. P. Davies, and M. P. Zalucki. 2015. “Assessing the
+Impact of Arthropod Natural Enemies on Crop Pests at the Field Scale.”
+Insect Science 22: 20–34.
+Mahalle, R. M., and G. K. Taggar. 2017. “Yield Loss Assessment and
+Establishment of Economic Threshold Level of Maruca vitrata in
+Pigeonpea.” Journal of Food Legumes 31: 36–44.
+Mahendraraj, S., M. Collins, Y. Chauhan, V. Mellor, and R. C. N.
+Rachaputi. 2021. “Genotypic Variation in Cardinal Temperatures and
+Thermal Time for Germination and Seedling Emergence of Pigeonpea
+(Cajanus cajan [L.] Millsp.).” Experimental Results 2: 1–11.
+Makinson, J. R., J. A. Goolsby, D. E. Meyerdirk, A. A. Kirk, and C. J.
+Burwell. 2005. “A New Record and Host Association for the Pigeonpea
+Pod Fly, ‘Melanagromyza obtusa’ (Malloch)(Diptera: Agromyzidae)
+and Notes on Its Parasitoids in the Northern Territory, Australia.”
+Australian Entomologist 32: 79–82.
+Mandal, S. K., S. Prasad, and M. Kumar. 2023. “Bio- Efficacy of Newer
+Insecticides for the Management of Helicoverpa armigera Hübner on
+Pigeonpea.” Pharma Innovation Journal 12: 2691–2693.
+Maurya, R. P., M. Agnihotri, S. Tiwari, and L. B. Yadav. 2017. “Validation
+of Integrated Pest Management Module Against Insect Pests of
+Pigeonpea, Cajanus cajan in Tarai Region of Uttarakhand.” Journal of
+Applied and Natural Science 9: 1077–1080.
+Mergeai, G., P. Kimani, A. Mwang'ombe, et al. 2001. “Survey of
+Pigeonpea Production Systems, Utilization and Marketing in Semi- Arid
+Lands of Kenya.” Biotechonology, Agronomy, Society, and Environment
+5: 145–153.
+Midega, C. A. O., J. O. Pittchar, J. A. Pickett, G. W. Hailu, and Z. R.
+Khan. 2018. “A Climate- Adapted Push- Pull System Effectively Controls
+Fall Armyworm, Spodoptera frugiperda (J E Smith), in Maize in East
+Africa.” Crop Protection 105: 10–15.
+Minja, E. M., T. G. Shanower, J. M. Ong'aro, J. Nderitu, and J. Songa.
+1999. “Natural Enemies Associated With Arthropod Pests of Pigeonpea
+in Eastern Africa.” International Chickpea and Pigeonpea Newsletter 6:
+47–50.
+Minja, E. M., T. G. Shanower, J. M. Songa, and J. M. Ong'aro. 1996.
+“Pigeonpea Farmers in Southern and Eastern Africa: Do They Spray
+Their Crop?” International Chickpea Newsletter 3: 98–100.
+Minja, E. M., T. G. Shanower, J. M. Songa, et al. 1999. “Studies of
+Pigeonpea Insect Pests and Their Management in Kenya, Malawi,
+Tanzania and Uganda.” African Crop Science Journal 7: 59–69.
+Mitchell, P. L., R. Gupta, A. K. Singh, and P. Kumar. 2004. “Behavioral
+and Developmental Effects of Neem Extracts on Clavigralla scutellaris
+(Hemiptera: Heteroptera: Coreidae) and Its Egg Parasitoid, Gryon fulviventre (Hymenoptera: Scelionidae).” Journal of Economic Entomology
+97: 916–923.
+Mohan, S., P. V. Subba Rao, and P. C. Sundarababu. 1994. “A New Model
+Trap for Monitoring Pigeonpea Podfly.” International Chickpea and
+Pigeonpea Newsletter 1: 42.
+Mohapatra, S. D., and C. Chattopadhyay. 2012. “Perception of
+Constraints for Pigeonpea Production in India.” Indian Journal of Plant
+Protection 40: 171–175.
+Mohapatra, S. D., and C. Chattopadhyay. 2015. “Spotted Pod Borer:
+A Potential Threat to Short Duration Pigeonpea.” Indian Farming 62:
+27–29.
+14390418,
+0,
+D
+ow
+nloaded
+from
+https://onlinelibrary.w
+iley.com
+/doi/10.1111/jen.13414
+by
+R
+esearch
+Inform
+ation
+Service,
+W
+iley
+O nline
+L
+ibrary
+on
+[06/03/2025].
+See
+the
+T
+erm
+s
+and
+C
+onditions
+(https://onlinelibrary.w
+iley.com
+/term
+s-and-conditions)
+on
+W
+iley
+O
+nline
+L ibrary
+for
+rules
+of
+use;
+O A
+articles
+are
+governed
+by
+the
+applicable
+C
+reative
+C
+om
+m
+ons
+L
+icense
+
+[[page 18]]
+18 of 21 Journal of Applied Entomology, 2025
+Montezano, D. G., A. Specht, D. R. Sosa- Gómez, et al. 2018. “Host Plants
+of Spodoptera frugiperda (Lepidoptera: Noctuidae) in the Americas.”
+African Entomology 26: 286–300.
+Mula, M. G., and K. B. Saxena. 2010. “Lifting the Level of Awareness
+on Pigeonpea–A Global Perspective.” International Crops Research
+Institute for the Semi- Arid Tropics.
+Myaka, F. M., W. D. Sakala, J. J. Adu- Gyamfi, et al. 2006. “Yields and
+Accumulations of N and P in Farmer- Managed Intercrops of Maize–
+Pigeonpea in Semi- Arid Africa.” Plant and Soil 285: 207–220.
+Nahdy, M. S., R. Ellis, S. Silim, and J. Smith. 1998. “Field Infestation of
+Pigeonpea (Cajanus cajan (L.) Millsp.) by Callosobruchus chinensis (L.)
+in Uganda.” Journal of Stored Products Research 34: 207–216.
+Naranjo, S. E., J. R. Ruberson, H. C. Sharma, L. Wilson, and K. Wu. 2008.
+“The Present and Future Role of Insect- Resistant Genetically Modified
+Cotton in IPM.” In Integration of Insect- Resistant Genetically Modified
+Crops Within IPM Programs, edited by J. Romeis, A. M. Shelton, and G.
+C. Kennedy, 159–194. Springer.
+Nebapure, S. M. 2020. “Electrophysiological Response of Two Moth
+Species, Helicoverpa armigera and Maruca vitrata to Host Plant (Cajanus
+cajan) Volatiles.” National Academy Science Letters 43: 423–426.
+Nebapure, S. M., and D. Sagar. 2019. “Efficacy of Some Insecticides
+Against Pod Borers and Blister Beetle in Pigeon Pea.” Indian Journal Of
+Entomology 81: 837–840.
+Nithish, A., and N. Rana. 2019a. “Bio- Efficacy of Some Newer
+Insecticides Against Pod Fly Melanagromyza obtusa in Pigeonpea
+Under Field Conditions.” Journal of Pharmacognosy and Phytochemistry
+8: 369–372.
+Nithish, A., and N. Rana. 2019b. “Bio- Efficacy of Some Newer
+Insecticides Against Spotted Pod Borer Maruca vitrata in Pigeonpea
+Under Field Conditions.” Journal of Pharmacognosy and Phytochemistry
+8: 3277–3280.
+Norman, M. J. T., P. G. E. Searle, N. Dankittipakul, K. C. Ingram, and
+J. B. Baskoro. 1980. “Evaluation of Pigeon Pea (Cajanus cajan) as an
+Autumn Forage for Coastal New South Wales.” Australian Journal of
+Experimental Agriculture 20: 55–62.
+Odeny, D. A. 2007. “The Potential of Pigeonpea (Cajanus cajan (L.)
+Millsp.) in Africa.” Natural Resources Forum 31: 297–305.
+Orr, A. 2003. “Integrated Pest Management for Resource- Poor African
+Farmers: Is the Emperor Naked?” World Development 31: 831–845.
+Oswald, A., and J. K. Ransom. 2001. “Striga Control and Improved
+Farm Productivity Using Crop Rotation.” Crop Protection 20: 113–120.
+Otieno, M., B. A. Woodcock, A. Wilby, et al. 2011. “Local Management
+and Landscape Drivers of Pollination and Biological Control
+Services in a Kenyan Agro- Ecosystem.” Biological Conservation 144:
+2424–2431.
+Pal, S., S. K. Chaturvedi, D. C. Baskar, et al. 2022. “Efficacy of
+Insecticides Against Pod Borer Complex in Pigeonpea (Cajanus cajan
+(L.) Millsp.).” Pharma Innovation Journal 11: 814–819.
+Paramasiva, I., A. R. War, P. V. Krishnayya, and H. C. Sharma. 2016.
+“Aqueous Washings of Host Plant Surface Influence the Growth Inhibitory
+Effects of δ- Endotoxins of Bacillus thuringiensis Against Helicoverpa armigera.” Entomologia Experimentalis et Applicata 161: 79–91.
+Patange, N. R., O. P. Sharma, and B. Chiranjeevi. 2017. “Population
+Dynamics of Melanagromyza obtusa (Malloch)(Diptera: Agromyzidae)
+and Its Natural Parasitization in Pigeonpea.” Entomon 42: 201–206.
+Patil, B. L., and P. L. Kumar. 2015. “Pigeonpea Sterility Mosaic Virus:
+A Legume- Infecting Emaravirus From South Asia.” Molecular Plant
+Pathology 16: 775–786.
+Pedigo, L. P., S. H. Hutchins, and L. G. Higley. 1986. “Economic Injury
+Levels in Theory and Practice.” Annual Review of Entomology 31:
+341–368.
+Peterson, R. K. D., and L. G. Higley. 2000. “Illuminating the Black Box:
+The Relationship Between Injury and Yield.” In Biotic Stress and Yield
+Loss, edited by R. K. D. Peterson and L. G. Higley, 1–12. CRC Press.
+Peterson, R. K. D., A. C. Varella, and L. G. Higley. 2017. “Tolerance: The
+Forgotten Child of Plant Resistance.” PeerJ 5: e3934.
+Pimentel, D., D. Cerasale, R. C. Stanley, et al. 2012. “Annual vs.
+Perennial Grain Production.” Agriculture, Ecosystems & Environment
+161: 1–9.
+Qaim, M., and D. Zilberman. 2003. “Yield Effects of Genetically
+Modified Crops in Developing Countries.” Science 299: 900–902.
+Rabindra, R. J., M. Muthuswami, and S. Jayaraj. 1994. “Influence of Host
+Plant Surface Environment on the Virulence of Nuclear Polyhedrosis
+Virus Against Helicoverpa armigera (Hbn.)(Lep., Noctuidae) Larvae.”
+Journal of Applied Entomology 118: 453–460.
+Rahman, M. M., E. Kim, D. Kim, M. M. H. Bhuyain, and U. T. Lim.
+2018. “Use of Aggregation Pheromone Traps Increases Infestation of
+Adult Riptortus pedestris (Hemiptera: Alydidae) in Soybean Fields.” Pest
+Management Science 74: 2578–2588.
+Rajapakse, C. N. K., and G. H. Walter. 2007. “Polyphagy and Primary
+Host Plants: Oviposition Preference Versus Larval Performance in the
+Lepidopteran Pest Helicoverpa armigera.” Arthropod- Plant Interactions
+1: 17–26.
+Rajapakse, C. N. K., G. H. Walter, C. J. Moore, C. D. Hull, and B. W.
+Cribb. 2006. “Host Recognition by a Polyphagous Lepidopteran
+(Helicoverpa armigera): Primary Host Plants, Host Produced Volatiles
+and Neurosensory Stimulation.” Physiological Entomology 31: 270–277.
+Ramkumar, N., M. Rathinam, S. Singh, et al. 2020. “Assessment of
+Pigeonpea (Cajanus cajan L.) Transgenics Expressing Bt ICPs, Cry2Aa
+and Cry1AcF Under Nethouse Containment Implicated an Effective
+Control Against Herbivory by Helicoverpa aArmigera (Hübner).” Pest
+Management Science 76: 1902–1911.
+Ramsden, M., S. Kendall, S. Ellis, and P. Berry. 2017. “A Review of
+Economic Thresholds for Invertebrate Pests in UK Arable Crops.” Crop
+Protection 96: 30–43.
+Ramu, S. V., S. Rohini, G. Keshavareddy, et al. 2012. “Expression of a
+Synthetic cry1AcF Gene in Transgenic Pigeon Pea Confers Resistance
+to Helicoverpa armigera.” Journal of Applied Entomology 136: 675–687.
+Randhawa, H., and M. Saini. 2015. “Efficacy of Different Insecticides
+Against Pod Borer, (Maruca vitrata Geyer) in Pigeonpea.” Legume
+Research 38: 687–690.
+Ranga Rao, G. V., and S. Gopalakrishnan. 2009. “Bio- Pesticides
+Research at ICRISAT: A Consortium Model. Paper Presented in
+Expert Consultation on Biopesticides and Viofertilizers for Sustainable
+Agriculture Organized by Asia- Pacific Association of Agricultural
+Research Insttitutions (APA ARI) & Council of Agriculture, Tapei
+(COA), Taiwan Agricultural Research Institute, Taichung, Taiwan.”
+Rao, C. A., M. S. Srinivasa Rao, K. Srinivas, A. K. Patibanda, and C.
+Sudhakar. 2011. “Adoption, Impact and Discontinuance of Integrated
+Pest Management Technologies for Pigeon Pea in South India.” Outlook
+on Agriculture 40: 245–250.
+Rao, G. V. R., K. B. Saxena, Y. Shiying, P. Wen, and W. G. Tian. 2002.
+“Insect Pest Problems of Pigeonpea in Guangxi and Hainan Provinces.”
+International Chickpea and Pigeonpea Newsletter 9: 48–49.
+Rao, M. S., C. A. R. Rao, G. S. Vani, and E. Anjaiah. 2007. “Impact of
+Crop- Crop Diversity on Pod Borer (Helicoverpa armigera) of Pigeonpea
+(Cajanus cajan).” Indian Journal of Agricultural Sciences 77: 19–25.
+14390418,
+0,
+D
+ow
+nloaded
+from
+https://onlinelibrary.w
+iley.com
+/doi/10.1111/jen.13414
+by
+R
+esearch
+Inform
+ation
+Service,
+W
+iley
+O nline
+L ibrary
+on
+[06/03/2025].
+See
+the
+T
+erm
+s
+and
+C
+onditions
+(https://onlinelibrary.w
+iley.com
+/term
+s-and-conditions)
+on
+W
+iley
+O
+nline
+L ibrary
+for
+rules
+of
+use;
+O
+A articles
+are
+governed
+by
+the
+applicable
+C
+reative
+C
+om
+m
+ons
+L
+icense
+
+[[page 19]]
+19 of 21
+Reddy, C. N., Y. Singh, and V. S. Singh. 2001. “Economic Injury Level of
+Gram Pod Borer (Helicoverpa armigera) on Pigeonpea.” Indian Journal
+Of Entomology 63: 381–387.
+Reddy, L. J. 1990. “Pigeonpea: Morphology.” In The Pigeonpea, edited
+by Y. L. Nene, S. D. Hall, and V. K. Sheila, 47–87. C.A.B. International.
+Reddy, M. V., and Y. L. Nene. 1980. “Influence of Sterility Mosaic
+Resistant Pigeonpeas on Multiplication of the Mite Vector.” Indian
+Phytopathology 33: 61–63.
+Reed, W., and S. S. Lateef. 1990. “Pigeonpea: Pest Management.” In The
+Pigeonpea, edited by Y. L. Nene, S. D. Hall, and V. K. Sheila, 349–374.
+C.A.B. International.
+Reed, W., S. S. Lateef, and S. Sithanantham. 1980. “Pest Management
+in Low- Input Pigeonpea.” In: Proceedings, International Workshop on
+Pigeonpeas, vol. 1. Patancheru, India: International Crops Research
+Institute for the Semi- Arid Tropics. 99–105.
+Renwick, L. L. R., A. A. Kimaro, J. M. Hafner, T. S. Rosenstock, and
+A. C. Gaudin. 2020. “Maize- Pigeonpea Intercropping Outperforms
+Monocultures Under Drought.” Frontiers in Sustainable Food Systems
+4: 562–663.
+Riaz, S., J. B. Johnson, M. Ahmad, G. P. Fitt, and M. Naiker. 2021.
+“A Review on Biological Interactions and Management of the Cotton
+Bollworm, Helicoverpa armigera (Lepidoptera: Noctuidae).” Journal of
+Applied Entomology 145: 467–498.
+Rogé, P., S. Snapp, M. N. Kakwera, L. Mungai, I. Jambo, and B. Peter.
+2016. “Ratooning and Perennial Staple Crops in Malawi. A Review.”
+Agronomy for Sustainable Development 36: 1–18.
+Romeis, J., D. Babendreier, F. L. Wäckers, and T. G. Shanower. 2005.
+“Habitat and Plant Specificity of Trichogramma Egg Parasitoids—
+Underlying Mechanisms and Implications.” Basic and Applied Ecology
+6: 215–236.
+Romeis, J., N. C. Lawo, and A. Raybould. 2009. “Making Effective Use
+of Existing Data for Case- By- Case Risk Assessments of Genetically
+Engineered Crops.” Journal of Applied Entomology 133: 571–583.
+Romeis, J., S. E. Naranjo, M. Meissle, and A. M. Shelton. 2019.
+“Genetically Engineered Crops Help Support Conservation Biological
+Control.” Biological Control 130: 136–154.
+Romeis, J., and T. G. Shanower. 1996. “Arthropod Natural Enemies
+of Helicoverpa armigera (Hübner)(lepidoptera: Noctuidae) in India.”
+Biocontrol Science and Technology 6: 481–508.
+Romeis, J., T. G. Shanower, and C. P. Zebitz. 1997. “Volatile Plant
+Infochemicals Mediate Plant Preference of Trichogramma chilonis.”
+Journal of Chemical Ecology 23: 2455–2465.
+Romeis, J., T. G. Shanower, and C. P. W. Zebitz. 1998. “Physical and
+Chemical Plant Characters Inhibiting the Searching Behaviour of
+Trichogramma Chilonis.” Entomologia Experimentalis et Applicata 87:
+275–284.
+Romeis, J., T. G. Shanower, and C. P. W. Zebitz. 1999. “Trichogramma
+Egg Parasitism of Helicoverpa Armigera on Pigeonpea and Sorghum
+in Southern India.” Entomologia Experimentalis et Applicata 90:
+69–81.
+Ryan, J. G. 1998. “Pigeonpea Improvement: ACIAR Projects 8201 and
+8567.” Impact Assessment Study Report: IAS 06. Canberra, Australia:
+Australian Centre for International Agricultural Research.
+Sambathkumar, S., C. Durairaj, N. Ganapathy, and S. Mohankumar.
+2015. “Field Evaluation of Newer Insecticide Molecules and Botanicals
+Against Pod Borers of Red Gram.” Legume Research 38: 260–267.
+Sanahuja, G., R. Banakar, R. M. Twyman, T. Capell, and P. Christou.
+2011. “Bacillus thuringiensis: A Century of Research, Development and
+Commercial Applications.” Plant Biotechnology Journal 9: 283–300.
+Sarkar, S., S. Roy, and S. K. Ghosh. 2021. “Development of Marker-
+Free Transgenic Pigeon Pea (Cajanus cajan) Expressing a Pod Borer
+Insecticidal Protein.” Scientific Reports 11: 1–16.
+Saxena, K., A. Bohra, A. K. Choudhary, et al. 2021. “The Alternative
+Breeding Approaches for Improving Yield Gains and Stress Response in
+Pigeonpea (Cajanus cajan).” Plant Breeding 140: 74–86.
+Saxena, K., A. K. Choudhary, R. K. Srivastava, A. Bohra, R. K. Saxena,
+and R. K. Varshney. 2019. “Origin of Early Maturing Pigeonpea
+Germplasm and Its Impact on Adaptation and Cropping Systems.” Plant
+Breeding 138: 243–251.
+Saxena, K. B., G. D. S. N. Chandrasena, K. Hettiarachchi, Y. B. Iqbal,
+H. H. D. Fonseka, and S. J. B. A. Jayasekera. 2002. “Evaluation of
+Pigeonpea Accessions and Selected Lines for Reaction to Maruca.” Crop
+Science 42: 615–618.
+Saxena, K. B., Y. S. Chauhan, C. V. S. Kumar, et al. 2018. “Developing
+Improved Varieties of Pigeonpea, Improving Cultivation of Particular
+Grain Legumes.” In Achieving Sustainable Cultivarion of Grain
+Legumes, edited by S. Sivassankar, D. Bergvinson, P. Gaur, S.
+Kumar, S. Beebe, and M. Tamò, vol. 2, 1–30. Burleigh Dodds Science
+Publishing.
+Saxena, K. B., A. K. Choudhary, R. K. Saxena, and R. K. Varshney.
+2018. “Breeding Pigeonpea Cultivars for Intercropping: Synthesis and
+Strategies.” Breeding Science 68: 159–167.
+Saxena, K. B., R. V. Kumar, and R. Sultana. 2010. “Quality Nutrition
+Through Pigeonpea- a Review.” Health 2: 1335–1344.
+Saxena, K. B., R. Sultana, P. Bhatnagar- Mathur, et al. 2016.
+“Accomplishments and Challenges of Pigeonpea Breeding Research in
+India.” Indian Journal of Genetics & Plant Breeding 76: 467–482.
+Schläger, S., F. Beran, A. T. Groot, et al. 2015. “Pheromone Blend
+Analysis and Cross- Attraction Among Populations of Maruca vitrata
+From Asia and West Africa.” Journal of Chemical Ecology 41: 1155–1162.
+Schläger, S., C. Ulrichs, R. Srinivasan, et al. 2012. “Developing
+Pheromone Traps and Lures for Maruca vitrata in Taiwan.” Gesunde
+Pflanzen 64: 183–186.
+Scholz, B. C. 2000. “Trichogramma and Heliothis Management in Sweet
+Corn: Developing an IPM Package.” PhD Thesis. Brisbane, Australia:
+The University of Queensland.
+Seethalam, M., K. G. Bapatla, M. Kumar, et al. 2021. “Characterization
+of Helicoverpa Armigera Spatial Distribution in Pigeonpea Crop Using
+Geostatistical Methods.” Pest Management Science 77: 4942–4950.
+Seni, A. 2021. “Diversity of Hemipteran Insect Fauna and Their
+Relative Abundance in Pigeonpea, Cajanus cajan (L.) Millsp.” Journal
+of Entomology and Zoology Studies 9: 1072–1079.
+Shanower, T. G., S. S. Lal, and V. R. Bhagwat. 1998. “Biology
+and Management of Melanagromyza obtusa (Malloch)(Diptera:
+Agromyzidae).” Crop Protection 17: 249–263.
+Shanower, T. G., J. Romeis, and E. M. Minja. 1999. “Insect Pests of
+Pigeonpea and Their Management.” Annual Review of Entomology 44:
+77–96.
+Sharma, H. C. 1998. “Bionomics, Host Plant Resistance, and
+Management of the Legume Pod Borer, Maruca vitrata—A Review.”
+Crop Protection 17: 373–386.
+Sharma, H. C. 2016. “Host Plant Resistance to Insect Pests in Pigeonpea:
+Potential and Limitations.” Legume Perspectives 11: 24–29.
+Sharma, H. C., R. Ahmad, R. Ujagir, R. Yadav, R. Singh, and T. J.
+Ridsdill- Smith. 2005. “Host Plant Resistance to Cotton Bollworm/
+Legume Pod Borer, Heliothis/Helicoverpa.” In Heliothis/Helicoverpa
+Management: Emerging Trends and Strategies for Future Research, edited by H. C. Sharma, 167–208. Oxford and IBH Publishers.
+14390418,
+0,
+D
+ow
+nloaded
+from
+https://onlinelibrary.w
+iley.com
+/doi/10.1111/jen.13414
+by
+R
+esearch
+Inform
+ation
+Service,
+W
+iley
+O nline
+L ibrary
+on
+[06/03/2025].
+See
+the
+T
+erm
+s and
+C
+onditions
+(https://onlinelibrary.w
+iley.com
+/term
+s-and-conditions)
+on
+W
+iley
+O nline
+L ibrary
+for
+rules
+of
+use;
+O
+A
+articles
+are
+governed
+by
+the
+applicable
+C
+reative
+C
+om
+m
+ons
+L
+icense
+
+[[page 20]]
+20 of 21 Journal of Applied Entomology, 2025
+Sharma, H. C., G. Pampapathy, and L. J. Reddy. 2003. “Wild Relatives
+of Pigeonpea as a Source of Resistance to the Pod Fly (Melanagromyza
+obtusa Malloch) and Pod Wasp (Tanaostigmodes cajaninae La Salle).”
+Genetic Resources and Crop Evolution 50: 817–824.
+Sharma, H. C., G. Pampathy, M. L. Dhillon, and T. J. Ridsdill- Smith.
+2005. “Detached Leaf Assay to Screen for Host Plant Resistance to
+Helicoverpa armigera.” Journal of Economic Entomology 98: 568–576.
+Sharma, H. C., K. B. Saxena, and V. R. Bhagwat. 1999. “The Legume
+Pod Borer, Maruca vitrata: Bionomics and Management.” Monograph.
+International Crops Research Institute for the Semi- Arid Tropics.
+Sharma, H. C., G. Sujana, and D. Manohar Rao. 2009. “Morphological
+and Chemical Components of Resistance to Pod Borer, Helicoverpa
+Armigera in Wild Relatives of Pigeonpea.” Arthropod- Plant Interactions
+3: 151–161.
+Sharma, O. P., O. M. Bambawale, S. Yelshetty, et al. 2012. “Innovative
+Approach in Sustainable Production of Pigeonpea & Chickpea–Success
+Story of Gulbarga.” Department of Agricultural and Co- Opeteration,
+Ministry of Agriculture.
+Sharma, O. P., S. D. Bantewad, N. R. Patange, et al. 2015. “Implementation
+of Integrated Pest Management in Pigeonpea and Chickpea Pests in
+Major Pulse- Growing Areas of Maharashtra.” Journal of Integrated Pest
+Management 6: 12.
+Sharma, O. P., B. B. Bhosle, K. R. Kamble, B. V. Bhede, and N. R. Seeras.
+2011. “Management of Pigeonpea Pod Borers With Special Reference
+to Pod Fly (Melanagromyza obtusa).” Indian Journal of Agricultural
+Sciences 81: 539–543.
+Sharma, O. P., J. B. Gopali, S. Yelshetty, O. M. Bambawale, D. K. Garg,
+and B. B. Bhosle. 2010. “Pests of Pigeonpea and Their Management.”
+NCIPM, LBS Building, IARI Campus, New Delhi- 110,012, India, 4.
+Sheldrake, A. R., A. Narayanan, and N. Venkataratnam. 1979. “The
+Effects of Flower Removal on the Seed Yield of Pigeonpeas (Cajanus
+cajan).” Annals of Applied Biology 91: 383–390.
+Sigsgaard, L., and A. K. Ersboll. 1999. “Effects of Cowpea Intersowing and
+Insecticide Application on Helicoverpa armigera Hübner (Lepidoptera:
+Noctuidae) and Its Natural Enemies in Pigeonpea Intercropped With
+Sorghum.” International Journal of Pest Management 45: 61–67.
+Sigsgaard, L., and P. Esbjerg. 1997. “Cage Experiments on Orius Tantillus
+Predation of Helicoverpa armigera.” Entomologia Experimentalis et
+Applicata 82: 311–318.
+Singh, G., R. Singh, and A. Singla. 2022. “Estimation of Crop Losses
+in Cajanus cajan (L.) Millsp. And Vigna radiata (L.) Wilczek Caused
+by Blister Beetle, Mylabris pustulata Thunberg (Coleoptera: Meloidae).”
+International Journal of Tropical Insect Science 42: 3143–3150.
+Singh, R. N., and K. M. Singh. 1978. “Influence of Intercropping on
+Succession and Population Build Up of Insect- Pests in Early Variety of
+Red Gram, Cajanus cajan (L.) Millsp.” Indian Journal Of Entomology
+40: 361–375.
+Singh, S., N. R. Kumar, R. Maniraj, et al. 2018. “Expression of Cry2Aa,
+a Bacillus thuringiensis Insecticidal Protein in Transgenic Pigeon Pea
+Confers Resistance to Gram Pod Borer, Helicoverpa armigera.” Scientific
+Reports 8: 1–12.
+Singh, T. V. K., V. S. Kukanur, and G. B. Supriya. 2021. “Frequency
+of Resistance Alleles to Cry1Ac Toxin From Cotton Bollworm,
+Helicoverpa armigera (Hübner) Collected From Bt- Cotton Growing
+Areas of Telangana State of India.” Journal of Invertebrate Pathology
+183: 107559.
+Sison, M. L. J., and T. G. Shanower. 1994. “Development and Survival
+of Helicoverpa Armigera (Lepidoptera: Noctuidae) on Short- Duration
+Pigeonpea.” Journal of Economic Entomology 87: 1749–1753.
+Sison, M. L. J., T. G. Shanower, and V. R. Bhagwat. 1993. “Helicoverpa
+Armigera (Hübner) Ovipositional and Larval Feeding Preferences
+Among Six Short- Duration Pigeonpea Genotypes.” International
+Pigeonpea Newsletter 17: 37–39.
+Snapp, S., P. Rogé, P. Okori, R. Chikowo, B. Peter, and J. Messina. 2019.
+“Perennial Grains for Africa: Possibility or Pipedream?” Experimental
+Agriculture 55: 251–272.
+Snapp, S. S., R. B. Jones, E. M. Minja, J. Rusike, and S. N. Silim. 2003.
+“Pigeon Pea for Africa: A Versatile Vegetable—And More.” HortScience
+38: 1073–1079.
+Sreekanth, M., and M. Seshamahalakshmi. 2012. “Studies on Relative
+Toxicity of Biopesticides to Helicoverpa armigera (Hubner) and Maruca
+vitrata (Geyer) on Pigeonpea (Cajanus cajan L.).” Journal of Biopesticides
+5: 191–195.
+Sreelakshmi, P., A. Paul, M. Antu, M. Sheela, and T. George. 2015.
+“Assessment of Insecticide Resistance in Field Populations of
+Spotted Pod Borer, Maruca vitrata Fabricius on Vegetable Cowpea.”
+International Journal of Farm Sciences 5: 159–164.
+Sreekanth, M., and M. Seshamahalakshmi. 2018. “Evaluation of Bt
+Liquid Formulations Against Gram Pod Borer, Helicoverpa armigera
+(Hubner) and Spotted Pod Borer, Maruca vitrata (Geyer) in Pigeonpea.”
+Journal of Biopesticides 11: 52–59.
+Srinivasan, R., M. Tamò, S. T. Lee, M. Lin, C. Huang, and Y. C. Hsu.
+2009. “Towards Developing a Biological Control Program for Legume
+Pod Borer (Maruca vitrata).” In: Proceedings of the International
+Conference on Grain Legumes: Quality Improvement, Value Addition
+and Trade, Kanpur, India: Indian Society of Pulses Research and
+Development, indian Institute of Pulses Research. 14–16.
+Srinivasan, R., M. Tamò, and P. Malini. 2021. “Emergence of Maruca
+vitrata as a Major Pest of Food Legumes and Evolution of Management
+Practices in Asia and Africa.” Annual Review of Entomology 66:
+141–161.
+Srivastava, C. P., and N. Joshi. 2011. “Insect Pest Management in
+Pigeon Pea in Indian Scenario: A Critical Review.” Indian Journal Of
+Entomology 73: 63–75.
+Stevenson, P. C., P. W. C. Green, M. S. J. Simmonds, and H. C. Sharma.
+2005. “Physical and Chemical Mechanisms of Plant Resistance to
+Helicoverpa: Recent Research on Chickpea and Pigeonpea.” In Heliothis/
+Helicoverpa Management: Emerging Trends and Strategies for Future
+Research, edited by H. C. Sharma, 209–222. Oxford and IBH Publishers.
+Stout, M. J. 2013. “Reevaluating the Conceptual Framework for Applied
+Research on Host- Plant Resistance.” Insect Science 20: 263–272.
+Stowe, K. A., R. J. Marquis, C. G. Hochwender, and E. L. Simms. 2000.
+“The Evolutionary Ecology of Tolerance to Consumer Damage.” Annual
+Review of Ecology and Systematics 31: 565–595.
+Subbarao, G. V., Y. S. Chauhan, and C. Johansen. 2000. “Patterns of
+Osmotic Adjustment in Pigeonpea—Its Importance as a Mechanism of
+Drought Resistance.” European Journal of Agronomy 12: 239–249.
+Subbarao, G. V., N. H. Nam, Y. S. Chauhan, and C. Johansen.
+2000. “Osmotic Adjustment, Water Relations and Carbohydrate
+Remobilization in Pigeonpea Under Water Deficits.” Journal of Plant
+Physiology 157: 651–659.
+Sunitha, V., K. V. Lakshmi, and G. V. Ranga Rao. 2008. “Laboratory
+Evaluation of Certain Insecticides Against Pigeonpea Pod Borer,
+Maruca vitrata Geyer.” Journal of Food Legumes 21: 137–139.
+Sunitha, V., G. V. Ranga Rao, K. Vijaya Lakshmi, K. B. Saxena, R. V.
+Rameshwar, and Y. V. R. Reddy. 2008. “Morphological and Biochemical
+Factors Associated With Resistance to Maruca vitrata (Lepidoptera:
+Pyralidae) in Short- Duration Pigeonpea.” International Journal of
+Tropical Insect Science 28: 45–52.
+Tabashnik, B. E., and Y. Carrière. 2017. “Surge in Insect Resistance
+to Transgenic Crops and Prospects for Sustainability.” Nature
+Biotechnology 35: 926–935.
+14390418,
+0,
+D
+ow
+nloaded
+from
+https://onlinelibrary.w
+iley.com
+/doi/10.1111/jen.13414
+by
+R
+esearch
+Inform
+ation
+Service,
+W
+iley
+O nline
+L
+ibrary
+on
+[06/03/2025].
+See
+the
+T
+erm
+s
+and
+C
+onditions
+(https://onlinelibrary.w
+iley.com
+/term
+s-and-conditions)
+on
+W
+iley
+O
+nline
+L
+ibrary
+for
+rules
+of
+use;
+O
+A
+articles
+are
+governed
+by
+the
+applicable
+C reative
+C
+om
+m
+ons
+L
+icense
+
+[[page 21]]
+21 of 21
+Tabashnik, B. E., J. A. Fabrick, and Y. Carrière. 2023. “Global Patterns
+of Insect Resistance to Transgenic Bt Crops: The First 25 Years.” Journal
+of Economic Entomology 116: 297–309.
+Taggar, G. K., R. Singh, P. K. Chhuneja, et al. 2022. “Insecticidal
+Potential of Home- Made Neem Extract Against Pod Sucking Bug,
+Clavigralla gibbosa (Spinola) in Pigeonpea.” International Journal of
+Tropical Insect Science 42: 1913–1924.
+Taggar, G. K., R. Singh, H. S. Randhawa, and H. K. Cheema. 2021.
+“Novel Insecticides for the Management of Pod Borer Complex in
+Pigeonpea Crop.” Legume Research 44: 1179–1185.
+Talakayala, A., S. Katta, and M. Garladinne. 2020. “Genetic Engineering
+of Crops for Insect Resistance: An Overview.” Journal of Biosciences 45:
+114.
+Tamò, M., R. Srinivasan, E. Dannon, et al. 2012. “Biological Control:
+A Major Component for the Long- Term Cowpea Pest Management
+Strategy.” In Proceedings of the Fifth World Cowpea Conference
+on Improving Livelihoods in the Cowpea Value Chain Through
+Advancement in Science, Ibadan, NigeriaL IITA. 249–259.
+Tayo, T. 1980. “Compensatory Growth and Yield of Pigeon Pea (Cajanus
+cajan) Following Pod Removal at Different Stages of Reproductive
+Growth.” Journal of Agricultural Science 95: 487–491.
+Thilagam, P., A. Gopikrishnan, and D. Dinakaran. 2020. “Evaluation
+of Chemical Insecticides for the Management of Podbug, Clavigralla
+gibbosa Spinola in Pigeonpea.” Journal of Pharmacognosy and
+Phytochemistry 9: 987–989.
+Tillman, P. G., J. R. Aldrich, A. Khrimian, and T. E. Cottrell. 2010.
+“Pheromone Attraction and Cross- Attraction of Nezara, Acrosternum,
+and Euschistus spp. Stink Bugs (Heteroptera: Pentatomidae) in the
+Field.” Environmental Entomology 39: 610–617.
+Togun, A. O., and T. O. Tayo. 1990. “Flowering and Pod and Seed
+Development in Pigeon Pea (Cajanus cajan).” Journal of Agricultural
+Science 115: 327–335.
+Van der Maesen, L. J. 1985. “Cajanus DC. And Atylosia W. & A.
+(Leguminosae): A Revision of all Taxa Closely Related to the Pigeonpea,
+With Notes on Other Related Genera Within the Subtribe Cajaninae.”
+Agricultural University Wageningen Papers.
+Vanambathina, P., R. C. N. Rachaputi, R. J. Henry, and S. L. Norton. 2019.
+“Phenotypic Variation in Australian Wild Cajanus and Their Interspecific
+Hybrids.” Genetic Resources and Crop Evolution 66: 1699–1712.
+Vandervoet, T. F., P. C. Ellsworth, Y. Carrière, and S. E. Naranjo.
+2018. “Quantifying Conservation Biological Control for Management
+of Bemisia tabaci (Hemiptera: Aleyrodidae) in Cotton.” Journal of
+Economic Entomology 111: 1056–1068.
+Vinayaka, T. 2012. “Eco- Friendly Management of Pigeonpea
+Podborers With Special Reference to Webworm, Maruca Vitrata Geyer
+(Lepidoptera: Pyralidae).” MSc Thesis. University of Agricultural
+Science, Bengaluru, Karnataka.
+Vinayaka, T., and S. Murali. 2014. “Different Bt Formulations Against
+Pod Borer Complex in Pigeonpea Ecosystem.” Journal of Biopesticides 7:
+15–17.
+Viteri, D. M., L. Sarmiento, A. M. Linares, and I. Cabrera. 2019.
+“Efficacy of Biological Control Agents, Synthetic Insecticides, and
+Their Combinations to Control Tobacco Budworm [Heliothis virescens
+(Lepidoptera: Noctuidae)] in Pigeon Pea.” Crop Protection 122: 175–179.
+Volp, T. M., M. P. Zalucki, and M. J. Furlong. 2022. “What Defines a
+Host? Oviposition Behavior and Larval Performance of Spodoptera frugiperda (Lepidoptera:Noctuidae) on Five Putative Host Plants.” Journal
+of Economic Entomology 115: 1744–1751.
+Volp, T. M., M. P. Zalucki, and M. J. Furlong. 2023. “Helicoverpa armigera Preference and Performance on Three Cultivars of Short-
+Duration Pigeonpea (Cajanus cajan): The Importance of Whole Plant
+Assays.” Pest Management Science 79: 627–637.
+Volp, T. M., M. P. Zalucki, and M. J. Furlong. 2024a. “Ontogenetic
+Changes in the Feeding Behaviour of Helicoverpa armigera Larvae on
+Pigeonpea (Cajanus cajan) Flowers and Pods.” Plants 13: 696.
+Volp, T. M., M. P. Zalucki, and M. J. Furlong. 2024b. “Pigeonpea
+(Cajanus cajan) Crop Stage Strongly Influences Plant Susceptibility to
+Helicoverpa armigera (Lepidoptera: Noctuidae).” Journal of Economic
+Entomology 17, no. 3: 973–981.
+Wade, M. R., B. C. G. Scholz, R. J. Lloyd, A. J. Cleary, B. A. Franzmann,
+and M. P. Zalucki. 2006. “Temporal Variation in Arthropod Sampling
+Effectiveness: The Case for Using the Beat Sheet Method in Cotton.”
+Entomologia Experimentalis et Applicata 120: 139–153.
+Wallis, E. S., P. C. Whiteman, and D. E. Byth. 1979. “Pigeon Pea: A New
+Crop for Queensland.” Queensland Agricultural Journal 105: 487–492.
+Walsh, T. K., D. G. Heckel, Y. Wu, S. Downes, K. H. J. Gordon, and J.
+G. Oakeshott. 2022. “Determinants of Insecticide Resistance Evolution:
+Comparative Analysis Among Heliothines.” Annual Review of
+Entomology 67: 387–406.
+Wankhade, R. N., G. B. Malthane, and D. V. Nemade. 2009. “Constraints
+in Pigeonpea Production in Maharashtra.” Journal of Community
+Mobilization and Sustainable Development 4: 72–75.
+Wayal, C. B., S. A. Gaikwad, and P. J. Warad. 2021. “Bioefficacy of Various
+Insecticides Against, Melanagromyza obtusa (Malloch) on Pigeon Pea
+(Cajanas cajan)(L) Millsp.” Pharma Innovation Journal 10: 1442–1445.
+Whitehouse, M. E., D. Cross, S. Mansfield, et al. 2017. “Do Pigeon Pea
+Refuges in Bt Cotton Pull Their Weight as “Genetic Diluters” to Counter
+Bt Resistance in Helicoverpa Moths?” Crop Protection 100: 96–105.
+Wilson, L. J., M. E. Whitehouse, and G. A. Herron. 2018. “The
+Management of Insect Pests in Australian Cotton: An Evolving Story.”
+Annual Review of Entomology 63: 215–237.
+Xiao, Y., and K. Wu. 2019. “Recent Progress on the Interaction Between
+Insects and Bacillus thuringiensis Crops.” Philosophical Transactions of
+the Royal Society B 374: 180316.
+Yadav, A., R. Keval, and A. Yadav. 2021. “Monitoring of Gram Pod
+Borer, Helicoverpa armigera (Hübner) Through Pheromone Traps in
+Different Modules of Short Duration Pigeonpea.” Legume Research 44:
+1192–1197.
+Yadava, C. P., S. S. Lal, C. A. R. Dias, and R. Nigam. 1983. “Host
+Evasion: A Prospective Approach for Suppressing Heliothis Damage.”
+International Pigeonpea Newsletter 2: 62–64.
+Yogesh, K. R., S. Chand, and G. P. Morya. 2015. “Impact of Intercropping
+on Population Build- Up of Gram Pod Borer (Helicoverpa armigera) in
+Pigeonpea.” Progressive Research 10: 616–618.
+Yohane, E. N., H. Shimelis, M. Laing, A. Shayanowako, I. Mathew, and
+J. M. Chintu. 2021. “Pigeonpea Production Constraints and farmers'
+Trait Preferences in Malawi: Implications for Variety Design.” South
+African Journal of Plant and Soil 38: 326–337.
+Zalucki, M. P., D. Adamson, and M. J. Furlong. 2009. “The Future of
+IPM: Whither or Wither?” Australian Journal of Entomology 48: 85–96.
+Zalucki, M. P., G. Daglish, S. Firempong, and P. Twine. 1986. “The
+Biology and Ecology of Heliothis Armigera (Hubner) and Heliothis
+Punctigera Wallengren (Lepidoptera: Noctuidae) in Australia: What Do
+We Know.” Australian Journal of Zoology 34: 779–814.
+Zalucki, M. P., M. J. Furlong, N. A. Schellhorn, S. Macfadyen, and
+A. P. Davies. 2015. “Assessing the Impact of Natural Enemies in
+Agroecosystems: Toward Real IPM or in Quest of the Holy Grail?”
+Insect Science 22: 1–5.
+Zalucki, M. P., A. Shabbir, R. Silva, D. Adamson, L. Shu- Sheng, and M. J.
+Furlong. 2012. “Estimating the Economic Cost of One of the World's Major
+Insect Pests, Plutella xylostella (Lepidoptera: Plutellidae): Just How Long
+Is a Piece of String?” Journal of Economic Entomology 105: 1115–1129.
+14390418,
+0,
+D
+ow
+nloaded
+from
+https://onlinelibrary.w
+iley.com
+/doi/10.1111/jen.13414
+by
+R
+esearch
+Inform
+ation
+Service,
+W
+iley
+O nline
+L ibrary
+on [06/03/2025].
+See
+the
+T
+erm
+s and
+C
+onditions
+(https://onlinelibrary.w
+iley.com
+/term
+s-and-conditions)
+on
+W
+iley
+O nline
+L ibrary
+for
+rules
+of
+use;
+O
+A
+articles
+are
+governed
+by
+the
+applicable
+C
+reative
+C
+om
+m
+ons
+L
+icense

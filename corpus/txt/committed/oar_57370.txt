@@ -1,0 +1,783 @@
+=== ADTC-PROVENANCE v1 ===
+id: oar_57370
+titre: Pearl millet yield reduction by soil erosion and its recovery potential through fertilizer application on an Arenosol in the Sahel
+editeur: Elsevier
+annee: 2024-10-16
+langue: en
+licence: CC-BY-4.0
+licence_confirmee_dans_le_pdf: true
+licence_citation: .V. This is an open access article under the CC BY license ( http://creativecommons.org/license
+regime: committed
+citation_verbatim_autorisee: oui
+sujet: fertilisation
+portee: sahel_specific
+utilite_conseil: directe
+url_pdf: http://oar.icrisat.org/id/document/57370
+page_notice: http://oar.icrisat.org/id/eprint/13174
+doi: https://doi.org/10.1016/j.still.2024.106324
+fichier_source: Soil and Tillage Research_246_1-9_2025.pdf
+pages_pdf_total: 9
+pages_extraites: 9
+pages_source: 1-9
+moteur_extraction: pdfplumber 0.11.10 (use_text_flow=True)
+car_extraits: 51712
+car_utiles_pypdf_reference: 54607
+car_pypdf_memes_pages: 54607
+normalisations: pua=0 ligatures=0 espaces_speciaux=0 zero_largeur=0 decesures=44
+decesure_regles: atteste_soude=40 atteste_tiret=0 atteste_deux_moities=1 defaut_prefixe=0 defaut_soude=3
+qualite_texte: car_en_tokens_soudes_pct=0.6 tokens_soudes=8 tokens_total=8006 verdict=sain
+marqueur_page: [[page N]] = numero de page PDF 1-indexe, lu du PDF et non du texte
+=== TEXTE ===
+[[page 1]]
+Pearl millet yield reduction by soil erosion and its recovery potential
+through fertilizer application on an Arenosol in the Sahel
+Tomohiro Nishigakia, Kenta Ikazakia,*, Hitoshi Shinjob, Ueru Tanakac, Dougbedji Fatondjid,
+Shinya Funakawab
+aCrop, Livestock, and Environment Division, Japan International Research Center for Agricultural Sciences, 1-1 Owashi, Tsukuba, Ibaraki 305-8686, Japan
+bGraduate School of Global Environmental Studies, Kyoto University, Yoshida Honmachi, Sakyo-ku, Kyoto 606-8501, Japan
+cResearch Institute for Humanity and Nature, 457-4 Kamigamo Motoyama, Kita-ku, Kyoto 603-804, Japan
+dInternational Crops Research Institute for the Semi-Arid Tropics (ICRISAT), Niamey BP12404, Niger
+A R T I C L E I N F O
+Keywords:
+Arid agriculture
+Soil degradation
+Soil restoration
+Sub-Saharan Africa
+Topsoil removal
+A B S T R A C T
+Despite the heightened contribution of soil erosion to soil degradation in the Sahel, its impact, particularly
+topsoil loss, on crop productivity remains unclear. To address this issue, we investigated the effects of simulated
+erosion by removing topsoil on the grain yield of pearl millet in the Sahel. Three-year field experiments conducted on an Arenosol in Niger examined different levels of topsoil removal (0, 1.0, 2.5, 5.0, and 10 cm) and
+fertilization (unfertilized and fertilized) on the grain yield of pearl millet. Results showed that topsoil removal of
+2.5 cm or more significantly reduced grain yield, with effects projected to become apparent in 5–6 years based on
+erosion rates previously reported. Under normal rainfall conditions in the first and third years, 2.5-cm topsoil
+removal under unfertilized conditions resulted in a yield reduction of 37 % cm⁻1, surpassing the values reported
+in other humid to semi-arid regions of sub-Saharan Africa. Conversely, the grain yield remained unaffected
+following a 1-cm topsoil removal. Fertilizer application compensated for the grain yield loss in the plots of 2.5-
+and 5.0-cm topsoil removal but not effectively in the 10-cm removal plot. In conclusion, the loss of the thin Ap
+horizon markedly reduced plant-available water and nutrients in soils, leading to a decreased grain yield of pearl
+millet in the Sahel. Given the Ap horizon thinness and soil erosion prevalence in the Sahel, recognizing the
+topsoil loss in the early stages of soil erosion and implementing countermeasures are imperative to avoid a sharp
+decline in grain yield.
+1. Introduction
+Agricultural soil erosion ranks among the most destructive human-induced perturbations to soil sustainability (Amundson et al., 2015),
+as it adversely affects soil quality and productivity by reducing infiltration rates, water-holding capacity, nutrients, organic matter, soil
+biota, and soil depth (IPBES, 2019; Pimentel et al., 1995). Soil erosion
+rate in croplands (12.7 Mg ha (cid:0) 1 yr (cid:0) 1) is substantially higher than that in
+native vegetation and the soil formation rate (Montgomery, 2007).
+Consequently, despite occupying a relatively small percentage of the
+world’s land (11.2 %), croplands contribute disproportionately to total
+soil erosion (50.5 %) (Borrelli et al., 2017). Continuous depletion of
+nutrient resources and reduced water availability due to soil erosion can
+result in stunted plant growth, decreased overall productivity, and
+increased agricultural costs (Frye et al., 1982; Panagos et al., 2018).
+Preventing the loss of fertile topsoil caused by soil erosion represents an
+essential long-term strategy for achieving agricultural sustainability
+(Jones et al., 2013).
+The erosion-induced loss of fertile surface soil results in decreased
+crop productivity and necessitates labor-intensive efforts to restore soil
+fertility. This challenge is particularly pronounced in sub-Saharan Af-
+rican (SSA) countries, where meeting the demand for staple food crops
+becomes increasingly difficult due to the growing population and the
+unaffordability of chemical fertilizers for local small-holder farmers
+(Sanchez, 2002; van Ittersum et al., 2016). Africa has the highest soil
+erosion rate (3.9 Mg ha (cid:0) 1 yr (cid:0) 1) among South America (3.8 Mg ha (cid:0) 1
+yr (cid:0) 1), Asia (3.5 Mg ha (cid:0) 1 yr (cid:0) 1), and other continents (Borrelli et al.,
+2017). Without fertilizer application, African agricultural soils exhibited
+* Corresponding author.
+E-mail addresses: nishigaki@affrc.go.jp(T. Nishigaki), ikazaki@affrc.go.jp(K. Ikazaki), shinjo.hitoshi.4x@kyoto-u.ac.jp(H. Shinjo), ueru.tanaka@setsunan.ac.jp
+(U. Tanaka), Dougbedji.Fatondji@icrisat.org(D. Fatondji), funakawa.shinya.2w@kyoto-u.ac.jp(S. Funakawa).
+Contents lists available at ScienceDirect
+Soil
+&
+Tillage Research
+journal homepage: www.elsevier.com/locate/still
+https://doi.org/10.1016/j.still.2024.106324
+Received 11 June 2024; Received in revised form 30 September 2024; Accepted 3 October 2024
+Soil & Tillage Research 246 (2025) 106324
+Available online 16 October 2024
+0167-1987/© 2024 The Author(s). Published by Elsevier B.V. This is an open access article under the CC BY license ( http://creativecommons.org/licenses/by/4.0/ ).
+
+[[page 2]]
+a negative overall phosphorus balance ((cid:0) 11.4 kg P ha (cid:0) 1 yr (cid:0) 1) owing to
+high phosphorus losses resulting from severe soil erosion (Alewell et al.,
+2020). Erosion-induced yield losses of 2 %–40 %, with a mean loss of
+9 % for the African continent and 6.6 % for SSA, have been reported (Lal,
+1995, 2001). If higher soil erosion rates continue unabated, average
+annual crop yield declines of 16.5 % for the former and 14.5 % for the
+latter may be possible (Pimentel and Burgess, 2013). However, these
+estimations involve uncertainty mainly due to the high spatial variability in environmental conditions and soil erosion characteristics in
+SSA (Nishigaki et al., 2017).
+Spatiotemporally erratic rainfall patterns combined with extremely
+sandy and less fertile soils markedly contribute to persistent food production insecurity in the Sahel (Agnew and Chappell, 1999). The region
+also suffers desertification and consequent depletion of soil fertility,
+primarily resulting from wind erosion (Ikazaki, 2015). Wind erosion
+causes soil and nutrient losses at rates of 4–5 mm yr (cid:0) 1 and 40–50 kg N
+ha (cid:0) 1 yr (cid:0) 1, respectively, which is 2–3 times higher than the annual nitrogen uptake by pearl millet in this region (Ikazaki et al., 2012, 2011b).
+The impact of wind erosion on soil properties in the region could result
+from the loss of a loose sand layer, Ap horizon, which forms on the
+ground and is typically a few centimeters thick. This sandy Ap horizon
+overlays a crust layer, which has low water permeability, and prevents
+the deterioration of physical properties resulting from crust layer
+exposure. Hence, the loss of only several centimeters, including the
+sandy Ap horizon, could significantly decrease crop productivity.
+However, unlike regions with relatively high rainfall amounts in SSA
+(Lal, 1995; Mbagwu et al., 1984), the impact of soil loss on crop productivity in the Sahel remains unclear.
+Restoring soil fertility using mineral and organic fertilizers is
+essential for closing the yield gap in degraded croplands in SSA (Nord
+et al., 2022; Tittonell and Giller, 2013; Zhou et al., 2015). Bielders et al.
+(2000) showed that broadcasted pearl millet stover mulching was
+effective to trap aeolian sediment transported by wind, which would
+contribute to ameliorate degraded lands. Treatment with organic
+amendments such as manure proved highly effective in restoring productivity by supplying macro- and micronutrients to eroded soils
+(Larney et al., 2000). In contrast, treatment with chemical fertilizer
+failed to restore yields to the level observed in noneroded soil (Wang
+et al., 2009). Mbagwu et al. (1984)observed the nonresponsiveness of
+maize yield to even higher fertilizer application rates in plots where 10
+or 20 cm of topsoil had been removed in southeast Nigeria—an effect
+resulting from poor drainage conditions or other yield-limiting elements
+not supplied by fertilizer. Consequently, farmers can benefit from understanding the crop yield increase achieved through fertilizer application to counteract yield reductions at various levels of soil erosion.
+However, there have been few attempts to determine the effect of fertilizer application on crop yield recovery at different levels of soil
+erosion in field experiments in SSA.
+The most recognized method for analyzing the impact of soil erosion
+on productivity involves evaluating crop yield variations among plots
+with varying degrees of erosion (Zhang et al., 2021). Major attempts to
+obtain data for this purpose include (1) removing or adding topsoil in
+experimental plots and (2) comparing crop yield along transects and
+plots with different erosion levels. Topsoil removal may exacerbate the
+negative effects of erosion on productivity, as it leads to the abrupt
+disappearance of topsoil without the natural preferential sorting of soil
+aggregates in erosion processes (Zhang et al., 2021). Higher values of
+yield reduction have been generally reported in previous studies using
+topsoil removal approach compared to other approaches (Bakker et al.,
+2004). Bakker et al. (2004) found an approximately 26.6 % yield
+reduction with topsoil removal (desurfacing) methods and a 10.9 %
+reduction with transect methods per 10 cm of soil loss. However, the
+confounding aspects of landscape position and inherent topsoil depth
+variability in Attempt 2 can be overcome using a topsoil removal
+experiment. Moreover, traditional cultivation practices in the Sahel
+involve minimal disturbance, typically utilizing push-hoes for only the
+top several centimeters of surface soil. This suggests that the disappearance of topsoil may, to some extent, mimic natural erosion processes. Therefore, the topsoil removal experiment is considered the
+easiest, most practical, and efficient quantitative method in research
+examining the effects of soil erosion on crop yields in the Sahel (Bakker
+et al., 2004; Gao et al., 2015; Zhang et al., 2021).
+This study focuses on assessing the effect of topsoil removal on pearl
+millet productivity in the Sahel and quantifying the effectiveness of
+fertilizer application in restoring productivity in eroded soils. Of
+particular interest, we aimed to determine the depth of topsoil removal
+that causes significant yield loss in pearl millet and to understand to
+what depth of topsoil removal the yield loss can be recovered by fertilizer application.
+2. Materials and methods
+2.1. Field experiment
+A three-year field trial was conducted at the International Crops
+Research Institute for the Semi-Arid Tropics West and Central Africa
+(IWCA) in Niger (13◦14’16"N, 2◦16’48"E, 230 m asl.) from 2009 to
+2011. The climate is typical of the Sahel and is classified as BSh according to the K¨ oppen climate classification system. The mean annual
+temperature was 29ºC (based on the mean values from 1983 to 2008,
+with data missing for 2003, provided by IWCA). Rainfall is concentrated
+during the rainy season, from June to October. The mean rainfall during
+this period was 513 ±113 mm (mean ±standard deviation based on
+data from 1983 to 2008, with data missing for 2003, provided by IWCA).
+According to the same data, the monthly rainfall in October was the
+lowest, averaging 15.6 mm, and mostly less than 10 mm. The total
+rainfall values in the cropping period from June to October were 493.6
+and 476.1 mm in the first and third years, which were comparable to the
+mean value in this area. Meanwhile, the total rainfall in the second year
+was 661.2 mm, 29 % higher than the average value, due to the high
+rainfall amounts in September and October, which were 1.5 and 6.3
+times higher than the average of each month (Fig. 1). Heavy rainfall
+events (>35 mm day-1) were frequently observed after fertilizer application in the second year: three times (26, 33, and 40 days after sowing
+(DAS)) within a month after fertilizer application in the second year,
+while only once in the first (24 DAS) and third years (44 DAS).
+The soil at the experimental site was classified as Dystric Sideralic
+Arenosol according to the WRB soil classification system (IUSS Working
+Group WRB, 2022). The temperature regime was isohyperthermic and
+moisture regime was ustic. The sand content exceeded 90% throughout
+the soil profile up to a 180-cm depth (Supplemental Table 1and Photo
+1). The land history before the experiment is a 4-year fallow. A
+Fig. 1. Monthly rainfall at the experimental site during cropping seasons
+(June–October) in the three years and the average value in 1983–2008. Error
+bars represent the standard deviation of the values in 1983–2008.
+T. Nishigaki et al. Soil & Tillage Research 246 (2025) 106324
+2
+
+[[page 3]]
+randomized complete block split-plot design with three replicates was
+established in the 2009 season. Each block had two whole plots with and
+without fertilizer application and each whole plot had five subplots with
+different removal depths (0, 1.0, 2.5, 5.0, and 10cm). In the fertilized
+plots, 200kgha (cid:0) 1 of NPK compound fertilizer (15% N, 15% P2O5, and
+15% K2O) common in the study area was broadcasted 14 DAS following
+IWCA recommendations. The topsoils were excavated and removed
+manually from all the subplots using handheld rectangular shovels with
+1-, 2.5-, and 5-cm thicknesses. The subplot measured 7m by 7m. The
+slope of the experimental site was 2%, with the south side higher and
+the north side lower. To prevent soil and fertilizer from being carried
+outside the plots by erosive wind (east wind) and runoff water, and to
+prevent them from entering the adjacent plots, trenches (30cm wide
+and 30cm deep) were dug on the west and north sides of each plot,
+specifically on the leeward and lower sides. Soil accumulated in the
+trenches was removed as needed. The overview of the experimental site
+can be seen as Supplemental Photos 2 and 3. A landrace of pearl millet,
+Haini kirey (120 days to maturity), was used in this experiment owing to
+its widespread use by farmers in the region. The planting density of pearl
+millet was 1m ×1m and thus 10,000 plants per hector. About 20 pearl
+millet seeds were placed in pockets on June 14, 2009, June 20, 2010,
+and June 23, 2011, in the first to third years, respectively. Re-seeding
+was also performed as needed. Pearl millet was thinned to three plants
+per hill four weeks after sowing. Weeding was conducted twice by hand
+during the cropping season, and weed biomass was sampled to measure
+the weight at each plot.
+2.2. Soil sampling and analysis
+To assess the vertical variation in the initial soil fertility of the surface layer at the experimental site, soil samples were collected before
+topsoil removal at depths of 0–1.0, 1.0–2.0, 2.0–3.0, 3.0–4.0, 4.0–5.0,
+5.0–7.0, 7.0–9.0, 9.0–11.0, 11.0–13.0, 13.0–15.0, 15.0–17.5, and
+17.5–20.0cm at 5 points in the experimental site and then mixed to
+make composite samples. The soil samples were then air-dried, passed
+through a 2-mm sieve, and used for subsequent analysis. Soil pH and
+electric conductivity (EC) were determined in deionized water at a soilto-solution ratio of 1:5. The total carbon content (TC) and total nitrogen
+content (TN) were quantified using the dry combustion method with an
+NC analyzer (VarioMAX CN; Elemental Analysensystem GmbH, Hanau,
+Germany). Exchangeable cations (Ca, Mg, K, and Na) and cation
+exchangeable capacity (CEC) were measured using the ammonium acetate method following van Reeuwijk (2002). Exchangeable Al was
+extracted by 1M KCl and determined as in van Reeuwijk (2002).
+Nutrient loss due to topsoil removal was calculated based on the depth of
+topsoil removal, the bulk density and nutrient concentration of the
+topsoil. The bulk density values used were previously measured as 1.58
+Mg m-3 (0–3cm depth) and 1.65 Mg m-3 (3–10cm depth) (Supplemental
+Table 1).
+To obtain the soil water retention curve, soil samples were taken at
+10, 30, 50, and 80cm depth using the 100mL metal core. Then, the
+volumetric water contents at tensions of 9.8, 31, 98, and 1500 kPa
+(permanent wilting point) were measured with a pressure plate apparatus as described in Dane and Hopmans (2002).
+2.3. Plant sampling and analysis
+To monitor pearl millet growth, the dates of heading and flowering
+were recorded. After drying the panicles in the field for two weeks, in
+early November, yield components (survival rate, stem number per
+survived hill, panicle number per stem, grain weight per panicle) and
+grain yield were determined using all plants in each plot after removing
+one border row on each side of the plot (25 plants from 25m2 per plot)
+(Supplemental Photo 4). The collected plant samples were oven-dried at
+70ºC for 48h and weighed. The weight of the weed biomass was also
+recorded after drying at 70ºC for 48h.
+2.4. Environmental monitoring
+Rainfall amount was measured with a tipping bucket rain gauge
+(TE525; Campbell Scientific, Inc., UT, USA) at the experiment site and
+recorded using a data logger (CR1000; Campbell Scientific, Inc., UT,
+USA) at 30-min intervals throughout the experimental period. The
+volumetric water content (VWC) of soils at a depth of 0–10cm was
+continuously measured using time domain reflectometer probes (CS616;
+Campbell Scientific, Inc., UT, USA) with one replication in a subplot of 0,
+1, 2.5, and 5cm topsoil removal in a representative main plot. The
+profile moisture content was also monitored using soil moisture probes
+(Easy-AG 1358; Sentek, SA, Australia) at depths of 10, 30, 50, and 80cm
+in the same plots as above. Data on soil moisture were recorded using a
+data logger (CR1000) at 30-min intervals from June to October 2009.
+The data in the plot with 10-cm topsoil removal was missing because we
+failed to measure it.
+The amount of soil water at the lower tension than the permanent
+wilting point (1500 kPa) in the soil profile (0–100cm depth) was
+calculated with the bulk density, VWC at the permanent wilting point,
+VWC at that time, and thickness of each layer. The VWCs at depths of 10,
+30, 50, and 80cm were used to calculate the soil water content of layers
+of 0–20, 20–40, 40–60, and 60–100cm, respectively. Supplemental
+Table 1contains the bulk density of each layer.
+2.5. Statistical analyses
+Statistical analyses were performed using JMP14 software (SAS
+Institute Inc., Cary, NC, USA). A Pearson correlation analysis was performed to assess the relationship among the soil properties in the top 20-
+cm depth. Grain yield and stem number per survived hill of pearl millet
+and weed biomass were logarithmically transformed for normality.
+Then, analysis of variance (ANOVA) was conducted to determine the
+individual effects of topsoil removal depth, fertilizer application, and
+experimental year on the measured variables. The mean values of these
+transformed variables and other original variables, except survival rate,
+in different treatment plots were then compared with the plot with 0-cm
+topsoil removal under unfertilized conditions (hereafter control) using
+the Dunnett’s test. The survival rate did not follow a normal distribution
+even after logarithmical transformation. Therefore, the mean values of
+its original data in different treatment plots were compared with the
+control using the Steel test. In all cases, statistical significance was
+determined at the p <0.05 level.
+3. Results
+3.1. Initial soil properties of the surface layer and nutrient losses by
+topsoil removal
+Soil pH, EC, TN, TC, and exchangeable Ca decreased with increasing
+soil depth, whereas the C:N ratio and exchangeable Al increased with
+increasing soil depth (Table 1). Exchangeable Mg, exchangeable Na, and
+CEC exhibited unclear trends in relation to soil depth. Thus, the surface
+soils of the plots after topsoil removal had lower pH, EC, TN, TC, and
+exchangeable Ca and higher C:N ratio and exchangeable Al than those of
+the original soil (i.e., the plot of 0-cm removal). Soil pH negatively
+correlated with exchangeable Al (r = (cid:0) 0.97, p < 0.001, n = 12) but
+positively correlated with exchangeable Ca (r =0.94, p <0.001, n =12).
+The nutrient loss due to topsoil removal generally increased linearly
+with soil depth (Table 2). However, in the case of exchangeable Ca, the
+loss rate was higher for shallower layers (0–1.0cm and 0–2.5cm
+depths) than for deeper layers (0–5.0cm and 0–10cm depths) due to the
+higher concentration in the shallower layer. Conversely, for exchangeable Al, the loss rate was higher for deeper layers as the concentration
+was lower in the surface layer.
+T. Nishigaki et al. Soil & Tillage Research 246 (2025) 106324
+3
+
+[[page 4]]
+3.2. Grain yield
+Grain yield was significantly affected by topsoil removal depth, fertilizer application, and experimental year (p <0.01). Due to the high
+rainfall amount in the second year, the grain yield was significantly
+higher in the second year than the first and third years (Fig. 2). The
+average grain yield of the first and third years with normal rainfall
+decreased significantly in the plots with 2.5-cm or more topsoil removal
+under unfertilized conditions compared with the control (Fig. 2). The
+topsoil removal of 2.5, 5, and 10cm depths under unfertilized conditions resulted in 92%, 97%, and 99% grain yield reductions, respectively. However, this reduction was clear (p =0.080) only in the plot
+Table 1
+Soil chemical properties of the 0–20cm layer.
+Depth pH Electric
+conductivity
+Total
+N
+Total
+C
+C:N
+ratio
+Available
+Pa
+Exchangeable
+Ca
+Exchangeable
+Mg
+Exchangeable
+Na
+Exchangeable
+Al
+Cation
+exchange
+capacity
+(cm) (mS m(cid:0)1) (%) (mg kg(cid:0)1) (cmolc kg(cid:0)1)
+0–1.0 5.86 2.04 0.03 0.28 9.66 8.5 0.33 0.23 0.15 0.03 0.42
+1.0–2.0 5.75 1.93 0.03 0.31 9.87 8.5 0.38 0.26 0.16 0.08 0.94
+2.0–3.0 5.55 1.59 0.03 0.27 10.1 8.5 0.23 0.18 0.15 0.20 0.85
+3.0–4.0 5.40 1.51 0.03 0.26 10.0 8.8 0.25 0.30 0.23 0.28 0.88
+4.0–5.0 5.42 1.49 0.02 0.22 9.74 8.8 0.17 0.24 0.21 0.33 0.87
+5.0–7.0 5.26 1.47 0.02 0.22 9.91 8.8 0.13 0.31 0.28 0.37 0.86
+7.0–9.0 5.18 1.76 0.02 0.22 10.3 8.8 0.11 0.19 0.17 0.41 0.86
+9.0–11.0 5.31 1.54 0.02 0.19 10.1 8.8 0.08 0.15 0.14 0.48 1.00
+11.0–13.0 5.18 1.25 0.02 0.18 10.5 8.8 0.06 0.15 0.14 0.45 0.82
+13.0–15.0 5.18 1.17 0.02 0.17 10.2 8.8 0.08 0.20 0.18 0.51 0.96
+15.0–17.5 5.12 1.19 0.02 0.16 10.9 8.8 0.07 0.19 0.17 0.54 0.89
+17.5–20.0 5.10 1.10 0.02 0.17 11.1 8.8 0.06 0.24 0.22 0.57 1.00
+a The values of available P content (Bray I method) were referred from Table 2in the supplemental materials.
+Table 2
+Nutrient loss by topsoil removal.
+Depth Total N Total C Available P Exchangeable Ca Exchangeable Mg Exchangeable Na Exchangeable Al
+(cm) (g m-2) (g m-2) (g m-2) (g m-2) (g m-2) (g m-2) (g m-2)
+0–1.0 4.57 44.13 0.13 1.05 0.44 0.54 0.12
+0–2.5 11.58 113.79 0.20 2.59 1.11 1.39 0.88
+0–5.0 21.78 214.89 0.36 4.33 2.36 3.33 3.97
+0–10.0 39.06 389.69 0.72 6.19 4.65 7.20 13.07
+Fig. 2. Effects of different depths of topsoil removal and fertilizer treatments on pearl millet grain yield in the three years. Asterisks indicate significant differences
+from the plot of 0-cm topsoil removal under unfertilized conditions using the Dunnett’s test after logarithmic transformation for normality. Error bars represent the
+standard error of the replications. * p <0.05, ** p<0.01, and *** p<0.001.
+T. Nishigaki et al. Soil & Tillage Research 246 (2025) 106324
+4
+
+[[page 5]]
+with 10-cm topsoil removal under fertilized conditions, exhibiting an
+77% reduction compared with the control. The topsoil removal of 1cm
+did not result in a significant decrease in the average grain yield in
+normal rainfall years compared with the control under either unfertilized or fertilized conditions. In the first year, the grain yield reduction
+compared with the control was not significant in any plots with topsoil
+removal under unfertilized conditions, while it became significant in the
+unfertilized plots with 10-cm removal in the second year and 2.5-cm or
+more removal in the third year. In the second year, fertilizer treatment
+did not significantly affect grain yield. In the third year, the effect of
+fertilizer treatment on increasing grain yield was significant in the plots
+with 2.5-cm or more topsoil removal.
+3.3. Yield components and growth stage of pearl millet
+The days to heading of pearl millet were significantly shortened by
+8.8–13.3 days in the fertilized plots with different topsoil removal
+depths, except for 10cm (Fig. 3a). Although not significant, the survival
+rate tended to decrease with the topsoil removal depth increasing under
+unfertilized conditions (Fig. 3b). Conversely, the survival rate in the
+plots with topsoil removal under fertilized conditions was comparable to
+or even higher than that in the control. Although fertilizer application
+significantly recovered the decrease in stem number per hill in the plots
+with 5- and 10-cm removal, panicle number per stem in the plot with 10-
+cm removal, and grain weight per panicle in the plots with 2.5- and 5-cm
+removal (Fig. 3c–e), it failed to restore the decrease in grain weight per
+panicle in the plot with 10-cm topsoil removal (Fig. 3e).
+3.4. Weed biomass
+The effects of topsoil removal depth (p <0.001), fertilizer application (p <0.05), and experimental year (p <0.001) on weed biomass
+were significant. The weed biomass was significantly reduced in the
+plots with 2.5-cm or more topsoil removal regardless of fertilizer treatment throughout the three years (Fig. 4). Under unfertilized conditions,
+the total weed biomass in the three years was reduced by 86%, 93%,
+and 98% in the plots with 2.5-, 5-, and 10-cm topsoil removal,
+respectively.
+3.5. Soil moisture content
+The VWC of the surface layer (0–10-cm depth) largely fluctuated
+during the cropping period of the first year following the cycles of
+rainfall events and dry spells in all the treatment plots (Fig. 5). The VWC
+Fig. 3. Effects of different depths of topsoil removal and fertilizer treatments on heading day (a), survival rate (b), stem number per survived hill (c), panicle number
+per stem (d), and grain weight per panicle (e) of pearl millet over a three-year period. Asterisks indicate significant differences from the plot of 0-cm topsoil removal
+under unfertilized conditions. The Dunnett’s test was conducted for the original data of heading day, panicle number per stem, and grain weight per panicle and for
+the logarithmic transformed data of stem number per survived hill. The Steel’s test was conducted for the original data of survival rate. Error bars represent the
+standard error of the replications. * p <0.05, ** p<0.01, and *** p<0.001.
+T. Nishigaki et al. Soil & Tillage Research 246 (2025) 106324
+5
+
+[[page 6]]
+of the surface layer in the plots with 0- and 1-cm removal more
+responded to rainfall events with higher peaks of VWC than the plots
+with 2.5- and 5-cm removal. The average VWC of the surface layer
+during the cropping period of the first year was 0.05, 0.06, 0.04, and
+0.04m3 m-3 in the plots with 0-, 1-, 2.5-, and 5-cm removal, respectively.
+The amount of soil water at the lower tension than the permanent
+wilting point (1500 kPa)—the amount of water available for pearl millet—within the depth of 0–100cm was generally low in the early (June)
+and the late (October) of the cropping season in all the plots in the first
+year. It increased in the middle of the cropping season and showed its
+peak around mid-August, corresponding to the rainfall pattern (Fig. 6).
+The amount of soil water available for pearl millet within a depth of
+0–100cm was generally highest in the plot of 1-cm removal, followed by
+0-, 2.5-, and 5-cm removal. The average during the cropping period of
+the first year was 12.1, 20.0, 6.8, and 4.4mm in the plots with 0-, 1-, 2.5-
+, and 5-cm removal, respectively.
+4. Discussion
+The topsoil removal of 2.5-cm or more depth resulted in a significantly decreased pearl millet grain yield in the Sahel. Ikazaki (2015)
+highlighted the role of the thin Ap horizon (about 3cm, called the loose
+sand layer) of the original soil in conserving crop productivity in the
+Sahel region. Soil water availability markedly decreased after removing
+2.5-cm or more depth of topsoil, corroborating the finding of Bakker
+et al. (2004) that plant-available water typically decreases with
+increasing removal depth. Conversely, the pearl millet grain yield
+remained unaffected following topsoil removal at a 1-cm depth, despite
+nutrient loss. This is likely attributed to the relatively low weed biomass
+and resulting favorable soil moisture conditions in both the surface layer
+and soil profile in the plot with 1-cm topsoil removal. Additionally, as
+the root density of pearl millet is mostly concentrated in the 0–15-cm
+depth (Faye et al., 2019), it suggests that the effect of minimal nutrient
+Fig. 4. Effects of different depths of topsoil removal and fertilizer treatments on weed biomass in the three years. Asterisks indicate significant differences from the
+plot of 0-cm topsoil removal under unfertilized conditions using the Dunnett’s test after logarithmic transformation for normality. Error bars represent the standard
+error of the replications. *** p<0.001, ** p<0.01, and *** p<0.001.
+Fig. 5. Hourly fluctuations in volumetric water content of the 0–10-cm layers in the plots with different depths of topsoil removal and daily rainfall during a cropping
+season (June–October) of the first year of the experiment (2009).
+T. Nishigaki et al. Soil & Tillage Research 246 (2025) 106324
+6
+
+[[page 7]]
+loss resulting from 1-cm topsoil removal was counteracted by the positive effects mentioned earlier for pearl millet. The estimated yield
+reduction per depth was 37% cm (cid:0) 1 for the plot of 2.5-cm removal under
+no fertilization in the normal rainfall years, which exceeded the previously reported values of 20% cm (cid:0) 1 for Ultisols and 10% cm (cid:0) 1 for
+Alfisols cultivated with various crops in humid to semi-arid conditions in
+SSA (Lal, 1995). Zhang et al. (2021) also reported that crop yields
+decreased with decreasing the remaining depth of the A horizon,
+although they mostly reviewed studies with more than a 5-cm depth of
+remaining A horizon (69% of total samples). Therefore, the Ap horizon
+depletion markedly decreased pearl millet yield in the Sahel region.
+Given the high soil erosion rate in this region, ranging from 4 to 5mm
+year-1 (Bielders et al., 2000; Ikazaki et al., 2011b), the yield reduction
+will become severe within 5–6 years (2.5-cm topsoil removal) under
+unfertilized conditions. Considering the current situation in the Sahel
+region, where the widespread adoption of soil conservation measures is
+insufficient and the use of chemical fertilizers is limited (Nord et al.,
+2022), our data suggests that the decline in crop yields due to soil
+erosion is an urgent challenge in this area.
+Fertilizer application resulted in the recovery of the grain yield loss
+of pearl millet caused by topsoil removal at 2.5- and 5.0-cm depths in the
+normal rainfall years. The positive effect of fertilizer application on pearl
+millet growth resulted from the high survival rate of plants and, to a
+lesser extent, the high numbers of stem per hill and panicle per stem, and
+grain weight per panicle. Fertilizer application also resulted in a
+remarkable shortening of the days to heading by 8.8–13.3 days. Maha-
+lakshmi and Bidinger (1985)reported that a decreased pearl millet grain
+yield resulted from the coincidence of severe water stress with flowering
+and early grain filling. Thus, the shortened growing period by fertilizer
+application may contribute to drought escape, as the flowering stage of
+pearl millet coincides with late-September when rainfall and
+plant-available soil water content are low in this region. Our results
+corroborate those of Lal (1995)which showed that fertilizer input at the
+recommended rate mitigated the yield loss compared with low fertilizer
+input or no external input in SSA. The observation that the reduction in
+soil available water in the plots at 2.5- and 5.0-cm depths did not affect
+the recovery of pearl millet grain yield under fertilizer application
+suggests that nutrient deficiency had a greater effect on grain yield
+reduction in these plots than water availability. However, in the 10-cm
+topsoil removal plots, fertilizer application failed to restore grain yield
+effectively to the level observed in noneroded plots, probably resulting
+from the depletion of micronutrient (Awio et al., 2021) and available
+water (Bakker et al., 2004; Frye et al., 1982). The pH level, even at the
+plot with 10-cm removal, was not likely a factor of nonresponse to fertilizer application because pearl millet is tolerant to Al toxicity and low
+pH (Ahlrichs et al., 1991; Kretzschmar et al., 1991). Michels and Bielders
+(2005) highlighted the significance of organic matter and lime application, such as manure and calcium carbonate, to increase pH and P
+availability on an erosion-affected soil in the Sahel. Larney et al. (2000)
+also suggested that removing moisture stress as a yield- and fertilizer
+response-limiting factor through irrigation did not offset topsoil loss,
+even with adequate N and P fertilization. Therefore, in severely eroded
+fields, conventional fertilizer management may be insufficient for crop
+yield recovery and should be combined with organic fertilizers to
+improve soil physical properties and replenish essential nutrients
+(Larney et al., 2000). Given the high soil erosion rate in the Sahel, the
+fields may become less sensitive to fertilizer application within 20–25
+years (10-cm topsoil removal) without any countermeasure against soil
+erosion. Zhang et al. (2021)proposed that increasing production inputs
+to compensate for nutrient losses arising from erosion may be reasonable
+for increasing crop yield but does not support the sustainability of
+agricultural practices. Land management should be implemented to
+control soil erosion and simultaneously improve soil fertility and crop
+yields, such as the Fallow Band System developed in the Sahel (Ikazaki
+et al., 2024, 2011a) and other techniques using organic materials
+(Bielders et al., 2000; Nord et al., 2022).
+Fertilizer application had no significant effect on pearl millet grain
+yield or weed biomass in the second year. This could be attributed to the
+heavy rainfall events concentrated soon after fertilizer application in the
+second year, which probably caused nutrient losses by runoff and
+leaching and resulted in low nutrient recovery by pearl millet. Although
+broadcasting is a labor-saving practice, it increases the opportunity for
+direct detachment and/or dissolution of nutrients in runoff compared
+with fertilizer incorporation (Withers et al., 2000). The leaching of nitrate and phosphate ions and subsequent low nutrient use efficiency
+have also been reported in sandy soils in other regions in SSA
+(Nyamangara et al., 2003; Sugihara et al., 2012). Therefore, besides the
+impact of erosion-induced soil loss, the loss of applied fertilizer is
+another concern; increasing nutrient use efficiency is a great challenge
+for small-holder farmers in SSA, where most of them cannot afford
+chemical fertilizers (Tsujimoto et al., 2019). Fertilizer microdosing
+would be a potential technique to improve fertilizer use efficiency in the
+Sahel. Ibrahim et al. (2016)reported comparable pearl millet grain yield
+by fertilizer microdosing treatment to that with broadcasting in Niger,
+while the fertilizer application rate was substantially reduced by 88%,
+69%, and 100% for N, P, and K, respectively. The high nutrient use
+Fig. 6. Hourly fluctuations in soil water content at lower tension than the permanent wilting point in the soil profile (0–100cm depth) in the plots with different
+depths of topsoil removal during a cropping season (June–October) of the first year of the experiment (2009).
+T. Nishigaki et al. Soil & Tillage Research 246 (2025) 106324
+7
+
+[[page 8]]
+efficiency resulted from the enhanced lateral root growth of peal millet
+by fertilizer microdosing (Ibrahim et al., 2015, 2016). Split application
+of fertilizers has also been suggested to increase nutrient utilization efficiency and grain yield in the Sahel (Fatondji and Ibrahim, 2018;
+Ibrahim and Fatondji, 2020).
+The grain yield reduction observed in the plots with 2.5-cm and 5-cm
+topsoil removal became significant after consecutive cultivation under
+unfertilized conditions. The decrease in grain yield over the years
+probably resulted from the depletion of soil organic matter and available
+nutrients and the increasing competition with weeds. The time lag between soil loss and the consequences of reduced crop production may
+lead to an underestimated impact of initial soil erosion. However,
+prompt actions are needed to prevent soil erosion before yield reduction
+becomes evident. Importantly, deeper topsoil removal results in higher
+recovery costs for crop production (Pimentel et al., 1995). To avoid
+further erosion-induced reduction of crop productivity, farmers need to
+realize this induced topsoil loss at the initial stage, particularly Ap horizon depletion, and apply countermeasures to reduce soil erosion and
+conserve soil fertility in the Sahel.
+The markedly reduced weed biomass observed in the topsoil removal
+of 2.5cm or more under unfertilized conditions could result from the
+disappearance of the seed bank of weeds by topsoil removal. Zhang et al.
+(2001)reported that 75.8% of total seeds within the layer of 0–10cm
+depth was present in the top 2cm in a field after five-year abandonment.
+As a result, the pearl millet grain yield in the plots with 2.5-cm to 5-cm
+removal were likely overrated, particularly under fertilized conditions,
+due to less competition between pearl millet and weeds. The competition between main crops and weeds is a primary factor contributing to
+crop yield reduction in many croplands across SSA, largely due to the
+limited use of herbicides among local farmers (Rodenburg et al., 2019).
+However, previous topsoil removal experiments overlooked the difference in weed biomass at different removal depths (Bakker et al., 2004;
+Zhang et al., 2021). A significant reduction in weed biomass can positively influence crop yield in experiments involving deeper topsoil
+removal, as it helps alleviate competition between crops and weeds. A
+caution is needed when the utilization efficiencies of water and nutrients
+are discussed in the topsoil removal experiments (Lal, 2015).
+5. Conclusion
+Our results demonstrated that topsoil removal of 2.5cm or more
+significantly decreased pearl millet grain yield by over 92% in an
+Arenosol in the Sahel under normal rainfall condition. This decline per
+removal depth was more pronounced compared to previous reports from
+other regions in SSA. However, the grain yield remained unaffected in
+the topsoil removal of 1-cm. These results emphasize that the loss of a
+thin Ap horizon markedly contributes to reduce plant-available water
+and nutrient contents in soils, resulting in a decline in pearl millet yield
+in the Sahel. The recommended fertilizer management compensated for
+the grain yield loss in the plots of less than 5-cm topsoil removal but not
+effectively in the 10-cm removal plot. Overall, the loss of Ap horizon can
+degrade soil fertility, threaten pearl millet production stability, and increase grain yield recovery costs in the region. Sahelian farmers should
+recognize topsoil loss in the early stages of soil erosion and implement
+appropriate countermeasures within their labor and economic capabilities to prevent a decline in crop yield caused by the loss of the Ap
+horizon.
+CRediT authorship contribution statement
+Shinya Funakawa: Writing – review & editing, Supervision.
+Dougbedji Fatondji: Writing – review & editing, Investigation, Data
+curation, Conceptualization. Kenta Ikazaki: Writing – original draft,
+Visualization, Validation, Methodology, Investigation, Formal analysis,
+Data curation, Conceptualization. Tomohiro Nishigaki: Writing –
+original draft, Visualization, Validation, Software, Formal analysis.
+Ueru Tanaka: Writing – review & editing, Supervision, Project administration, Investigation, Funding acquisition, Conceptualization.
+Hitoshi Shinjo: Writing – review & editing, Supervision, Project
+administration, Investigation, Funding acquisition, Conceptualization.
+Declaration of Competing Interest
+The authors declare that they have no known competing financial
+interests or personal relationships that could have appeared to influence
+the work reported in this paper.
+Acknowledgments
+This study was performed under the JIRCAS-ICRISAT collaborative
+project, “Improvement of Fertility of Sandy Soils in the Semi-Arid Zone
+of West Africa through Organic Matter Management.” Portions of this
+study were financially supported by the JSPS KAKENHI Grant Number
+JP20405005 and JP22405020. We thank Mr. Moussa Alkaldi, the late
+Mr. Tahirou Saley, Mr. Hamidou Boubacar, and Mr. Ibrahim Hassan for
+their invaluable help during the field trial.
+Appendix A. Supporting information
+Supplementary data associated with this article can be found in the
+online version at doi:10.1016/j.still.2024.106324.
+Data availability
+Data will be made available on request.
+References
+Agnew, C.T., Chappell, A., 1999. Drought in the Sahel. GeoJournal 48, 299–311.
+Ahlrichs, J.L., Duncan, R.R., Ejeta, G., Hill, P.R., Baligar, V.C., Wright, R.J., Hanna, W.
+W., 1991. Pearl millet and sorghum tolerance to aluminium in acid soil. In:
+Wright, R.J., Baligar, V.C., Murrmann, R.P. (Eds.), Plant-Soil Interactions at Low pH:
+Proceedings of the Second International Symposium on Plant-Soil Interactions at
+Low pH, 24–29 June 1990, Beckley West Virginia. USA. Springer Netherlands,
+Dordrecht, pp. 947–951.
+Alewell, C., Ringeval, B., Ballabio, C., Robinson, D.A., Panagos, P., Borrelli, P., 2020.
+Global phosphorus shortage will be aggravated by soil erosion. Nat. Commun. 11,
+4546.
+Amundson, R., Berhe, A.A., Hopmans, J.W., Olson, C., Sztein, A.E., Sparks, D.L., 2015.
+Soil and human security in the 21st century. Science 348, 1261071.
+Awio, T., Senthilkumar, K., Dimkpa, C.O., Otim-Nape, G.W., Kempen, B., Struik, P.C.,
+Stomph, T.J., 2021. Micro-nutrients in East African lowlands: Are they needed to
+intensify rice production? Field Crops Res. 270, 108219.
+Bakker, M.M., Govers, G., Rounsevell, M.D.A., 2004. The crop productivity–erosion
+relationship: an analysis based on experimental work. Catena 57, 55–76.
+Bielders, C.L., Michels, K., Rajot, J.-L., 2000. On-farm evaluation of ridging and residue
+management practices to reduce wind erosion in Niger. Soil Sci. Soc. Am. J. 64,
+1776–1785.
+Borrelli, P., Robinson, D.A., Fleischer, L.R., Lugato, E., Ballabio, C., Alewell, C.,
+Meusburger, K., Modugno, S., Schütt, B., Ferro, V., Bagarello, V., Oost, K.V.,
+Montanarella, L., Panagos, P., 2017. An assessment of the global impact of 21st
+century land use change on soil erosion. Nat. Commun. 8, 2013.
+Dane, J.H., Hopmans, J.W., 2002. Pressure plate extractor. In: Dane, J.H., Topp, G.C.
+(Eds.), Methods of Soil Analysis, Part 4: Physical Methods. SSSA, Madison,
+pp. 688–690.
+Fatondji, D., Ibrahim, A., 2018. Improving nutrient use efficiency from decomposing
+manure and millet yield under Plinthosols in Niger. Nutr. Cycl. Agroecosyst. 110,
+485–499.
+Faye, A., Sine, B., Chopart, J.-L., Grondin, A., Lucas, M., Diedhiou, A.G., Gantet, P.,
+Cournac, L., Min, D., Audebert, A., Kane, A., Laplaze, L., 2019. Development of a
+model estimating root length density from root impacts on a soil profile in pearl
+millet (Pennisetum glaucum (L.) R. Br). Application to measure root system response
+to water stress in field conditions. PLoS One 14, e0214182.
+Frye, W.W., Ebelhar, S.A., Murdock, L.W., Blevins, R.L., 1982. Soil erosion effects on
+properties and productivity of two Kentucky soils. Soil Sci. Soc. Am. J. 46,
+1051–1055.
+Gao, X., Xie, Y., Liu, G., Liu, B., Duan, X., 2015. Effects of soil erosion on soybean yield as
+estimated by simulating gradually eroded soil profiles. Soil Tillage Res. 145,
+126–134.
+Ibrahim, A., Abaidoo, R.C., Fatondji, D., Opoku, A., 2015. Hill placement of manure and
+fertilizer micro-dosing improves yield and water use efficiency in the Sahelian low
+input millet-based cropping system. Field Crops Res. 180, 29–36.
+T. Nishigaki et al. Soil & Tillage Research 246 (2025) 106324
+8
+
+[[page 9]]
+Ibrahim, A., Abaidoo, R.C., Fatondji, D., Opoku, A., 2016. Determinants of fertilizer
+mincrodosing-induced yield increment of peal millet on an acid sandy soil. Exp.
+Agric. 52, 562–578.
+Ibrahim, A., Fatondji, D., 2020. Optimizing manure management for enhancing millet
+yields and resources use efficiency under rehabilitated plinthosols in the Sahel.
+J. Arid Environ. 181, 104225.
+Ikazaki, K., 2015. Desertification and a new countermeasure in the Sahel, West Africa.
+Soil Sci. Plant Nutr. 61, 372–383.
+Ikazaki, K., Shinjo, H., Sasaki, Y., Tanaka, U., Tobita, S., Fatondji, D., Funakawa, S.,
+Kosaki, T., 2024. Fallow band system for improving crop production on Sandy Soils
+in the Sahel. In: Hartemink, A.E., Huang, J. (Eds.), Sandy Soils. Springer,
+pp. 149–156.
+Ikazaki, K., Shinjo, H., Tanaka, U., Tobita, S., Funakawa, S., Kosaki, T., 2011a. Fallow
+Band System,” a land management practice for controlling desertification and
+improving crop production in the Sahel, West Africa. 1. Effectiveness in
+desertification control and soil fertility improvement. Soil Sci. Plant Nutr. 57,
+573–586.
+Ikazaki, K., Shinjo, H., Tanaka, U., Tobita, S., Funakawa, S., Kosaki, T., 2011b. Field-
+scale aeolian sediment transport in the Sahel, West Africa. Soil Sci. Soc. Am. J. 75,
+1885–1897.
+Ikazaki, K., Shinjo, H., Tanaka, U., Tobita, S., Funakawa, S., Iwai, K., Kosaki, T., 2012.
+Soil and nutrient loss from a cultivated field during wind erosion events in the Sahel,
+West Africa. Pedologist 55, 355–363.
+IPBES, 2019. Global assessment report of the Intergovernmental Science-Policy Platform
+on Biodiversity and Ecosystem Services, In: Brondízio, E.S., Settele, J., Díaz, S., Ngo,
+H.T. (Eds.), Bonn, Germany, p. 1144.
+IUSS Working Group WRB, 2022. World Reference Base for Soil Resources. International
+soil classification system for naming soils and creating legends for soil maps, 4th
+edition. International Union of Soil Sciences (IUSS), Vienna, Austria.
+Jones, A., Breuning-Madsen, H., Brossard, M., Dampha, A., Deckers, J., Dewitte, O.,
+Gallali, T., Hallett, S., Jones, R., Kilasara, M., Le Roux, P., Micheli, E.,
+Montanarella, L., Spaargaren, O., Thiombiano, L., Van Ranst, E., Yemefack, M.,
+Zougmor´e, R., 2013. Soil Atlas of Africa. European Commission, Publications Office
+of the European Union, Luxembourg, p. 176.
+Kretzschmar, R.M., Hafner, H., Bationo, A., Marschner, H., 1991. Long- and short-term
+effects of crop residues on aluminum toxicity, phosphorus availability and growth of
+pearl millet in an acid sandy soil. Plant Soil 136, 215–223.
+Lal, R., 1995. Erosion-crop productivity relationship for soils of Africa. Soil Sci. Soc. Am.
+J. 59, 661–667.
+Lal, R., 2001. Soil degradation by erosion. Land Degrad. Dev. 12, 519–539.
+Lal, R., 2015. Restoring soil quality to mitigate soil degradation. Sustainability 7,
+5875–5895.
+Larney, F.J., Olson, B.M., Janzen, H., Lindwall, C.W., 2000. Early impact of topsoil
+removal and soil amendments on crop productivity. Agron. J. 92, 948–956.
+Mahalakshmi, V., Bidinger, F.R., 1985. Water stress and time of floral initiation in pearl
+millet. J. Agric. Sci. 105, 437–445.
+Mbagwu, J.S.C., Lal, R., Scott, T.W., 1984. Effects of desurfacing of alfisols and ultisols in
+Southern Nigeria: I. Crop performance. Soil Sci. Soc. Am. J. 48, 828–833.
+Michels, K., Bielders, C.L., 2005. Pearl millet growth on an erosion-affected soil in the
+Sahel. Exp. Agric. 42, 1–17.
+Montgomery, D.R., 2007. Soil erosion and agricultural sustainability. Proc. Natl. Acad.
+Sci. 104, 13268–13272.
+Nishigaki, T., Sugihara, S., Kilasara, M., Funakawa, S., 2017. Surface runoff generation
+and soil loss under different soil and rainfall properties in The Uluguru Mountains,
+Tanzania. Land Degrad. Dev. 28, 283–293.
+Nord, A., Snapp, S., Traore, B., 2022. Current knowledge on practices targeting soil
+fertility and agricultural land rehabilitation in the Sahel. A review. Agron. Sustain.
+Dev. 42, 79.
+Nyamangara, J., Bergstr¨ om, L.F., Piha, M.I., Giller, K.E., 2003. Fertilizer use efficiency
+and nitrate leaching in a tropical sandy soil. J. Environ. Qual. 32, 599–606.
+Panagos, P., Standardi, G., Borrelli, P., Lugato, E., Montanarella, L., Bosello, F., 2018.
+Cost of agricultural productivity loss due to soil erosion in the European Union: From
+direct cost evaluation approaches to the use of macroeconomic models. Land Degrad.
+Dev. 29, 471–484.
+Pimentel, D., Burgess, M., 2013. Soil erosion threatens food production. Agriculture 3,
+443–463.
+Pimentel, D., Harvey, C., Resosudarmo, P., Sinclair, K., Kurz, D., McNair, M., Crist, S.,
+Shpritz, L., Fitton, L., Saffouri, R., Blair, R., 1995. Environmental and economic costs
+of soil erosion and conservation benefits. Science 267, 1117–1123.
+Rodenburg, J., Johnson, J.-M., Dieng, I., Senthilkumar, K., Vandamme, E., Akakpo, C.,
+Allarangaye, M.D., Baggie, I., Bakare, S.O., Bam, R.K., Bassoro, I., Abera, B.B.,
+Cisse, M., Dogbe, W., Gbakatch´etch´e, H., Jaiteh, F., Kajiru, G.J., Kalisa, A.,
+Kamissoko, N., S´ekou, K., Kokou, A., Mapiemfu-Lamare, D., Lunze, F.M., Mghase, J.,
+Mossi Maïga, I., Nanfumba, D., Niang, A., Rabeson, R., Segda, Z., Silas Sillo, F.,
+Tanaka, A., Saito, K., 2019. Status quo of chemical weed control in rice in sub-
+Saharan Africa. Food Secur. 11, 69–92.
+Sanchez, P.A., 2002. Soil Fertility and Hunger in Africa. Science 295, 2019–2020.
+Sugihara, S., Funakawa, S., Nishigaki, T., Kilasara, M., Kosaki, T., 2012. Dynamics of
+fractionated P and P budget in soil under different land management in two
+Tanzanian croplands with contrasting soil textures. Agric., Ecosyst. Environ. 162,
+101–107.
+Tittonell, P., Giller, K.E., 2013. When yield gaps are poverty traps: the paradigm of
+ecological intensification in African smallholder agriculture. Field Crops Res. 143,
+76–90.
+Tsujimoto, Y., Rakotoson, T., Tanaka, A., Saito, K., 2019. Challenges and opportunities
+for improving N use efficiency for rice production in sub-Saharan Africa. Plant Prod.
+Sci. 22, 413–427.
+van Ittersum, M.K., van Bussel, L.G., Wolf, J., Grassini, P., van Wart, J., Guilpart, N.,
+Claessens, L., de Groot, H., Wiebe, K., Mason-D′Croz, D., Yang, H., Boogaard, H., van
+Oort, P.A., van Loon, M.P., Saito, K., Adimo, O., Adjei-Nsiah, S., Agali, A., Bala, A.,
+Chikowo, R., Kaizzi, K., Kouressy, M., Makoi, J.H., Ouattara, K., Tesfaye, K.,
+Cassman, K.G., 2016. Can sub-Saharan Africa feed itself? Proc. Natl. Acad. Sci. USA
+113, 14964–14969.
+van Reeuwijk, L.P., 2002. Procedures for Soil Analysis, 6th ed. International Soil
+Reference and Information Centre, Wageningen.
+Wang, Z., Liu, B., Wang, X., Gao, X., Liu, G., 2009. Erosion effect on the productivity of
+black soil in Northeast China. Sci. China Ser. D: Earth Sci. 52, 1005–1021.
+Withers, P.J.A., Davidson, I.A., Foy, R.H., 2000. Prospects for controlling nonpoint
+phosphorus loss to water: a UK perspective. J. Environ. Qual. 29, 167–175.
+Zhang, L., Huang, Y., Rong, L., Duan, X., Zhang, R., Li, Y., Guan, J., 2021. Effect of soil
+erosion depth on crop yield based on topsoil removal method: a meta-analysis.
+Agron. Sustain. Dev. 41.
+Zhang, Z.Q., Shu, W.S., Lan, C.Y., Wong, M.H., 2001. Soil seed bank as an input of seed
+source in revegetation of lead/zinc mine tailings. Restor. Ecol. 9, 378–385.
+Zhou, K., Sui, Y., Liu, X., Zhang, X., Jin, J., Wang, G., Herbert, S.J., 2015. Crop rotation
+with nine-year continuous cattle manure addition restores farmland productivity of
+artificially eroded Mollisols in Northeast China. Field Crops Res. 171, 138–145.
+T. Nishigaki et al. Soil & Tillage Research 246 (2025) 106324
+9

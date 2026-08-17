@@ -288,8 +288,15 @@ sources:
   caveats: []
   pages: 21
   utilite_conseil: indirecte
-  licence_citation: n open access article under the terms of the Creative Commons Attribution License,
-    which permits use, distribution and
+  exclusion: police_cassee
+  exclusion_motif: 'Police PDF sans les glyphes de ligature fi/fl : le texte extrait ecrit
+    "afatoxin" 325 fois contre "aflatoxin" 13, et les tableaux sortent eclates lettre par
+    lettre. 34% des caracteres se retrouvent dans des tokens soudes, introuvables par BM25
+    comme par l''embedding. Non reparable sans deviner : la meme police ecrit "four" 15 fois,
+    indecidable entre le nombre et "flour". Mesure et exclue au D3 le 2026-08-17 ; entree
+    conservee pour la tracabilite. Le PDF reste telechargeable par fetch_corpus.sh.'
+  licence_citation: An open access article under the terms of the Creative Commons Attribution
+    License, which permits use, distribution and
   extraction: EXTRACTIBLE
   pages_utiles: 21
   car_utiles: 109506
