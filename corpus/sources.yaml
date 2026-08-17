@@ -1,0 +1,1077 @@
+# corpus/sources.yaml — provenance du corpus agronomique sahelien (ADTC 2026)
+#
+# DEUX REGIMES, et la distinction est juridique, pas technique :
+#
+#   regime: committed  licence explicitement permissive (CC BY / CC BY-NC).
+#                      Le texte extrait EST committe dans corpus/txt/, avec
+#                      attribution. C'est le socle citable verbatim.
+#
+#   regime: fetched    aucune licence declaree par l'editeur (institutionnels
+#                      publics). On ne redistribue RIEN : corpus/fetch_corpus.sh
+#                      telecharge chez l'editeur avec la taille attendue, et
+#                      l'extraction se fait localement.
+#
+# Ce que `licence: null` veut dire : « aucune mention juridique trouvee dans le
+# PDF (pages 1-4 et 2 dernieres sondees) ». Cela ne veut PAS dire « libre ».
+#
+# `licence_confirmee_dans_le_pdf` n'est true que si la mention a ete LUE dans le
+# fichier, pas sur le site de l'editeur. Les deux peuvent se contredire : la page
+# web d'Agrodok annonce « download, share, copy » et sa page 3 imprime « tous
+# droits reserves, aucune reproduction meme partielle ». C'est pourquoi ce champ
+# existe.
+#
+# `car_page` = caracteres par page mesures (6 pages echantillonnees). Un document
+# a 0 car/page est un scan : inexploitable sans OCR, donc exclu.
+#
+# ─── APRÈS AUDIT (patch_sources.py, mesure du 2026-08-16) ─────────────────────
+# Chaque entrée a été TÉLÉCHARGÉE, sa taille vérifiée à l'octet, son texte sondé
+# page par page, et sa licence cherchée dans TOUTES les pages du fichier.
+#
+# Ce que l'audit a changé, et qu'aucune métadonnée de dépôt ne disait :
+#   - 2 documents annoncés `cc_attribution` par ICRISAT OAR sont en réalité l'un
+#     CC BY-NC-**ND** (interdit l'index, qui est une œuvre dérivée), l'autre
+#     « All rights reserved ». Ils sont RETIRÉS.
+#   - 2 documents annoncés `cc_attribution` ne portent AUCUNE mention dans le
+#     fichier. Rétrogradés en `fetched` : pas de redistribution sur la foi d'un
+#     champ de dépôt.
+#   - 1 document (`oar_57448`) semblait sans licence : sa CC BY est en p14 sur 16
+#     (Springer imprime le bloc Open Access après les Déclarations). Ma première
+#     sonde n'échantillonnait que p1-4 + 2 dernières — elle le perdait.
+#   - Piège Wiley écarté : « OA articles are governed by the *applicable* Creative
+#     Commons License », répété sur 20 pages, ne NOMME aucune variante. Chez Wiley
+#     un article OA peut être CC BY, CC BY-NC ou CC BY-NC-ND ⇒ ne prouve rien.
+#
+# `utilite_conseil` est le SEUL champ qui soit un jugement et non une mesure :
+#   directe / indirecte / methodologique. Les `methodologique` (télédétection,
+#   génomique, priorisation) ne seront PAS indexés au D4 : ils produiraient du
+#   bruit sourcé, pire qu'une absence de réponse.
+#
+# ─── APPORTS RECA NIGER (merge_reca.py, 2026-08-16) ───────────────────────────
+# 21 documents francophones ajoutes, tous mesures : taille verifiee a l'octet,
+# extractibilite sondee page par page (sonde v3), editeur LU en p1-3 du PDF.
+#
+# Pourquoi cet ajout : l'audit du socle CC BY a montre que les 14 documents
+# anglophones sont du CONTEXTE (articles scientifiques), et que le conseil
+# agronomique *direct* — date de semis, densite, dose, seuil d'intervention —
+# ne vivait que dans 6 fiches francaises. Or c'est exactement ce que la moitie
+# jugee du score recompense. Le bucket francophone passe de 6 a 27 documents.
+#
+# Ce que la mesure a corrige, et qu'aucun nom de fichier ne disait :
+#   - `foreurs_de_tiges_inran.pdf` n'est PAS de l'INRAN : c'est un article de
+#     *IOSR Journal of Agriculture and Veterinary Science* 11(6) 2018. Le nom du
+#     fichier heberge nommait un institut qui n'est pas l'emetteur.
+#   - 2 catalogues varietes 2012 ECARTES : 10 % et 11 % de pages textuelles,
+#     medianes a 0 — des scans avec une page de texte. Ma premiere sonde les
+#     laissait passer a 283 car/page de MOYENNE.
+#   - Le Catalogue CNEV est `PARTIEL` : 54 % de pages utiles mais 112 665 car —
+#     il se garde AVEC filtrage page a page, il ne se jette pas.
+#
+# Regime : `fetched` sans exception. RECA ne declare aucune licence, et un
+# document d'Etat n'est pas pour autant republiable.
+sources:
+- id: reca_recueil_fiches_2019
+  sujet: multi_cultures
+  regime: fetched
+  titre: Recueil de fiches techniques validées
+  editeur: INRAN / PMERSA-MTZ (Niger)
+  annee: 2019-07
+  langue: fr
+  portee: sahel_specific
+  licence: null
+  licence_confirmee_dans_le_pdf: false
+  url_pdf: https://reca-niger.org/IMG/pdf/recueil_de_fiches_techniques_validees_vf.pdf
+  fichier: recueil_de_fiches_techniques_validees_vf.pdf
+  octets_attendus: 4595072
+  pages: 46
+  caveats:
+  - '14 fiches en un seul PDF : decouper par fiche a l''indexation'
+  - document le plus dense du corpus fr
+  utilite_conseil: directe
+  extraction: EXTRACTIBLE
+  pages_utiles: 46
+  car_utiles: 84914
+- id: reca_niebe_dan_hadjia_2020
+  sujet: niebe
+  regime: fetched
+  titre: Fiche technique niebe Dan Hadjia
+  editeur: INRAN (Niger)
+  annee: 2020-07
+  langue: fr
+  portee: sahel_specific
+  licence: null
+  licence_confirmee_dans_le_pdf: false
+  url_pdf: https://reca-niger.org/IMG/pdf/fiche_technique_niebe_dan_hadjia.pdf
+  fichier: fiche_technique_niebe_dan_hadjia.pdf
+  octets_attendus: 232729
+  pages: 1
+  caveats:
+  - 'variete unique (Dan Hadjia) : ne pas generaliser aux autres niebes'
+  - cycle 50-55 j, resistance striga
+  utilite_conseil: directe
+  extraction: EXTRACTIBLE
+  pages_utiles: 1
+  car_utiles: 1990
+- id: reca_repiquage_mil
+  sujet: mil
+  regime: fetched
+  titre: Fiche technique pour le repiquage du mil
+  editeur: RECA Niger
+  annee: s.d.
+  langue: fr
+  portee: sahel_specific
+  licence: null
+  licence_confirmee_dans_le_pdf: false
+  url_pdf: https://reca-niger.org/IMG/pdf/fiche_technique_pour_le_repiquage_du_mil.pdf
+  fichier: fiche_technique_pour_le_repiquage_du_mil.pdf
+  octets_attendus: 246154
+  pages: 4
+  caveats:
+  - 'annee non imprimee dans le document : ne jamais datar la citation'
+  utilite_conseil: directe
+  extraction: EXTRACTIBLE
+  pages_utiles: 4
+  car_utiles: 9412
+- id: reca_foreur_tiges_mil_2024
+  sujet: ravageurs
+  regime: fetched
+  titre: 'Note conseil : foreur des tiges de mil (Coniesta ignefusalis)'
+  editeur: RECA Niger
+  annee: '2024'
+  langue: fr
+  portee: sahel_specific
+  licence: null
+  licence_confirmee_dans_le_pdf: false
+  url_pdf: https://reca-niger.org/IMG/pdf/note_conseil_foreur_tiges_de_mil_coniesta_ignefusalis_2024.pdf
+  fichier: note_conseil_foreur_tiges_de_mil_coniesta_ignefusalis_2024.pdf
+  octets_attendus: 404977
+  pages: 5
+  caveats: []
+  utilite_conseil: directe
+  extraction: EXTRACTIBLE
+  pages_utiles: 5
+  car_utiles: 13434
+- id: reca_maladies_cultures_vivrieres
+  sujet: maladies
+  regime: fetched
+  titre: 'Selection thematique Duddal-presse : maladies des cultures vivrieres'
+  editeur: RECA Niger / Duddal
+  annee: s.d.
+  langue: fr
+  portee: sahel_specific
+  licence: null
+  licence_confirmee_dans_le_pdf: false
+  url_pdf: https://reca-niger.org/IMG/pdf/juin_-_juillet_selection_thematique_duddal-presse_maladie_des_cultures_vivrieres.pdf
+  fichier: juin_-_juillet_selection_thematique_duddal-presse_maladie_des_cultures_vivrieres.pdf
+  octets_attendus: 1295258
+  pages: 7
+  caveats:
+  - 'revue de presse : verifier que chaque fait cite a bien une source primaire'
+  utilite_conseil: indirecte
+  extraction: EXTRACTIBLE
+  pages_utiles: 7
+  car_utiles: 14250
+- id: icrisat_terres_degradees_2017
+  sujet: fertilisation
+  regime: fetched
+  titre: Manuel de formation sur la recuperation biologique des terres degradees
+  editeur: ICRISAT / PASAM-TAI
+  annee: '2017'
+  langue: fr
+  portee: sahel_specific
+  licence: null
+  licence_confirmee_dans_le_pdf: false
+  url_pdf: http://oar.icrisat.org/id/document/48470
+  fichier: MONTAGE DU PROJET PASAM-TAI WEB.pdf
+  octets_attendus: 4732727
+  pages: 48
+  caveats:
+  - 'notice: http://oar.icrisat.org/id/eprint/10207'
+  - 'mise en page InDesign : 736 car/page, verifier les tableaux a la main'
+  utilite_conseil: directe
+  extraction: EXTRACTIBLE
+  pages_utiles: 45
+  car_utiles: 32953
+- id: oar_57526
+  sujet: mil
+  regime: committed
+  titre: Evaluation of Hybrid Sorghum Parents for Morphological, Physiological and Agronomic Traits Under
+    Post-Flowering Drought
+  editeur: MDPI
+  annee: '2025-06-06'
+  langue: en
+  portee: sahel_specific
+  licence: CC-BY-4.0
+  licence_confirmee_dans_le_pdf: true
+  url_pdf: http://oar.icrisat.org/id/document/57526
+  fichier: Agronomy_15_6_1-16_2025.pdf
+  octets_attendus: 1935708
+  page_notice: http://oar.icrisat.org/id/eprint/13338
+  doi: https://doi.org/10.3390/agronomy15061399
+  caveats: []
+  pages: 16
+  utilite_conseil: methodologique
+  licence_citation: MDPI, Basel, Switzerland. This article is an open access article distributed under
+    the terms and conditions of the Creative Commons Attri
+  extraction: EXTRACTIBLE
+  pages_utiles: 16
+  car_utiles: 62557
+- id: oar_57444
+  sujet: mil
+  regime: committed
+  titre: Assessing yield stability of pearl millet and rice cropping systems across West Africa using
+    long-term experiments and a modeling approach
+  editeur: Public Library of Science
+  annee: '2025-05-27'
+  langue: en
+  portee: sahel_specific
+  licence: CC-BY-4.0
+  licence_confirmee_dans_le_pdf: true
+  url_pdf: http://oar.icrisat.org/id/document/57444
+  fichier: PLoS One_20_5_1-26_2025.pdf
+  octets_attendus: 3725569
+  page_notice: http://oar.icrisat.org/id/eprint/13254
+  doi: https://doi.org/10.1371/journal.pone.0317170
+  caveats: []
+  pages: 26
+  utilite_conseil: indirecte
+  licence_citation: 'Copyright: © 2025 Kouadio et al. This is an open access article distributed under
+    the terms of the Creative Commons Attribution License,'
+  extraction: EXTRACTIBLE
+  pages_utiles: 26
+  car_utiles: 92247
+- id: oar_57495
+  sujet: sorgho
+  regime: committed
+  titre: Evaluating the impact of cattle corralling duration on soil nutrient dynamics and sorghum yield
+    in dryland Systems
+  editeur: Research Square (PRÉPRINT, non relu par les pairs) — Institut d'Économie Rurale (IER), CRRA
+    Sikasso, Mali
+  annee: '2025-06-06'
+  langue: en
+  portee: sahel_specific
+  licence: CC-BY-4.0
+  licence_confirmee_dans_le_pdf: true
+  url_pdf: http://oar.icrisat.org/id/document/57495
+  fichier: 1f010dfe-0ae0-4a04-8fee-6b21066a7ae5.pdf
+  octets_attendus: 2980774
+  page_notice: http://oar.icrisat.org/id/eprint/13296
+  doi: https://doi.org/10.21203/rs.3.rs-6786015/v1
+  caveats:
+  - 'PRÉPRINT Research Square v1 (DOI 10.21203/rs.3.rs-6786015/v1) : non relu par les pairs. Citer en
+    nommant ce statut, jamais comme un résultat établi'
+  - seul document du corpus dont le terrain est le Mali (Sikasso)
+  - 'durée de parcage du bétail -> nutriments du sol -> rendement sorgho : effet mesuré sur un site, ne
+    pas généraliser au Sahel entier'
+  pages: 19
+  utilite_conseil: directe
+  licence_citation: 'rs.3.rs-6786015/v1 License:   This work is licensed under a Creative Commons Attribution
+    4.0 International License. Read Full L'
+  extraction: EXTRACTIBLE
+  pages_utiles: 16
+  car_utiles: 54855
+- id: oar_57215
+  sujet: sorgho
+  regime: committed
+  titre: 'A Comprehensive Review of Aflatoxin in Groundnut and Maize Products in Africa: Prevalence, Detection
+    and Mitigation Strategies'
+  editeur: Wiley
+  annee: '2025-03-06'
+  langue: en
+  portee: general_tropical
+  licence: CC-BY-4.0
+  licence_confirmee_dans_le_pdf: true
+  url_pdf: http://oar.icrisat.org/id/document/57215
+  fichier: Journal of Food Quality_2025_1-21_2025.pdf
+  octets_attendus: 676917
+  page_notice: http://oar.icrisat.org/id/eprint/13074
+  doi: https://doi.org/10.1155/jfq/2810946
+  caveats: []
+  pages: 21
+  utilite_conseil: indirecte
+  licence_citation: n open access article under the terms of the Creative Commons Attribution License,
+    which permits use, distribution and
+  extraction: EXTRACTIBLE
+  pages_utiles: 21
+  car_utiles: 109506
+- id: oar_56273
+  sujet: niebe
+  regime: committed
+  titre: Dryland cropping in different Land uses of Senegal using Sentinel-2 and hybrid ML method
+  editeur: Taylor & Francis
+  annee: '2024-07-18'
+  langue: en
+  portee: sahel_specific
+  licence: CC-BY-4.0
+  licence_confirmee_dans_le_pdf: true
+  url_pdf: http://oar.icrisat.org/id/document/56273
+  fichier: International Journal of Digital Earth_17_1_1-18_2024.pdf
+  octets_attendus: 2494018
+  page_notice: http://oar.icrisat.org/id/eprint/12793
+  doi: https://doi.org/10.1080/17538947.2024.2378815
+  caveats: []
+  pages: 18
+  utilite_conseil: methodologique
+  licence_citation: trading as Taylor & Francis Group This is an Open Access article distributed under
+    the terms of the Creative Commons Attribution License
+  extraction: EXTRACTIBLE
+  pages_utiles: 18
+  car_utiles: 54051
+- id: oar_57507
+  sujet: arachide
+  regime: committed
+  titre: A cost–benefit analysis of the production system with improved and climate-resilient sorghum
+    varieties in southern Mali
+  editeur: Frontiers Media
+  annee: '2025-01-06'
+  langue: en
+  portee: sahel_specific
+  licence: CC-BY-4.0
+  licence_confirmee_dans_le_pdf: true
+  url_pdf: http://oar.icrisat.org/id/document/57507
+  fichier: Frontiers in Climate_6_01-12_2025.pdf
+  octets_attendus: 1829744
+  page_notice: http://oar.icrisat.org/id/eprint/13315
+  doi: https://doi.org/10.3389/fclim.2024.1477039
+  caveats: []
+  pages: 12
+  utilite_conseil: indirecte
+  licence_citation: Nebié, Worou, Jumbo and Savadogo. This is an open-access article distributed under
+    the terms of the Creative Commons Attribution License
+  extraction: EXTRACTIBLE
+  pages_utiles: 12
+  car_utiles: 62331
+- id: oar_56942
+  sujet: striga
+  regime: committed
+  titre: 'Multi-dimensional impact assessment for priority setting of agricultural technologies: An application
+    of TOPSIS for the drylands of sub-Saharan Africa and South Asia'
+  editeur: Public Library of Science
+  annee: '2024-11-21'
+  langue: en
+  portee: general_tropical
+  licence: CC-BY-4.0
+  licence_confirmee_dans_le_pdf: true
+  url_pdf: http://oar.icrisat.org/id/document/56942
+  fichier: PLOS ONE_19_11_1-35_2024.pdf
+  octets_attendus: 4915704
+  page_notice: http://oar.icrisat.org/id/eprint/12888
+  doi: https://doi.org/10.1371/journal.pone.0314007
+  caveats: []
+  pages: 35
+  utilite_conseil: methodologique
+  licence_citation: 'yright: © 2024 Gbegbelegbe et al. This is an open access article distributed under
+    the terms of the Creative Commons Attributio n License'
+  extraction: EXTRACTIBLE
+  pages_utiles: 35
+  car_utiles: 114420
+- id: oar_56309
+  sujet: striga
+  regime: fetched
+  titre: The role of phenomics and genomics in delineating the genetic basis of complex traits in millets
+  editeur: Wiley
+  annee: '2024-05-23'
+  langue: en
+  portee: general_tropical
+  licence: null
+  licence_confirmee_dans_le_pdf: false
+  url_pdf: http://oar.icrisat.org/id/document/56309
+  fichier: Physiologia Plantarum_176_3_1-20_2024.pdf
+  octets_attendus: 19383753
+  page_notice: http://oar.icrisat.org/id/eprint/12825
+  doi: https://doi.org/10.1111/ppl.14349
+  caveats: []
+  pages: 20
+  utilite_conseil: methodologique
+  extraction: EXTRACTIBLE
+  pages_utiles: 20
+  car_utiles: 131817
+- id: oar_57100
+  sujet: chenille_legionnaire
+  regime: committed
+  titre: 'Integrated Pest Management in Pigeonpea: Progress and Prospects'
+  editeur: Wiley-VCH GmbH
+  annee: '2025-02-24'
+  langue: en
+  portee: general_tropical
+  licence: CC-BY-4.0
+  licence_confirmee_dans_le_pdf: true
+  url_pdf: http://oar.icrisat.org/id/document/57100
+  fichier: Journal of Applied Entomology_1-21_2025.pdf
+  octets_attendus: 944507
+  page_notice: http://oar.icrisat.org/id/eprint/13000
+  doi: https://doi.org/10.1111/jen.13414
+  caveats: []
+  pages: 21
+  utilite_conseil: directe
+  licence_citation: n open access article under the terms of the Creative Commons Attribution License,
+    which permits use, distribution and
+  extraction: EXTRACTIBLE
+  pages_utiles: 21
+  car_utiles: 135890
+- id: oar_57372
+  sujet: chenille_legionnaire
+  regime: fetched
+  titre: 'Performance of larval parasitoid Habrobracon hebetor Say (Hymenoptera: Braconidae) on Spodoptera
+    frugiperda (JE Smith) (Lepidoptera: Noctuidae): potential use as Bio-control agent'
+  editeur: Springer
+  annee: '2025-02-18'
+  langue: en
+  portee: general_tropical
+  licence: null
+  licence_confirmee_dans_le_pdf: false
+  url_pdf: http://oar.icrisat.org/id/document/57372
+  fichier: International Journal of Tropical Insect Science_45_593-600_2025.pdf
+  octets_attendus: 992670
+  page_notice: http://oar.icrisat.org/id/eprint/13175
+  doi: https://doi.org/10.1007/s42690-025-01448-0
+  caveats: []
+  pages: 8
+  utilite_conseil: directe
+  extraction: EXTRACTIBLE
+  pages_utiles: 8
+  car_utiles: 42386
+- id: oar_57370
+  sujet: fertilisation
+  regime: committed
+  titre: Pearl millet yield reduction by soil erosion and its recovery potential through fertilizer application
+    on an Arenosol in the Sahel
+  editeur: Elsevier
+  annee: '2024-10-16'
+  langue: en
+  portee: sahel_specific
+  licence: CC-BY-4.0
+  licence_confirmee_dans_le_pdf: true
+  url_pdf: http://oar.icrisat.org/id/document/57370
+  fichier: Soil and Tillage Research_246_1-9_2025.pdf
+  octets_attendus: 2345917
+  page_notice: http://oar.icrisat.org/id/eprint/13174
+  doi: https://doi.org/10.1016/j.still.2024.106324
+  caveats: []
+  pages: 9
+  utilite_conseil: directe
+  licence_citation: .V. This is an open access article under the CC BY license ( http://creativecommons.org/license
+  extraction: EXTRACTIBLE
+  pages_utiles: 9
+  car_utiles: 54607
+- id: oar_56131
+  sujet: fertilisation
+  regime: committed
+  titre: 'Restoring degraded landscapes and sustaining livelihoods: sustainability assessment (cum-review)
+    of integrated landscape management in sub-Saharan Africa'
+  editeur: Frontiers Media
+  annee: '2024-03-21'
+  langue: en
+  portee: sahel_specific
+  licence: CC-BY-4.0
+  licence_confirmee_dans_le_pdf: true
+  url_pdf: http://oar.icrisat.org/id/document/56131
+  fichier: Frontiers in Climate_06_01-15_2024.pdf
+  octets_attendus: 6274611
+  page_notice: http://oar.icrisat.org/id/eprint/12606
+  doi: https://doi.org/10.3389/fclim.2024.1338259
+  caveats: []
+  pages: 15
+  utilite_conseil: indirecte
+  licence_citation: ta, Cofie, Tilahun and Mabhaudhi. This is an open-access article distributed under
+    the terms of the Creative Commons Attribution License
+  extraction: EXTRACTIBLE
+  pages_utiles: 15
+  car_utiles: 76616
+- id: oar_57448
+  sujet: calendrier_cultural
+  regime: committed
+  titre: APSIM-based modeling approach to understand sorghum production environments in Mali
+  editeur: Springer
+  annee: '2024-04-22'
+  langue: en
+  portee: sahel_specific
+  licence: CC-BY-4.0
+  licence_confirmee_dans_le_pdf: true
+  url_pdf: http://oar.icrisat.org/id/document/57448
+  fichier: Agronomy for Sustainable Development_44_1-16_2024.pdf
+  octets_attendus: 2437921
+  page_notice: http://oar.icrisat.org/id/eprint/13258
+  doi: https://doi.org/10.1007/s13593-023-00909-5
+  caveats: []
+  pages: 16
+  utilite_conseil: indirecte
+  licence_citation: ict of interest. Open Access This article is licensed under a Creative Commons Attri-
+    bution 4.0 International License, which per
+  extraction: EXTRACTIBLE
+  pages_utiles: 16
+  car_utiles: 68771
+- id: oar_56229
+  sujet: calendrier_cultural
+  regime: committed
+  titre: Glutaredoxin regulation of primary root growth is associated with early drought stress tolerance
+    in pearl millet
+  editeur: eLife Sciences Publications
+  annee: '2024-01-31'
+  langue: en
+  portee: sahel_specific
+  licence: CC-BY-4.0
+  licence_confirmee_dans_le_pdf: true
+  url_pdf: http://oar.icrisat.org/id/document/56229
+  fichier: elife_12_1-21_2024.pdf
+  octets_attendus: 5402965
+  page_notice: http://oar.icrisat.org/id/eprint/12741
+  doi: https://doi.org/10.7554/eLife.86169.3
+  caveats: []
+  pages: 21
+  utilite_conseil: methodologique
+  licence_citation: rticle is distributed under the terms of the Creative Commons Attribution License,
+    which permits unrestricted use and
+  extraction: EXTRACTIBLE
+  pages_utiles: 21
+  car_utiles: 88093
+- id: reca_catalogue_des_especes_et_varietes_nige
+  sujet: varietes
+  regime: fetched
+  titre: Catalogue variétés végétales /Niger, 2021 |Reca-Niger
+  editeur: Comité National des Semences (CNS) — Ministère de l'Agriculture, Niger
+  annee: '2021'
+  langue: fr
+  portee: sahel_specific
+  licence: null
+  licence_confirmee_dans_le_pdf: false
+  url_pdf: https://reca-niger.org/IMG/pdf/catalogue_des_especes_et_varietes_niger.pdf
+  fichier: catalogue_des_especes_et_varietes_niger.pdf
+  octets_attendus: 6680246
+  pages: 307
+  extraction: PARTIEL
+  pages_utiles: 166
+  car_utiles: 112665
+  caveats:
+  - '307 pages dont 166 seulement portent du texte : extraire UNIQUEMENT les pages listees dans pages_utiles
+    (sonde v3)'
+  - 'fiches variete + tableaux « Techniques culturales » (date de semis par zone pluviometrique, microdose)
+    : citer verbatim, ne jamais paraphraser un chiffre'
+  - 'reference officielle des varietes homologuees au Niger : c''est la source qui empeche d''inventer
+    un nom de variete'
+  utilite_conseil: directe
+  index_pages_utiles:
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 11
+  - 12
+  - 13
+  - 14
+  - 16
+  - 18
+  - 20
+  - 22
+  - 24
+  - 26
+  - 28
+  - 30
+  - 32
+  - 34
+  - 36
+  - 38
+  - 40
+  - 42
+  - 44
+  - 46
+  - 48
+  - 50
+  - 52
+  - 54
+  - 56
+  - 58
+  - 60
+  - 62
+  - 64
+  - 66
+  - 68
+  - 70
+  - 72
+  - 74
+  - 76
+  - 78
+  - 80
+  - 82
+  - 85
+  - 86
+  - 87
+  - 88
+  - 90
+  - 92
+  - 94
+  - 96
+  - 98
+  - 100
+  - 102
+  - 104
+  - 106
+  - 109
+  - 110
+  - 111
+  - 112
+  - 114
+  - 116
+  - 118
+  - 120
+  - 122
+  - 125
+  - 126
+  - 127
+  - 128
+  - 130
+  - 132
+  - 134
+  - 136
+  - 138
+  - 140
+  - 142
+  - 144
+  - 146
+  - 148
+  - 150
+  - 152
+  - 154
+  - 156
+  - 158
+  - 160
+  - 162
+  - 164
+  - 166
+  - 169
+  - 170
+  - 171
+  - 172
+  - 174
+  - 176
+  - 178
+  - 180
+  - 182
+  - 184
+  - 186
+  - 188
+  - 190
+  - 192
+  - 194
+  - 196
+  - 198
+  - 201
+  - 202
+  - 203
+  - 204
+  - 206
+  - 208
+  - 210
+  - 213
+  - 214
+  - 215
+  - 216
+  - 218
+  - 220
+  - 222
+  - 224
+  - 226
+  - 228
+  - 230
+  - 232
+  - 234
+  - 236
+  - 238
+  - 240
+  - 242
+  - 244
+  - 247
+  - 248
+  - 249
+  - 250
+  - 252
+  - 254
+  - 257
+  - 258
+  - 259
+  - 260
+  - 262
+  - 264
+  - 266
+  - 268
+  - 270
+  - 273
+  - 274
+  - 275
+  - 276
+  - 278
+  - 280
+  - 282
+  - 285
+  - 286
+  - 287
+  - 288
+  - 290
+  - 292
+  - 294
+  - 296
+  - 298
+  - 300
+  - 302
+  - 304
+  - 305
+  - 306
+- id: reca_les_varietes_de_mil_2020
+  sujet: mil
+  regime: fetched
+  titre: Variétés améliorées de mil au Niger |Reca-Niger
+  editeur: RECA — Réseau National des Chambres Régionales d'Agriculture du Niger
+  annee: 2020-05
+  langue: fr
+  portee: sahel_specific
+  licence: null
+  licence_confirmee_dans_le_pdf: false
+  url_pdf: https://reca-niger.org/IMG/pdf/les_varietes_de_mil_2020.pdf
+  fichier: les_varietes_de_mil_2020.pdf
+  octets_attendus: 546189
+  pages: 5
+  extraction: EXTRACTIBLE
+  pages_utiles: 5
+  car_utiles: 9526
+  caveats: []
+  utilite_conseil: directe
+- id: reca_varietes_de_semences_certifiees_dispon
+  sujet: varietes
+  regime: fetched
+  titre: Semences 2025 / les variétés |Reca-Niger
+  editeur: RECA (Aïssa Kimba, Patrick Delmas) — Annuaire National 2025
+  annee: '2025-03-23'
+  langue: fr
+  portee: sahel_specific
+  licence: null
+  licence_confirmee_dans_le_pdf: false
+  url_pdf: https://reca-niger.org/IMG/pdf/varietes_de_semences_certifiees_disponibles_2025_reca.pdf
+  fichier: varietes_de_semences_certifiees_disponibles_2025_reca.pdf
+  octets_attendus: 518753
+  pages: 9
+  extraction: EXTRACTIBLE
+  pages_utiles: 9
+  car_utiles: 24945
+  caveats: []
+  utilite_conseil: directe
+- id: reca_manuel_niebe_a5_dec_2022
+  sujet: niebe
+  regime: fetched
+  titre: Manuel semences niébé |Reca-Niger
+  editeur: Souleymane Abdou, Salami Issoufou (Niger)
+  annee: 2022-12
+  langue: fr
+  portee: sahel_specific
+  licence: null
+  licence_confirmee_dans_le_pdf: false
+  url_pdf: https://reca-niger.org/IMG/pdf/manuel_niebe_a5_dec_2022.pdf
+  fichier: manuel_niebe_a5_dec_2022.pdf
+  octets_attendus: 5581144
+  pages: 32
+  extraction: EXTRACTIBLE
+  pages_utiles: 26
+  car_utiles: 35018
+  caveats: []
+  utilite_conseil: directe
+- id: reca_spodoptera_mais_fiche_technique_2017
+  sujet: chenille_legionnaire
+  regime: fetched
+  titre: Chenille légionnaire du maïs |Reca-Niger
+  editeur: DGPV + INRAN + RECA (Madougou Garba, Haougui Adamou, Bibata Ali, Aïssa Kimba, Patrick Delmas,
+    Salissou Oumarou)
+  annee: '2017-12-28'
+  langue: fr
+  portee: sahel_specific
+  licence: null
+  licence_confirmee_dans_le_pdf: false
+  url_pdf: https://reca-niger.org/IMG/pdf/Spodoptera_mais_fiche_technique_2017.pdf
+  fichier: Spodoptera_mais_fiche_technique_2017.pdf
+  octets_attendus: 953759
+  pages: 4
+  extraction: EXTRACTIBLE
+  pages_utiles: 4
+  car_utiles: 7919
+  caveats: []
+  utilite_conseil: directe
+- id: reca_fiche_descriptive_frugiperda
+  sujet: chenille_legionnaire
+  regime: fetched
+  titre: Fiche chenille légionnaire d’automne |Reca-Niger
+  editeur: ICRISAT Niger (Saidou A. Laminou, Karimoune Laouali, Malick N. Ba)
+  annee: '2024'
+  langue: fr
+  portee: sahel_specific
+  licence: null
+  licence_confirmee_dans_le_pdf: false
+  url_pdf: https://reca-niger.org/IMG/pdf/fiche_descriptive_frugiperda.pdf
+  fichier: fiche_descriptive_frugiperda.pdf
+  octets_attendus: 806447
+  pages: 5
+  extraction: EXTRACTIBLE
+  pages_utiles: 5
+  car_utiles: 7385
+  caveats: []
+  utilite_conseil: directe
+- id: reca_guide_identification_mem_lamine
+  sujet: mil
+  regime: fetched
+  titre: Guide mineuse du mil |Reca-Niger
+  editeur: ICRISAT Niger / projet SAHEL IPM
+  annee: '2020'
+  langue: fr
+  portee: sahel_specific
+  licence: null
+  licence_confirmee_dans_le_pdf: false
+  url_pdf: https://reca-niger.org/IMG/pdf/guide_identification_mem_lamine.pdf
+  fichier: guide_identification_mem_lamine.pdf
+  octets_attendus: 548506
+  pages: 3
+  extraction: EXTRACTIBLE
+  pages_utiles: 3
+  car_utiles: 4303
+  caveats: []
+  utilite_conseil: directe
+- id: reca_foreurs_de_tiges_inran
+  sujet: mil
+  regime: fetched
+  titre: Foreur des tiges du mil |Reca-Niger
+  editeur: IOSR Journal of Agriculture and Veterinary Science 11(6) — DOI 10.9790/2380-1106021019
+  annee: 2018-06
+  langue: fr
+  portee: sahel_specific
+  licence: null
+  licence_confirmee_dans_le_pdf: false
+  url_pdf: https://reca-niger.org/IMG/pdf/foreurs_de_tiges_inran.pdf
+  fichier: foreurs_de_tiges_inran.pdf
+  octets_attendus: 369269
+  pages: 10
+  extraction: EXTRACTIBLE
+  pages_utiles: 10
+  car_utiles: 43389
+  caveats:
+  - revue IOSR, PAS une fiche INRAN malgre le nom du fichier
+  utilite_conseil: directe
+- id: reca_sorgho_ssd-35
+  sujet: sorgho
+  regime: fetched
+  titre: Sorgho SSD-35 et cécidomyie |Reca-Niger
+  editeur: INRAN / ICRISAT (poster technologie, Niger)
+  annee: 2010-06
+  langue: fr
+  portee: sahel_specific
+  licence: null
+  licence_confirmee_dans_le_pdf: false
+  url_pdf: https://reca-niger.org/IMG/pdf/sorgho_ssd-35.pdf
+  fichier: sorgho_ssd-35.pdf
+  octets_attendus: 282509
+  pages: 3
+  extraction: EXTRACTIBLE
+  pages_utiles: 3
+  car_utiles: 6131
+  caveats:
+  - 'poster 2010 : verifier que SSD-35 figure toujours au catalogue CNEV 2021 avant de la conseiller'
+  utilite_conseil: directe
+- id: reca_presentation_fiche_conseil2013
+  sujet: phytosanitaire
+  regime: fetched
+  titre: Fiches conseil insecticide /matières actives |Reca-Niger
+  editeur: RECA (Niger) — série fiches conseil matières actives
+  annee: '2013-10-21'
+  langue: fr
+  portee: sahel_specific
+  licence: null
+  licence_confirmee_dans_le_pdf: false
+  url_pdf: https://reca-niger.org/IMG/pdf/Presentation_fiche_conseil2013.pdf
+  fichier: Presentation_fiche_conseil2013.pdf
+  octets_attendus: 591375
+  pages: 5
+  extraction: EXTRACTIBLE
+  pages_utiles: 5
+  car_utiles: 12107
+  caveats:
+  - 'recensement 2013 des produits en vente : etat des lieux date, pas une liste d''homologation en vigueur'
+  utilite_conseil: directe
+- id: reca_fiche_conseil_lambda_cyhalothrine_vers
+  sujet: phytosanitaire
+  regime: fetched
+  titre: Fiches conseil insecticide /matières actives |Reca-Niger
+  editeur: RECA + atelier de validation PPAAO (Niger)
+  annee: '2013-09-22'
+  langue: fr
+  portee: sahel_specific
+  licence: null
+  licence_confirmee_dans_le_pdf: false
+  url_pdf: https://reca-niger.org/IMG/pdf/Fiche_conseil_Lambda_cyhalothrine_Version_22septembre2013.pdf
+  fichier: Fiche_conseil_Lambda_cyhalothrine_Version_22septembre2013.pdf
+  octets_attendus: 546951
+  pages: 5
+  extraction: EXTRACTIBLE
+  pages_utiles: 5
+  car_utiles: 12242
+  caveats:
+  - 'version 2013 : une matiere active peut avoir ete retiree depuis. Citer avec sa date, jamais comme
+    une autorisation en vigueur'
+  utilite_conseil: directe
+- id: reca_conseil_en_fertilisation_note_2_reca
+  sujet: fertilisation
+  regime: fetched
+  titre: Conseil fertilisation /Doses |Reca-Niger
+  editeur: RECA (Aïssa Kimba, Patrick Delmas, Yayé Zakey) + CRA Niamey (Mariama Iboune)
+  annee: '2024-12-20'
+  langue: fr
+  portee: sahel_specific
+  licence: null
+  licence_confirmee_dans_le_pdf: false
+  url_pdf: https://reca-niger.org/IMG/pdf/conseil_en_fertilisation_note_2_reca.pdf
+  fichier: conseil_en_fertilisation_note_2_reca.pdf
+  octets_attendus: 476801
+  pages: 5
+  extraction: EXTRACTIBLE
+  pages_utiles: 5
+  car_utiles: 12007
+  caveats:
+  - 'porte sur la TOMATE, pas sur les cereales : ne pas transposer ses doses au mil ou au sorgho'
+  - 'le document lui-meme met en doute les doses de ses propres fiches anterieures : signaler la revision,
+    ne pas citer l''ancienne dose'
+  utilite_conseil: directe
+- id: reca_ft_bandes_niebe_mil_inran_2015
+  sujet: calendrier_cultural
+  regime: fetched
+  titre: F.T. Mil/niébé en bandes alternées |Reca-Niger
+  editeur: INRAN — Institut National de Recherche Agronomique du Niger
+  annee: '2015'
+  langue: fr
+  portee: sahel_specific
+  licence: null
+  licence_confirmee_dans_le_pdf: false
+  url_pdf: https://reca-niger.org/IMG/pdf/FT_Bandes_niebe_mil_INRAN_2015.pdf
+  fichier: FT_Bandes_niebe_mil_INRAN_2015.pdf
+  octets_attendus: 544103
+  pages: 3
+  extraction: EXTRACTIBLE
+  pages_utiles: 3
+  car_utiles: 5204
+  caveats: []
+  utilite_conseil: directe
+- id: reca_gdt_fiches_techniques_2022_sacs_pics
+  sujet: niebe
+  regime: fetched
+  titre: FT conservation niébé |Reca-Niger
+  editeur: RECA (Niger) — Gestion Durable des Terres, fiche 5.3
+  annee: '2022'
+  langue: fr
+  portee: sahel_specific
+  licence: null
+  licence_confirmee_dans_le_pdf: false
+  url_pdf: https://reca-niger.org/IMG/pdf/gdt_fiches_techniques_2022_sacs_pics.pdf
+  fichier: gdt_fiches_techniques_2022_sacs_pics.pdf
+  octets_attendus: 546596
+  pages: 3
+  extraction: EXTRACTIBLE
+  pages_utiles: 3
+  car_utiles: 3922
+  caveats: []
+  utilite_conseil: directe
+- id: reca_ft_compostage_aerien_inran
+  sujet: fertilisation
+  regime: fetched
+  titre: F.T. Compostage aérien |Reca-Niger
+  editeur: INRAN (Boukary Habsatou, Adamou M. Moustapha, Kindo Ousmane, Wanzeido Pauline Douramane)
+  annee: '2020'
+  langue: fr
+  portee: sahel_specific
+  licence: null
+  licence_confirmee_dans_le_pdf: false
+  url_pdf: https://reca-niger.org/IMG/pdf/FT_Compostage_aerien_INRAN.pdf
+  fichier: FT_Compostage_aerien_INRAN.pdf
+  octets_attendus: 640377
+  pages: 3
+  extraction: EXTRACTIBLE
+  pages_utiles: 3
+  car_utiles: 4817
+  caveats: []
+  utilite_conseil: directe
+- id: reca_vca4d.niger_.arachide.28112023_approve
+  sujet: arachide
+  regime: fetched
+  titre: CDV arachide Niger |Reca-Niger
+  editeur: VCA4D — Commission Européenne / INTPA & Agrinatura
+  annee: '2023-11-28'
+  langue: fr
+  portee: sahel_specific
+  licence: null
+  licence_confirmee_dans_le_pdf: false
+  url_pdf: https://reca-niger.org/IMG/pdf/vca4d.niger_.arachide.28112023_approved_v1.pdf
+  fichier: vca4d.niger_.arachide.28112023_approved_v1.pdf
+  octets_attendus: 5484324
+  pages: 185
+  extraction: EXTRACTIBLE
+  pages_utiles: 180
+  car_utiles: 460183
+  caveats:
+  - 'analyse de chaine de valeur : economie et filiere, tres peu d''agronomie applicable — ne pas en tirer
+    de conseil de culture'
+  - '185 pages : le plus gros document du corpus, decouper finement'
+  utilite_conseil: indirecte
+- id: reca_reca_appui-conseil_note7_unions_produc
+  sujet: niebe
+  regime: fetched
+  titre: Niébé /Une expérience d’appui-conseil (Burkina Faso) |Reca-Niger
+  editeur: RECA (Niger) — note d'appui-conseil n°7, terrain Burkina Faso
+  annee: '2012'
+  langue: fr
+  portee: sahel_specific
+  licence: null
+  licence_confirmee_dans_le_pdf: false
+  url_pdf: https://reca-niger.org/IMG/pdf/RECA_appui-conseil_Note7_Unions_producteurs_niebe_Burkina_2012.pdf
+  fichier: RECA_appui-conseil_Note7_Unions_producteurs_niebe_Burkina_2012.pdf
+  octets_attendus: 464028
+  pages: 3
+  extraction: EXTRACTIBLE
+  pages_utiles: 3
+  car_utiles: 6765
+  caveats:
+  - 'dispositif d''appui-conseil, pas une fiche technique : contexte technico-economique seulement'
+  - seul document du corpus dont le terrain est le Burkina Faso
+  utilite_conseil: indirecte
+- id: reca_2014-09_fermeture_et_liberation_des_ch
+  sujet: calendrier_cultural
+  regime: fetched
+  titre: Fermeture et libération des champs |Reca-Niger
+  editeur: RECA (Niger) — ordonnance n°2010-029 relative au pastoralisme
+  annee: '2014-09-22'
+  langue: fr
+  portee: sahel_specific
+  licence: null
+  licence_confirmee_dans_le_pdf: false
+  url_pdf: https://reca-niger.org/IMG/pdf/2014-09_fermeture_et_liberation_des_champs.pdf
+  fichier: 2014-09_fermeture_et_liberation_des_champs.pdf
+  octets_attendus: 217162
+  pages: 2
+  extraction: EXTRACTIBLE
+  pages_utiles: 2
+  car_utiles: 3123
+  caveats:
+  - 'dates reglementaires NIGER liees a l''ordonnance 2010-029 : ne pas transposer au Senegal, au Mali
+    ni au Burkina'
+  utilite_conseil: directe
+- id: reca_note_effets_pratiques_recommandees_cge
+  sujet: calendrier_cultural
+  regime: fetched
+  titre: Note sur les effets des pratiques recommandées... |Reca-Niger
+  editeur: Chambre Régionale d'Agriculture de Zinder (Niger)
+  annee: '2020'
+  langue: fr
+  portee: sahel_specific
+  licence: null
+  licence_confirmee_dans_le_pdf: false
+  url_pdf: https://reca-niger.org/IMG/pdf/note_effets_pratiques_recommandees_cgef_rendements_cultures__zinder_vf.pdf
+  fichier: note_effets_pratiques_recommandees_cgef_rendements_cultures__zinder_vf.pdf
+  octets_attendus: 475880
+  pages: 6
+  extraction: EXTRACTIBLE
+  pages_utiles: 6
+  car_utiles: 15385
+  caveats:
+  - 'donnees de la region de Zinder : portee regionale, pas nationale'
+  utilite_conseil: indirecte

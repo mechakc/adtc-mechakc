@@ -1,37 +1,37 @@
 {
-  "team_id": "your-team-id",
-  "domain": "coding_assistants",
-  "language_scope": ["en"],
-  "african_alpha_claim": false,
+  "team_id": "1141147-adtc-mechakc",
+  "domain": "agriculture",
+  "language_scope": ["fr", "en"],
+  "african_alpha_claim": true,
   "budget_laptop_claim": true,
   "submitter": {
-    "name": "your-name",
-    "email": "your-email@domain.com",
-    "github_handle": "your-github"
+    "name": "Loic HOUNYOVI",
+    "email": "loichyv@gmail.com",
+    "github_handle": "mechakc"
   },
   "cross_disciplinary_pairing": {
-    "discipline": "education",
+    "discipline": "agronomie",
     "load_bearing": true,
-    "description": "Brief description of how your model serves a real-world domain."
+    "description": "Le systeme repond a partir d'un corpus agronomique sahelien de 34 documents indexes (INRAN, RECA Niger, ICRISAT, CGIAR), dont 12 sous licence CC-BY verifiee page par page a l'interieur du PDF. L'agronomie n'est pas un theme mais la source de verite : chaque conseil chiffre (date de semis, ecartement, densite, dose d'engrais, seuil d'intervention) est rendu avec sa citation verbatim, son editeur, son annee et sa page. Hors corpus, le systeme annonce explicitement que la reponse n'est pas sourcee et nomme le document qui manque ; hors du domaine agricole, il refuse."
   },
   "test_prompts": [
     {
-      "prompt_id": "tp_001",
-      "prompt": "Write a Python function that reads a CSV file and returns the column with the highest mean value."
+      "prompt_id": "calendrier_semis_mil_maradi",
+      "prompt": "A quelle periode faut-il semer le mil dans la region de Maradi au Niger, et quel cumul pluviometrique doit declencher le semis ? Cite ta source."
     },
     {
-      "prompt_id": "tp_002",
-      "prompt": "Explain the difference between a list and a tuple in Python, and give one example where each is the better choice."
+      "prompt_id": "striga_sorgho_cross_lingual",
+      "prompt": "How can a smallholder farmer in Niger control Striga hermonthica in sorghum? Give practical measures and cite the source document, even if that document is written in French."
     }
   ],
   "model": {
-    "name": "SmolLM2-135M-Instruct-Q4_K_M",
+    "name": "Qwen2.5-0.5B-Instruct",
     "runtime": "llama.cpp",
     "quantization": "GGUF Q4_K_M",
-    "parameters_estimate": "135M",
-    "packaging": "binary_bundle"
+    "parameters_estimate": "0.6B",
+    "packaging": "docker_image"
   },
   "_runtime": {
-    "model_path": "model/SmolLM2-135M-Instruct-Q4_K_M.gguf"
+    "model_path": "model/Qwen2.5-0.5B/qwen2.5-0.5b-instruct-q4_k_m.gguf"
   }
 }

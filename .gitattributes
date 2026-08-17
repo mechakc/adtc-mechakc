@@ -1,0 +1,31 @@
+# Normalisation des fins de ligne — correctif DURABLE, pas cosmetique.
+#
+# Contexte : ce poste a `core.autocrlf=true`. Sans ce fichier, git reecrit les
+# scripts en CRLF dans le REPERTOIRE DE TRAVAIL au prochain checkout/stash/switch
+# — et un `#!/usr/bin/env bash\r\n` echoue en WSL avec
+#     /usr/bin/env: 'bash\r': No such file or directory
+# Les blobs du depot etaient deja LF-purs (verifie octet par octet) ; c'est la
+# copie locale qui etait exposee. `eol=lf` protege les DEUX cotes, quelle que
+# soit la config git de la machine qui clone.
+#
+# Enjeu concret : le livrable D9 exige que `download_model.sh` fonctionne. Un juge
+# clonant sous Linux ne verrait rien, mais NOUS aurions casse nos propres runs.
+
+*               text=auto eol=lf
+
+# Scripts executes sous Linux (WSL, image Docker) — LF non negociable.
+*.sh            text eol=lf
+Dockerfile      text eol=lf
+
+# Donnees lues par des parseurs : un CR parasite se retrouve dans les valeurs.
+*.json          text eol=lf
+*.yaml          text eol=lf
+*.yml           text eol=lf
+*.py            text eol=lf
+*.md            text eol=lf
+
+# Binaires : jamais de conversion (un seul octet modifie invalide un GGUF).
+*.gguf          binary
+*.bin           binary
+*.safetensors   binary
+*.pdf           binary

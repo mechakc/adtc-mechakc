@@ -1,4 +1,11 @@
 # Model weights — never commit these to git
+# ⚠️ `model/*.gguf` ne couvre PAS les sous-dossiers (un seul `*` ne traverse pas
+# les `/`) : les candidats du bake-off vivent dans model/<Nom>/*.gguf et étaient
+# donc non-ignorés. Sur un repo PUBLIC, un `git add -A` aurait mis en scène 6,5 Go
+# de poids — et GitHub refuse tout fichier > 100 Mo.
+model/**/*.gguf
+model/**/*.bin
+model/**/*.safetensors
 model/*.gguf
 model/*.bin
 model/*.safetensors
@@ -18,3 +25,38 @@ audit.json
 # Stratégie compétitive — NE JAMAIS pousser sur le repo public
 CLAUDE.md
 .claude/
+# ⚠️ PREUVES.md est le document COMPAGNON de CLAUDE.md, pas un livrable : recon
+# nominative des 44 forks rivaux, analyse du scoring, chemins d'échec dur du
+# comparateur. Le committer ajouterait à la dette d'historique qu'on doit déjà
+# purger pour CLAUDE.md (commit cac2b8d) avant de rendre le repo public.
+PREUVES.md
+# Bake-off : révèle les candidats testés et les mesures comparatives
+bakeoff_*
+.bakeoff_*
+# Spot-check qualitatif nu (D1) : même famille que bakeoff_* — révèle nos 6 prompts
+# d'évaluation agro et la comparaison des candidats. `spotcheck_nu/` = sorties de
+# run (dont la sonde anti-interactif). Le .sh reste sur disque, documenté CLAUDE.md.
+spotcheck_nu.sh
+spotcheck_nu/
+# Outillage de sonde du corpus (D2/D3) : révèle la stratégie de sourcing.
+# N'entre ni dans l'image Docker ni dans le runtime — l'index RAG est prébâti.
+tools_corpus/
+
+# Corpus : les PDF originaux ne sont PAS redistribués (licences hétérogènes,
+# cf. CLAUDE.md §13.3). Seul le texte extrait des sources à licence permissive
+# est committé, dans corpus/txt/.
+corpus/pdf/
+# ⚠️ pdf_ecartes/ contient les documents dont le PDF INTERDIT explicitement la
+# redistribution (un CC BY-NC-ND, un « all rights reserved ») — c'est le pire
+# dossier du repo à laisser suivi sur un fork PUBLIC. Mis en quarantaine hors de
+# corpus/pdf/ pour qu'aucun glob d'extraction du D3 ne les ramasse.
+corpus/pdf_ecartes/
+# Fichiers de travail de l'audit du corpus (états intermédiaires, sauvegardes).
+corpus/sources.yaml.*
+
+# Porte anti-échec-dur du D6 (vérifie les 4 chemins vers `fail` de comparator.py).
+# ⚠️ Ignoré par DÉFAUT, pas par principe : c'est un outil de QA qui ne révèle rien
+# de secret (le profileur est public) et qui pourrait légitimement être committé au
+# D6 comme preuve de rigueur. Décision utilisateur — retirer cette ligne pour le
+# publier. En attendant, il ne pollue pas `git status`.
+check_submission.py
