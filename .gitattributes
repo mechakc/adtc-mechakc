@@ -39,9 +39,11 @@ Dockerfile      text eol=lf
 *.pdf           binary
 
 # Vecteurs de l'index RAG (D4) : `rag/index/vectors.npy` est COMMITTE (regle 3, index
-# prebati offline — CLAUDE.md 7.11). Le catch-all `text=auto` ci-dessus laisserait
+# prebati offline ; le regime de licence des documents indexes est declare dans
+# REPORT.md). Le catch-all `text=auto` ci-dessus laisserait
 # l'heuristique de git decider : elle detecterait probablement le binaire grace aux octets
 # NUL des float16, et « probablement » n'est pas une mesure. Un seul CR converti en CRLF
 # decalerait toutes les lignes de la matrice et rendrait des vecteurs plausibles et faux —
-# la meme classe de degat qu'un GGUF tronque. L'invariant s'ECRIT (erreur n 23).
+# la meme classe de degat qu'un GGUF tronque. Une sortie saine aujourd'hui ne
+# reste pas saine : l'invariant s'ECRIT dans le depot, il ne se constate pas a un instant t.
 *.npy           binary

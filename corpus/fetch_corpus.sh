@@ -1,7 +1,9 @@
 #!/usr/bin/env bash
 # corpus/fetch_corpus.sh — recupere les PDF sources du corpus agronomique.
 #
-# GENERE par tools_corpus/make_fetch_script.py — ne pas editer a la main.
+# GENERE depuis corpus/sources.yaml par l'outillage de collecte (non redistribue, meme
+# regime que corpus/txt/fetched/) — ne pas editer a la main : toute correction faite ici
+# est perdue a la prochaine generation, elle doit se faire dans sources.yaml.
 #
 # Pourquoi ce script existe : les documents institutionnels du Sahel (RECA Niger,
 # INRAN, ICRISAT-fr) ne declarent AUCUNE licence. Nous ne redistribuons donc pas

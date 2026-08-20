@@ -53,6 +53,40 @@
   "normalisation": "faite par le serveur (norme 1,0 assertee, jamais reimposee)",
   "octets": 634553760,
   "pooling": "cls",
+  "prefixe_requete": {
+   "decision": "AUCUN prefixe sur la requete",
+   "delta_marge_dure_avec_moins_sans": {
+    "arachide_densite_semis": 0.0309,
+    "mil_microdose_en": -0.0097,
+    "niebe_semence_pure": -0.0117,
+    "tp1_mil_semis_maradi": 0.0427
+   },
+   "delta_marge_moyen": 0.0131,
+   "mesure": "M2 du D5, 19/08 : 4 items etiquetes PAR VERBATIM, requete en lot de 1, pooling cls explicite, llama-server 10175 (60bccc376)",
+   "motif": "le prefixe n'ameliore le rang dans AUCUN cas et le degrade 2 fois sur 4 (6->20, 51->157). Le delta de marge moyen positif est TROMPEUR : il monte parce que le prefixe ecrase tous les cosinus (0,6181->0,5671 sur tp1), pas parce qu'il discrimine mieux. Les 3 180 passages ont ete plonges SANS prefixe ; la convention obligatoire de bge-small/base-en ne se transporte pas a BGE-M3 (convention verifiee AGISSANTE sur CE modele, pas seulement documentee pour un autre).",
+   "n_items_ou_le_prefixe_ameliore_le_rang": 0,
+   "n_items_ou_le_prefixe_degrade_le_rang": 2,
+   "portee_honnete": "4 items. Le verdict est robuste a une erreur d'etiquette : les deux regimes partagent le meme label, donc le delta est intra-item.",
+   "prefixe_teste": "Represent this sentence for searching relevant passages: ",
+   "rang_du_bon_chunk_sans_puis_avec": {
+    "arachide_densite_semis": [
+     51,
+     157
+    ],
+    "mil_microdose_en": [
+     5,
+     5
+    ],
+    "niebe_semence_pure": [
+     6,
+     20
+    ],
+    "tp1_mil_semis_maradi": [
+     5,
+     5
+    ]
+   }
+  },
   "sha256_gguf": "950f4a8e5e19477a6d3c26d2f162233c20002c601f75e4b002e3239997821167"
  },
  "perimetre": {
@@ -71,5 +105,5 @@
   "n_documents": 33,
   "n_sources": 39
  },
- "seuils_cosinus": "AUCUN. Calibres au D5 sur distribution mesuree (PREUVES.md 17.5.1)."
+ "seuils_cosinus": "AUCUN seuil dans cet index. La porte est calibree au D5 et consignee dans seuils.json (meme repertoire), avec son n de calibration et son cout mesure des deux cotes."
 }

@@ -1,6 +1,7 @@
 """Verification COMPORTEMENTALE de rag/index/ — chaque controle EXECUTE l'acte.
 
-Modele : tools_corpus/verify_txt.py (D3). Le principe qui gouverne ce fichier est une lecon
+Modele : la verification du corpus texte au D3 (meme principe). Le principe qui gouverne ce
+fichier est une lecon
 payee trois fois sur ce projet — `jq` jamais execute, `grep -c $'\\r'` a motif vide qui
 renvoie 89 sur un fichier LF pur, `git check-ignore` qui cite une ligne VIDE — et une
 quatrieme fois pendant le D4 : `tasklist | grep llama` n'a rien trouve pendant que
@@ -9,7 +10,8 @@ resultat plausible est pire qu'aucune verification.
 
 D'ou la regle appliquee ici : tout controle qui pourrait etre vert par accident porte sa
 CONTRE-EPREUVE — on fabrique la faute que le controle doit attraper, et on exige qu'il
-l'attrape. Un test qui ne peut pas echouer ne prouve rien (erreur n 17).
+l'attrape. Un test qui ne peut pas echouer ne prouve rien, et une defense jamais vue
+refuser ne prouve rien non plus.
 
 Sections :
   0. perimetre DERIVE de sources.yaml puis verrouille a 33 ; documents.json croise
@@ -105,7 +107,8 @@ def section_0(chunks, docs, manif) -> dict:
           f"les {len(ids_chunk)} ids porteurs de chunks sont exactement ceux derives"
           + ("" if ids_chunk == ids_src else f" (absents : {sorted(ids_src - ids_chunk)})"))
 
-    # L'exclusion doit rester une DECISION visible, pas un effet de bord (D3, CLAUDE.md 7.10).
+    # L'exclusion doit rester une DECISION visible, pas un effet de bord (decision du D3 :
+    # une source ecartee garde son entree dans sources.yaml, avec son motif mesure).
     exclus = [s for s in sources if s.get("exclusion")]
     exige(len(exclus) == idx.N_EXCLUSION_ATTENDU
           and all(len(str(s.get("exclusion_motif", ""))) >= 80 for s in exclus),
@@ -232,8 +235,10 @@ def section_3(chunks, ctx) -> None:
           "citation_verbatim_autorisee suit licence_confirmee_dans_le_pdf sur tous les chunks")
     n_cc = len({c["doc"] for c in chunks
                 if norm(c["citation_verbatim_autorisee"]).lower() in ("true", "oui")})
-    ok(f"regime declare : {n_cc} documents a citation verbatim autorisee, "
-       f"{len({c['doc'] for c in chunks}) - n_cc} a licence null (CLAUDE.md 7.11)")
+    exige(n_cc == 7,
+          f"regime declare : {n_cc} documents a citation verbatim autorisee (licence CC-BY "
+          f"confirmee DANS le PDF), {len({c['doc'] for c in chunks}) - n_cc} a licence null "
+          "— c'est le regime que REPORT.md doit declarer en clair")
 
 
 # =========================================================================================
@@ -329,8 +334,9 @@ def section_6() -> None:
         except UnicodeDecodeError as e:
             echec(f"{nom} : UTF-8 invalide ({e})")
     ok(f"{len(FICHIERS_TEXTE)} fichiers texte : 0 octet 0x0D sur {total:,}, UTF-8 strict")
-    # CONTRE-EPREUVE : le compteur d'octets sait-il compter un CR ? (erreur n 19 :
-    # `grep -c $'\\r'` renvoyait 89 sur un fichier LF pur.)
+    # CONTRE-EPREUVE : le compteur d'octets sait-il compter un CR ? Une commande dont l'echec
+    # ressemble a un resultat plausible ne mesure rien :
+    # `grep -c $'\\r'` renvoyait 89 sur un fichier LF pur, son motif etant vide.
     exige(b"a\r\nb".count(b"\x0d") == 1,
           "CONTRE-EPREUVE : le compteur voit 1 octet 0x0D dans b'a\\r\\nb'")
     npy = (INDEX / "vectors.npy").read_bytes()
@@ -368,8 +374,8 @@ def section_7(chunks, manif, echantillon: int, alea: random.Random) -> None:
 def section_8(chunks) -> None:
     titre(8, "sanite translingue sur CHUNKS REELS — marge IMPRIMEE")
     metadonnees = json.load(io.open(RACINE / "metadata.json", encoding="utf-8"))
-    # Cle LUE dans metadata.json, pas devinee : c'est `prompt_id`, pas `id` (erreur n 15 du
-    # projet : deviner un nom de cle JSON). Et le prompt est pris MOT POUR MOT du fichier
+    # Cle LUE dans metadata.json, pas devinee : c'est `prompt_id`, pas `id` — deviner un nom de
+    # cle JSON a deja produit de fausses cles ici. Et le prompt est pris MOT POUR MOT du fichier
     # soumis — mesurer sur une paraphrase ne mesurerait pas ce que les juges enverront.
     prompts = {p["prompt_id"]: p["prompt"] for p in metadonnees["test_prompts"]}
     en = prompts["striga_sorgho_cross_lingual"]
@@ -403,9 +409,10 @@ def section_8(chunks) -> None:
           "— c'est le differenciateur translingue, mesure et non suppose")
     if marge < 0.03:
         note(f"marge dure {marge:+.4f} : le meilleur distracteur est proche. La reference "
-             "+0,3346 de PREUVES.md 17.5 n'est PAS comparable (une seule paire fabriquee "
-             "contre un maximum sur 3 179 distracteurs) — c'est la marge des medianes qui "
-             "l'est. A surveiller au D5 lors de la calibration des deux seuils.")
+             "+0,3346 mesuree au D4 sur UNE paire de phrases fabriquee n'est PAS comparable "
+             "(un maximum sur 3 179 distracteurs reels, tous agronomiques, n'a pas la meme "
+             "loi) — c'est la marge des medianes qui l'est. Surveille au D5 lors de la "
+             "calibration de la porte : rag/index/seuils.json.")
 
 
 # =========================================================================================
@@ -424,7 +431,8 @@ def pids_llama_server() -> list[int]:
 def section_9(pid_vivant) -> None:
     titre(9, "aucun llama-server.exe ne survit au run")
     # CONTRE-EPREUVE d'abord : la commande sait-elle TROUVER un serveur ? Sans cela, « 0
-    # processus » est indistinguable d'un detecteur debranche (erreur n 17, et tasklist).
+    # processus » est indistinguable d'un detecteur debranche : une defense
+    # jamais vue refuser ne prouve rien.
     if pid_vivant:
         ok(f"CONTRE-EPREUVE : pendant la section 7, Get-Process trouvait bien "
            f"{len(pid_vivant)} llama-server (PID {pid_vivant}) — le detecteur voit")

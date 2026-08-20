@@ -2,11 +2,11 @@
 
 Pourquoi ce fichier existe : `llama-embedding` N'EXISTE PAS (absent de WSL, de l'image et du
 zip officiel b10175) — llama.cpp l'a absorbe dans `llama-server --embedding`. Recette prouvee
-le 17/08 par `tools_corpus/probe_embedding.py` (PREUVES.md 17.5) ; elle est centralisee ici
-pour que index.py, verify_index.py et le service runtime du D5 ne la reimplementent pas
-chacun de son cote.
+par mesure le 17/08 (sonde d'embedding, outillage de calibration non redistribue) ; elle est
+centralisee ici pour que index.py, verify_index.py et le service runtime du D5 ne la
+reimplementent pas chacun de son cote.
 
-Invariants ECRITS, pas constates (erreur n 23) :
+Invariants ECRITS, pas constates — une sortie saine aujourd'hui ne reste pas saine :
   * `--pooling cls` est passe EXPLICITEMENT. CLS est deja le defaut de ce GGUF (ecart mesure
     0,000e+00 contre le defaut), mais le journal du serveur n'imprime PAS le pooling, meme a
     `-lv 3` : personne ne verrait une derive. Or un cosinus n'a aucun sens hors de son pooling
@@ -16,7 +16,8 @@ Invariants ECRITS, pas constates (erreur n 23) :
     comportement du serveur au lieu de le reveler.
   * la taille du GGUF est verifiee A L'OCTET avant le premier appel : garde, pas doute.
 
-Bornes par construction (erreur n 17 : 5,52 Go ecrits en 33 min) : aucun volume inscriptible,
+Bornes par construction — un flag verifie EXISTANT mais jamais verifie AGISSANT a fait
+ecrire 5,52 Go en 33 min et tuer Docker : aucun volume inscriptible,
 attente de /health plafonnee, serveur tue dans un `finally` — jamais laisse en vie.
 Reseau : 127.0.0.1 uniquement. Rien ne sort de la machine.
 """

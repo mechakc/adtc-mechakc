@@ -1,0 +1,249 @@
+{
+ "bloc": "D5",
+ "mecanisme_de_la_fusion_mesure": {
+  "lecture": "le gagnant de la fusion est le top-1 dense de moins en moins souvent quand on s'eloigne du corpus, et son cosinus s'ecarte davantage de celui du top-1 dense. C'est ce gradient qui creuse la separation, et c'est pourquoi cos_du_retenu_1 bat cos_top1_dense a AUC quasi egale. L'accord BM25/dense, lui, ne separe PAS (auc 0.471) : l'explication par « les deux moteurs se contredisent » est ecartee par la mesure.",
+  "par_population": {
+   "niveau1": {
+    "ecart_moyen_top1_dense_moins_retenu_1": 0.0221,
+    "n": 11,
+    "retenu_1_est_le_top1_dense": 6
+   },
+   "niveau2a": {
+    "ecart_moyen_top1_dense_moins_retenu_1": 0.0455,
+    "n": 2,
+    "retenu_1_est_le_top1_dense": 0
+   },
+   "niveau2b": {
+    "ecart_moyen_top1_dense_moins_retenu_1": 0.0294,
+    "n": 24,
+    "retenu_1_est_le_top1_dense": 6
+   },
+   "niveau3": {
+    "ecart_moyen_top1_dense_moins_retenu_1": 0.0348,
+    "n": 10,
+    "retenu_1_est_le_top1_dense": 1
+   }
+  }
+ },
+ "parametres_retrieve_au_moment_de_la_calibration": {
+  "K_FINAL": 8,
+  "K_POOL": 60,
+  "MAX_PAR_DOC": 3,
+  "PENALITE_STRUCTURE": 5,
+  "RRF_K": 60
+ },
+ "populations_de_calibration": {
+  "n_total": 47,
+  "niveau1_in_corpus": 11,
+  "niveau2a_absences_mesurees": 2,
+  "niveau2b_prompts_du_champ_concurrent": 24,
+  "niveau3_hors_agriculture": 10,
+  "outillage_non_redistribue": "la calibration et le jeu etiquete sont produits par l'outillage de developpement, qui n'est PAS redistribue (meme regime que corpus/txt/fetched/). C'est pourquoi toutes les valeurs, tous les couts des deux cotes et le n de calibration sont consignes ici EN CLAIR : un renvoi vers un fichier absent du repo public ne serait pas verifiable par le lecteur.",
+  "portee": "seuils CALIBRES sur 14 items etiquetes a la main (ancre = chaine exacte verifiee presente dans l'index) + 24 requetes agricoles hors corpus + 10 requetes hors agriculture. JAMAIS « valides » : 11 items in-corpus est petit, et ce n'est pas le jeu d'evaluation des juges."
+ },
+ "porte_niveau_1_contre_2": {
+  "ce_qui_accorde_le_niveau_1_a_la_place": "answer.py exige, dans un chunk retenu : (a) l'entite demandee nommee dans le meme passage, et (b) un motif de valeur compatible avec le type de demande. Sans les deux, la demande passe en niveau 2 (utile, ETIQUETEE non sourcee). Cette regle corrige la formulation « il faut deux seuils cosinus » heritee de la politique graduee : le second seuil n'existe pas, il est remplace par une verification.",
+  "cout_du_zero_promotion_par_statistique": {
+   "accord_bm25_dense_top10": {
+    "auc": 0.811,
+    "niveau1_perdus": 11,
+    "niveau1_total": 11,
+    "seuil": 0.8
+   },
+   "bm25_top1": {
+    "auc": 0.636,
+    "niveau1_perdus": 11,
+    "niveau1_total": 11,
+    "seuil": 30.0307
+   },
+   "cos_du_retenu_1": {
+    "auc": 0.84,
+    "niveau1_perdus": 8,
+    "niveau1_total": 11,
+    "seuil": 0.6636
+   },
+   "cos_max_retenus": {
+    "auc": 0.853,
+    "niveau1_perdus": 6,
+    "niveau1_total": 11,
+    "seuil": 0.6636
+   },
+   "cos_top1_dense": {
+    "auc": 0.846,
+    "niveau1_perdus": 8,
+    "niveau1_total": 11,
+    "seuil": 0.7018
+   },
+   "ecart_dense_1_2": {
+    "auc": 0.748,
+    "niveau1_perdus": 7,
+    "niveau1_total": 11,
+    "seuil": 0.0433
+   },
+   "idf_couvert_max_retenus": {
+    "auc": 0.794,
+    "niveau1_perdus": 11,
+    "niveau1_total": 11,
+    "seuil": 1.0
+   },
+   "idf_couvert_requete": {
+    "auc": 0.829,
+    "niveau1_perdus": 5,
+    "niveau1_total": 11,
+    "seuil": 0.9014
+   },
+   "idf_couvert_retenu_1": {
+    "auc": 0.86,
+    "niveau1_perdus": 10,
+    "niveau1_total": 11,
+    "seuil": 0.5468
+   },
+   "idf_rare_dans_retenu_1": {
+    "auc": 0.538,
+    "niveau1_perdus": 11,
+    "niveau1_total": 11,
+    "seuil": 1.0
+   },
+   "jetons_couverts": {
+    "auc": 0.871,
+    "niveau1_perdus": 5,
+    "niveau1_total": 11,
+    "seuil": 0.9375
+   }
+  },
+  "decision": "AUCUN seuil scalaire. Le niveau 1 est accorde par VERIFICATION D'ANCRE.",
+  "mecanisme": "un cosinus mesure une PROXIMITE THEMATIQUE, pas la presence d'un fait. La requete `absence_cumul_pluvio` demande une valeur absente POUR L'ENTITE DEMANDEE alors que le corpus en porte un homologue thematiquement voisin : un seuil de declenchement de semis a 20 mm en 7 jours existe bien, mais pour le SORGHO au MALI et comme parametre d'un modele APSIM (oar_57448 p.8), pas pour le mil a Maradi. C'est precisement ce voisinage qui fait marquer la requete plus haut que des questions dont la reponse est ecrite noir sur blanc. Aucune statistique de distance ne peut distinguer les deux — et la formulation « absente du corpus », portee par une verification d'absence menee EN FRANCAIS SEUL, etait fausse : mesure du 19/08, le fait est ecrit en anglais.",
+  "meilleure_statistique_et_son_cout": {
+   "niveau1_perdus": 5,
+   "statistique": "idf_couvert_requete",
+   "sur": 11,
+   "verdict": "meme la MEILLEURE statistique perd 5/11 des niveau 1 pour ne jamais promouvoir a tort : aucune n'est utilisable comme porte du niveau 1."
+  },
+  "pourquoi_mesure_et_non_suppose": "le plus haut item de niveau 2 est `absence_cumul_pluvio` a 0.6636 sur la statistique de porte, et 8 des 11 items de niveau 1 sont SOUS ce plafond. Un seuil qui n'accorderait jamais le niveau 1 a tort couterait donc 8/11 des vraies questions sourcables."
+ },
+ "porte_niveau_2_contre_3": {
+  "alternatives_ecartees": {
+   "accord_bm25_dense_top10": {
+    "agricoles_refusees_a_ce_seuil": 21,
+    "auc": 0.471,
+    "seuil_zero_fuite": 0.1,
+    "sur": 26
+   },
+   "bm25_top1": {
+    "agricoles_refusees_a_ce_seuil": 7,
+    "auc": 0.892,
+    "seuil_zero_fuite": 13.2559,
+    "sur": 26
+   },
+   "cos_max_retenus": {
+    "agricoles_refusees_a_ce_seuil": 4,
+    "auc": 0.973,
+    "seuil_zero_fuite": 0.4747,
+    "sur": 26
+   },
+   "cos_top1_dense": {
+    "agricoles_refusees_a_ce_seuil": 4,
+    "auc": 0.973,
+    "seuil_zero_fuite": 0.4747,
+    "sur": 26
+   },
+   "ecart_dense_1_2": {
+    "agricoles_refusees_a_ce_seuil": 25,
+    "auc": 0.573,
+    "seuil_zero_fuite": 0.0392,
+    "sur": 26
+   },
+   "idf_couvert_max_retenus": {
+    "agricoles_refusees_a_ce_seuil": 26,
+    "auc": 0.375,
+    "seuil_zero_fuite": 1.0,
+    "sur": 26
+   },
+   "idf_couvert_requete": {
+    "agricoles_refusees_a_ce_seuil": 26,
+    "auc": 0.592,
+    "seuil_zero_fuite": 1.0,
+    "sur": 26
+   },
+   "idf_couvert_retenu_1": {
+    "agricoles_refusees_a_ce_seuil": 26,
+    "auc": 0.285,
+    "seuil_zero_fuite": 1.0,
+    "sur": 26
+   },
+   "idf_rare_dans_retenu_1": {
+    "agricoles_refusees_a_ce_seuil": 26,
+    "auc": 0.281,
+    "seuil_zero_fuite": 1.0,
+    "sur": 26
+   },
+   "jetons_couverts": {
+    "agricoles_refusees_a_ce_seuil": 26,
+    "auc": 0.587,
+    "seuil_zero_fuite": 1.0,
+    "sur": 26
+   }
+  },
+  "auc": 0.972,
+  "cout_mesure": {
+   "detail_refusees": [
+    {
+     "id": "agri_autre_fork_17",
+     "valeur": 0.3951
+    },
+    {
+     "id": "agri_autre_fork_22",
+     "valeur": 0.4006
+    }
+   ],
+   "requetes_agricoles_refusees_a_tort": 2,
+   "requetes_agricoles_total": 26,
+   "requetes_hors_agriculture_passees": 0,
+   "requetes_hors_agriculture_total": 10
+  },
+  "creux_mesure": {
+   "largeur": 0.0189,
+   "lecture": "le seuil est le MILIEU d'un creux borne par ses deux items nommes, pas un percentile — la consigne du D5 est de lire le creux.",
+   "plafond": 0.447,
+   "plafond_pose_par": "agri_autre_fork_06",
+   "plancher": 0.4281,
+   "plancher_pose_par": "hors_agri_05"
+  },
+  "invariance_dans_le_creux": {
+   "milieu": {
+    "n_agri_refusees": 2,
+    "n_hors_agri_passees": 0,
+    "seuil": 0.4376
+   },
+   "plafond": {
+    "n_agri_refusees": 2,
+    "n_hors_agri_passees": 0,
+    "seuil": 0.44702
+   },
+   "plancher_plus_epsilon": {
+    "n_agri_refusees": 2,
+    "n_hors_agri_passees": 0,
+    "seuil": 0.428089
+   }
+  },
+  "pourquoi_ce_cout_est_accepte": "les 2 requetes refusees a tort tombent A L'INTERIEUR de la distribution hors agriculture (0,3951 et 0,4006, quand les requetes hors agriculture montent a 0,4281) : AUCUN seuil sur cette statistique ne les separe. Ce n'est donc pas un mauvais choix de seuil, c'est un recouvrement reel. Les deux portent sur des cultures hors de notre perimetre declare (cacao, manioc). Contrepartie de conception : le message de refus NOMME le perimetre documente, de sorte qu'un refus a tort rende quand meme au demandeur l'information utile.",
+  "quand_le_repli_sert": "cos_du_retenu_1 est absent quand le gagnant de la fusion RRF vient du BM25 SEUL, donc hors du pool dense : il n'a aucun cosinus. Mesure sur 47 requetes : 1 cas (agri_autre_fork_04). Sans repli l'item est indecidable ; le repli lit le meilleur support dense parmi les chunks retenus. Portee honnete : le repli est valide sur 1 cas mesure.",
+  "repli_si_absente": "cos_max_retenus",
+  "sens": "valeur >= seuil -> niveau 2 ou 1 ; valeur < seuil -> niveau 3 (refus)",
+  "seuil": 0.4376,
+  "seuil_est_dans_un_creux_et_non_sur_une_pente": true,
+  "statistique": "cos_du_retenu_1"
+ },
+ "rappel_du_bon_chunk": {
+  "bm25_seul": 5,
+  "dense_seul": 7,
+  "fusion_rrf": 9,
+  "k_final": 8,
+  "manques": [
+   "niebe_dates_zones",
+   "mil_cycle_hkp3"
+  ],
+  "total": 11
+ },
+ "statistiques_emises_sans_etre_elues": 11
+}

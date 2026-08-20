@@ -1,26 +1,38 @@
 #!/usr/bin/env bash
 # download_model.sh — recupere les poids GGUF necessaires a la soumission.
 #
-# Contraintes officielles (checklist ADTC, cf. CLAUDE.md §6.4) :
+# Contraintes officielles de soumission, tenues ici :
 #   - idempotent (relancable sans effet de bord) ;
 #   - AUCUN credential (URL publiques uniquement) ;
 #   - le chemin de sortie doit correspondre a `_runtime.model_path` de metadata.json.
 #
-# DEUX modeles, deux roles distincts — ne pas les confondre :
-#   1. LLM de generation      -> Qwen2.5-0.5B-Instruct Q4_K_M. C'EST LUI que le
+# DEUX modeles, deux roles distincts — ne pas les confondre. Ils sont TOUS DEUX en
+# Q8_0 depuis le 2026-08-18, mais pour des raisons DIFFERENTES (cf. plus bas) :
+#   1. LLM de generation      -> Qwen2.5-0.5B-Instruct Q8_0. C'EST LUI que le
 #      profileur charge (`_runtime.model_path`), donc lui seul pese sur S_perf/S_eff.
+#      Q8_0 mesure le 2026-08-18 contre Q4_K_M et Q4_0, 3 runs profileur n=300 :
+#      Q4_K_M elimine sous tous les regimes (+7,96 points pour
+#      Q8_0). Ce n'est PAS « un quant plus large est plus fidele » — Q8_0 rend
+#      MOINS d'arc_easy que Q4_K_M (59,33 contre 61,33) ; il gagne parce qu'il va
+#      2,27x plus vite et que S_perf sature. Le spot-check en francais a ecarte
+#      Q4_0 (2 boucles degenerees sur 6 a temperature 0).
 #   2. Modele d'embedding     -> BGE-M3 Q8_0, pour le RAG (rag/index.py, rag/retrieve.py).
 #      Charge par NOTRE application uniquement, JAMAIS par le profileur => son
 #      RSS ne coute rien sur S_eff. Choisi multilingue parce que le corpus est a
 #      75 % en francais ; regle 4 « llama.cpp only » => GGUF via llama.cpp,
 #      jamais sentence-transformers.
-#      Q8_0 (et non Q4_K_M) : en recherche vectorielle la qualite depend de
-#      distinctions fines de cosinus, et le surcout est gratuit ici (jamais
-#      charge en telemetrie). Revisable au D4 si Q4_K_M retrouve autant.
+#      Son Q8_0 tient a une raison SANS RAPPORT avec celle du LLM : en recherche
+#      vectorielle la qualite depend de distinctions fines de cosinus, et le
+#      surcout est gratuit ici (jamais charge en telemetrie). Arbitrage tranche au
+#      D4 et non rouvert : l'index livre est bati avec ce GGUF precis (son sha256
+#      est dans rag/index/manifest.json) — en changer invaliderait les 3 180
+#      vecteurs deja committes.
 #
-# Tailles verifiees a l'octet par requete HEAD le 2026-08-16 (pas une estimation) :
-#   qwen2.5-0.5b-instruct-q4_k_m.gguf  491 400 032 o  <- identique au fichier local
-#   bge-m3-Q8_0.gguf                   634 553 760 o
+# Tailles verifiees a l'octet par requete HEAD (pas une estimation) :
+#   qwen2.5-0.5b-instruct-q8_0.gguf    675 710 816 o  <- HEAD 2026-08-18 : X-Linked-Size
+#                                                        ET content-length du CDN ;
+#                                                        identique au fichier local
+#   bge-m3-Q8_0.gguf                   634 553 760 o  <- HEAD 2026-08-16
 
 set -euo pipefail
 
@@ -28,9 +40,14 @@ HERE="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 MODEL_DIR="$HERE/model"
 
 # ── LLM de generation (obligatoire — sans lui le profileur ne peut pas tourner) ─
-LLM_REL="Qwen2.5-0.5B/qwen2.5-0.5b-instruct-q4_k_m.gguf"
-LLM_URL="https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct-GGUF/resolve/main/qwen2.5-0.5b-instruct-q4_k_m.gguf"
-LLM_BYTES=491400032
+LLM_REL="Qwen2.5-0.5B/qwen2.5-0.5b-instruct-q8_0.gguf"
+LLM_URL="https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct-GGUF/resolve/main/qwen2.5-0.5b-instruct-q8_0.gguf"
+# 🔴 LLM_BYTES n'est PAS documentaire : c'est `$want` dans fetch(), compare a QUATRE
+# endroits (:53 fichier present, :70 et :74 .partial, :114 fin de telechargement).
+# Une valeur perimee ici SUPPRIME un GGUF sain (:61 `rm -f "$dest"`) puis epuise les
+# 5 tentatives. Tout changement de quant doit passer par cette ligne : une checklist de
+# changement de quant qui l'omet fait croire au tour complet — la notre l'omettait.
+LLM_BYTES=675710816
 
 # ── Modele d'embedding pour le RAG (obligatoire pour repondre, pas pour mesurer) ─
 EMB_REL="bge-m3/bge-m3-Q8_0.gguf"

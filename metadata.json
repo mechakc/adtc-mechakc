@@ -27,11 +27,11 @@
   "model": {
     "name": "Qwen2.5-0.5B-Instruct",
     "runtime": "llama.cpp",
-    "quantization": "GGUF Q4_K_M",
+    "quantization": "GGUF Q8_0",
     "parameters_estimate": "0.6B",
     "packaging": "docker_image"
   },
   "_runtime": {
-    "model_path": "model/Qwen2.5-0.5B/qwen2.5-0.5b-instruct-q4_k_m.gguf"
+    "model_path": "model/Qwen2.5-0.5B/qwen2.5-0.5b-instruct-q8_0.gguf"
   }
 }

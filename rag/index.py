@@ -4,16 +4,16 @@ de `corpus/txt/`.
 Regles du projet qui contraignent ce fichier, et comment elles sont tenues ici :
   * regle 4 « llama.cpp only » -> embeddings par `llama-server --embedding` (embed_server.py),
     jamais sentence-transformers. numpy ne sert qu'a stocker des flottants.
-  * regle 3 « 100 % offline » -> l'index est prebati et committe EN ENTIER (CLAUDE.md 7.11,
-    tranche le 17/08 : 7 documents CC-BY-4.0 confirmee + 26 `licence: null`, provenance
-    declaree dans REPORT.md). Aucun acces reseau ici hors 127.0.0.1.
+  * regle 3 « 100 % offline » -> l'index est prebati et committe EN ENTIER (tranche le 17/08 :
+    7 documents CC-BY-4.0 confirmee + 26 `licence: null`, provenance et regime de licence
+    declares dans REPORT.md). Aucun acces reseau ici hors 127.0.0.1.
   * le PERIMETRE se derive des CHAMPS de sources.yaml (`utilite_conseil`, `exclusion`), jamais
     d'un id code en dur — c'est ce qui a permis d'ecarter `oar_57215` (police cassee) sans
     toucher au code. Le compte derive est ensuite VERROUILLE a 33 : un ecart doit etre une
     decision, pas un effet de bord.
   * chaque chunk porte sa provenance de citation EN LIGNE (id, titre, editeur, annee, langue,
-    licence, regime, page) : c'est exactement ce que ChukwumaUk ne fait pas (RAG committe,
-    REPORT.md citant 0 source et 0 licence).
+    licence, regime, page) : un index qui rend des passages sans dire de quel document, de quel
+    editeur ni de quelle page ils viennent ne permet aucune verification par le lecteur.
 
 Deux proprietes tenues par construction, parce que la verification en depend :
   1. un chunk est un EXTRAIT CONTIGU du .txt source, aux offsets declares — aucune
@@ -24,9 +24,11 @@ Deux proprietes tenues par construction, parce que la verification en depend :
      source (le marqueur s'intercale). Les marqueurs eux-memes ne sont jamais indexes (bruit
      lexical dans BM25).
 
-Aucun seuil cosinus n'est ecrit ici. Les DEUX seuils de la politique graduee (CLAUDE.md 7.9)
-se calibrent au D5 sur une distribution mesuree : une valeur absolue de cosinus ne veut rien
-dire hors de son pooling (cls 0,6578/0,3232 contre mean 0,8274/0,6476, PREUVES.md 17.5.1).
+Aucun seuil cosinus n'est ecrit ici : la porte de la politique graduee est calibree au D5 sur
+une distribution mesuree et consignee dans `rag/index/seuils.json` (meme repertoire), avec son
+n de calibration et son cout des deux cotes. Une valeur absolue de cosinus ne veut rien dire
+hors de son pooling — cls rend 0,6578 / 0,3232 la ou mean rend 0,8274 / 0,6476 sur les memes
+paires — donc un seuil se transporte avec le regime qui l'a produit, jamais seul.
 """
 from __future__ import annotations
 
@@ -65,7 +67,7 @@ N_DOCUMENTS_ATTENDU = 33
 # ---- chunking ---------------------------------------------------------------------------
 # Valeurs par defaut = celles RETENUES PAR LA MESURE, pas par l'usage (le brief interdit
 # explicitement de « choisir 512 parce que c'est l'usage »). Balayage 500->1800 puis mesure
-# de cosinus sur 5 requetes reelles, 6519 embeddings — PREUVES.md 18.
+# de cosinus sur 5 requetes reelles, 6519 embeddings (mesure du D4, 17/08).
 # Trois quantites ont decide, toutes dans le meme sens :
 #   1. DILUTION — `marge_medianes` (pertinents moins hors-sujet) : 700 -> +0,0803 ;
 #      1100 -> +0,0654 (-19 %) ; 1500 -> +0,0607 (-24 %). Decroissante sur 5/5 requetes.
@@ -174,7 +176,7 @@ def documents_indexables(sources: list[dict]) -> tuple[list[dict], dict]:
             raise SystemExit(
                 f"ECHEC perimetre : {nom} = {obtenu}, {attendu} attendu (verrou D4). "
                 "Un ecart doit etre une decision : mettre a jour le verrou ET sources.yaml "
-                "ET le pairing.description de metadata.json (tools_corpus/_check_metadata.py)."
+                "ET le pairing.description de metadata.json, qui annonce ce compte aux juges."
             )
     return retenus, comptes
 
@@ -188,7 +190,11 @@ def lit_document(source: dict) -> tuple[dict, str, int]:
     tranche, sans rejouer le decoupage."""
     chemin = TXT / source["regime"] / f"{source['id']}.txt"
     if not chemin.is_file():
-        raise SystemExit(f"ECHEC {chemin} absent — relancer tools_corpus/extract.py")
+        raise SystemExit(f"ECHEC {chemin} absent — le corpus texte doit etre extrait avant "
+                         f"l'indexation. Le regime '{source['regime']}' n'est redistribue que "
+                         "pour 'committed' : pour 'fetched', lancer corpus/fetch_corpus.sh puis "
+                         "l'extraction. L'index prebati de rag/index/ ne depend PAS de cette "
+                         "etape (regle 3), elle ne sert qu'a le rebatir.")
     texte = io.open(chemin, encoding="utf-8", newline="").read()
     coupe = texte.find(SEPARATEUR_CORPS)
     if coupe < 0:
@@ -359,7 +365,7 @@ def chunks_du_segment(texte: str, debut: int, fin: int, cible: int, maxi: int,
 # ========================================================================================
 # 4bis. Bruit structurel — MARQUE, jamais supprime
 # ========================================================================================
-# Defaut MESURE au D4 (PREUVES.md 18.3) : les meilleurs distracteurs du cosinus ne sont pas
+# Defaut MESURE au D4 : les meilleurs distracteurs du cosinus ne sont pas
 # des chunks « un peu hors sujet », ce sont des bibliographies, des sommaires et des pages de
 # titre — du texte lexicalement DENSE en termes agronomiques et VIDE de conseil.
 # `oar_57448 p15` (« Gilbert RA, Heilman JL, Juo ASR (2003) Diurnal and seasonal light
@@ -719,7 +725,13 @@ def bati(cible: int, maxi: int, mini: int, chevauchement: int, dtype: str,
             "dtype_stocke": dtype if vecteurs is not None else None,
             **extra,
         },
-        "seuils_cosinus": "AUCUN. Calibres au D5 sur distribution mesuree (PREUVES.md 17.5.1).",
+        # Le prefixe "AUCUN" est verifie par verify_index.py : aucun seuil ne vit dans l'index.
+        # Le renvoi pointe un fichier du MEME repertoire, ouvrable par le lecteur — la version
+        # d'avant renvoyait a un compagnon git-ignore, donc a rien du tout : un renvoi se
+        # verifie en le RESOLVANT, jamais a l'oeil.
+        "seuils_cosinus": ("AUCUN seuil dans cet index. La porte est calibree au D5 et consignee "
+                           "dans seuils.json (meme repertoire), avec son n de calibration et son "
+                           "cout mesure des deux cotes."),
     }
     if vecteurs is not None:
         manifeste["embeddings"]["sha256_gguf"] = sha256_fichier(embed_server.GGUF)
