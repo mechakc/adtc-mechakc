@@ -35,6 +35,15 @@ __pycache__/
 # Local profiler output
 submission.json
 audit.json
+# ⚠️ Les deux lignes ci-dessus ne couvrent PAS les runs finaux : `run_final.sh` ecrit
+# `final_runs/submission_run<N>.json` + `.log`, et `submission.json` (motif sans `/`)
+# matche le nom EXACT a n'importe quelle profondeur, jamais `submission_run1.json`.
+# Mesure : `git add --dry-run final_runs/` rendait `fatal: pathspec did not match`
+# — c'est-a-dire « le dossier n'existe pas encore », PAS « il est protege ». Un test qui
+# passe parce que la cible est absente ne prouve rien (meme famille que l'erreur n°21).
+# Le dossier contient des JSON de telemetrie et des journaux de conteneur : ce n'est pas
+# un livrable, seul le submission.json final retenu le sera, choisi a la main.
+final_runs/
 
 # Stratégie compétitive — NE JAMAIS pousser sur le repo public
 CLAUDE.md

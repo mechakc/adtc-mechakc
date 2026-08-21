@@ -32,6 +32,7 @@
     "packaging": "docker_image"
   },
   "_runtime": {
-    "model_path": "model/Qwen2.5-0.5B/qwen2.5-0.5b-instruct-q8_0.gguf"
+    "model_path": "model/Qwen2.5-0.5B/qwen2.5-0.5b-instruct-q8_0.gguf",
+    "docker_image": "ghcr.io/mechakc/adtc-agri@sha256:e5f5d7ce461c2f9435ee11171f2693582e57fc71c1c90ecf7c2213c102e8e4cd"
   }
 }

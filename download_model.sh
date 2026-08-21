@@ -43,10 +43,11 @@ MODEL_DIR="$HERE/model"
 LLM_REL="Qwen2.5-0.5B/qwen2.5-0.5b-instruct-q8_0.gguf"
 LLM_URL="https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct-GGUF/resolve/main/qwen2.5-0.5b-instruct-q8_0.gguf"
 # 🔴 LLM_BYTES n'est PAS documentaire : c'est `$want` dans fetch(), compare a QUATRE
-# endroits (:53 fichier present, :70 et :74 .partial, :114 fin de telechargement).
-# Une valeur perimee ici SUPPRIME un GGUF sain (:61 `rm -f "$dest"`) puis epuise les
-# 5 tentatives. Tout changement de quant doit passer par cette ligne : une checklist de
-# changement de quant qui l'omet fait croire au tour complet — la notre l'omettait.
+# endroits (:70 fichier deja present, :87 et :91 .partial d'un essai precedent,
+# :131 fin de telechargement). Une valeur perimee ici SUPPRIME un GGUF sain
+# (:78 `rm -f "$dest"`) puis epuise les 5 tentatives sur une liaison qui marche.
+# Tout changement de quant doit passer par cette ligne : une checklist de changement
+# de quant qui l'omet fait croire au tour complet — la notre l'omettait.
 LLM_BYTES=675710816
 
 # ── Modele d'embedding pour le RAG (obligatoire pour repondre, pas pour mesurer) ─
@@ -101,7 +102,7 @@ fetch() {
   # sans `-C -`. Deux defauts qui se combinent :
   #   1. `--retry` de curl RECOMMENCE le transfert a zero ; sur une liaison lente,
   #      634 Mo n'aboutissent jamais (constate : mort a 44 671 000 o).
-  #   2. `set -euo pipefail` (ligne 25) abrege le script des que curl sort non-nul,
+  #   2. `set -euo pipefail` (ligne 37) abrege le script des que curl sort non-nul,
   #      donc AVANT le nettoyage plus bas — le .partial restait sur le disque, et
   #      il n'etait couvert par aucune regle de .gitignore.
   # D'ou : boucle de reprise explicite, `-C -`, et .partial conserve a dessein en
