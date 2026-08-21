@@ -1,0 +1,86 @@
+{
+  "schema_version": "1.1.0",
+  "profiler_version": "adtc-profiler 0.1.0",
+  "submission": {
+    "team_id": "1141147-adtc-mechakc",
+    "domain": "agriculture",
+    "language_scope": [
+      "fr",
+      "en"
+    ],
+    "african_alpha_claim": true,
+    "budget_laptop_claim": true,
+    "submitter": {
+      "name": "Loic HOUNYOVI",
+      "email": "loichyv@gmail.com",
+      "github_handle": "mechakc"
+    },
+    "cross_disciplinary_pairing": {
+      "discipline": "agronomie",
+      "load_bearing": true,
+      "description": "Le systeme repond a partir d'un corpus agronomique sahelien de 33 documents indexes (INRAN, RECA Niger, ICRISAT, CGIAR), dont 7 sous licence CC-BY verifiee page par page a l'interieur du PDF. L'agronomie n'est pas un theme mais la source de verite : chaque conseil chiffre (date de semis, ecartement, densite, dose d'engrais, seuil d'intervention) est rendu avec sa citation verbatim, son editeur, son annee et sa page. Hors corpus, le systeme annonce explicitement que la reponse n'est pas sourcee et nomme le document qui manque ; hors du domaine agricole, il refuse."
+    },
+    "test_prompts": [
+      {
+        "prompt_id": "calendrier_semis_mil_maradi",
+        "prompt": "A quelle periode faut-il semer le mil dans la region de Maradi au Niger, et quel cumul pluviometrique doit declencher le semis ? Cite ta source."
+      },
+      {
+        "prompt_id": "striga_sorgho_cross_lingual",
+        "prompt": "How can a smallholder farmer in Niger control Striga hermonthica in sorghum? Give practical measures and cite the source document, even if that document is written in French."
+      }
+    ],
+    "model": {
+      "name": "Qwen2.5-0.5B-Instruct",
+      "runtime": "llama.cpp",
+      "quantization": "GGUF Q8_0",
+      "parameters_estimate": "0.6B",
+      "packaging": "docker_image"
+    }
+  },
+  "environment": {
+    "measured_on": "participant_laptop",
+    "cpu_model": "13th Gen Intel(R) Core(TM) i9-13900HX",
+    "ram_gb": 7.3,
+    "gpu": "none",
+    "os": "Debian GNU/Linux 13 (trixie)"
+  },
+  "throughput": {
+    "tokens_per_second_generation": 26.52,
+    "first_token_latency_ms": 11390.99,
+    "prompt_tokens": 512,
+    "generated_tokens": 128
+  },
+  "memory": {
+    "peak_rss_mb": 761.49,
+    "steady_state_rss_mb": 739.71,
+    "peak_vms_mb": 1235.16
+  },
+  "accuracy": [
+    {
+      "benchmark": "arc_easy",
+      "dataset_version": "lm-eval-harness",
+      "language": "en",
+      "samples": 300,
+      "score": 0.5933,
+      "metric": "acc_norm"
+    }
+  ],
+  "cpu_thermal": {
+    "cpu_percent_p99": 53.1,
+    "core_temp_c_peak": 5.0,
+    "throttled": false
+  },
+  "reproducibility": {
+    "git_commit_sha": "744a26e23168",
+    "docker_image_digest": "ghcr.io/mechakc/adtc-agri@sha256:e5f5d7ce461c2f9435ee11171f2693582e57fc71c1c90ecf7c2213c102e8e4cd",
+    "random_seed": 42
+  },
+  "model_info": {
+    "params_count": 630167424,
+    "context_length": 32768,
+    "architecture": "qwen2",
+    "claimed_params_estimate": "0.6B",
+    "params_match": true
+  }
+}

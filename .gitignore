@@ -33,16 +33,29 @@ __pycache__/
 .venv/
 
 # Local profiler output
-submission.json
+# 🔴 `submission.json` N'EST PLUS IGNORE (21/08, decision utilisateur) : le run final retenu
+# EST un livrable — c'est ce que la derniere phrase du bloc `final_runs/` ci-dessous annoncait
+# deja (« seul le submission.json final retenu le sera »), et l'ignorer contredisait le depot.
+# Committer le JSON est ce qui rend verifiables les deux chiffres de performance qu'on declare
+# au jury (Sperf/Seff, recalcules sur ce fichier) et le `docker_image_digest` pullable, qui
+# permet a un tiers de refaire la mesure dans l'image exacte. Contrepartie assumee : le JSON
+# expose `environment.cpu_model` = i9-13900HX, a documenter dans REPORT.md — le taire serait
+# pire, une re-mesure d'audit le verrait de toute facon.
+# ⚠️ `audit.json` reste ignore : c'est la sortie du mode audit, qu'on ne produit JAMAIS
+# nous-memes (`measured_on: audit_cloud_vm` dans un fichier soumis = echec dur structurel).
 audit.json
-# ⚠️ Les deux lignes ci-dessus ne couvrent PAS les runs finaux : `run_final.sh` ecrit
-# `final_runs/submission_run<N>.json` + `.log`, et `submission.json` (motif sans `/`)
-# matche le nom EXACT a n'importe quelle profondeur, jamais `submission_run1.json`.
+# ⚠️ La ligne ci-dessus ne couvre PAS les runs finaux : `run_final.sh` ecrit
+# `final_runs/submission_run<N>.json` + `.log`, et un motif sans `/` (tel qu'etait
+# `submission.json`) matche le nom EXACT a n'importe quelle profondeur, jamais
+# `submission_run1.json`.
 # Mesure : `git add --dry-run final_runs/` rendait `fatal: pathspec did not match`
 # — c'est-a-dire « le dossier n'existe pas encore », PAS « il est protege ». Un test qui
 # passe parce que la cible est absente ne prouve rien (meme famille que l'erreur n°21).
-# Le dossier contient des JSON de telemetrie et des journaux de conteneur : ce n'est pas
-# un livrable, seul le submission.json final retenu le sera, choisi a la main.
+# ✅ Re-exerce le 21/08, les fichiers existant enfin : `final_runs/submission_run3.json`,
+# `submission_run1.log` et `final_runs/` sont tous refuses comme ignores, temoin positif
+# `REPORT.md` accepte. Le « absent » de la premiere mesure est solde.
+# Le dossier contient les 3 runs bruts et des journaux de conteneur : ce n'est pas un
+# livrable, seul le `submission.json` retenu l'est — run3, choisi a la main.
 final_runs/
 
 # Stratégie compétitive — NE JAMAIS pousser sur le repo public
