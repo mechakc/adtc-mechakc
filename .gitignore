@@ -22,13 +22,23 @@ model/*.safetensors
 # `model/` trop large et le retire, les poids restent couverts.
 # ⚠️ Forme `model/` et non `model/*` : la règle officielle est écrite « must exclude
 # *.gguf and model/ », et `model/` la satisfait littéralement. La version précédente
-# écrivait `model/*` + `!model/.gitkeep` pour garder un fichier suivi dans le dossier
-# — inutile : `download_model.sh` fait `mkdir -p` lui-même, et rien dans le code ne
-# référence ce .gitkeep (vérifié le 2026-08-24, 0 occurrence). `git ls-files model/`
-# rend donc désormais ZÉRO ligne : plus aucune ambiguïté sur « NOT committed ».
+# écrivait `model/*` + `!model/.gitkeep`.
 # 🔴 Ne pas réintroduire une négation ici : sous un dossier ignoré en `model/`, git
 # ne descend pas, donc `!model/quelquechose` serait SANS EFFET (il ne marchait
 # qu'avec la forme `model/*`). Une exception écrite là serait un faux garde-fou.
+# ✅ Et elle est INUTILE, ce qui est le point important : `.gitignore` ne s'applique
+# JAMAIS à un fichier déjà suivi. `model/.gitkeep` (0 octet) reste donc suivi malgré
+# la ligne ci-dessous, sans négation, et c'est lui qui fait exister `model/` dans
+# l'arborescence du dépôt — git ne sait pas stocker un répertoire, seulement des
+# fichiers. La liste officielle des fichiers requis montre `model/your-model.gguf`,
+# donc un juge qui la parcourt à l'œil doit voir le dossier ; les poids, eux, restent
+# non committés comme la même ligne l'exige.
+# 🔴 Erreur commise le 2026-08-24 et réparée le même jour : `.gitkeep` avait été
+# retiré du suivi au motif que « rien ne le référence ». Vrai, et hors sujet — sa
+# fonction n'est pas d'être lu par du code, c'est de rendre le dossier visible. Les
+# deux propriétés (conformité littérale de cette ligne + dossier présent) n'ont
+# jamais été exclusives ; je les ai traitées comme telles. Si `.gitkeep` disparaît
+# un jour du disque, le remettre exige `git add -f` (le `-f` est le seul coût).
 model/
 # Conformité littérale avec la règle officielle (« .gitignore must exclude *.gguf
 # and model/ ») : les règles ci-dessus la tiennent déjà pour tout ce qui vit sous
