@@ -23,6 +23,10 @@ model/*.safetensors
 # `model/*` trop large et le retire, les poids restent couverts.
 model/*
 !model/.gitkeep
+# Conformité littérale avec la règle officielle (« .gitignore must exclude *.gguf
+# and model/ ») : les règles ci-dessus la tiennent déjà pour tout ce qui vit sous
+# `model/`, mais un poids déposé AILLEURS dans l'arbre ne serait couvert par aucune.
+*.gguf
 
 # macOS
 .DS_Store
@@ -94,7 +98,19 @@ spotcheck_nu.sh
 spotcheck_nu/
 # Outillage de sonde du corpus (D2/D3) : révèle la stratégie de sourcing.
 # N'entre ni dans l'image Docker ni dans le runtime — l'index RAG est prébâti.
-tools_corpus/
+# 🔴 `tools_corpus/*` et NON `tools_corpus/` : git ne redescend pas dans un
+# répertoire exclu, donc le `!` ci-dessous serait SILENCIEUSEMENT sans effet
+# derrière un motif de répertoire. Vérifié par l'acte (`git add --dry-run`), pas
+# par lecture de la doc. Un sous-répertoire reste exclu en entier par le `*`.
+tools_corpus/*
+# Seule exception, et c'est un LIVRABLE : le jeu étiqueté à la main qui sert de test
+# de non-régression aux 3 niveaux de réponse. Le publier est ce qui rend nos
+# affirmations d'accuracy vérifiables par un juge au lieu de « crois-moi ».
+# ⚠️ Aucun compte d'items écrit ici : il change à chaque ajout, et un nombre recopié
+# dans un fichier suivi devient faux en silence. `verify_retrieve.py` §10 le dérive du
+# fichier (`len(items)`, `fr`) à chaque exécution. Son générateur `_build_qcm.py` reste
+# exclu : il porte les pseudonymes de forks concurrents.
+!tools_corpus/_qcm.jsonl
 
 # Corpus : les PDF originaux ne sont PAS redistribués (licences hétérogènes,
 # cf. CLAUDE.md §13.3). Seul le texte extrait des sources à licence permissive
@@ -111,10 +127,12 @@ corpus/sources.yaml.*
 # pour que cette ligne existe. `corpus/txt/fetched/` = 26 documents dont AUCUNE
 # licence n'est établie (RECA/INRAN/ICRISAT ne portent aucune mention juridique
 # dans le PDF ⇒ `licence: null`). Les committer sur un fork PUBLIC serait une
-# reproduction intégrale sans titre — exactement le reproche qu'on adresse à
-# ChukwumaUk, qui redistribue 376 ko de texte FAO/IITA sans citer une source.
+# reproduction intégrale sans titre — c'est-à-dire redistribuer des centaines de
+# ko de texte d'éditeur sans en citer le titre juridique. Le mode d'échec se
+# décrit sans nommer personne, et un dossier de soumission n'a pas à nommer ses
+# concurrents (retiré le 23/08, même correctif que `rag/verify_retrieve.py`).
 # Le régime `fetched` ne redistribue rien : `corpus/fetch_corpus.sh` retélécharge
-# chez l'éditeur, comme `download_model.sh` pour les poids (CLAUDE.md §7.5).
+# chez l'éditeur, comme `download_model.sh` pour les poids.
 # ⚠️ Committables au contraire : `corpus/txt/committed/` = 7 documents dont la
 # licence CC-BY est confirmée DANS le PDF, page lue une par une. 7 et non 8 :
 # `oar_57215` a été écarté au D3 (police cassée, mesurée), son entrée restant dans
@@ -135,3 +153,15 @@ rag/_embed_server.log
 # D6 comme preuve de rigueur. Décision utilisateur — retirer cette ligne pour le
 # publier. En attendant, il ne pollue pas `git status`.
 check_submission.py
+
+# Vidéo Devpost (≤2 min) : binaire lourd, produit hors dépôt et déposé sur
+# Devpost, jamais servi depuis le repo. Mesuré le 23/08 : `git add --dry-run
+# video.mov` répondait `add` (41,06 MiB) et aucun motif vidéo n'existait — donc
+# à un `git add` distrait près. Le push ne serait PAS rejeté (la limite dure de
+# GitHub est 100 MiB) : le danger est qu'un binaire de cette taille est
+# IRRÉVERSIBLE dans l'historique une fois poussé, et l'historique de ce dépôt
+# doit déjà être purgé avant publication.
+# ✅ Re-exercé après ajout : `video.mov` est refusé comme ignoré, témoin positif
+# `REPORT.md` accepté — ce n'est donc pas un test qui passe parce que la cible
+# est absente (le piège de `final_runs/` plus haut).
+video.*

@@ -18,7 +18,8 @@
 #   ./run_final.sh preflight     # rapide, sans profileur : prouve les invariants
 #   ./run_final.sh runs [N]      # N runs complets (defaut 3), 1 JSON par run
 #
-# Invariants non negociables (CLAUDE.md §4, §6.2, §6.7, §12.2) :
+# Invariants non negociables, chacun ecrit ICI en entier plutot que renvoye a un
+# fichier de travail non publie :
 #   - `--mode participant` EN DUR : `audit` forcerait measured_on=audit_cloud_vm,
 #     seul echec dur atteignable par notre propre erreur.
 #   - JAMAIS `--skip-accuracy` : un lm-eval qui plante rend accuracy:[] + exit 0.
@@ -305,8 +306,11 @@ PY
   if [ ${#failed[@]} -gt 0 ]; then
     echo; echo "RUNS EN ECHEC : ${failed[*]}"; return 1
   fi
-  echo; echo "TOUS LES RUNS OK — copier le JSON retenu en submission.json puis"
-  echo "python3 check_submission.py submission.json  (exit 0 avant tout commit)"
+  echo; echo "TOUS LES RUNS OK — copier le JSON retenu en submission.json, puis"
+  echo "AVANT TOUT COMMIT relire le JSON lui-meme : accuracy non vide (une liste"
+  echo "vide vaut S_acc=0 avec un exit 0), environment.measured_on ="
+  echo "participant_laptop, reproducibility.git_commit_sha != 000000000000,"
+  echo "docker_image_digest renseigne, et les 4 champs a tolerance non nuls."
   return 0
 }
 

@@ -45,10 +45,11 @@ Sections (0 a 8 sans serveur, 9 a 15 avec) :
       PROUVEE par le compteur d'appels d'embedding)
   14. degradation « socle committed seul » : que reste-t-il quand on retire les 26 documents non
       redistribues ?
-  15. les TROIS commutateurs de l'etape 4 dans leurs DEUX bras — veto de variete (portee CHUNK),
-      couture de meme page, borne 5 « le texte cousu n'est pas deja dans sa source ». La section 12
-      n'assert que le NIVEAU et aucune des trois regles n'en change un : elle est aveugle a ce que
-      cette section mesure                                                          + 1 contre-mesure
+  15. les QUATRE commutateurs de l'etape 4 dans leurs DEUX bras — veto de variete (portee CHUNK),
+      couture de meme page, borne 5 « le texte cousu n'est pas deja dans sa source », borne 6 « la
+      citation nomme la cible sanitaire de la requete ». La section 12 n'assert que le NIVEAU et
+      aucune des regles n'en change un : elle est aveugle a ce que cette section mesure
+                                                                                  + 1 contre-mesure
 
 Usage : py -X utf8 rag/verify_retrieve.py [--rapide] [--echantillon N]
   --rapide  saute les sections 9 a 15 (les seules qui lancent un serveur) et imprime une note
@@ -91,7 +92,15 @@ QCM = RACINE / "tools_corpus" / "_qcm.jsonl"
 RENVOIS_INTERDITS = [
     # (a) chemins hors depot public
     "tools_corpus", "PREUVES.md", "RECON-D3.md", "CLAUDE.md", "spotcheck_nu",
-    "corpus/txt/fetched", "check_submission.py", "_embed_server.log", "_qcm.jsonl",
+    "corpus/txt/fetched", "check_submission.py", "_embed_server.log",
+    # 🔴 `_qcm.jsonl` RETIRE de cette famille le 23/08 : le jeu etiquete a la main est
+    #     devenu un LIVRABLE (exception `!tools_corpus/_qcm.jsonl`), donc un renvoi vers lui n'est
+    #     plus pendant — un juge peut l'ouvrir. L'aiguille ne mesurait plus ce pour quoi elle
+    #     existait. ⚠️ Son generateur `_build_qcm` reste dans la famille (b) ci-dessous, lui : il
+    #     n'est pas publie. Et `tools_corpus` reste arme, donc un renvoi au REPERTOIRE echoue
+    #     toujours : c'est le fichier qui est publie, pas l'outillage autour.
+    #     Consequence a ne pas perdre : le jeu publie tombe desormais DANS le perimetre du
+    #     balayage (`.jsonl` est un suffixe texte), il est donc lui-meme controle a chaque run.
     # (b) ARTEFACTS de mesure de cet outillage, cites par leur nom NU (donc invisibles a la
     #     famille (a), qui n'attrape que les mentions prefixees du repertoire) : mesure du 20/08,
     #     8 lignes des livrables renvoyaient a un rapport de mesure que le juge ne peut pas ouvrir.
@@ -117,10 +126,17 @@ RENVOIS_INTERDITS = [
     #     mot « corrige » : c'est le controle executable qui fixe le perimetre, jamais la
     #     relecture.
     "erreur n°", "erreurs n°", "erreur n ", "erreurs n ",
-    # (d) le PSEUDO d'un fork concurrent. Meme defaut de resolution (il ne s'explique que par une
-    #     reconnaissance qui reste hors depot), plus une raison propre : un dossier de soumission
-    #     n'a pas a nommer ses concurrents. Le mode d'echec qu'on veut ecarter s'ecrit sans eux.
-    "ayekoo", "nevodesigns", "chukwumauk", "th3-hunter", "tifeoshodi", "nogasante", "bamalli",
+    # (d) RETIREE le 23/08. Une famille d'aiguilles « pseudos de forks concurrents » a existe ici :
+    #     son travail etait d'empecher que la redaction ecrive ces noms dans un livrable, et elle
+    #     l'a fait. Mais une fois la redaction finie, la LISTE ELLE-MEME etait le dernier endroit du
+    #     depot a les porter — sept fois, trois lignes sous le commentaire qui l'interdisait, dans le
+    #     seul fichier revelant qu'une reconnaissance concurrentielle a eu lieu. Un detecteur dont
+    #     l'aiguille est le secret qu'il protege le publie a chaque commit. ⇒ Retirer la famille EST
+    #     le correctif, pas un renoncement : les familles (a)/(b)/(c) designent des chemins, qui
+    #     restent des chemins ; celle-ci citait la donnee. Mesure avant retrait, controle positif a
+    #     l'appui : 0 occurrence dans les 47 fichiers committables hors cette liste — sauf
+    #     `.gitignore`, hors perimetre declare (corrige separement le 23/08). Ne pas la reintroduire :
+    #     le mode d'echec qu'on veut ecarter s'ecrit sans eux.
 ]
 # Exclusions de PERIMETRE, declarees et imprimees plutot que tacites :
 #  - `.gitignore` est exclu EN ENTIER : son role est precisement de nommer ce qui est exclu du
@@ -316,6 +332,12 @@ def section_0(idx: retrieve.Index) -> list[dict]:
     if QCM.is_file():
         items = [json.loads(l) for l in QCM.read_text(encoding="utf-8").splitlines() if l.strip()]
         fr = sum(1 for it in items if not str(it.get("id", "")).endswith("_en"))
+        # items ANGLAIS qui citent en niveau 1 une source FRANCAISE : c'est la traversee de
+        # langue effectivement mesuree, et non plus supposee. Derive du jeu, jamais recopie.
+        tl = sum(1 for it in items
+                 if str(it.get("id", "")).endswith("_en")
+                 and str(it.get("niveau_attendu")) == "1"
+                 and any(p.get("langue") == "fr" for p in (it.get("provenance") or [])))
         print(f"        jeu etiquete : {len(items)} items ({fr} fr / {len(items) - fr} en)")
         for t in tps:
             jumeaux = [it for it in items
@@ -330,10 +352,11 @@ def section_0(idx: retrieve.Index) -> list[dict]:
                 note(f"{t['id']} n'a AUCUN jumeau dans le jeu etiquete : ce prompt vitrine "
                      f"(recopie mot pour mot dans le formulaire) n'est couvert que par la section "
                      f"ecrite a la main, pas par les statistiques mesurees sur les {len(items)} "
-                     f"items. Le jeu est a {fr}/{len(items)} en francais alors que ce prompt-ci est "
-                     f"la demonstration TRANSLINGUE — le meme angle mort qu'une absence prouvee en "
-                     f"francais seul sur un corpus a 14/33 documents anglais, dans l'argument "
-                     f"de vente lui-meme")
+                     f"items. Le trou restant est la parite MOT POUR MOT, plus la capacite "
+                     f"translingue : le jeu est a {fr}/{len(items)} en francais, donc "
+                     f"{len(items) - fr} items anglais, dont {tl} en niveau 1 sur une source "
+                     f"FRANCAISE — la traversee de langue est donc mesuree, sur d'autres textes "
+                     f"que celui-ci")
         # contre-epreuve : la meme comparaison DOIT refuser une chaine mutee d'un seul caractere
         mute = tps[0]["prompt"].replace("Maradi", "Maradii", 1)
         exige(mute.strip() != tps[0]["prompt"].strip(),
@@ -1227,7 +1250,8 @@ def section_12(idx: retrieve.Index, rec: retrieve.Recuperateur, seuils: dict) ->
           f" — toute divergence ci-dessous est un echec dur")
     if not QCM.is_file():
         note("jeu etiquete absent : ce qui reste NON prouve ici = la coherence niveau attendu / "
-             "niveau rendu sur les 14 items, et la distinction « label faux » / « classement faux ». "
+             "niveau rendu sur les items etiquetes, et la distinction « label faux » / "
+             "« classement faux ». "
              "Les sections 9 a 11 couvrent les deux test_prompts et le refus.")
         for it in REPLI_QCM:
             print(f"        (repli autoportant, non rejoue : {it['id']} -> {it['niveau_attendu']})")
@@ -1321,18 +1345,29 @@ def section_14(idx: retrieve.Index, rec: retrieve.Recuperateur, tp1: str, tp2: s
 
 
 # =========================================================================================
-# 15. Les TROIS commutateurs declares de l'etape 4, mesures dans LEURS DEUX BRAS
+# 15. Les QUATRE commutateurs declares de l'etape 4, mesures dans LEURS DEUX BRAS
 #     Meme idiome que la section 13 pour PENALITE_STRUCTURE : une regle dont on ne peut plus exhiber
 #     l'etat anterieur n'est plus mesurable, elle devient une croyance.
 # 🔴 Pourquoi cette section ne se reduit PAS a la section 12 : la 12 n'assert que le NIVEAU, et
-#     aucune des trois regles ne change un niveau sur les 14 items — mesure des deux bras, item par
-#     item, faite avant d'ecrire cette section.
+#     aucune des trois premieres regles ne change un niveau sur les 14 items D'ALORS (mesure des
+#     deux bras, item par item, faite le 20/08 avant d'ecrire cette section ; les 6 items anglais
+#     ajoutes le 23/08 n'ont PAS ete re-mesures a deux bras — ils sont mesures regles ACTIVES,
+#     ce qui prouve leur niveau, pas l'independance de leur niveau vis-a-vis des regles).
 #     Un niveau 1 servi depuis le mauvais chunk y passait donc invisible — c'est exactement ce qui
 #     est arrive a `mil_cycle_hkp3`, qui citait six lignes de tableau appartenant a d'AUTRES varietes
 #     tout en affichant le bon niveau. Une batterie qui verifie la porte ne verifie pas la piece.
+# 🔴 La QUATRIEME (borne 6, `CITATION_EXIGE_CIBLE_DE_LA_REQUETE`) est mesuree sur `tp2` et non sur le
+#     jeu etiquete, parce que le defaut qu'elle ferme a ete trouve LA : le prompt vitrine translingue
+#     servait une citation nommant un AUTRE ravageur que celui demande. Son bras (d) est donc place
+#     AVANT la porte du jeu etiquete — la seule regle dont le cas nomme est un livrable ne doit pas
+#     devenir non mesurable parce qu'un fichier d'outillage git-ignore manque.
+#     ⚠️ Ce que le bras (d) ne pretend PAS : que la borne 6 ne change aucun niveau sur le jeu
+#     etiquete.
+#     Ca n'a pas ete mesure item par item ; ce qui l'est, c'est que le niveau de `tp2` ne bouge pas.
 # =========================================================================================
 COMMUTATEURS = ("EXIGE_VARIETE_DANS_LE_CHUNK", "MAX_COUTURE_PAR_DEMANDE",
-                "COUTURE_EXIGE_TEXTE_ABSENT_DE_LA_SOURCE")
+                "COUTURE_EXIGE_TEXTE_ABSENT_DE_LA_SOURCE",
+                "CITATION_EXIGE_CIBLE_DE_LA_REQUETE")
 
 
 def sous_bras(idx: retrieve.Index, res: dict, requete: str, seuils: dict, **etats) -> dict:
@@ -1344,7 +1379,7 @@ def sous_bras(idx: retrieve.Index, res: dict, requete: str, seuils: dict, **etat
       * un nom de commutateur mal ecrit est refuse par `assert` au lieu de creer un attribut neuf :
         `setattr` sur une faute de frappe est un no-op MUET, donc un bras « sans la regle » qui
         serait en realite « avec » — et un bras muet se lit dans le rapport comme un bras vert.
-    ⚠️ Le `res` est passe TEL QUEL d'un bras a l'autre : les trois commutateurs vivent en AVAL du
+    ⚠️ Le `res` est passe TEL QUEL d'un bras a l'autre : les quatre commutateurs vivent en AVAL du
     classement. Re-chercher ferait varier une seconde chose (le lot d'embedding deplace la marge de
     1,8e-03, plan factoriel du D4) et on lirait la somme des deux comme l'effet de la regle."""
     avant = {n: getattr(answer, n) for n in COMMUTATEURS}
@@ -1365,17 +1400,68 @@ def cle_citation(c: dict) -> tuple:
     return (c["chunk"], " ".join(c["citation"].split()))
 
 
-def section_15(idx: retrieve.Index, rec: retrieve.Recuperateur, seuils: dict) -> None:
-    titre(15, "les 3 commutateurs de l'etape 4 dans leurs DEUX bras — la section 12 est aveugle a ca")
+def section_15(idx: retrieve.Index, rec: retrieve.Recuperateur, tp2: str, seuils: dict) -> None:
+    titre(15, "les 4 commutateurs de l'etape 4 dans leurs DEUX bras — la section 12 est aveugle a ca")
     for nom in COMMUTATEURS:
         exige(hasattr(answer, nom), f"le commutateur `{nom}` existe dans answer.py")
     print(f"        etat livre : " + " · ".join(f"{n}={getattr(answer, n, '?')!r}"
                                                 for n in COMMUTATEURS))
+
+    # --- (d) borne 6 : la citation nomme la CIBLE SANITAIRE de la requete -----------------------
+    # Place AVANT la porte du jeu etiquete : le cas nomme de cette regle est `tp2` lui-meme, un
+    # livrable, donc son bras ne doit pas dependre d'un fichier d'outillage git-ignore.
+    res = rec.cherche(tp2)
+    rap_a = sous_bras(idx, res, tp2, seuils)
+    rap_s = sous_bras(idx, res, tp2, seuils, CITATION_EXIGE_CIBLE_DE_LA_REQUETE=False)
+    avec = citations_du_rapport(rap_a)
+    sans = citations_du_rapport(rap_s)
+    cl_a = {cle_citation(c) for c in avec}
+    retirees = [c for c in sans if cle_citation(c) not in cl_a]
+    demandees = set(answer._cibles_sanitaires(tp2, generiques=False))
+    print(f"        (d) borne 6 : {len(avec)} citation(s) avec, {len(sans)} sans "
+          f"-> {len(retirees)} refusee(s) ; cible(s) demandee(s) : {sorted(demandees) or '(aucune)'}")
+    exige(bool(demandees),
+          "le prompt vitrine nomme bien une cible sanitaire SPECIFIQUE : sans elle la borne 6 "
+          "s'ouvre par construction (porte 3 du predicat) et ce bras mesurerait une regle inerte")
+    exige(bool(retirees),
+          "la borne 6 refuse quelque chose de reel sur le prompt vitrine : son refus est MUET (la "
+          "citation manque, rien ne le dit), donc sans ce bras « elle ferme le defaut hors-sujet de "
+          "tp2 » serait une croyance — une defense qu'on n'a jamais VUE refuser est indistinguable "
+          "d'une defense debranchee")
+    for c in retirees:
+        nommees = set(answer._cibles_sanitaires(c["citation"], generiques=False))
+        print(f"            refuse i{c['chunk']} (cible(s) nommee(s) : {sorted(nommees) or '-'}) : "
+              f"« {c['citation'][:60]} »")
+        exige(not (nommees & demandees),
+              f"ce que la borne 6 retire ne nomme AUCUNE des cibles demandees (chunk {c['chunk']}) : "
+              "c'est ce qui distingue « elle a retire une citation hors sujet » de « elle a retire "
+              "au hasard une citation que les quatre autres controles avaient acceptee »")
+    for c in avec:
+        nommees = set(answer._cibles_sanitaires(c["citation"], generiques=False))
+        exige(bool(nommees & demandees),
+              f"la citation SERVIE du chunk {c['chunk']} nomme la cible demandee — sinon la borne 6 "
+              "aurait retire le mauvais cote et le defaut vivrait encore dans le livrable")
+    # Ce que la borne 6 ne doit PAS faire : degrader le prompt vitrine. Elle mord sur la CITATION,
+    # jamais sur le classement, donc le niveau doit survivre a son passage — mesure dans les deux
+    # bras, pas suppose.
+    print(f"            niveau(x) de tp2 : {rap_s['niveau_global']} sans la borne -> "
+          f"{rap_a['niveau_global']} avec")
+    exige(rap_a["niveau_global"] == rap_s["niveau_global"],
+          "la borne 6 ne deplace AUCUN niveau sur tp2 : elle mord sur le choix de l'unite citee, "
+          "jamais sur le classement — si elle deplacait un niveau, elle ferait autre chose que ce "
+          "que sa docstring annonce")
+    exige(bool(avec), "tp2 garde au moins une citation avec la borne 6 : une regle qui viderait le "
+                      "prompt vitrine coute plus qu'elle ne rapporte")
+    exige(rap_a.get("appels_generateur", 0) == 0,
+          "tp2 reste 100 % extractif avec la borne 6 : le refus d'une unite hors sujet ne doit pas "
+          "faire tomber la demande dans une branche qui appelle le modele")
+
     if not QCM.is_file():
         note("jeu etiquete absent : restent NON prouves ici — que le veto de variete retire des "
              "citations d'un chunk qui ne nomme pas la variete demandee, que la couture est la SEULE "
              "raison pour laquelle l'ancre `niebe_dates_zones` est servie, et que la borne 5 refuse "
-             "un contournement de plafond. Aucune autre section ne les couvre.")
+             "un contournement de plafond. Aucune autre section ne les couvre. (Le bras (d) de la "
+             "borne 6, lui, vient d'etre mesure : il ne depend pas de ce fichier.)")
         return
     items = {}
     for ligne in QCM.read_text(encoding="utf-8").splitlines():
@@ -1608,7 +1694,8 @@ def principal() -> int:
              "non-regression des deux test_prompts de bout en bout (citations, ancre de juin, "
              "voisin anglais), le refus reel sur une question hors perimetre, le rejeu du jeu "
              "etiquete, la mesure de PENALITE_STRUCTURE, la degradation « committed seul » et les "
-             "DEUX bras des trois commutateurs de l'etape 4. "
+             "DEUX bras des quatre commutateurs de l'etape 4 (dont la borne 6, qui n'est couverte "
+             "par AUCUNE autre section : la 10 se contente d'au moins une citation). "
              "Les sections 0 a 8 ne lancent aucun serveur : elles ne peuvent pas les couvrir.")
     else:
         with retrieve.Recuperateur() as rec:
@@ -1618,7 +1705,7 @@ def principal() -> int:
             section_12(idx, rec, seuils)
             section_13(idx, rec, tp1, tp2)
             section_14(idx, rec, tp1, tp2, seuils)
-            section_15(idx, rec, seuils)
+            section_15(idx, rec, tp2, seuils)
         ok("le serveur d'embedding a ete ferme par le gestionnaire de contexte")
 
     print()

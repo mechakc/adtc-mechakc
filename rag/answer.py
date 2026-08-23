@@ -1057,6 +1057,37 @@ def _cibles_sanitaires(texte: str, generiques: bool = False) -> list[str]:
 RANG_IDEAL = (0, 0, 0)
 
 
+def _sert_la_cible_de_la_requete(typ: str, unite: str, requete: str) -> bool:
+    """L'unite candidate nomme-t-elle la cible sanitaire que la REQUETE demande ?
+
+    Borne 6 des deux cadres de citation (`_citations_niveau_1` et `_couture_meme_page`). Elle ne
+    duplique aucune des quatre verifications existantes : celles-la portent sur la CULTURE, sur la
+    co-mention culture↔valeur, sur le motif de valeur et sur la fidelite au chunk — aucune sur le
+    ravageur. Defaut mesure qu'elle ferme : `tp2` (striga) servait une ligne « Chenille Legionnaire /
+    Spodoptera », meme document, meme page, valeur bien portee par le sorgho. Cf.
+    `CITATION_EXIGE_CIBLE_DE_LA_REQUETE` pour le pourquoi du commutateur.
+
+    QUATRE portes de sortie, chacune une decision et non une commodite :
+      - commutateur a False ⇒ l'arme « sans la regle » reste exercable a l'identique ;
+      - type NON conjonctif ⇒ rien a exiger : `periode_semis`, `cycle_duree`, `dose_engrais` n'ont
+        pas de cible sanitaire, et l'exiger d'eux supprimerait toutes leurs citations (`tp1` en
+        premier). C'est `CONJONCTIF` — un **dict** — qui nomme les types concernes, pas une seconde
+        liste maintenue ici ;
+      - la requete ne nomme aucune cible SPECIFIQUE (`generiques=False` : « pest » ou « maladie » ne
+        nomment pas un ravageur) ⇒ il n'y a pas de cible a servir, et refuser sur une exigence vide
+        rendrait la regle plus severe que la question ;
+      - sinon : intersection non vide entre les cibles de la requete et celles de l'unite.
+    `_cibles_sanitaires` est REUTILISEE des deux cotes — la liste d'alternatives reste re-derivee de
+    `CIBLES_SANITAIRES`, comme la cle (0bis) de `_rang_unite` qui fait deja ce test au niveau 2.
+    """
+    if not CITATION_EXIGE_CIBLE_DE_LA_REQUETE or typ not in CONJONCTIF:
+        return True
+    demandees = _cibles_sanitaires(requete, generiques=False)
+    if not demandees:
+        return True
+    return bool(set(demandees) & set(_cibles_sanitaires(unite, generiques=False)))
+
+
 def _rang_unite(c: dict) -> tuple[int, int, int]:
     """Rang lexicographique d'une unite candidate pour un type CONJONCTIF. `RANG_IDEAL` = meilleur.
 
@@ -1311,6 +1342,24 @@ MAX_COUTURE_PAR_DEMANDE = 1
 # non une mesure : une defense qu'on n'a jamais VUE refuser est indistinguable d'une defense
 # debranchee, et les deux se lisent pareil dans un rapport vert.
 COUTURE_EXIGE_TEXTE_ABSENT_DE_LA_SOURCE = True
+# QUATRIEME commutateur DECLARE, et il porte la borne 6 des DEUX cadres de citation (le niveau 1
+# ordinaire et la couture). Defaut MESURE qui l'exige, et les chiffres sont ecrits ICI parce que le
+# rapport de mesure n'est pas un livrable public : `tp2` demande la lutte contre le **striga** et servait TROIS citations — chunks
+# 223 / 223 / **224**, toutes page 3 du meme document — dont la troisieme nomme « Chenille
+# Legionnaire / Spodoptera » et **pas** la cible de la requete. Elle passait parce qu'aucune des
+# quatre verifications de citation ne teste le ravageur demande : `verifie_entite` verifie la
+# CULTURE (le sorgho est bien nomme), `arbitre_co_mention` verifie que c'est elle qui porte la
+# valeur, `trouve` le motif de valeur, `invariant_verbatim` la fidelite au chunk. La cle (0bis) de
+# `_rang_unite` fait deja ce travail — mais au niveau 2 SEULEMENT.
+# 🔴 L'hypothese de depart (« penaliser les chunks de type sommaire/listing via le champ
+# `structure` ») est REFUTEE par la mesure et ne doit pas etre reimplementee : les deux chunks
+# portent `structure: ""` (`n_chunks_marques_structure: 0`) ⇒ une porte fondee sur `structure` est
+# INERTE sur ce defaut precis. Le predicat qui agit est la cible sanitaire de la requete.
+# 0/False = regle desactivee, pour la meme raison que `MAX_COUTURE_PAR_DEMANDE = 0` : le refus de la
+# borne 6 est MUET (une unite en moins, pas un message), donc sans un moyen d'exhiber l'etat « sans
+# la regle » elle serait une croyance et non une mesure — une defense qu'on n'a jamais vue refuser
+# est indistinguable d'une defense debranchee.
+CITATION_EXIGE_CIBLE_DE_LA_REQUETE = True
 PERIMETRE = ("Sahel francophone, cœur Niger — mil, sorgho, mais, arachide, niebe "
              "(33 documents indexes, 3 180 passages)")
 
@@ -1330,7 +1379,7 @@ def _couture_meme_page(idx: retrieve.Index, res: dict, typ: str, cible: str, req
     servie etait donc juste et INCOMPLETE, ce qu'aucun niveau ne signale : ni le niveau 1 (il est
     verbatim et sourcé), ni le niveau 2 (rien n'est absent du corpus).
 
-    CINQ bornes, chacune destinee a empecher que « achever » ne devienne « elargir » :
+    SIX bornes, chacune destinee a empecher que « achever » ne devienne « elargir » :
       1. seulement si la demande est DEJA au niveau 1 — la couture acheve, elle ne promeut jamais ;
       2. seulement un voisin de MEME document et MEME page (la primitive ne traverse pas la page :
          un chunk a cheval n'aurait aucun numero de page unique a citer) ;
@@ -1358,6 +1407,21 @@ def _couture_meme_page(idx: retrieve.Index, res: dict, typ: str, cible: str, req
          queue de i1957. Les deux achevements reels passent la borne (i1646 apporte la premiere zone
          pluviometrique que i1647 n'a pas ; i347 apporte les quatre doses NPK que i346 annonce sans
          les donner), le contournement est refuse.
+      6. 🔴 l'unite cousue doit nommer la CIBLE SANITAIRE de la requete quand le type est conjonctif
+         (`_sert_la_cible_de_la_requete`, commutateur `CITATION_EXIGE_CIBLE_DE_LA_REQUETE`). La
+         borne 4 ci-dessus disait « les MEMES quatre verifications que le niveau 1 » — mesure faite,
+         ces quatre-la sont AVEUGLES au ravageur : elles verifient la culture, la co-mention
+         culture↔valeur, le motif de valeur et la fidelite au chunk. C'est par ce trou que `tp2`
+         (striga) servait une troisieme citation nommant « Chenille Legionnaire / Spodoptera » —
+         chunk 224, meme document et MEME PAGE 3 que les deux citations justes, donc les bornes 2
+         et 5 la laissaient passer sans faute. La borne 6 est portee aux DEUX cadres, pas seulement
+         ici : le meme trou existe dans `_citations_niveau_1`, et ne le fermer que du cote de la
+         couture aurait deplace le defaut au lieu de le fermer.
+         ⚠️ Ce qu'elle COUTE, mesure sur les 3 180 chunks AVANT d'etre acceptee : **50 %**
+         des 54 unites portant un motif `mesure_lutte` sur 7 documents ne nomment aucune cible
+         specifique et deviennent incitables. Accepte parce que ces unites-la ne repondaient a la
+         question de personne — mais c'est un cout de RAPPEL, pas un gain gratuit, et il est ecrit
+         ici pour qu'un futur elargissement sache ce qu'il rachete.
     Plus une dedup sur le TEXTE (et non sur le couple chunk+texte comme le fait la boucle
     principale) : deux chunks d'une meme page repetent parfois la meme ligne, et re-servir un texte
     deja cité consommerait le budget sans rien achever — ce qui est le contraire de la definition.
@@ -1387,6 +1451,8 @@ def _couture_meme_page(idx: retrieve.Index, res: dict, typ: str, cible: str, req
                 ok, etage = verifie_entite(idx, chunk, u, cible, requete=requete)
                 if not ok:
                     continue
+                if not _sert_la_cible_de_la_requete(typ, u, requete):
+                    continue                              # borne 6
                 co = (arbitre_co_mention(typ, cible, u) if cible in ENTITES
                       else {"declenche": False, "accorde": True})
                 if not co["accorde"]:
@@ -1450,6 +1516,11 @@ def _citations_niveau_1(idx: retrieve.Index, res: dict, typ: str, cible: str,
                 continue
             ok, etage = verifie_entite(idx, chunk, u, cible, requete=requete)
             if not ok:
+                continue
+            # borne 6 : la CULTURE est verifiee ci-dessus, le RAVAGEUR ici. Le defaut mesure qui
+            # l'exige (`tp2` servant une ligne Spodoptera sur une question striga) passe les quatre
+            # autres controles sans faute — voir `_sert_la_cible_de_la_requete`.
+            if not _sert_la_cible_de_la_requete(typ, u, requete):
                 continue
             # `cible` peut etre une entite DYNAMIQUE (« EL MARADI »), absente d'`ENTITES` : l'arbitre
             # ne saurait pas la localiser, et il n'a rien a arbitrer puisqu'aucune culture n'est
@@ -1609,27 +1680,50 @@ def compose(rap: dict) -> str:
         cible = (" (" + d["cible"] + ")") if d.get("cible") else ""
         L.append("[" + etiquette + "] " + titre + cible)
         if d["niveau"] == 1:
+            # RESERVE de niveau 2 GREFFEE sur ce niveau 1 (§8bis). Son etiquette porte « 2 » pour
+            # que la gradation reste lisible a l'ecran — un juge doit pouvoir compter les niveaux
+            # sans ouvrir le JSON.
+            #
+            # 🔴 ORDRE D'AFFICHAGE INVERSE le 22/08, apres lecture des 2 test_prompts COTE A COTE.
+            # Le commentaire precedent posait « la reserve vient APRES les citations, jamais a leur
+            # place : le lecteur voit d'abord ce qui est source ». Vrai pour tp1, FAUX pour tp2 :
+            #   · tp1 cite une PHRASE qui porte la valeur (« … les trois decades de juin ») ⇒ le
+            #     lecteur apprend « juin » des la premiere ligne ;
+            #   · tp2 cite deux TITRES de documents — le motif `mesure_lutte` matche « lutte …
+            #     contre le striga » a l'interieur d'un titre (:288) et la cible sanitaire y est
+            #     aussi ⇒ la promotion est la regle qui s'applique, pas un bug, mais les deux
+            #     premieres lignes n'ENONCENT RIEN, et la seule pratique du corpus arrivait
+            #     cinquieme, presentee comme un repli.
+            # Meme etiquette `[1 · SOURCE]`, deux natures d'objet, hierarchie inversee — sur le
+            # prompt le plus lu de la soumission (§2.1). ⇒ Quand la reserve porte un voisin, ce
+            # voisin passe EN TETE : c'est la seule unite du bloc qui enonce quelque chose a faire.
+            # Les citations gardent leur place, leur provenance et leur tag « lecture de tableau »,
+            # derriere la reserve qui dit ce qu'elles ne sont pas.
+            # Ce changement est PUREMENT un ordre : aucun niveau ne bouge, aucune affirmation n'est
+            # ajoutee, `d["niveau"]`/`rap["niveau_global"]` sont intacts. C'est ce qui le rend sur :
+            # `verify_retrieve.py` §10 asserte sur le RAPPORT (`:1126` la citation de niveau 1,
+            # `:1146` le voisin = chunk 2094), jamais sur ce texte. L'option qui faisait TOMBER tp2
+            # en niveau 2 avait ete mesuree et ecartee le 19/08 (:315) — elle otait ses deux
+            # citations francaises ; elle contredit en plus `:1126` et `:1423`.
+            r = d.get("reserve")
+            v = r.get("voisin") if r else None
+            if v:
+                L.append("  Pratique documentee la plus proche : « "
+                         + v["citation_affichee"] + " »")
+                L.append("  — " + provenance_lisible(v["provenance"]))
+                if r.get("ecarts"):
+                    L.append("  Ecart a ta question : " + " · ".join(r["ecarts"]) + ".")
+                L.append("  [2 · RESERVE] " + r["motif"] + ".")
             for c in d["citations"]:
                 tag = " — lecture de tableau" if c["lecture_de_tableau"] else ""
                 L.append("  « " + c["citation_affichee"] + " »" + tag)
                 L.append("  — " + provenance_lisible(c["provenance"]))
-            # RESERVE de niveau 2 GREFFEE sur ce niveau 1 (§8bis). Elle vient APRES les citations,
-            # jamais a leur place : le lecteur voit d'abord ce qui est sourcé, puis ce que la source
-            # ne dit PAS. Son etiquette porte « 2 » pour que la gradation reste lisible a l'ecran —
-            # un juge doit pouvoir compter les niveaux sans ouvrir le JSON.
-            r = d.get("reserve")
-            if r:
+            if r and v is None:
+                # Pas de voisin : ordre d'origine conserve (citations d'abord, reserve ensuite).
+                # Ouvrir un bloc sur une negation nue serait pire que le defaut qu'on corrige.
                 L.append("  [2 · RESERVE] " + r["motif"] + ".")
-                v = r.get("voisin")
-                if v:
-                    L.append("  Pratique documentee la plus proche : « "
-                             + v["citation_affichee"] + " »")
-                    L.append("  — " + provenance_lisible(v["provenance"]))
-                    if r.get("ecarts"):
-                        L.append("  Ecart a ta question : " + " · ".join(r["ecarts"]) + ".")
-                else:
-                    L.append("  Et je n'ai trouve aucune pratique approchante dans mes "
-                             "33 documents.")
+                L.append("  Et je n'ai trouve aucune pratique approchante dans mes "
+                         "33 documents.")
         else:
             if d.get("pistes"):
                 L.append("  Je n'ai pas reconnu de valeur chiffree demandee : je ne presente donc")
