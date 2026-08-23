@@ -112,7 +112,7 @@ fetch() {
   #      donc AVANT le nettoyage plus bas — le .partial restait sur le disque, et
   #      il n'etait couvert par aucune regle de .gitignore.
   # D'ou : boucle de reprise explicite, `-C -`, et .partial conserve a dessein en
-  # cas d'abandon (il est desormais ignore par git, cf. .gitignore `model/*`).
+  # cas d'abandon (il est desormais ignore par git, cf. .gitignore `model/`).
   # 🔴 PANNE MESUREE le 2026-08-24, en repertoire vierge : la version precedente
   # bornait a 5 tentatives FIXES. Sur une liaison a ~400 ko/s chaque appel curl meurt
   # avant la fin, la reprise `-C -` marche (le .partial grandit a chaque essai), mais

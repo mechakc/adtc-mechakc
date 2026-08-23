@@ -17,12 +17,19 @@ model/*.safetensors
 # Le premier passe sous les 100 Mo de GitHub : il aurait été poussé sans erreur.
 # C'est le même mécanisme que le trou des sous-dossiers documenté plus haut, avec
 # une autre extension — donc on arrête d'énumérer des extensions et on INVERSE la
-# règle : tout est ignoré sous `model/`, sauf `model/.gitkeep`, seul fichier que git
-# y suit réellement (vérifié : `git ls-files model/` → une seule ligne).
+# règle : TOUT est ignoré sous `model/`, sans exception.
 # Les règles spécifiques au-dessus sont gardées à dessein : si quelqu'un juge un jour
-# `model/*` trop large et le retire, les poids restent couverts.
-model/*
-!model/.gitkeep
+# `model/` trop large et le retire, les poids restent couverts.
+# ⚠️ Forme `model/` et non `model/*` : la règle officielle est écrite « must exclude
+# *.gguf and model/ », et `model/` la satisfait littéralement. La version précédente
+# écrivait `model/*` + `!model/.gitkeep` pour garder un fichier suivi dans le dossier
+# — inutile : `download_model.sh` fait `mkdir -p` lui-même, et rien dans le code ne
+# référence ce .gitkeep (vérifié le 2026-08-24, 0 occurrence). `git ls-files model/`
+# rend donc désormais ZÉRO ligne : plus aucune ambiguïté sur « NOT committed ».
+# 🔴 Ne pas réintroduire une négation ici : sous un dossier ignoré en `model/`, git
+# ne descend pas, donc `!model/quelquechose` serait SANS EFFET (il ne marchait
+# qu'avec la forme `model/*`). Une exception écrite là serait un faux garde-fou.
+model/
 # Conformité littérale avec la règle officielle (« .gitignore must exclude *.gguf
 # and model/ ») : les règles ci-dessus la tiennent déjà pour tout ce qui vit sous
 # `model/`, mais un poids déposé AILLEURS dans l'arbre ne serait couvert par aucune.
