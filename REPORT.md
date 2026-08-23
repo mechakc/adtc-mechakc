@@ -136,6 +136,14 @@ crossover computation above.
   run. Model weights are fetched by `download_model.sh` (two GGUF files, 675 710 816 bytes for the
   LLM and 634 553 760 bytes for the embedding model, both verified byte-exact), because committing
   weights is disallowed.
+- **Two GGUF where the required-files tree shows one.** The submission layout published for this
+  challenge lists a single `model/your-model.gguf`. `download_model.sh` fetches two, and the
+  difference is deliberate rather than an oversight: `model/Qwen2.5-0.5B/qwen2.5-0.5b-instruct-q8_0.gguf`
+  is the generation model and the only path named in `_runtime.model_path`, so it is the only file the
+  profiler ever loads; `model/bge-m3/bge-m3-Q8_0.gguf` is the retrieval embedding model, used by our
+  application alone. Both are GGUF served through llama.cpp, both land under `model/`, and neither is
+  committed — `.gitignore` excludes `*.gguf` and `model/`, and `git ls-files model/` returns nothing
+  at all. So no stated requirement is bent; the tree simply does not anticipate a retrieval model.
 - **Corpus licensing:** the governing constraint on corpus growth was licensing, not availability.
   A licence is a legal act inside the document, not a statement on the publisher's website — one
   collection advertised free reuse on its site and reserved all rights on page 3 of the PDF, and was
@@ -206,6 +214,17 @@ S_perf and S_eff are the two scores the submission form collects. They are compu
 README's fixed reference of 15 t/s; the challenge's other stated regime normalises against the
 highest throughput observed in the field, which is not knowable before the field closes, so the
 ranking renormalises what is declared under a fixed reference.
+
+**What the memory figures do and do not cover.** 761.49 MB is the peak resident set of the profiler
+loading `_runtime.model_path` alone. The profiler never loads the embedding model, so S_eff = 89.12
+is a score for the generation model and not for the application as a whole: answering a question also
+starts a separate `llama-server` child process holding BGE-M3. We did not measure the application's
+own peak, and we will not quote a number we did not measure. What can be stated as a bound is that
+the embedding weights are 634 553 760 bytes on disk, so even if both models were resident at the same
+instant the total sits near 1.40 GB against the 8 GB limit — roughly one sixth of it. The advantage
+this asymmetry gives us is real and worth naming rather than hiding: retrieval quality is free on the
+telemetry surface, because the file that earns the S_eff score is not the file that does the
+retrieving.
 
 Run identity: participant mode, non-AVX image
 `sha256:e5f5d7ce461c2f9435ee11171f2693582e57fc71c1c90ecf7c2213c102e8e4cd`, pushed as
