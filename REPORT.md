@@ -6,7 +6,7 @@
 
 > **Telemetry in this report is the final profiler run**: participant mode, image
 > `sha256:e5f5d7ce461c2f9435ee11171f2693582e57fc71c1c90ecf7c2213c102e8e4cd`, repository commit
-> `744a26e23168`, 2026-08-21, third of three consecutive runs. That run's JSON is committed as
+> `49be3b478d58`, 2026-08-21, third of three consecutive runs. That run's JSON is committed as
 > `submission.json`, and it is the only source of the figures below: each one was re-derived from
 > that file by a script and printed before being written here, never copied from an earlier table.
 > Figures from *other* runs do appear — the quantization arbitration of 2026-08-18 — and every one
@@ -229,7 +229,7 @@ retrieving.
 Run identity: participant mode, non-AVX image
 `sha256:e5f5d7ce461c2f9435ee11171f2693582e57fc71c1c90ecf7c2213c102e8e4cd`, pushed as
 `ghcr.io/mechakc/adtc-agri@sha256:e5f5d7ce…` and recorded under that digest in `submission.json`;
-repository commit `744a26e23168`; 2 threads; `--memory=7.5g`; 2026-08-21; arc_easy n=300 seed 42;
+repository commit `49be3b478d58`; 2 threads; `--memory=7.5g`; 2026-08-21; arc_easy n=300 seed 42;
 512 prompt tokens and 128 generated tokens. Reported CPU model: 13th Gen Intel(R) Core(TM)
 i9-13900HX; reported available RAM inside the container: 7.3 GB; reported OS inside the container:
 Debian GNU/Linux 13 (trixie) — the Ubuntu 22.04 named in the Machine row above is the host, and the
