@@ -207,8 +207,8 @@ Scores under the README formulas, recomputed from the four fields above rather t
 |---|---|---|
 | S_acc | acc_norm × 100 = 0.5933 × 100 — a declared proxy, not a measurement of agronomic accuracy | **59.33** |
 | S_perf | min(26.52 / 15, 1) × 100 — the ratio is **1.7680**, so the score is capped and 11.52 t/s of measured throughput convert to zero points | **100.00** |
-| S_eff | max(0, (7 − 0.76149) / 7) × 100 | **89.12** |
-| S_total | 0.50 × 59.33 + 0.30 × 100.00 + 0.20 × 89.12 = 29.6650 + 30.0000 + 17.8243 | **77.49** |
+| S_eff | max(0, (7 − 0.74364) / 7) × 100 — the profiler builds `peak_rss_mb` as `rss / (1024**2)` (`adtc_profiler/memory.py`), so the field is MiB and converts to GiB by 1024, not by 1000: 761.49 / 1024 = 0.74364 | **89.38** |
+| S_total | 0.50 × 59.33 + 0.30 × 100.00 + 0.20 × 89.38 = 29.6650 + 30.0000 + 17.8753 | **77.54** |
 
 S_perf and S_eff are the two scores the submission form collects. They are computed here under the
 README's fixed reference of 15 t/s; the challenge's other stated regime normalises against the
@@ -216,7 +216,7 @@ highest throughput observed in the field, which is not knowable before the field
 ranking renormalises what is declared under a fixed reference.
 
 **What the memory figures do and do not cover.** 761.49 MB is the peak resident set of the profiler
-loading `_runtime.model_path` alone. The profiler never loads the embedding model, so S_eff = 89.12
+loading `_runtime.model_path` alone. The profiler never loads the embedding model, so S_eff = 89.38
 is a score for the generation model and not for the application as a whole: answering a question also
 starts a separate `llama-server` child process holding BGE-M3. We did not measure the application's
 own peak, and we will not quote a number we did not measure. What can be stated as a bound is that
@@ -328,10 +328,22 @@ the standard evaluation machine.
 
 - The profiler is pinned to a specific upstream commit in our Dockerfile, fetched by SHA at build
   time, so a rebuild resolves the same profiler code rather than a moving branch head.
-- The `team_id` above follows the convention `<devpost-id>-<slug>` and is taken from our Devpost
-  submission URL. The participant portal named in the challenge README could not be reached through
-  any documented channel — the repository issue asking for it went unanswered and the contact
-  address bounced — so no portal-issued identifier exists to quote here.
+- The `team_id` above is the value the challenge organisers instructed us to use, and it is the slug
+  of our Devpost submission URL (`devpost.com/software/adtc-mechakc`). The participant portal named in
+  the challenge README could not be reached through any documented channel — the repository issue
+  asking for it went unanswered and the contact address bounced — so no portal-issued identifier
+  exists to quote here.
+- **One field of `metadata.json` changed after the measured run, and we name it rather than repoint
+  the commit.** `submission.json` records `git_commit_sha: 49be3b478d58`, which is truthfully the
+  repository HEAD at the moment of the run on 2026-08-21. At that commit `team_id` still read
+  `1141147-adtc-mechakc`; it was changed to `adtc-mechakc` on 2026-08-23 on the organisers'
+  instruction, in `metadata.json` and in the submission block of `submission.json` alike, which is why
+  the two files agree today while the commit they point at does not. The gap is confined to that one
+  identifier: between `49be3b478d58` and HEAD the only change to `metadata.json` is that string, and
+  `download_model.sh` still resolves the same relative path, the same URL and the same byte count, so
+  the weights that produced the telemetry are unchanged. A `team_id` is not an input to any measured
+  field. We state this rather than advance the recorded SHA to a later commit, because the measurement
+  was not taken at a later commit and the field means HEAD at measurement time.
 - No dependency of the upstream profiler is pinned tighter than upstream pins it: the four
   tolerance-bearing telemetry fields all come from a pinned `llama-bench` build, and diverging from
   the official dependency specification would break parity with the audit environment.
